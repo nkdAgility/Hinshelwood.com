@@ -1,0 +1,24 @@
+# ignore directories
+/public/
+/site/public/
+**/.obsidian/
+**/_gen/
+/resources/
+/.processing/
+**/data.index.*.batch
+**/data.index.*-*.jsonl
+**/classifications.batch-*.jsonl
+**/batch_*.jsonl
+**/batch-*.jsonl
+.data/*.log
+.data/.log
+.powershell/py/__pycache__/*
+.data/linkedin-all_comments-snapshots.json
+.data/linkedin-member_share_info-snapshots.json
+.data/linkedin-post_analytics-snapshots.json
+.data/matched_resource_posts_with_comments.json
+.data/matched_resource_posts.json
+.data/content-embeddings/
+.data/classification-correlation/analysis/
+.data/content-related/
+/node_modules/*

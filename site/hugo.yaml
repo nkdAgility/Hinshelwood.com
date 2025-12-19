@@ -1,0 +1,59 @@
+languageCode: en
+defaultContentLanguage: en
+
+title: Martin Hinshewlood
+
+publishDir: ../public
+resourceDir: ../resources
+
+summaryLength: 30
+
+enableRobotsTXT: true
+enableGitInfo: true
+
+frontmatter:
+  lastmod: ["lastmod", "publishDate", ":git"]
+
+timezone: "Europe/London"
+
+# Site-wide parameters
+params:
+  title: Martin Hinshelwood | DevOps, Agile, Lean and AI Enablement
+  TakingOnNewClients: true
+  description: "Independent consultant specialising in DevOps, Agile, Lean, and AI enablement. I help organisations understand and improve their systems of work so teams can deliver valuable software more effectively and with greater confidence."
+  keywords: "Agile, Scrum, Kanban, DevOps, Azure DevOps, Github, AI"
+  author: "Martin Hinshelwood"
+  og_image: "/images/og-image.jpg" # URL to the default Open Graph image
+  twitter_handle: "@mrhinsh" # Your Twitter handle for Twitter cards
+  githubRepo: "https://github.com/nkdAgility/hinshelwood.com" # URL to edit content on GitHub
+  githubContentDir: "site/content" # Directory in the GitHub repo where content is stored
+
+pagination:
+  pagerSize: 30
+
+# Enable sitemap and robots.txt
+sitemap:
+  filename: "sitemap.xml"
+  changefreq: "daily"
+  priority: 0.5
+
+menus:
+  mainMenu:
+    - name: Home
+      pageRef: /
+      weight: 20
+    - name: About
+      pageRef: /about/
+      weight: 30
+    - name: Services
+      pageRef: /services/
+      weight: 40
+    - name: Success Stories
+      pageRef: /success-stories/
+      weight: 50
+    - name: Insights
+      pageRef: /insights/
+      weight: 66
+    - name: Contact
+      pageRef: /contact/
+      weight: 76
