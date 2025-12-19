@@ -16,40 +16,30 @@
       <!-- End Google Tag Manager (noscript) -->
     {{- end }}
     {{- block "breadcrumbs" . }}
-      <section class="container my-2">
-        
-        
+      <section class="container block-breadcrumbs my-2">
+        breadcrumbs
       </section>
     {{- end }}
 
     {{- block "headline" . }}
-      <section class="container my-2">
-        
+      <section class="container block-headline my-2">
+        headline
       </section>
-      {{- if not .IsHome }}
-        <section class="container my-5">
-         
-        </section>
-      {{- end }}
     {{- end }}
 
     {{- block "main" . }}
-      <section class="container my-2">
-      
+      <section class="container block-main my-2">
+      main
       </section>
     {{- end }}
 
     {{- block "siteSectionCallback" . }}
-      {{- partial "connect.html" . }}
-      <section class="container my-2 siteSectionCallback"></section>
-    {{- end }}
-
-    {{- if not .IsHome }}
-   
+      <section class="container my-2 block-siteSectionCallback">siteSectionCallback</section>
     {{- end }}
 
 
     {{- if eq hugo.Environment "development" }}
+     <hr />
       <div id="debugArea" class="container-fluid p-2 bg-brand-{{- hugo.Environment }}">
         <section class="container my-2">
           <button class="btn btn-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#debugSection" aria-expanded="false" aria-controls="debugSection">Show Debug Information</button>

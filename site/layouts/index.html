@@ -4,117 +4,25 @@
 
 {{- define "headline" }}
   <section class="container my-5">
-    {{- partial "components/taking-on-new-client-poc-cycle.html" . }}
-    <div class="row p-2 p-lg-6">
-      <div class="col-12 col-xl-6 p-lg-3">
-        <h1 class="mb-4 nkda-heading-primary">Leading your <i>operating model</i> through technical leadership and engineering excellence.</h1>
-
-        <h2 class="mb-4 nkda-heading-secondary">We help organisations improve the performance of their digital products by creating operating models that increase speed, strengthen decision-making, and reduce delivery friction. Our work aligns strategy, discovery, delivery, and operations so teams can move faster with greater clarity and accountability.</h2>
-        <p class="mb-4 d-none d-sm-block">We enable leaders to build empowered teams, clearer value flow, and measurable business outcomes. Clients see faster delivery cycles, higher product quality, and better economic returns by focusing on evidence-based decisions and strong engineering leadership.</p>
-        <p class="mb-4 d-none d-sm-block">Our expertise ensures that technology becomes a strategic advantage rather than a constraint, providing organisations with a more resilient, adaptable, and effective system of work.</p>
-      </div>
-      <div class="col-12 col-xl-6 d-none d-sm-block">
-        <div class="row">
-          <div class="col-12">
-            <div class="card text-center card-left-border">
-              <div class="card-body">
-                {{ range first 1 (where .Site.RegularPages.ByWeight "Params.ResourceType" "blog") }}
-                  <h3 class="card-title">
-                    {{- partial "components/resources/resource-icon.html" . }}
-                    {{ .Title }}
-                  </h3>
-                  <p class="card-text">{{ .Description }}</p>
-                  <a href="{{ .RelPermalink }}" class="btn btn-primary">Read more...</a>
-                {{ end }}
-                <div class="row p-2">
-                  <hr />
-                  <div class="col-12">
-                    <h6>Recent engineering excellence insights</h6>
-                  </div>
-                  {{ range first 4 (after 1 (where .Site.RegularPages.ByWeight "Params.ResourceType" "blog")) }}
-                    <div class="col-md-12 d-flex align-items-center">
-                      <span class="mr-1"><i class="fa-solid fa-newspaper pe-1"></i></span>
-                      <span class="text-truncate d-inline-block" style="max-width: 100%;" title="{{ .Title }} - {{ .Description }}">
-                        <a href="{{ .Permalink }}">{{ .Params.short_title | default .Title }}</a>
-                      </span>
-                    </div>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row py-3 align-items-center">
-          <div class="col-12 col-sm-6 col-md-3 p-2 d-flex justify-content-center" title="Professional Scrum Trainer"><img src="/images/PST-Badge-v2-web-transparent.webp" alt="Professional Scrum Trainer Badge" loading="lazy" width="100%" style="max-height: 80px; object-fit: contain;" /></div>
-          <div class="col-12 col-sm-6 col-md-3 p-2 d-flex justify-content-center" title="Microsoft MVP"><img src="/images/MVP_Horizontal_FullColor.webp" alt="Microsoft MVP Badge" loading="lazy" width="100%" style="max-height: 80px; object-fit: contain;" /></div>
-          <div class="col-12 col-sm-6 col-md-3 p-2 d-flex justify-content-center" title="Professional Kanban"><img src="/images/PK-Email@0.5x-1.png" alt="Professional Kanban Badge" loading="lazy" width="100%" style="max-height: 80px; object-fit: contain;" /></div>
-          <div class="col-12 col-sm-6 col-md-3 p-2 d-flex justify-content-center" title="OKR Professional Coach"><img src="/images/OKR-Professional-Coach-Logo.webp" alt="OKR Professional Coach Badge" loading="lazy" width="100%" style="max-height: 80px; object-fit: contain;" /></div>
-        </div>
-      </div>
-    </div>
+   
+    
   </section>
   <section class="container my-5">
-    {{- partial "components/trustpilot/scrumorg-trustpilot-carousel.html" . }}
+    
   </section>
 {{- end }}
 {{- define "main" }}
   <section class="container my-5">
-    <h2>What you gain</h2>
-    <p>You experience improved conditions across delivery, quality, and economic visibility. Teams deliver with greater predictability. Risk reduces. Innovation becomes sustainable.</p>
-    {{- partial "cards-section.html" (dict "context" . "SectionName" "outcomes" "MaxItems" 4) . }}
+    
   </section>
   <section class="container my-5">
-    <h2>How we work with you</h2>
-    <p>Our engagement model removes transactional friction. You retain strategic capacity through timeboxed partnerships—no hourly billing, no change orders, no scope debates. Full refund if you're not satisfied. You choose advisory, embedded, or fractional executive involvement at the level that fits your context.</p>
-    <div class="row">
-      <div class="col-md-4">
-        <h3 class="text-modern text-center nkda-heading-primary"><i class="fa-solid fa-shield-halved"></i></h3>
-        <p class="text-modern text-center nkda-heading-secondary"><strong>Risk reversal</strong><br />Full refund guarantee</p>
-      </div>
-      <div class="col-md-4">
-        <h3 class="text-modern text-center nkda-heading-primary"><i class="fa-solid fa-clock"></i></h3>
-        <p class="text-modern text-center nkda-heading-secondary"><strong>Timeboxed retainers</strong><br />Capacity, not hours</p>
-      </div>
-      <div class="col-md-4">
-        <h3 class="text-modern text-center nkda-heading-primary"><i class="fa-solid fa-handshake"></i></h3>
-        <p class="text-modern text-center nkda-heading-secondary"><strong>High trust</strong><br />Transparent collaboration</p>
-      </div>
-    </div>
+    
   </section>
   <section class="container my-5">
-    <h2>What we provide</h2>
-    <p>We deliver assessments, operating model design, coaching, and engineering excellence enablement. Our capabilities span strategy alignment, delivery system optimisation, and technical leadership development.</p>
-    {{- partial "cards-section.html" (dict "context" . "SectionName" "capabilities" "MaxItems" 4) }}
+   
   </section>
   <section class="container my-5">
-    <h2>Experience and reach</h2>
-    <p>We've partnered with organisations across finance, healthcare, technology, government, and more. Our work spans multiple continents and regulatory contexts.</p>
-    <div class="row">
-      <div class="col-md-2">
-        <h2 class="text-modern text-center nkda-heading-primary">{{- sub (now.Year) 2013 }}</h2>
-        <p class="text-modern text-center nkda-heading-secondary">Years in business</p>
-      </div>
-      <div class="col-md-2">
-        <h2 class="text-modern text-center nkda-heading-primary">{{- sub (now.Year) 2008 }}</h2>
-        <p class="text-modern text-center nkda-heading-secondary">Years as Microsoft MVP</p>
-      </div>
-      <div class="col-md-2">
-        <h2 class="text-modern text-center nkda-heading-primary">{{- sub (now.Year) 2010 }}</h2>
-        <p class="text-modern text-center nkda-heading-secondary">Years as Scrum.org trainer</p>
-      </div>
-      <div class="col-md-2">
-        <h2 class="text-modern text-center nkda-heading-primary">13</h2>
-        <p class="text-modern text-center nkda-heading-secondary">Countries served</p>
-      </div>
-      <div class="col-md-2">
-        <h2 class="text-modern text-center nkda-heading-primary">200+</h2>
-        <p class="text-modern text-center nkda-heading-secondary">Organisations supported</p>
-      </div>
-      <div class="col-md-2">
-        <h2 class="text-modern text-center nkda-heading-primary">2,600+</h2>
-        <p class="text-modern text-center nkda-heading-secondary">Professionals trained</p>
-      </div>
-    </div>
+    
   </section>
-  {{- partial "our-customers.html" . }}
+
 {{- end }}
