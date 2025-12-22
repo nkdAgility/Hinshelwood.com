@@ -1,4 +1,4 @@
-name: Azure Static Web App PR Cleanup
+name: PR Environment Cleanup
 
 on:
   pull_request:
