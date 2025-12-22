@@ -343,7 +343,7 @@ jobs:
           skip_api_build: false
           output_location: ""
           deployment_environment: ${{ (needs.Setup.outputs.Hinshelwood_AzureSitesEnvironment) }}
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_KIND_DESERT_06AA2CE10}}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_CALM_ISLAND_0DC928510}}
 
       - name: "Show Summery"
         if: always()
