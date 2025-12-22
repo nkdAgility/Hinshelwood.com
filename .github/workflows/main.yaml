@@ -330,16 +330,6 @@ jobs:
           $sizeOnDisk = "{0:N2} MB" -f ($size / 1MB)
           $sizeOnDisk
           echo "sizeOnDisk=$sizeOnDisk" >> $env:GITHUB_OUTPUT
-      - name: Install OIDC Client from Core Package
-        run: npm install @actions/core@1.6.0 @actions/http-client
-      - name: Get Id Token
-        uses: actions/github-script@v6
-        id: idtoken
-        with:
-          script: |
-            const coredemo = require('@actions/core')
-            return await coredemo.getIDToken()
-          result-encoding: string
       - name: Build and Deploy
         uses: Azure/static-web-apps-deploy@v1
         id: azureDeploy
@@ -353,7 +343,6 @@ jobs:
           skip_api_build: false
           output_location: ""
           deployment_environment: ${{ (needs.Setup.outputs.Hinshelwood_AzureSitesEnvironment) }}
-          github_id_token: ${{ steps.idtoken.outputs.result }}
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_KIND_DESERT_06AA2CE10}}
 
       - name: "Show Summery"
