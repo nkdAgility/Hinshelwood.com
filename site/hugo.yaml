@@ -23,7 +23,7 @@ params:
   description: "Independent consultant specialising in DevOps, Agile, Lean, and AI enablement. I help organisations understand and improve their systems of work so teams can deliver valuable software more effectively and with greater confidence."
   keywords: "Agile, Scrum, Kanban, DevOps, Azure DevOps, Github, AI"
   author: "Martin Hinshelwood"
-  og_image: "/images/MartinHinshelwood-origin-outline.png" # URL to the default Open Graph image
+  og_image: "/images/martin-hinshelwood-image.webp" # URL to the default Open Graph image
   twitter_handle: "@mrhinsh" # Your Twitter handle for Twitter cards
   githubRepo: "https://github.com/nkdAgility/hinshelwood.com" # URL to edit content on GitHub
   githubContentDir: "site/content" # Directory in the GitHub repo where content is stored

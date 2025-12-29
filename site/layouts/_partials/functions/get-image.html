@@ -17,6 +17,11 @@
     {{- $section := .Section -}}
     {{- $slug := .Params.slug | default .File.ContentBaseName -}}
     {{- $imageSrc = printf "/images/%s/%s.webp" $section $slug -}}
+    {{- $filePath := printf "static/images/%s/%s.webp" $section $slug -}}
+     {{- if not (fileExists $filePath) -}}
+      {{- $imageSrc = printf "%s#missing#%s" site.Params.og_image $imageSrc -}}
+       {{- $imagePos = "left" -}}
+    {{- end -}}
   {{- else -}}
     {{- $imageSrc = site.Params.og_image -}}
   {{- end -}}
