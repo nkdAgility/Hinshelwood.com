@@ -5,6 +5,7 @@ slug: AI
 description: "Organizations struggle to move AI projects from prototype to production. I help establish patterns, infrastructure, and practices that enable reliable AI delivery."
 ItemType: home
 ItemKind: marketing
+image: /images/problem-ai-enablement.webp
 weight: 200
 sitemap:
   filename: sitemap.xml
