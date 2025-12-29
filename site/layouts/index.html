@@ -60,18 +60,12 @@
   {{- /* Recent Insights - 3 items */ -}}
   <section class="container my-5">
     <h2>Recent Insights</h2>
-    <div class="insights-grid">
       {{ $insights := where .Site.RegularPages "Section" "insights" }}
-      {{ range first 3 $insights }}
-        <article class="insight-card">
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-          {{ with .Description }}
-            <p>{{ . }}</p>
-          {{ end }}
-        </article>
+       <div class="row g-4">
+      {{ range first 9 $insights }}
+        {{ partial "components/promo-card.html" . }}
       {{ end }}
-    </div>
+      </div>
   </section>
 
 {{- end }}
