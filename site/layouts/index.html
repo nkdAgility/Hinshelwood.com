@@ -43,29 +43,36 @@
 
   {{- /* Case Studies - 3 items */ -}}
   <section class="container my-5">
-    <h2>Case Studies</h2>
-    <div class="case-studies-grid">
+      {{ $caseStudiesSection := .Site.GetPage "section" "case-studies" }}
+    <h2>{{ $caseStudiesSection.Title }}</h2>
+    {{ $caseStudiesSection.Content }}
+    <div class="row g-4">
       {{ $caseStudies := where .Site.RegularPages "Section" "case-studies" }}
       {{ range first 3 $caseStudies }}
-        <article class="case-study-card">
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          {{ with .Description }}
-            <p>{{ . }}</p>
-          {{ end }}
-        </article>
+        {{ partial "components/promo-card.html" . }}
       {{ end }}
+    </div>
+    <div class="text-center mt-4">
+      <a href="{{ $caseStudiesSection.Permalink }}" class="btn btn-primary">View All Case Studies</a>
     </div>
   </section>
 
   {{- /* Recent Insights - 3 items */ -}}
   <section class="container my-5">
-    <h2>Recent Insights</h2>
+    {{ $insightsSection := .Site.GetPage "section" "insights" }}
+    <h2>{{ $insightsSection.Title }}</h2>
+    {{ $insightsSection.Content }}
+    <div class="row g-4">
       {{ $insights := where .Site.RegularPages "Section" "insights" }}
        <div class="row g-4">
       {{ range first 9 $insights }}
         {{ partial "components/promo-card.html" . }}
       {{ end }}
       </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="{{ $insightsSection.Permalink }}" class="btn btn-primary">View All Insights</a>
+    </div>
   </section>
 
 {{- end }}
