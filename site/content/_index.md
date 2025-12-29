@@ -2,6 +2,7 @@
 title: Martin Hinshelwood - Delivery and Outcomes through Technical Leadership
 date: 2025-12-19
 url: /
+description: "I help organisations improve delivery and outcomes through technical leadership and engineering excellence, using evidence-based practices and measurable results."
 ItemType: home
 ItemKind: marketing
 sitemap:

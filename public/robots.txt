@@ -1,8 +1,0 @@
-# NKDAgility Robots File development
-
-User-agent: *
-Disallow: /
-
-
-
-https://nkdagility.com/sitemap.xml
