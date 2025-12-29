@@ -9,10 +9,13 @@
       {{ else }}
         {{ $imageSrc = .Params.image }}
       {{ end }}
-    {{ else }}
-      {{ $imageSrc = "/images/default-problem.jpg" }}
     {{ end }}
-    <img src="{{ $imageSrc }}" class="promo-card-image" alt="{{ .Title }}" itemprop="image" style="object-position: {{ $imagePos }};">
+    {{ if not $imageSrc }}
+      {{ $section := .Section }}
+      {{ $slug := .Params.slug }}
+      {{ $imageSrc = printf "/images/%s/%s.webp" $section $slug }}
+    {{ end }}
+    <img src="{{ $imageSrc }}" ifnotimageSrc="{{$imageSrc}}" ifParamsimage="{{.Params.image}}" class="promo-card-image" alt="{{ .Title }}" itemprop="image" style="object-position: {{ $imagePos }};">
     <div class="promo-card-overlay">
       <a href="{{ .RelPermalink }}" class="promo-card-title d-block" itemprop="headline">{{ .Title }}</a>
       {{ with .Description }}

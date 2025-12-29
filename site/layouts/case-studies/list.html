@@ -9,15 +9,12 @@
   </section>
 
   <section class="container my-5">
-    <div class="case-study-grid">
-      {{ range .Pages }}
-        <article class="case-study-card">
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          {{ with .Description }}
-            <p>{{ . }}</p>
-          {{ end }}
-        </article>
+   <div class="row g-4">
+      {{ range .Paginator.Pages }}
+        {{ partial "components/promo-card.html" . }}
       {{ end }}
     </div>
+    
+    {{ template "_internal/pagination.html" . }}
   </section>
 {{- end }}

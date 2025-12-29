@@ -1,7 +1,8 @@
 ---
 title: Restoring Delivery Visibility and Governance at Enterprise Scale
-description:
+description: "How a global oil and gas service company consolidated fragmented systems to regain delivery visibility, reduce duplication, and restore leadership governance."
 date: 2026-05-15
+image: /images/case-study-restoring-delivery-visibility-and-governance-at-enterprise-scale.webp
 slug: restoring-delivery-visibility-and-governance-at-enterprise-scale
 related:
   - "problems/devops"

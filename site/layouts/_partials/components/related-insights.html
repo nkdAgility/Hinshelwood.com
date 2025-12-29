@@ -1,0 +1,32 @@
+{{ $currentPath := .RelPermalink }}
+{{ $relatedInsights := slice }}
+{{ range where site.RegularPages "Section" "insights" }}
+  {{ $insight := . }}
+  {{ $isPublished := le .Date now }}
+  {{ $showDrafts := or (eq hugo.Environment "preview") (eq hugo.Environment "development") }}
+  {{ if or $isPublished $showDrafts }}
+    {{ if $insight.Params.related }}
+      {{ range $insight.Params.related }}
+        {{ $relatedPath := . }}
+        {{ if not (hasPrefix $relatedPath "/") }}
+          {{ $relatedPath = printf "/%s" $relatedPath }}
+        {{ end }}
+        {{ if not (hasSuffix $relatedPath "/") }}
+          {{ $relatedPath = printf "%s/" $relatedPath }}
+        {{ end }}
+        {{ if eq $relatedPath $currentPath }}
+          {{ $relatedInsights = $relatedInsights | append $insight }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if $relatedInsights }}
+    <h2>Related Insights</h2>
+    <div class="row g-4">
+      {{ range $relatedInsights }}
+        {{ partial "components/promo-card.html" . }}
+      {{ end }}
+    </div>
+{{ end }}
