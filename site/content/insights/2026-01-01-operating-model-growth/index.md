@@ -8,9 +8,6 @@ related:
   - "outcomes/technical-leadership"
 ---
 
-
-# Your Operating Model Is Costing You Growth
-
 Most organisations believe they have a delivery problem.
 They don’t.
 

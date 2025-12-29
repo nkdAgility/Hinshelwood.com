@@ -16,15 +16,22 @@
   {{- if .File -}}
     {{- $section := .Section -}}
     {{- $slug := .Params.slug | default .File.ContentBaseName -}}
-    {{- $imageSrc = printf "/images/%s/%s.webp" $section $slug -}}
-    {{- $filePath := printf "static/images/%s/%s.webp" $section $slug -}}
-     {{- if not (fileExists $filePath) -}}
-      {{- $imageSrc = printf "%s#missing#%s" site.Params.og_image $imageSrc -}}
-       {{- $imagePos = "left" -}}
+    {{- $imagePath := printf "images/%s/%s.webp" $section $slug -}}
+    {{- $image := resources.Get $imagePath -}}
+    {{- if $image -}}
+      {{- $resized := $image.Resize "800x450" -}}
+      {{- $imageSrc = $resized.RelPermalink -}}
+    {{- else -}}
+      {{- $staticPath := printf "static/images/%s/%s.webp" $section $slug -}}
+      {{- if fileExists $staticPath -}}
+        {{- $imageSrc = printf "/images/%s/%s.webp" $section $slug -}}
+      {{- else -}}
+        {{- $imageSrc = printf "%s#missing#%s" site.Params.og_image $imagePath -}}
+        {{- $imagePos = "left" -}}
+      {{- end -}}
     {{- end -}}
   {{- else -}}
     {{- $imageSrc = site.Params.og_image -}}
   {{- end -}}
 {{- end -}}
-
 {{- return (dict "src" $imageSrc "position" $imagePos) -}}
