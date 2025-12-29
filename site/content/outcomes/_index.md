@@ -2,6 +2,7 @@
 title: Outcomes I Deliver
 date: 2026-01-01
 slug: outcomes
+description: "Measurable improvements in delivery speed, quality, and team capability. Focus on engineering excellence and technical leadership."
 ItemType: home
 ItemKind: marketing
 

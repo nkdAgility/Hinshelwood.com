@@ -1,7 +1,8 @@
 ---
-title: DevOps
+title: Scaling
 date: 2026-01-01
-slug: devops
+slug: scaling
+description: "Growth exposes coordination problems and technical debt that slow delivery. I help teams scale without sacrificing quality or speed."
 ItemType: home
 ItemKind: marketing
 
