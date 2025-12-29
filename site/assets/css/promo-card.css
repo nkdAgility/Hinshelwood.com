@@ -19,11 +19,12 @@
   flex: 1;
   min-height: 0;
   overflow: hidden;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease, flex 0.4s ease;
 }
 
 .promo-card:hover .promo-card-image-container {
   opacity: 0;
+  flex: 0;
 }
 
 .promo-card-image {
@@ -45,16 +46,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  position: relative;
+  transform-origin: bottom;
 }
 
 .promo-card:hover .promo-card-overlay {
   background: rgba(0,0,0,0.9);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  flex: 1;
   justify-content: flex-start;
   padding: 2rem;
 }
