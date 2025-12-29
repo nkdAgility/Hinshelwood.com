@@ -1,7 +1,9 @@
 <article class="col-md-6 col-lg-4" itemscope itemtype="https://schema.org/Article">
   <div class="card promo-card shadow-sm">
     {{ $image := partial "functions/get-image.html" . }}
-    <img src="{{ $image.src }}" class="promo-card-image" alt="{{ .Title }}" itemprop="image" style="object-position: {{ $image.position }};">
+    <div class="promo-card-image-container">
+      <img src="{{ $image.src }}" class="promo-card-image" alt="{{ .Title }}" itemprop="image" style="object-position: {{ $image.position }};">
+    </div>
     <div class="promo-card-overlay">
       <a href="{{ .RelPermalink }}" class="promo-card-title d-block" itemprop="headline">{{ .Title }}</a>
       {{ with .Description }}

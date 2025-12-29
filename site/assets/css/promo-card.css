@@ -6,44 +6,55 @@
   transition: transform 0.3s ease;
   height: 400px;
   background-color: rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
 }
 
 .promo-card:hover {
   transform: translateY(-5px);
 }
 
-.promo-card-image {
+.promo-card-image-container {
   width: 100%;
-  height: calc(100% - 100px);
-  object-fit: cover;
-  object-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
   transition: opacity 0.4s ease;
 }
 
-.promo-card:hover .promo-card-image {
+.promo-card:hover .promo-card-image-container {
   opacity: 0;
 }
 
+.promo-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.promo-card:hover .promo-card-image {
+  opacity: 1;
+}
+
 .promo-card-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  flex-shrink: 0;
   background: rgba(0,0,0,0.9);
   padding: 1.5rem;
   transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 100px;
+  position: relative;
 }
 
 .promo-card:hover .promo-card-overlay {
   background: rgba(0,0,0,0.9);
+  position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   justify-content: flex-start;
   padding: 2rem;
 }
