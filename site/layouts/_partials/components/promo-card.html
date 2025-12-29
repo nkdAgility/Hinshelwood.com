@@ -1,21 +1,7 @@
 <article class="col-md-6 col-lg-4" itemscope itemtype="https://schema.org/Article">
   <div class="card promo-card shadow-sm">
-    {{ $imageSrc := "" }}
-    {{ $imagePos := "center" }}
-    {{ if .Params.image }}
-      {{ if reflect.IsMap .Params.image }}
-        {{ $imageSrc = .Params.image.src }}
-        {{ $imagePos = .Params.image.position | default "center" }}
-      {{ else }}
-        {{ $imageSrc = .Params.image }}
-      {{ end }}
-    {{ end }}
-    {{ if not $imageSrc }}
-      {{ $section := .Section }}
-      {{ $slug := .Params.slug }}
-      {{ $imageSrc = printf "/images/%s/%s.webp" $section $slug }}
-    {{ end }}
-    <img src="{{ $imageSrc }}" ifnotimageSrc="{{$imageSrc}}" ifParamsimage="{{.Params.image}}" class="promo-card-image" alt="{{ .Title }}" itemprop="image" style="object-position: {{ $imagePos }};">
+    {{ $image := partial "functions/get-image.html" . }}
+    <img src="{{ $image.src }}" class="promo-card-image" alt="{{ .Title }}" itemprop="image" style="object-position: {{ $image.position }};">
     <div class="promo-card-overlay">
       <a href="{{ .RelPermalink }}" class="promo-card-title d-block" itemprop="headline">{{ .Title }}</a>
       {{ with .Description }}

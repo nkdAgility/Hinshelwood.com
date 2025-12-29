@@ -1,0 +1,25 @@
+{{- $imageSrc := "" -}}
+{{- $imagePos := "center" -}}
+
+{{- if .Params.image -}}
+  {{- if reflect.IsMap .Params.image -}}
+    {{- if .Params.image.src -}}
+      {{- $imageSrc = .Params.image.src -}}
+    {{- end -}}
+    {{- $imagePos = .Params.image.position | default "center" -}}
+  {{- else -}}
+    {{- $imageSrc = .Params.image -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $imageSrc -}}
+  {{- if .File -}}
+    {{- $section := .Section -}}
+    {{- $slug := .Params.slug | default .File.ContentBaseName -}}
+    {{- $imageSrc = printf "/images/%s/%s.webp" $section $slug -}}
+  {{- else -}}
+    {{- $imageSrc = site.Params.og_image -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict "src" $imageSrc "position" $imagePos) -}}

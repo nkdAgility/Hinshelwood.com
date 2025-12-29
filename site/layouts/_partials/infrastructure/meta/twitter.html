@@ -4,23 +4,5 @@
 <meta name="twitter:creator" content="{{- site.Params.twitter_handle -}}">
 <meta name="twitter:title" content="{{- if .IsHome }}{{ site.Params.title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end -}}">
 <meta name="twitter:description" content="{{- with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end -}}">
-{{- $twitterImage := "" -}}
-{{- if .Params.image -}}
-  {{- if reflect.IsMap .Params.image -}}
-    {{- if .Params.image.src -}}
-      {{- $twitterImage = .Params.image.src -}}
-    {{- end -}}
-  {{- else -}}
-    {{- $twitterImage = .Params.image -}}
-  {{- end -}}
-{{- end -}}
-{{- if not $twitterImage -}}
-  {{- if .File -}}
-    {{- $section := .Section -}}
-    {{- $slug := .File.BaseFileName -}}
-    {{- $twitterImage = printf "/images/%s/%s.webp" $section $slug -}}
-  {{- else -}}
-    {{- $twitterImage = site.Params.og_image -}}
-  {{- end -}}
-{{- end -}}
-<meta name="twitter:image" content="{{- $twitterImage | absURL -}}">
+{{- $image := partial "functions/get-image.html" . -}}
+<meta name="twitter:image" content="{{- $image.src | absURL -}}">
