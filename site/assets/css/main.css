@@ -36,7 +36,7 @@
 .promo-card:hover .promo-card-overlay {
   background: rgba(0,0,0,0.9);
   top: 0;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 2rem;
 }
 
@@ -68,4 +68,33 @@
 .promo-card:hover .promo-card-description {
   opacity: 1;
   max-height: 500px;
+}
+
+.promo-card-button {
+  margin-top: auto;
+  padding-top: 1rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.promo-card:hover .promo-card-button {
+  opacity: 1;
+  max-height: 100px;
+}
+
+.promo-card-button .btn {
+  background-color: rgba(255,255,255,0.2);
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.promo-card-button .btn:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-2px);
 }
