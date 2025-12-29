@@ -10,4 +10,9 @@
   <section class="container my-5">
     {{ .Content }}
   </section>
+
+    <section class="container my-5">
+    <h2>Related Insights</h2>
+    {{ partial "components/related-insights.html" . }}
+  </section>
 {{- end }}

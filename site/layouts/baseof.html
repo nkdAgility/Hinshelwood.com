@@ -48,7 +48,7 @@
     {{- /* Additional SEO Meta Tags */ -}}
    
     
-    {{- if or (eq hugo.Environment "preview") (eq hugo.Environment "production") }}
+    {{- if (eq hugo.Environment "production") }}
         <meta name="robots" content="index, follow">
         <meta name="googlebot" content="index, follow">
     {{- else}}
