@@ -4,7 +4,7 @@ description: "How the Ghana Police Service built an execution system to turn ref
 date: 2026-05-15
 slug: turning-intent-into-capability-in-a-national-institution
 image:
- position: bottom
+ position: left
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"

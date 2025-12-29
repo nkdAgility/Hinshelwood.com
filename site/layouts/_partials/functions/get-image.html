@@ -19,7 +19,7 @@
     {{- $imagePath := printf "images/%s/%s.webp" $section $slug -}}
     {{- $image := resources.Get $imagePath -}}
     {{- if $image -}}
-      {{- $resized := $image.Resize "800x450" -}}
+      {{- $resized := $image.Resize "800x" -}}
       {{- $imageSrc = $resized.RelPermalink -}}
     {{- else -}}
       {{- $staticPath := printf "static/images/%s/%s.webp" $section $slug -}}

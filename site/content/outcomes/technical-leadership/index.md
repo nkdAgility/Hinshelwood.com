@@ -5,7 +5,8 @@ slug: technical-leadership
 description: "Build technical leadership capability to make better decisions, remove delivery obstacles, and strengthen team effectiveness."
 ItemType: home
 ItemKind: marketing
-image: /images/outcome-technical-leadership.webp
+image:
+  position: centre
 sitemap:
   filename: sitemap.xml
   priority: 0.9
