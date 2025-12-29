@@ -10,6 +10,5 @@
   ],
   "goTemplateBracketSpacing": true,
   "bracketSameLine": true,
-  "printWidth": 455,
-  "formatOnSave": true
+  "printWidth": 455
 }
