@@ -1,0 +1,80 @@
+{{- /*
+  Breadcrumbs Partial
+  Generates a semantic breadcrumb navigation with Schema.org structured data
+  Usage: {{ partial "infrastructure/breadcrumbs.html" . }}
+*/ -}}
+
+{{- if not .IsHome -}}
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    {{- /* Home link */ -}}
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{{ "/" | relURL }}" itemprop="item">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+    
+    {{- /* Build breadcrumb trail from page ancestors */ -}}
+    {{- $position := 2 -}}
+    {{- range .Ancestors.Reverse -}}
+      {{- if not .IsHome -}}
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="{{ .RelPermalink }}" itemprop="item">
+            <span itemprop="name">{{ .Title }}</span>
+          </a>
+          <meta itemprop="position" content="{{ $position }}" />
+        </li>
+        {{- $position = add $position 1 -}}
+      {{- end -}}
+    {{- end -}}
+    
+    {{- /* Current page (no link) */ -}}
+    <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
+      <span itemprop="name">{{ .Title }}</span>
+      <meta itemprop="position" content="{{ $position }}" />
+    </li>
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs {
+    margin: 1rem 0;
+    font-size: 0.875rem;
+  }
+  
+  .breadcrumb-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+  }
+  
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumb-item:not(:last-child)::after {
+    content: "/";
+    margin-left: 0.5rem;
+    color: #6b7280;
+  }
+  
+  .breadcrumb-item a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-item.active {
+    color: #374151;
+    font-weight: 500;
+  }
+</style>
+{{- end -}}
