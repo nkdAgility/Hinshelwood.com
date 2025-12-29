@@ -14,7 +14,7 @@ They did it because growth stalled, margins tightened, decisions slowed, or comp
 
 AI looked like leverage.
 
-What many buyers are discovering instead is this:
+What many Senior leaders are discovering instead is this:
 AI isn’t failing because the technology is immature.
 It’s failing because the organisation isn’t clear enough for it to work.
 
@@ -52,9 +52,9 @@ If accountability is vague, AI outcomes drift without consequence.
 This is why so many AI initiatives stall after early excitement.
 Not because AI is unreliable, but because the organisation has never been forced to be precise before.
 
-### The Real Question Buyers Should Be Asking
+### The Real Question leaders Should Be Asking
 
-The productive buyers shift the question early.
+The productive leaders shift the question early.
 
 Not:
 
@@ -94,9 +94,9 @@ It feels like leadership work.
 
 That is why it works.
 
-### The Buyer’s Inflection Point
+### The Leadership teams Inflection Point
 
-Every serious buyer reaches a moment of choice.
+Every serious leader reaches a moment of choice.
 
 Either:
 
@@ -111,15 +111,15 @@ They start redesigning how decisions are made, how problems are framed, and how 
 
 AI then becomes an accelerator, not a liability.
 
-### What This Means for You as a Buyer
+### What This Means for You as a Senior leader
 
 If AI initiatives in your organisation feel slower, messier, or more political than expected, that is a signal, not a failure.
 
 The signal is this:
 Your organisation is being asked to be more explicit than it has ever needed to be before.
 
-Buyers who recognise that early reclaim momentum.
-Buyers who ignore it keep funding pilots that never compound.
+Leaders who recognise that early reclaim momentum.
+Leaders who ignore it keep funding pilots that never compound.
 
 The technology is ready.
 The question is whether your organisation is.
