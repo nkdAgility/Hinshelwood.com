@@ -9,14 +9,23 @@
   </section>
 
   <section class="container my-5">
-    <div class="outcome-list">
+    <div class="row g-4">
       {{ range .Pages }}
-        <article class="outcome-card">
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          {{ with .Description }}
-            <p>{{ . }}</p>
-          {{ end }}
-        </article>
+        <div class="col-md-6 col-lg-4">
+          <div class="card promo-card shadow-sm">
+            {{ with .Params.image }}
+              <img src="{{ . }}" class="promo-card-image" alt="{{ $.Title }}">
+            {{ else }}
+              <img src="/images/default-outcome.jpg" class="promo-card-image" alt="{{ $.Title }}">
+            {{ end }}
+            <div class="promo-card-overlay">
+              <a href="{{ .RelPermalink }}" class="promo-card-title d-block">{{ .Title }}</a>
+              {{ with .Description }}
+                <p class="promo-card-description">{{ . }}</p>
+              {{ end }}
+            </div>
+          </div>
+        </div>
       {{ end }}
     </div>
   </section>
