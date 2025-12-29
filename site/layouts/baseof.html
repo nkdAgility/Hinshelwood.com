@@ -5,9 +5,57 @@
 {{ .Page.Scratch.Set "heading_count" 0 }}
 <html lang="{{- or site.Language.LanguageCode }}" dir="{{- or site.Language.LanguageDirection `ltr` }}">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {{- /* SEO Title */ -}}
+    <title>
+      {{- if .IsHome -}}
+        {{- site.Params.title -}}
+      {{- else if .Title -}}
+        {{- .Title }} | {{ site.Title -}}
+      {{- else -}}
+        {{- site.Title -}}
+      {{- end -}}
+    </title>
+    
+    {{- /* Meta Description */ -}}
+    {{- with .Description -}}
+      <meta name="description" content="{{- . -}}">
+    {{- else -}}
+      <meta name="description" content="{{- site.Params.description -}}">
+    {{- end -}}
+    
+    {{- /* Meta Keywords */ -}}
+    {{- with .Params.tags -}}
+      <meta name="keywords" content="{{- delimit . ", " -}}, {{- site.Params.keywords -}}">
+    {{- else -}}
+      <meta name="keywords" content="{{- site.Params.keywords -}}">
+    {{- end -}}
+    
+    {{- /* Author */ -}}
+    <meta name="author" content="{{- site.Params.author -}}">
+    
+    {{- /* Canonical URL */ -}}
+    <link rel="canonical" href="https://hinshelwood.com{{- .RelPermalink -}}">
+    
+    {{- /* Open Graph Tags */ -}}
+    {{- partial "meta/opengraph.html" . -}}
+    
+    {{- /* Twitter Card Tags */ -}}
+    {{- partial "meta/twitter.html" . -}}
+    
+    {{- /* Additional SEO Meta Tags */ -}}
+   
+    
     {{- if or (eq hugo.Environment "preview") (eq hugo.Environment "production") }}
-
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow">
+    {{- else}}
+      <meta name="robots" content="noindex, nofollow">
+      <meta name="googlebot" content="noindex, nofollow">
     {{- end }}
+
   </head>
   <body data-ndka-environment="{{- hugo.Environment }}" data-ndka-version="v#{GitVersion.SemVer}#" data-nkda-renderGTM=" {{- if or (eq hugo.Environment "preview") (eq hugo.Environment "production") }}true{{ else }}false{{- end }}">
     {{- if or (eq hugo.Environment "preview") (eq hugo.Environment "production") }}

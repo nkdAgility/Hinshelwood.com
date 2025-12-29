@@ -18,7 +18,7 @@ timezone: "Europe/London"
 
 # Site-wide parameters
 params:
-  title: Martin Hinshelwood | DevOps, Agile, Lean and AI Enablement
+  title: "Martin Hinshelwood | Delivery and Outcomes through Technical Leadership"
   TakingOnNewClients: true
   description: "Independent consultant specialising in DevOps, Agile, Lean, and AI enablement. I help organisations understand and improve their systems of work so teams can deliver valuable software more effectively and with greater confidence."
   keywords: "Agile, Scrum, Kanban, DevOps, Azure DevOps, Github, AI"
