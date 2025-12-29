@@ -15,26 +15,7 @@
     <div class="row g-4">
       {{ $problems := where .Site.RegularPages "Section" "problems" }}
       {{ range first 3 $problems }}
-        <article class="col-md-6 col-lg-4" itemscope itemtype="https://schema.org/Article">
-          <div class="card promo-card shadow-sm">
-            {{ with .Params.image }}
-              <img src="{{ . }}" class="promo-card-image" alt="{{ $.Title }}" itemprop="image">
-            {{ else }}
-              <img src="/images/default-problem.jpg" class="promo-card-image" alt="{{ $.Title }}" itemprop="image">
-            {{ end }}
-            <div class="promo-card-overlay">
-              <a href="{{ .RelPermalink }}" class="promo-card-title d-block" itemprop="headline">{{ .Title }}</a>
-              {{ with .Description }}
-                <p class="promo-card-description" itemprop="description">{{ . }}</p>
-              {{ end }}
-              <div class="promo-card-button">
-                <a href="{{ .RelPermalink }}" class="btn" itemprop="url">Learn More</a>
-              </div>
-            </div>
-            <meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">
-            <meta itemprop="author" content="{{ site.Params.author }}">
-          </div>
-        </article>
+        {{ partial "components/promo-card.html" . }}
       {{ end }}
     </div>
   </section>
@@ -46,27 +27,8 @@
     {{ $outcomesSection.Content }}
     <div class="row g-4">
       {{ $outcomes := where .Site.RegularPages "Section" "outcomes" }}
-      {{ range first 2 $outcomes }}
-        <article class="col-md-6 col-lg-4" itemscope itemtype="https://schema.org/Article">
-          <div class="card promo-card shadow-sm">
-            {{ with .Params.image }}
-              <img src="{{ . }}" class="promo-card-image" alt="{{ $.Title }}" itemprop="image">
-            {{ else }}
-              <img src="/images/default-outcome.jpg" class="promo-card-image" alt="{{ $.Title }}" itemprop="image">
-            {{ end }}
-            <div class="promo-card-overlay">
-              <a href="{{ .RelPermalink }}" class="promo-card-title d-block" itemprop="headline">{{ .Title }}</a>
-              {{ with .Description }}
-                <p class="promo-card-description" itemprop="description">{{ . }}</p>
-              {{ end }}
-              <div class="promo-card-button">
-                <a href="{{ .RelPermalink }}" class="btn" itemprop="url">Learn More</a>
-              </div>
-            </div>
-            <meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">
-            <meta itemprop="author" content="{{ site.Params.author }}">
-          </div>
-        </article>
+      {{ range first 3 $outcomes }}
+        {{ partial "components/promo-card.html" . }}
       {{ end }}
     </div>
   </section>

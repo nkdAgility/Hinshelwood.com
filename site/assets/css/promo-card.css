@@ -5,6 +5,7 @@
   border-radius: 0.5rem;
   transition: transform 0.3s ease;
   height: 400px;
+  background-color: rgba(0,0,0,0.9);
 }
 
 .promo-card:hover {
@@ -15,6 +16,7 @@
   width: 100%;
   height: calc(100% - 100px);
   object-fit: cover;
+  object-position: center;
   position: absolute;
   top: 0;
   left: 0;
