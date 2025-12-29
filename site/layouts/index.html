@@ -4,25 +4,83 @@
 
 {{- define "headline" }}
   <section class="container my-5">
-   
-    
-  </section>
-  <section class="container my-5">
-    
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
   </section>
 {{- end }}
+
 {{- define "main" }}
+  {{- /* Problems I Solve - 3 items */ -}}
   <section class="container my-5">
-    
+    <h2>Problems I Solve</h2>
+    <div class="problems-grid">
+      {{ $problems := where .Site.RegularPages "Section" "problems" }}
+      {{ range first 3 $problems }}
+        <article class="problem-card">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Description }}
+            <p>{{ . }}</p>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
   </section>
+
+  {{- /* Outcomes I Deliver - 2 items */ -}}
   <section class="container my-5">
-    
+    <h2>Outcomes I Deliver</h2>
+    <div class="outcomes-grid">
+      {{ $outcomes := where .Site.RegularPages "Section" "outcomes" }}
+      {{ range first 2 $outcomes }}
+        <article class="outcome-card">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Description }}
+            <p>{{ . }}</p>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
   </section>
+
+  {{- /* Social Proof */ -}}
   <section class="container my-5">
-   
+    <h2>Social Proof</h2>
+    <div class="social-proof">
+      <p>Client testimonials and credentials</p>
+    </div>
   </section>
+
+  {{- /* Case Studies - 3 items */ -}}
   <section class="container my-5">
-    
+    <h2>Case Studies</h2>
+    <div class="case-studies-grid">
+      {{ $caseStudies := where .Site.RegularPages "Section" "case-studies" }}
+      {{ range first 3 $caseStudies }}
+        <article class="case-study-card">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Description }}
+            <p>{{ . }}</p>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+  </section>
+
+  {{- /* Recent Insights - 3 items */ -}}
+  <section class="container my-5">
+    <h2>Recent Insights</h2>
+    <div class="insights-grid">
+      {{ $insights := where .Site.RegularPages "Section" "insights" }}
+      {{ range first 3 $insights }}
+        <article class="insight-card">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          {{ with .Description }}
+            <p>{{ . }}</p>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
   </section>
 
 {{- end }}

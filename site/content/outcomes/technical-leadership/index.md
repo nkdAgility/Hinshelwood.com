@@ -1,5 +1,5 @@
 ---
-title: Technical Leadership | Outcomes | Martin Hinshelwood
+title: Technical Leadership
 date: 2026-01-01
 slug: technical-leadership
 ItemType: home

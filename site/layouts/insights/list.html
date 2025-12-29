@@ -1,0 +1,24 @@
+{{- define "template" }}
+  insights/list.html
+{{- end }}
+
+{{- define "main" }}
+  <section class="container my-5">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </section>
+
+  <section class="container my-5">
+    <div class="insights-list">
+      {{ range .Pages }}
+        <article class="insight-card">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          {{ with .Description }}
+            <p>{{ . }}</p>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{- end }}

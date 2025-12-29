@@ -1,5 +1,5 @@
 ---
-title: About | Martin Hinshelwood
+title: About
 date: 2026-01-01
 slug: about
 ItemType: home

@@ -1,0 +1,13 @@
+{{- define "template" }}
+  problems/single.html
+{{- end }}
+
+{{- define "main" }}
+  <section class="container my-5">
+    <h1>{{ .Title }}</h1>
+  </section>
+
+  <section class="container my-5">
+    {{ .Content }}
+  </section>
+{{- end }}

@@ -1,5 +1,5 @@
 ---
-title: Case Studies | Martin Hinshelwood
+title: Case Studies
 date: 2026-01-01
 slug: case-studies
 ItemType: home

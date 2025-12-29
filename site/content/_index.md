@@ -1,5 +1,5 @@
 ---
-title: Hinshelwood.com | Delivery and Outcomes through Technical Leadership
+title: Martin Hinshelwood - Delivery and Outcomes through Technical Leadership
 date: 2025-12-19
 url: /
 ItemType: home

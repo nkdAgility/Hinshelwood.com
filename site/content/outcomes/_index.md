@@ -1,5 +1,5 @@
 ---
-title: Outcomes | Martin Hinshelwood
+title: Outcomes
 date: 2026-01-01
 slug: outcomes
 ItemType: home

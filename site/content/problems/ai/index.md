@@ -1,5 +1,5 @@
 ---
-title: AI Enablement | Problems I Solve | Martin Hinshelwood
+title: AI Enablement
 date: 2026-01-01
 slug: AI
 ItemType: home

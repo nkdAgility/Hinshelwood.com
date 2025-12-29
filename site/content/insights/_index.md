@@ -1,5 +1,5 @@
 ---
-title: Insights | Martin Hinshelwood
+title: Insights
 date: 2026-01-01
 slug: insights
 ItemType: home

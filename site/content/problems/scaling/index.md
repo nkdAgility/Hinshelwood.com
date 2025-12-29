@@ -1,5 +1,5 @@
 ---
-title: DevOps | Problems I Solve | Martin Hinshelwood
+title: DevOps
 date: 2026-01-01
 slug: devops
 ItemType: home

@@ -1,5 +1,5 @@
 ---
-title: Scaling | Problems I Solve | Martin Hinshelwood
+title: Scaling
 date: 2026-01-01
 slug: scaling
 ItemType: home

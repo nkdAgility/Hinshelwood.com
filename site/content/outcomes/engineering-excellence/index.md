@@ -1,5 +1,5 @@
 ---
-title: Engineering Excellence | Outcomes | Martin Hinshelwood
+title: Engineering Excellence
 date: 2026-01-01
 slug: engineering-excellence
 ItemType: home
