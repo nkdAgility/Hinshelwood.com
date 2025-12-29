@@ -6,44 +6,43 @@
 **Type**: Hugo static site (Extended version required)  
 **Primary Language**: Markdown content, Go templates, YAML configuration  
 **Deployment**: Azure Static Web Apps  
-**Size**: Small (~11 pages, generates <1MB output)
 
 Trust these instructions. Only search for additional information if you find gaps or errors.
 
 ## Build & Development Commands
 
-**Hugo Version**: v0.152.2+extended (or as specified in GitHub Actions variable `HUGO_BUILD_VERSION`)
+**Hugo Version**: latest extended
+
+**IMPORTANT**: Always run Hugo commands from the repository root, not from the `site/` directory.
 
 ### Local Development
 ```pwsh
-cd site
-hugo server --config hugo.yaml,hugo.local.yaml
+hugo serve --source site --config hugo.yaml,hugo.local.yaml
 ```
+- Run from repository root
 - Opens at `http://localhost:1313`
 - Hot reloads on file changes
-- Always run from `site/` directory
-- Build time: ~110-134ms
 
 ### Production Build
 ```pwsh
-cd site
-hugo --config hugo.yaml,hugo.production.yaml --logLevel info
+hugo --source site --config hugo.yaml,hugo.production.yaml --logLevel info
 ```
+- Run from repository root
 - Output: `public/` directory at repo root (not `site/public/`)
 - Typical output: 23 pages, <1MB
 - Environment configs overlay base `hugo.yaml`: production, preview, canary, local
 
 ### Preview Build
 ```pwsh
-cd site
-hugo --config hugo.yaml,hugo.preview.yaml
+hugo --source site --config hugo.yaml,hugo.preview.yaml
 ```
+- Run from repository root
 
 ### Canary Build
 ```pwsh
-cd site
-hugo --config hugo.yaml,hugo.canary.yaml
+hugo --source site --config hugo.yaml,hugo.canary.yaml
 ```
+- Run from repository root
 
 **Important**: Always specify both base config and environment config when building. Hugo merges them in order.
 
@@ -122,6 +121,20 @@ Template tokens use format `#{VariableName}#` in HTML/YAML files. Replaced befor
 ### Size Validation
 Pipeline checks if `public/` exceeds 500MB (Azure SWA limit). Current size: ~0.08MB (safe).
 
+## Custom Agents
+
+For specialized content creation, use these custom agents:
+
+- **Marketing Content**: `.github/agents/marketing-content.md` - Homepage, about pages, landing pages, service descriptions
+- **Insights**: `.github/agents/insights.md` - Technical articles, thought leadership, opinionated analysis
+- **Case Studies**: `.github/agents/case-studies.md` - Client engagement documentation with measurable outcomes
+
+Each agent provides:
+- Specific persona and role
+- Content structure templates
+- Quality checklists
+- Integration patterns with other content
+
 ## Content Guidelines
 
 ### File Requirements
@@ -149,14 +162,14 @@ Use Hugo shortcodes (NOT relative markdown links):
 
 ### Creating New Content
 ```pwsh
-cd site
-hugo new insights/my-new-article.md
+hugo new insights/my-new-article.md --source site
 ```
+- Run from repository root
 
 ### Content Sections
-- **about/**: Company/consultant information
-- **case-studies/**: Real client engagements with outcomes
-- **insights/**: Technical articles and opinions
+- **about/**: Company/consultant information (use marketing-content agent)
+- **case-studies/**: Real client engagements with outcomes (use case-studies agent)
+- **insights/**: Technical articles and opinions (use insights agent)
 - **outcomes/**: Success stories categorized by type
 - **problems/**: Problem domains (devops, scaling, ai)
 
@@ -194,7 +207,7 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 
 ## Common Pitfalls
 
-1. **Wrong working directory**: Always `cd site` before running Hugo commands
+1. **Wrong working directory**: Always run Hugo commands from repository root, use `--source site` flag
 2. **Missing config**: Specify both base and environment config: `--config hugo.yaml,hugo.local.yaml`
 3. **Editing public/**: Don't. It's generated. Edit source in `site/content/` or `site/layouts/`
 4. **Hardcoded URLs**: Use Hugo variables or environment-specific configs
@@ -202,7 +215,7 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 
 ## Validation Before Commit
 
-1. Build successfully: `cd site; hugo --config hugo.yaml,hugo.local.yaml`
+1. Build successfully: `hugo --source site --config hugo.yaml,hugo.local.yaml`
 2. Check output size: Should be <10MB
 3. Verify front matter is valid YAML
 4. Test internal links work
@@ -217,7 +230,7 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 - `.spellcheck.yml`, `.wordlist.txt`: Spell checking
 - `readme.md`: Project overview and setup
 - `site/`: Hugo source directory
-- `public/`: Hugo output (generated, not committed)
+- `public/`: Hugo output (generated, not committed, do not edit)
 - `staticwebapp.config*.json`: Azure Static Web Apps routing
 
 ## Key Dependencies
@@ -235,3 +248,62 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 - **Canary**: Dynamic per PR
 
 Deploy occurs automatically on push to main or PR merge based on GitVersion labels.
+
+## Documentation Maintenance
+
+**CRITICAL**: Keep documentation, instructions, and agent configurations synchronized.
+
+### When to Update Documentation
+
+Update these files whenever you:
+
+1. **Change Build Process**
+   - Update `.github/copilot-instructions.md` with new commands
+   - Update `readme.md` if user-facing
+
+2. **Add New Content Patterns**
+   - Update relevant agent in `.github/agents/`
+   - Update corresponding instructions in `.github/instructions/`
+   - Document in `.github/copilot-instructions.md` if significant
+
+3. **Modify CI/CD Pipeline**
+   - Update `.github/copilot-instructions.md` with new stages or behavior
+   - Document token changes or new environment variables
+
+4. **Create New Content Types**
+   - Create new `.github/instructions/*.instructions.md`
+   - Create corresponding `.github/agents/*.md` if needed
+   - Reference in `.github/copilot-instructions.md`
+
+5. **Discover Build Issues or Workarounds**
+   - Document in "Common Pitfalls" section
+   - Add to relevant agent workflow if content-specific
+
+### Documentation Files to Maintain
+
+| File | Purpose | Update When |
+|------|---------|-------------|
+| `.github/copilot-instructions.md` | Repository-wide guidance | Build changes, new patterns, architecture changes |
+| `.github/instructions/*.instructions.md` | Content-specific rules | Writing standards evolve, new content patterns |
+| `.github/agents/*.md` | Specialized content agents | Workflow improvements, quality standards change |
+| `readme.md` | User-facing documentation | Setup changes, deployment changes |
+| `.wordlist.txt` | Spell check dictionary | New technical terms added |
+
+### Quality Check Before Committing
+
+When updating documentation:
+- [ ] All referenced files exist and paths are correct
+- [ ] Commands have been tested and work
+- [ ] Cross-references between docs are accurate
+- [ ] Examples are current and valid
+- [ ] Build/deploy processes match actual pipeline
+- [ ] Agent workflows reference correct instruction files
+
+### Documentation Debt
+
+If you discover outdated information:
+1. Fix it immediately if straightforward
+2. Document as a TODO in the relevant file if complex
+3. Never leave known-incorrect information uncommented
+
+Trust documentation first. Verify if uncertain. Update when wrong.
