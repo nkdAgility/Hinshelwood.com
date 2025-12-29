@@ -15,6 +15,26 @@
       
       <!-- End Google Tag Manager (noscript) -->
     {{- end }}
+    {{- block "navigation" . }}
+      <section class="container block-navigation my-2">
+        <nav>
+          <ul>
+            {{ range .Site.Menus.main }}
+              <li>
+                <a href="{{ .PageRef | relURL }}">{{ .Name }}</a>
+                {{ if .HasChildren }}
+                  <ul>
+                    {{ range .Children }}
+                      <li><a href="{{ .PageRef | relURL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+      </section>
+    {{- end }}
     {{- block "breadcrumbs" . }}
       <section class="container block-breadcrumbs my-2">
         breadcrumbs

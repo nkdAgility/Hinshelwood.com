@@ -38,22 +38,54 @@ sitemap:
   priority: 0.5
 
 menus:
-  mainMenu:
+  main:
     - name: Home
       pageRef: /
       weight: 20
-    - name: About
-      pageRef: /about/
+
+    - name: Problems I Solve
+      identifier: problems
+      pageRef: /problems/
       weight: 30
-    - name: Services
-      pageRef: /services/
+
+    - name: When DevOps Breaks
+      pageRef: /problems/devops/
+      parent: problems
+      weight: 31
+
+    - name: Scaling
+      pageRef: /problems/scaling/
+      parent: problems
+      weight: 32
+
+    - name: AI Enablement
+      pageRef: /problems/ai/
+      parent: problems
+      weight: 33
+  
+    - name: Outcomes I deliver
+      pageRef: /outcomes/
+      identifier: outcomes
       weight: 40
-    - name: Success Stories
-      pageRef: /success-stories/
+
+    - name: Engineering Excellence
+      pageRef: /outcomes/engineering-excellence/
+      parent: outcomes
+      weight: 31
+
+    - name: Technical Leadership
+      pageRef: /outcomes/technical-leadership/
+      parent: outcomes
+      weight: 32
+
+    - name: What I do
+      pageRef: /about/
       weight: 50
+
     - name: Insights
       pageRef: /insights/
-      weight: 66
-    - name: Contact
-      pageRef: /contact/
-      weight: 76
+      weight: 60
+    
+    - name: Case Studies
+      pageRef: /case-studies/
+      weight: 70
