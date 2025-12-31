@@ -1,5 +1,6 @@
 ---
 title: Engineering Excellence for Predictable Delivery Without Increasing Risk
+shortTitle: Engineering Excellence
 date: 2026-01-01
 slug: engineering-excellence
 description: "Engineering excellence is a leadership capability that enables predictable delivery, reduced operational risk, and scalable engineering performance. This page explains what leaders gain when engineering becomes a reliable system, not a fragile dependency."

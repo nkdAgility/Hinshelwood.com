@@ -1,11 +1,12 @@
 ---
-title: About Martin Hinshelwood
+title: About Martin Hinshelwood Engineering Leadership and Delivery Systems Consultant
+shortTitle: About Martin Hinshelwood
+keywords: ["Martin Hinshelwood","engineering leadership consultant","software delivery consulting","engineering operating model","delivery constraints","predictable delivery","flow efficiency","Azure DevOps consulting","GitHub consulting","technical leadership","engineering excellence","systems of work","AI-enabled engineering","DevOps consulting"]
 date: 2026-01-01
 slug: about
-description: "Technical leadership consultant with 20+ years improving software delivery at scale. I help engineering leaders increase flow, predictability, and reliability through evidence-based engineering practices."
+description: "Martin Hinshelwood is an engineering leadership consultant helping CTOs and senior leaders remove delivery constraints, improve flow, and achieve predictable software delivery through evidence-based engineering and operating-model design."
 ItemType: home
 ItemKind: marketing
-
 sitemap:
   filename: sitemap.xml
   priority: 0.9

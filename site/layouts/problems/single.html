@@ -3,20 +3,23 @@
 {{- end }}
 
 {{- define "main" }}
-  <section class="container my-5">
-    <h1>{{ .Title }}</h1>
-  </section>
+  <article class="container my-5" itemscope itemtype="https://schema.org/Article">
+    <header>
+      <h1 itemprop="headline">{{ .Title }}</h1>
+      <meta itemprop="description" content="{{ .Description }}">
+      <meta itemprop="author" content="{{ site.Params.author }}">
+    </header>
 
-  <section class="container my-5">
-    {{ .Content }}
-  </section>
+    <div itemprop="articleBody">
+      {{ .Content }}
+    </div>
 
-  <section class="container my-5">
-    {{ partial "components/related-insights.html" . }}
-  </section>
+    <section>
+      {{ partial "components/related-insights.html" . }}
+    </section>
 
-  <section class="container my-5">
-    {{ partial "components/related-case-studies.html" . }}
-  </section>
- 
+    <section>
+      {{ partial "components/related-case-studies.html" . }}
+    </section>
+  </article>
 {{- end }}

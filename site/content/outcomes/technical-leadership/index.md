@@ -1,5 +1,6 @@
 ---
 title: Technical Leadership for Predictable Delivery and Scalable Engineering
+shortTitle: Technical Leadership
 date: 2026-01-01
 slug: technical-leadership
 description: "Outcome-focused technical leadership for senior engineering leaders accountable for delivery risk, platform enablement, and scalable decision-making. Strengthen technical judgement, reduce delivery risk, and improve predictability without adding bureaucracy."

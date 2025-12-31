@@ -3,12 +3,17 @@
 {{- end }}
 
 {{- define "main" }}
-  <article class="container my-5">
-    <h1>{{ .Title }}</h1>
-    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+  <article class="container my-5" itemscope itemtype="https://schema.org/Article">
+    <header>
+      <h1 itemprop="headline">{{ .Title }}</h1>
+      <time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      <meta itemprop="dateModified" content="{{ (or .Lastmod .Date).Format "2006-01-02" }}">
+      <meta itemprop="author" content="{{ site.Params.author }}">
+      <meta itemprop="description" content="{{ .Description }}">
+    </header>
+    
+    <div itemprop="articleBody">
+      {{ .Content }}
+    </div>
   </article>
-
-  <section class="container my-5">
-    {{ .Content }}
-  </section>
 {{- end }}
