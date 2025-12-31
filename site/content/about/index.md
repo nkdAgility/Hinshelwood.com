@@ -74,9 +74,51 @@ This is a fit if:
 - You value strong engineering judgment over dogma  
 - You want your organisation to get better after I leave  
 
-If you are looking for a vendor to “run DevOps for you”, this is not a fit.
+## When this is NOT a fit
 
+This is not a fit if:
 
+- You want someone to "do DevOps" or "run Agile" for you  
+- You need body-shop capacity or staff augmentation  
+- You are looking for certification theatre or framework compliance  
+- You want reassurance that your current approach is fine  
+- You expect guaranteed results without organisational commitment  
+- You need a vendor who will avoid uncomfortable conversations about constraints  
+- You are seeking a methodology to implement rather than capability to build  
+
+I work with leaders who are prepared to examine their systems honestly and act on what we discover. If that is uncomfortable, this is probably not the right engagement.
+
+## How engagement works
+
+I operate on a **fixed-price, timeboxed model**.
+
+Engagements are structured around defined periods: **1 week, 30 days, or 90 days**.
+
+### Engagement levels
+
+**Supportive** (~1-2 hours/week)  
+Light input, asynchronous feedback, occasional check-ins for specific challenges.
+
+**Regular** (~6-8 hours/week)  
+Regular reviews, pairing sessions, shaping delivery direction and execution practices.
+
+**Deep** (~14-16 hours/week)  
+Deep collaboration, hands-on stakeholder engagement, platform and operating-model design.
+
+I don't track hours. The focus is on removing constraints and delivering measurable improvement within the agreed timebox.
+
+### Pricing and terms
+
+Pricing depends on the engagement period and level. I provide specific rates during our initial conversation based on your situation.
+
+**Payment terms:**
+- 50% due upon acceptance  
+- 50% due 15 days after engagement start  
+- 5% discount available for full payment upfront  
+
+**Satisfaction guarantee:** If the engagement doesn't meet agreed standards, I refund your fee.
+
+Engagements are non-cancellable but may be rescheduled without penalty.
 ## Credentials (for those who care)
 
 - 17× Microsoft MVP (DevOps & GitHub)  
