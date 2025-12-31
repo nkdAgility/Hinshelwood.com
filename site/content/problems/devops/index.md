@@ -1,9 +1,9 @@
 ---
-title: DevOps That Fixes Delivery Risk by Correcting Your Operating Model
+title: Delivery Risk Embedded in the Operating Model
 shortTitle: DevOps
 date: 2026-01-01
 slug: devops
-description: "DevOps initiatives fail when the system of work cannot turn intent into outcomes. This page focuses on diagnosing delivery risk, fixing flow and decision latency, and correcting operating model constraints that limit speed, predictability, and business impact."
+description: "Delivery risk increases when the system of work cannot reliably turn intent into outcomes. Slow flow, delayed decisions, and operating model constraints undermine the benefits organisations expect from DevOps."
 keywords: [
   "devops consulting",
   "delivery risk",
@@ -17,16 +17,13 @@ keywords: [
   "devops beyond tools"
 ]
 
-ItemType: home
+ItemType: problem
 ItemKind: marketing
 weight: 100
 sitemap:
   filename: sitemap.xml
   priority: 0.9
 ---
-
-
-## This Is Not About DevOps Tools, Agile Frameworks, or Training Courses
 
 Most organisations don’t fail because they picked the wrong tools.  
 They fail because **their system of work cannot reliably convert intent into outcomes**.
@@ -37,7 +34,7 @@ Slow delivery, missed opportunities, brittle platforms, disengaged teams, and fr
 
 My work is about correcting that mismatch.
 
----
+
 
 ## The Outcomes Leaders Hire Me For
 
@@ -55,7 +52,7 @@ They come because they need to:
 
 Everything I do is designed to support those outcomes.
 
----
+
 
 ## What I Actually Do
 
@@ -72,7 +69,7 @@ I do not take work away from your teams.
 I do not "run" your enablement.  
 I help you **understand and lead your system more effectively**.
 
----
+
 
 ## How I Work With Clients
 
@@ -90,7 +87,7 @@ Focus areas typically include:
 
 This is advisory work, not facilitation.
 
----
+
 
 ### Embedded Partnership
 
@@ -107,8 +104,93 @@ This includes:
 You are not buying time.  
 You are buying **judgement, pattern recognition, and intervention at leverage points**.
 
----
+
+
+Understood. Below is a **direct continuation only**. No existing words are changed. This completes the page in an Allan Weiss, buyer-problem-focused way.
+
+
 
 ## What Makes This Different
 
-Most consulting
+Most consulting focuses on activity, not outcomes.
+
+More frameworks.
+More tooling.
+More workshops.
+More reporting.
+
+That creates motion, but it rarely changes results.
+
+This work is different because it starts with **why performance is constrained**, not with what to implement.
+
+I do not arrive with a preferred framework.
+I do not sell a transformation roadmap.
+I do not optimise for utilisation, adoption, or compliance.
+
+I work on the small number of decisions, structures, and feedback loops that are silently determining your results today.
+
+That is why the impact shows up in outcomes leaders care about, not in artefacts.
+
+
+
+## The Problem This Work Addresses
+
+When organisations struggle to deliver, the issue is rarely effort or capability.
+
+It is usually one or more of the following:
+
+* Decisions are slow, escalated, or reversible too late
+* Work accumulates faster than it can be validated
+* Coordination cost grows faster than headcount
+* Technology platforms constrain change instead of enabling it
+* Leadership intent is clear, but execution is distorted as it moves through the system
+
+These problems persist because they are **structural**, not operational.
+
+They cannot be fixed by asking teams to try harder.
+
+
+
+## Why This Persists
+
+Most leadership teams are managing a system they did not consciously design.
+
+Operating models accrete over time.
+Governance grows in response to past failures.
+Controls are added, but rarely removed.
+
+Eventually, the organisation becomes very good at protecting itself from risk it no longer faces, while becoming blind to the risk it now carries.
+
+At that point, performance plateaus.
+
+
+
+## What Changes When the System Changes
+
+When the system of work is corrected:
+
+* Decisions are made closer to information
+* Work flows with fewer handoffs and delays
+* Risk is surfaced earlier, when it is cheaper to act
+* Teams regain autonomy without losing alignment
+* Leaders spend more time steering and less time arbitrating
+
+Delivery improves as a consequence, not as a target.
+
+
+
+## How to Know If This Is Relevant
+
+This work is relevant if you recognise any of the following:
+
+* Results lag behind effort
+* Growth has increased complexity faster than capability
+* Delivery confidence depends on heroics
+* Investment decisions feel higher risk than they should
+* You suspect the problem is systemic, but cannot yet see where
+
+At that point, the question is not which method to adopt.
+
+It is whether your operating model still serves your strategy.
+
+

@@ -45,17 +45,17 @@ menus:
       pageRef: /problems/
       weight: 30
 
-    - name: Delivery Risk of DevOps
+    - name: Delivery Risk Embedded in the Operating Model
       pageRef: /problems/devops/
       parent: problems
       weight: 31
 
-    - name: Losing Speed or Control at Scale
+    - name: Scaling Has Increased Risk and Slowed Us Down
       pageRef: /problems/scaling/
       parent: problems
       weight: 32
 
-    - name: Reliable Outcomes with AI Enablement
+    - name: AI Is Creating Risk Instead of Reliable Capability
       pageRef: /problems/ai/
       parent: problems
       weight: 33
@@ -65,12 +65,12 @@ menus:
       identifier: outcomes
       weight: 40
 
-    - name: Predictable Delivery Without Increasing Risk with Engineering Excellence
+    - name: Predictable Delivery Without Increasing Engineering Risk
       pageRef: /outcomes/engineering-excellence/
       parent: outcomes
       weight: 31
 
-    - name: Predictable Delivery and Scalable Engineering with Technical Leadership
+    - name: Faster, Safer Technical Decisions at Scale
       pageRef: /outcomes/technical-leadership/
       parent: outcomes
       weight: 32

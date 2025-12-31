@@ -1,9 +1,9 @@
 ---
-title: AI Enablement Turning AI from Fragile Experiments into Reliable Business Capability
+title: AI Is Creating Risk Instead of Reliable Capability
 shortTitle: AI Enablement
 date: 2026-01-01
 slug: AI
-description: "AI initiatives stall when organisations lack clarity, ownership, and decision discipline. This page explains why AI fails to scale and how leaders create the operating conditions for AI to become reliable, trusted, and valuable in production."
+description: "AI initiatives stall and create risk when organisations lack clarity, ownership, and decision discipline. As AI scales, ambiguity undermines trust, increases delivery risk, and prevents experiments from becoming reliable capability."
 keywords: [
   "AI enablement",
   "AI operating model",
@@ -16,15 +16,13 @@ keywords: [
   "AI capability building",
   "scalable AI"
 ]
-ItemType: home
+ItemType: problem
 ItemKind: marketing
 weight: 200
 sitemap:
   filename: sitemap.xml
   priority: 0.9
 ---
-
-## AI Is Not Stalling Because the Technology Is Weak
 
 Most organisations don’t fail at AI because they chose the wrong model, tool, or vendor.
 

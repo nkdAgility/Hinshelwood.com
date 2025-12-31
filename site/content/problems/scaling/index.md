@@ -1,9 +1,9 @@
 ---
-title: Scaling Without Losing Speed or Control
+title: Scaling Has Increased Risk and Slowed Us Down
 shortTitle: Scaling
 date: 2026-01-01
 slug: scaling
-description: "Growth often increases coordination cost, decision latency, and risk. This page explains why scaling slows organisations down and how leaders redesign their operating model to scale without losing speed, quality, or control."
+description: "Growth increases coordination cost, decision latency, and delivery risk. As organisations scale, their operating model often slows learning, weakens decision-making, and reduces leverage instead of increasing it."
 keywords: [
 "scaling organisations",
 "scaling without losing speed",
@@ -16,7 +16,7 @@ keywords: [
 "scaling governance",
 "systems of work"
 ]
-ItemType: home
+ItemType: problem
 ItemKind: marketing
 weight: 300
 sitemap:
