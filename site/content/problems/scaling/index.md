@@ -1,8 +1,21 @@
 ---
-title: Scaling
+title: Scaling Without Losing Speed or Control
+shortTitle: Scaling
 date: 2026-01-01
 slug: scaling
-description: "Growth exposes coordination problems and technical debt that slow delivery. I help teams scale without sacrificing quality or speed."
+description: "Growth often increases coordination cost, decision latency, and risk. This page explains why scaling slows organisations down and how leaders redesign their operating model to scale without losing speed, quality, or control."
+keywords: [
+"scaling organisations",
+"scaling without losing speed",
+"growth constraints",
+"operating model at scale",
+"decision-making at scale",
+"coordination cost",
+"delivery risk at scale",
+"scaling leadership",
+"scaling governance",
+"systems of work"
+]
 ItemType: home
 ItemKind: marketing
 weight: 300

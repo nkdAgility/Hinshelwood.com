@@ -1,8 +1,21 @@
 ---
-title: AI Enablement
+title: AI Enablement Turning AI from Fragile Experiments into Reliable Business Capability
+shortTitle: AI Enablement
 date: 2026-01-01
 slug: AI
-description: "Organizations struggle to move AI projects from prototype to production. I help establish the clarity, discipline, and operating conditions that make AI reliable, scalable, and valuable."
+description: "AI initiatives stall when organisations lack clarity, ownership, and decision discipline. This page explains why AI fails to scale and how leaders create the operating conditions for AI to become reliable, trusted, and valuable in production."
+keywords: [
+  "AI enablement",
+  "AI operating model",
+  "AI at scale",
+  "AI delivery risk",
+  "AI in production",
+  "organisational clarity",
+  "decision-making discipline",
+  "AI governance",
+  "AI capability building",
+  "scalable AI"
+]
 ItemType: home
 ItemKind: marketing
 weight: 200

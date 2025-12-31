@@ -1,8 +1,22 @@
 ---
-title: DevOps
+title: DevOps That Fixes Delivery Risk by Correcting Your Operating Model
+shortTitle: DevOps
 date: 2026-01-01
 slug: devops
-description: "Teams adopt DevOps tools but see limited improvement. I focus on flow, feedback loops, and removing real constraints in your delivery system."
+description: "DevOps initiatives fail when the system of work cannot turn intent into outcomes. This page focuses on diagnosing delivery risk, fixing flow and decision latency, and correcting operating model constraints that limit speed, predictability, and business impact."
+keywords: [
+  "devops consulting",
+  "delivery risk",
+  "engineering operating model",
+  "systems of work",
+  "flow and feedback loops",
+  "predictable delivery",
+  "decision latency",
+  "engineering leadership",
+  "software delivery capability",
+  "devops beyond tools"
+]
+
 ItemType: home
 ItemKind: marketing
 weight: 100
