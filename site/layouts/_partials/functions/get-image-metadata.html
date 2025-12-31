@@ -1,0 +1,37 @@
+{{- /* Enhanced Image Metadata with Lazy Loading and Dimensions */ -}}
+{{- $image := partial "functions/get-image.html" . -}}
+{{- $imageResource := "" -}}
+{{- $imageWidth := "" -}}
+{{- $imageHeight := "" -}}
+{{- $imageAlt := .Title -}}
+
+{{- /* Try to get image dimensions from resource */ -}}
+{{- if not (strings.Contains $image.src "#missing#") -}}
+  {{- if strings.HasPrefix $image.src "/" -}}
+    {{- $imagePath := strings.TrimPrefix "/" $image.src -}}
+    {{- $imageResource = resources.Get $imagePath -}}
+    {{- if $imageResource -}}
+      {{- $imageWidth = $imageResource.Width -}}
+      {{- $imageHeight = $imageResource.Height -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Get alt text from params or use title */ -}}
+{{- with .Params.image -}}
+  {{- if reflect.IsMap . -}}
+    {{- with .alt -}}
+      {{- $imageAlt = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict 
+  "src" $image.src 
+  "position" $image.position 
+  "alt" $imageAlt 
+  "width" $imageWidth 
+  "height" $imageHeight
+  "loading" "lazy"
+  "decoding" "async"
+) -}}

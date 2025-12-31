@@ -36,6 +36,9 @@
     {{- /* Author */ -}}
     <meta name="author" content="{{- site.Params.author -}}">
     
+    {{- /* Open Graph Locale */ -}}
+    <meta property="og:locale" content="en_GB">
+    
     {{- /* Canonical URL */ -}}
     <link rel="canonical" href="https://hinshelwood.com{{- .RelPermalink -}}">
     
@@ -48,6 +51,11 @@
     {{- /* JSON-LD Structured Data */ -}}
     {{- partial "infrastructure/meta/schema-ld.html" . -}}
     
+    {{- /* Article Schema (for pages only) */ -}}
+    {{- if .IsPage -}}
+      {{- partial "infrastructure/meta/article-schema.html" . -}}
+    {{- end -}}
+    
     {{- /* Additional SEO Meta Tags */ -}}
    
     
@@ -58,6 +66,9 @@
       <meta name="robots" content="noindex, nofollow">
       <meta name="googlebot" content="noindex, nofollow">
     {{- end }}
+    
+    {{- /* Mobile Browser Theme Color */ -}}
+    <meta name="theme-color" content="#0066cc">
     <!--Boostrap -->
     <link async href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
@@ -83,24 +94,7 @@
       <!-- End Google Tag Manager (noscript) -->
     {{- end }}
     {{- block "navigation" . }}
-      <section class="container block-navigation my-2">
-        <nav>
-          <ul>
-            {{ range .Site.Menus.main }}
-              <li>
-                <a href="{{ .PageRef | relURL }}">{{ .Name }}</a>
-                {{ if .HasChildren }}
-                  <ul>
-                    {{ range .Children }}
-                      <li><a href="{{ .PageRef | relURL }}">{{ .Name }}</a></li>
-                    {{ end }}
-                  </ul>
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
-        </nav>
-      </section>
+      {{ partial "infrastructure/navigation.html" . }}
     {{- end }}
     {{- block "breadcrumbs" . }}
       <section class="container block-breadcrumbs my-2">

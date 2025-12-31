@@ -1,0 +1,42 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" 
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ if eq .Title site.Title }}{{ site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ site.Title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}</description>
+    <generator>Hugo {{ hugo.Version }}</generator>
+    <language>{{ site.LanguageCode }}</language>
+    <copyright>Copyright {{ now.Format "2006" }} {{ site.Params.author }}</copyright>
+    {{ with site.Params.author }}<managingEditor>{{ . }}</managingEditor>{{ end }}
+    {{ with site.Params.author }}<webMaster>{{ . }}</webMaster>{{ end }}
+    {{ if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
+    {{ range .Pages }}
+    {{- $image := partial "functions/get-image.html" . -}}
+    {{- $readingInfo := partial "functions/get-reading-time.html" . -}}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{ with site.Params.author }}<dc:creator>{{ . }}</dc:creator>{{ end }}
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</description>
+      <content:encoded><![CDATA[{{ .Content }}]]></content:encoded>
+      {{- range .Params.tags }}
+      <category>{{ . }}</category>
+      {{- end }}
+      {{- if not (strings.Contains $image.src "#missing#") }}
+      <enclosure url="{{ $image.src | absURL }}" type="image/webp" />
+      {{- end }}
+      <dc:subject>{{ .Section }}</dc:subject>
+      <dc:date>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</dc:date>
+      {{- with .Lastmod }}
+      <atom:updated>{{ .Format "2006-01-02T15:04:05Z07:00" }}</atom:updated>
+      {{- end }}
+    </item>
+    {{ end }}
+  </channel>
+</rss>

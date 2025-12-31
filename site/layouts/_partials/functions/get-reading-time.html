@@ -1,0 +1,9 @@
+{{- /* Calculate reading time from word count */ -}}
+{{- /* Average reading speed: 200 words per minute */ -}}
+{{- $wordCount := .WordCount -}}
+{{- $readingSpeed := 200 -}}
+{{- $minutes := div $wordCount $readingSpeed -}}
+{{- if lt $minutes 1 -}}
+  {{- $minutes = 1 -}}
+{{- end -}}
+{{- return (dict "minutes" $minutes "wordCount" $wordCount) -}}

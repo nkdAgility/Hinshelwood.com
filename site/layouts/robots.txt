@@ -9,4 +9,4 @@ Disallow: /
 {{ end }}
 
 
-https://nkdagility.com/sitemap.xml
+https://hinshelwood.com/sitemap.xml
