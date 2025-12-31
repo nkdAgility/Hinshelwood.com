@@ -3,23 +3,33 @@
 {{- end }}
 
 {{- define "main" }}
-  <article class="container my-5" itemscope itemtype="https://schema.org/Article">
-    <header>
-      <h1 itemprop="headline">{{ .Title }}</h1>
-      <meta itemprop="description" content="{{ .Description }}">
-      <meta itemprop="author" content="{{ site.Params.author }}">
-    </header>
+  <div itemscope itemtype="https://schema.org/Service">
+    <meta itemprop="name" content="{{ .Title }}">
+    <meta itemprop="description" content="{{ .Description }}">
+    <meta itemprop="serviceType" content="Professional Consulting">
+    <span itemprop="provider" itemscope itemtype="https://schema.org/Person">
+      <meta itemprop="name" content="{{ site.Params.author }}">
+    </span>
 
-    <div itemprop="articleBody">
+    <section class="container my-5">
+      <header>
+        <h1>{{ .Title }}</h1>
+        {{- with .Params.subtitle }}
+          <p class="lead">{{ . }}</p>
+        {{- end }}
+      </header>
+    </section>
+
+    <section class="container my-5">
       {{ .Content }}
-    </div>
+    </section>
 
-    <section>
+    <section class="container my-5">
       {{ partial "components/related-insights.html" . }}
     </section>
 
-    <section>
+    <section class="container my-5">
       {{ partial "components/related-case-studies.html" . }}
     </section>
-  </article>
+  </div>
 {{- end }}
