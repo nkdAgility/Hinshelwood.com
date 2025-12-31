@@ -37,9 +37,12 @@ When that capability is weak, leaders experience:
 * Platforms that slow teams down instead of enabling them
 * Quality problems that appear late and cost credibility
 * Roadmaps that feel fragile rather than directional
-* Senior leaders pulled into operational detail they should not own
+* Senior leaders pulled into technical arbitration because decisions cannot be trusted to hold
 
 These are not execution failures.
+
+When engineering excellence is weak, the cost is not just slower delivery.
+It is capital committed earlier than it should be, options closed before they are understood, and confidence eroded with every missed or renegotiated commitment.
 
 They are signals that engineering excellence is missing at the **system level**, not the individual level.
 
@@ -79,7 +82,7 @@ It shows up as drag.
 From the outside, everything still appears governed.
 
 From the inside, learning slows and risk accumulates quietly.
-
+This is why problems labelled as DevOps, scaling, or AI reliability often share the same root cause.
 This is why many organisations “improve” engineering for years without seeing strategic impact.
 
 ---
@@ -105,6 +108,9 @@ Excellence emerges when the **system of work** supports:
 
 In other words, engineering excellence is the result of **deliberate operating-model design**.
 
+These conditions do not emerge accidentally.
+They reflect how leadership has chosen to balance speed, risk, and control over time.
+
 ---
 
 ## What Changes When Engineering Excellence Is in Place
@@ -123,6 +129,8 @@ Engineering stops being a risk to manage and becomes a **strategic asset**.
 ---
 
 ## How I Help
+
+This work is not for organisations looking for faster delivery through more pressure, more process, or more tooling.
 
 I work with senior leaders who already know this is not a tooling or talent problem.
 
@@ -157,10 +165,8 @@ If engineering excellence is spoken about but not felt in results, this is the g
 ## The Question That Matters
 
 Engineering excellence is not a goal.
+It is the mechanism that allows you to operate at speed without betting the organisation each quarter.
 
-It is the price of admission for operating safely at speed.
-
-The question is not whether you invest in it.
-
-It is whether you do so deliberately, or continue paying for its absence indirectly.
+The question is not whether you are paying for it.
+The question is whether you are paying deliberately, or through missed commitments, rework, and declining confidence.
 
