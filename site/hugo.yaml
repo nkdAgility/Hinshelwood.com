@@ -45,17 +45,17 @@ menus:
       pageRef: /problems/
       weight: 30
 
-    - name: When DevOps Breaks
+    - name: Delivery Risk of DevOps
       pageRef: /problems/devops/
       parent: problems
       weight: 31
 
-    - name: Scaling
+    - name: Losing Speed or Control at Scale
       pageRef: /problems/scaling/
       parent: problems
       weight: 32
 
-    - name: AI Enablement
+    - name: Reliable Outcomes with AI Enablement
       pageRef: /problems/ai/
       parent: problems
       weight: 33
@@ -65,12 +65,12 @@ menus:
       identifier: outcomes
       weight: 40
 
-    - name: Engineering Excellence
+    - name: Predictable Delivery Without Increasing Risk with Engineering Excellence
       pageRef: /outcomes/engineering-excellence/
       parent: outcomes
       weight: 31
 
-    - name: Technical Leadership
+    - name: Predictable Delivery and Scalable Engineering with Technical Leadership
       pageRef: /outcomes/technical-leadership/
       parent: outcomes
       weight: 32
