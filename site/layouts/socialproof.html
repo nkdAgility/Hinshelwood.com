@@ -1,9 +1,9 @@
 {{- define "main" -}}
-<article class="social-proof-page">
-  <header class="page-header">
+<section class="container my-5">
+  <header class="mb-5">
     <h1>{{ .Title }}</h1>
     {{- with .Content -}}
-      <div class="page-description">
+      <div class="text-muted">
         {{ . }}
       </div>
     {{- end -}}
@@ -16,40 +16,40 @@
   {{- end -}}
   {{- $sortedQuotes := sort $quotes "date" "desc" -}}
 
-  <nav class="category-filters">
-    <a href="/social-proof/" {{- if not $category }} class="active"{{- end }}>All ({{ len .Site.Data.socialproof.quotes }})</a>
-    <a href="/social-proof/consulting/" {{- if eq $category "consulting" }} class="active"{{- end }}>Consulting ({{ len (where .Site.Data.socialproof.quotes "category" "consulting") }})</a>
-    <a href="/social-proof/training/" {{- if eq $category "training" }} class="active"{{- end }}>Training ({{ len (where .Site.Data.socialproof.quotes "category" "training") }})</a>
+  <nav class="d-flex justify-content-start gap-2 mb-4 flex-wrap">
+    <a href="/social-proof/" class="btn btn-sm {{- if not $category }}btn-primary{{- else }}btn-outline-primary{{- end }}">All ({{ len .Site.Data.socialproof.quotes }})</a>
+    <a href="/social-proof/consulting/" class="btn btn-sm {{- if eq $category "consulting" }}btn-primary{{- else }}btn-outline-primary{{- end }}">Consulting ({{ len (where .Site.Data.socialproof.quotes "category" "consulting") }})</a>
+    <a href="/social-proof/training/" class="btn btn-sm {{- if eq $category "training" }}btn-primary{{- else }}btn-outline-primary{{- end }}">Training ({{ len (where .Site.Data.socialproof.quotes "category" "training") }})</a>
   </nav>
 
-  <div class="quote-filters">
+  <div class="text-muted mb-4" style="font-size: 0.9rem;">
     <p id="pagination-info">Showing <span id="showing-count">0</span> of {{ len $sortedQuotes }} testimonials</p>
   </div>
 
-  <div class="quotes-list" id="quotes-container">
+  <div id="quotes-container">
     {{- range $sortedQuotes -}}
-      <blockquote class="testimonial" data-id="{{ .id }}">
-        <div class="testimonial-content">
+      <div class="testimonial mb-4 pb-4 border-bottom" data-id="{{ .id }}">
+        <blockquote class="mb-3">
           <p>{{ .text }}</p>
-        </div>
-        <footer class="testimonial-footer">
-          <cite>
+        </blockquote>
+        <footer>
+          <cite class="text-body not-italic">
             <strong>{{ .name }}</strong>
-            {{- with .title }}{{ if ne . "" }}<br><span class="testimonial-title">{{ . }}</span>{{ end }}{{ end -}}
+            {{- with .title }}{{ if ne . "" }}<br><span class="text-muted" style="font-size: 0.9rem;">{{ . }}</span>{{ end }}{{ end -}}
           </cite>
-          <div class="testimonial-meta">
-            {{- with .relationship }}<span class="badge relationship">{{ . }}</span>{{ end -}}
-            {{- with .class }}<span class="badge class">{{ . | upper }}</span>{{ end -}}
-            {{- with .stars }}<span class="stars">{{ range seq . }}⭐{{ end }}</span>{{ end -}}
-            {{- with .date }}<time datetime="{{ . }}">{{ dateFormat "2 Jan 2006" . }}</time>{{ end -}}
+          <div class="d-flex flex-wrap gap-2 align-items-center mt-2" style="font-size: 0.9rem;">
+            {{- with .relationship }}<span class="badge bg-primary-subtle text-primary">{{ . }}</span>{{ end -}}
+            {{- with .class }}<span class="badge bg-warning-subtle text-warning">{{ . | upper }}</span>{{ end -}}
+            {{- with .stars }}<span class="text-warning">{{ range seq . }}⭐{{ end }}</span>{{ end -}}
+            {{- with .date }}<time datetime="{{ . }}" class="text-muted">{{ dateFormat "2 Jan 2006" . }}</time>{{ end -}}
           </div>
         </footer>
-      </blockquote>
+      </div>
     {{- end -}}
   </div>
 
-  <nav class="pagination" id="pagination-nav" aria-label="Testimonials pagination"></nav>
-</article>
+  <nav class="d-flex justify-content-center gap-2 mt-5 flex-wrap" id="pagination-nav" aria-label="Testimonials pagination"></nav>
+</section>
 
 <script>
 (function() {
@@ -87,6 +87,7 @@
     if (currentPage > 1) {
       const prev = document.createElement('a');
       prev.href = '#';
+      prev.className = 'btn btn-sm btn-outline-primary';
       prev.textContent = '← Previous';
       prev.onclick = (e) => {
         e.preventDefault();
@@ -107,6 +108,7 @@
     if (startPage > 1) {
       const first = document.createElement('a');
       first.href = '#';
+      first.className = 'btn btn-sm btn-outline-primary';
       first.textContent = '1';
       first.onclick = (e) => {
         e.preventDefault();
@@ -116,6 +118,7 @@
 
       if (startPage > 2) {
         const ellipsis = document.createElement('span');
+        ellipsis.className = 'btn btn-sm btn-outline-secondary disabled';
         ellipsis.textContent = '...';
         nav.appendChild(ellipsis);
       }
@@ -124,10 +127,9 @@
     for (let i = startPage; i <= endPage; i++) {
       const pageLink = document.createElement(i === currentPage ? 'span' : 'a');
       pageLink.href = '#';
+      pageLink.className = i === currentPage ? 'btn btn-sm btn-primary' : 'btn btn-sm btn-outline-primary';
       pageLink.textContent = i;
-      if (i === currentPage) {
-        pageLink.className = 'active';
-      } else {
+      if (i !== currentPage) {
         pageLink.onclick = (e) => {
           e.preventDefault();
           showPage(i);
@@ -139,12 +141,14 @@
     if (endPage < totalPages) {
       if (endPage < totalPages - 1) {
         const ellipsis = document.createElement('span');
+        ellipsis.className = 'btn btn-sm btn-outline-secondary disabled';
         ellipsis.textContent = '...';
         nav.appendChild(ellipsis);
       }
 
       const last = document.createElement('a');
       last.href = '#';
+      last.className = 'btn btn-sm btn-outline-primary';
       last.textContent = totalPages;
       last.onclick = (e) => {
         e.preventDefault();
@@ -157,6 +161,7 @@
     if (currentPage < totalPages) {
       const next = document.createElement('a');
       next.href = '#';
+      next.className = 'btn btn-sm btn-outline-primary';
       next.textContent = 'Next →';
       next.onclick = (e) => {
         e.preventDefault();
@@ -171,194 +176,4 @@
 })();
 </script>
 
-<style>
-.social-proof-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.page-header {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.page-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.page-description {
-  color: #666;
-  font-size: 1.125rem;
-}
-
-.category-filters {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.category-filters a {
-  padding: 0.5rem 1rem;
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.375rem;
-  text-decoration: none;
-  color: #374151;
-  transition: all 0.2s;
-}
-
-.category-filters a:hover {
-  background: #e5e7eb;
-  border-color: #d1d5db;
-}
-
-.category-filters a.active {
-  background: #3b82f6;
-  border-color: #3b82f6;
-  color: white;
-}
-
-.quote-filters {
-  margin-bottom: 2rem;
-  text-align: center;
-  color: #666;
-}
-
-.quotes-list {
-  display: grid;
-  gap: 2rem;
-}
-
-.testimonial {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-left: 4px solid #3b82f6;
-  padding: 1.5rem;
-  margin: 0;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.testimonial:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-content p {
-  margin: 0 0 1rem 0;
-  line-height: 1.6;
-  color: #374151;
-  font-size: 1rem;
-}
-
-.testimonial-footer {
-  border-top: 1px solid #e5e7eb;
-  padding-top: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.testimonial-footer cite {
-  font-style: normal;
-  flex: 1;
-}
-
-.testimonial-footer strong {
-  color: #111827;
-  font-size: 1.125rem;
-}
-
-.testimonial-title {
-  color: #6b7280;
-  font-size: 0.875rem;
-}
-
-.testimonial-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  align-items: center;
-  font-size: 0.875rem;
-}
-
-.badge {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-}
-
-.badge.relationship {
-  background: #dbeafe;
-  color: #1e40af;
-}
-
-.badge.class {
-  background: #fef3c7;
-  color: #92400e;
-}
-
-.stars {
-  color: #f59e0b;
-}
-
-time {
-  color: #6b7280;
-}
-
-nav.pagination {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 3rem;
-  flex-wrap: wrap;
-}
-
-nav.pagination a,
-nav.pagination span {
-  padding: 0.5rem 1rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.375rem;
-  text-decoration: none;
-  color: #374151;
-  transition: all 0.2s;
-}
-
-nav.pagination a:hover {
-  background: #f3f4f6;
-  border-color: #d1d5db;
-}
-
-nav.pagination .active {
-  background: #3b82f6;
-  color: white;
-  border-color: #3b82f6;
-}
-
-@media (max-width: 768px) {
-  .social-proof-page {
-    padding: 1rem;
-  }
-  
-  .page-header h1 {
-    font-size: 2rem;
-  }
-  
-  .testimonial-footer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-</style>
 {{- end -}}
