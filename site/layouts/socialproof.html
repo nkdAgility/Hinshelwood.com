@@ -13,10 +13,10 @@
   {{- $sortedQuotes := sort $quotes "date" "desc" -}}
 
   <div class="quote-filters">
-    <p>Showing {{ len $sortedQuotes }} testimonials</p>
+    <p id="pagination-info">Showing <span id="showing-count">0</span> of {{ len $sortedQuotes }} testimonials</p>
   </div>
 
-  <div class="quotes-list">
+  <div class="quotes-list" id="quotes-container">
     {{- range $sortedQuotes -}}
       <blockquote class="testimonial" data-id="{{ .id }}">
         <div class="testimonial-content">
@@ -37,7 +37,129 @@
       </blockquote>
     {{- end -}}
   </div>
+
+  <nav class="pagination" id="pagination-nav" aria-label="Testimonials pagination"></nav>
 </article>
+
+<script>
+(function() {
+  const itemsPerPage = 20;
+  let currentPage = 1;
+  const container = document.getElementById('quotes-container');
+  const allTestimonials = Array.from(container.querySelectorAll('.testimonial'));
+  const totalPages = Math.ceil(allTestimonials.length / itemsPerPage);
+
+  function showPage(page) {
+    currentPage = page;
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+
+    allTestimonials.forEach((testimonial, index) => {
+      if (index >= start && index < end) {
+        testimonial.style.display = 'block';
+      } else {
+        testimonial.style.display = 'none';
+      }
+    });
+
+    document.getElementById('showing-count').textContent = 
+      Math.min(end, allTestimonials.length);
+
+    renderPagination();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderPagination() {
+    const nav = document.getElementById('pagination-nav');
+    nav.innerHTML = '';
+
+    // Previous button
+    if (currentPage > 1) {
+      const prev = document.createElement('a');
+      prev.href = '#';
+      prev.textContent = '← Previous';
+      prev.onclick = (e) => {
+        e.preventDefault();
+        showPage(currentPage - 1);
+      };
+      nav.appendChild(prev);
+    }
+
+    // Page numbers
+    const maxVisible = 7;
+    let startPage = Math.max(1, currentPage - Math.floor(maxVisible / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisible - 1);
+    
+    if (endPage - startPage < maxVisible - 1) {
+      startPage = Math.max(1, endPage - maxVisible + 1);
+    }
+
+    if (startPage > 1) {
+      const first = document.createElement('a');
+      first.href = '#';
+      first.textContent = '1';
+      first.onclick = (e) => {
+        e.preventDefault();
+        showPage(1);
+      };
+      nav.appendChild(first);
+
+      if (startPage > 2) {
+        const ellipsis = document.createElement('span');
+        ellipsis.textContent = '...';
+        nav.appendChild(ellipsis);
+      }
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      const pageLink = document.createElement(i === currentPage ? 'span' : 'a');
+      pageLink.href = '#';
+      pageLink.textContent = i;
+      if (i === currentPage) {
+        pageLink.className = 'active';
+      } else {
+        pageLink.onclick = (e) => {
+          e.preventDefault();
+          showPage(i);
+        };
+      }
+      nav.appendChild(pageLink);
+    }
+
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) {
+        const ellipsis = document.createElement('span');
+        ellipsis.textContent = '...';
+        nav.appendChild(ellipsis);
+      }
+
+      const last = document.createElement('a');
+      last.href = '#';
+      last.textContent = totalPages;
+      last.onclick = (e) => {
+        e.preventDefault();
+        showPage(totalPages);
+      };
+      nav.appendChild(last);
+    }
+
+    // Next button
+    if (currentPage < totalPages) {
+      const next = document.createElement('a');
+      next.href = '#';
+      next.textContent = 'Next →';
+      next.onclick = (e) => {
+        e.preventDefault();
+        showPage(currentPage + 1);
+      };
+      nav.appendChild(next);
+    }
+  }
+
+  // Initialize
+  showPage(1);
+})();
+</script>
 
 <style>
 .social-proof-page {
