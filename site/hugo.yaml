@@ -86,3 +86,7 @@ menus:
     - name: Evidence of Success
       pageRef: /case-studies/
       weight: 70
+
+    - name: Social Proof
+      pageRef: /social-proof/
+      weight: 80

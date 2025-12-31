@@ -10,7 +10,17 @@
   </header>
 
   {{- $quotes := .Site.Data.socialproof.quotes -}}
+  {{- $category := .Params.category -}}
+  {{- if $category -}}
+    {{- $quotes = where $quotes "category" $category -}}
+  {{- end -}}
   {{- $sortedQuotes := sort $quotes "date" "desc" -}}
+
+  <nav class="category-filters">
+    <a href="/social-proof/" {{- if not $category }} class="active"{{- end }}>All ({{ len .Site.Data.socialproof.quotes }})</a>
+    <a href="/social-proof/consulting/" {{- if eq $category "consulting" }} class="active"{{- end }}>Consulting ({{ len (where .Site.Data.socialproof.quotes "category" "consulting") }})</a>
+    <a href="/social-proof/training/" {{- if eq $category "training" }} class="active"{{- end }}>Training ({{ len (where .Site.Data.socialproof.quotes "category" "training") }})</a>
+  </nav>
 
   <div class="quote-filters">
     <p id="pagination-info">Showing <span id="showing-count">0</span> of {{ len $sortedQuotes }} testimonials</p>
@@ -181,6 +191,35 @@
 .page-description {
   color: #666;
   font-size: 1.125rem;
+}
+
+.category-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-filters a {
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  color: #374151;
+  transition: all 0.2s;
+}
+
+.category-filters a:hover {
+  background: #e5e7eb;
+  border-color: #d1d5db;
+}
+
+.category-filters a.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
 }
 
 .quote-filters {
