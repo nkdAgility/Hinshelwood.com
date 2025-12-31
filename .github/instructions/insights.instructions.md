@@ -1,9 +1,18 @@
+````instructions
 ---
 applyTo:
   - site/content/insights/**
 ---
 
-Insights are opinion pieces backed by experience. Take clear positions. Defend them. Don't hedge with "it depends" in every paragraph.
+# Insights Instructions
+
+## Purpose
+
+Insights for hinshelwood.com are buyer-diagnostic articles that help senior leaders understand systems of work, operating model constraints, and outcome risk. Write for CTOs, engineering/product/platform leaders, growth and revenue leaders, boards, and executive sponsors.
+
+Produce buyer-diagnostic insight that shapes decisions upstream of buying, without promotional tone or demand-gen tactics. Insights must stand alone and be useful without a pitch.
+
+Take clear positions backed by experience. Defend them. Challenge conventional wisdom. Avoid hype or evangelism.
 
 ## Content Requirements
 
@@ -12,6 +21,9 @@ Every insight article must:
 - **Support with evidence**: Personal experience, data, examples from the field
 - **Address counterarguments**: Don't ignore obvious objections
 - **Provide actionable takeaways**: Readers should know what to do with this information
+- **Emphasise**: Constraints, risk, learning speed, decision quality, evidence, flow, strategic optionality
+- **Assume**: Issues are systemic, not people failures
+- **Stop short of prescribing solutions** unless explicitly asked
 
 ## Structure
 
@@ -24,11 +36,16 @@ Every insight article must:
 
 ## Writing Standards
 
+- **British English only**
+- **No em dashes** (use full stops, commas, or shorter sentences)
+- **No analogies** (say what you mean directly)
 - Use "I" and "you." This is personal expertise, not a research paper.
 - Cut unnecessary qualifiers. "Usually," "often," "tends to" weaken your point.
 - Be specific. "Daily standups waste time" is better than "meetings can be inefficient."
-- Use examples from real work. Anonymize if needed, but keep it concrete.
+- Use examples from real work. Anonymise if needed, but keep it concrete.
 - Break up text. No paragraph longer than 5 lines.
+- Direct, pragmatic, executive-safe language.
+- Start with buyer problem/risk, name why it persists, identify the constraint, state consequences of inaction.
 
 ## Front Matter Requirements
 
@@ -47,9 +64,15 @@ author: "Martin Hinshelwood"
 
 - Academic hedging ("it could be argued that...")
 - Restating common wisdom without adding new perspective
-- Lists without context (not just "10 tips" - explain why)
+- Lists without context (not just "10 tips" without explanation)
 - Ending without a clear takeaway
 - Corporate safe-speak that offends no one and helps no one
+- "Agile transformation" (prefer "systems of work redesign")
+- "ways of working" (prefer "systems of work" or "operating model")
+- "mindset" (prefer "ethos" when culture is relevant)
+- "maturity models" (use specific capability assessments)
+- Guaranteed results or fixed methodologies
+- Hype or evangelism
 
 If you're not willing to defend the position in the comments, don't publish it.
 
@@ -81,3 +104,5 @@ Use consistent, precise terminology when describing organisational design and wo
 - If describing how work is designed to flow (processes, practices, governance, funding): use "systems of work".
 - If speaking to executives about organisational design and constraints: use "operating model".
 - If discussing software, platforms, or technical architecture: use explicit technical terms, not "systems".
+
+````

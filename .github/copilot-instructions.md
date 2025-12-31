@@ -184,8 +184,43 @@ Apply Allan Weiss principles to all content:
 - Front-load key information
 - Short paragraphs (3-4 lines max)
 - Challenge vague or unsupported assertions
+- **British English only**
+- **No em dashes** (use full stops, commas, or shorter sentences)
+- **No analogies** (say what you mean directly)
 
 Ask: "What does the reader gain?" If unclear, revise or delete.
+
+## Project Positioning
+
+**Site**: hinshelwood.com (NOT NKDAgility.com)  
+**Purpose**: Buyer-focused diagnostic insight for senior leaders making systems-of-work decisions  
+**Audience**: CTOs, engineering/product/platform leaders, growth and revenue leaders, boards, executive sponsors
+
+**Martin's Role**: Diagnostician and expert consultant who helps leaders understand and manage their systems of work. NOT doing delivery for clients, NOT owning outcomes, NOT selling a fixed methodology.
+
+**Content Intent**: Produce buyer-diagnostic insight that shapes decisions upstream of buying, without promotional tone or demand-gen tactics. Insights must stand alone and be useful without a pitch.
+
+## Lens and Framing
+
+**Prefer**: Operating model and systems of work framing  
+**Emphasise**: Constraints, risk, learning speed, decision quality, evidence, flow, strategic optionality  
+**Assume**: Issues are systemic, not people failures  
+**Approach**: Start with buyer problem/risk, name why it persists, identify the constraint, state consequences of inaction, stop short of prescribing solutions unless explicitly asked
+
+## Language Rules (Non-Negotiable)
+
+**Avoid**:
+- "Agile transformation" (prefer "systems of work redesign")
+- "ways of working" (prefer "systems of work" or "operating model")
+- "mindset" (prefer "ethos" when culture is relevant)
+- "maturity models" (use specific capability assessments)
+- Guaranteed results or fixed methodologies
+- Hype or evangelism
+
+**Use**:
+- "systems of work" (default for processes, practices, funding, decisions, governance)
+- "operating model" (when speaking to executives about organisational design)
+- Direct, pragmatic, executive-safe language
 
 ## Configuration Files
 

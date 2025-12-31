@@ -1,9 +1,16 @@
+````instructions
 ---
 applyTo:
   - site/content/outcomes/**
 ---
 
-Outcome pages describe the measurable results and business value clients achieve. Focus on capability development and tangible impact, not process descriptions.
+# Outcomes Instructions
+
+## Purpose
+
+Outcome pages for hinshelwood.com describe measurable results and business value for senior buyers evaluating systems of work decisions. Write for CTOs, engineering/product/platform leaders, growth and revenue leaders, boards, and executive sponsors.
+
+Focus on capability development and tangible impact, not process descriptions. Emphasise strategic optionality, decision quality, learning speed, and business value. No promotional tone or demand-gen tactics.
 
 ## Content Requirements
 
@@ -12,6 +19,8 @@ Each outcome page must:
 - **Quantify when possible**: Use metrics, percentages, time frames
 - **Show the path**: How do clients get from current state to this outcome?
 - **Connect to business value**: Why does this outcome matter to the business?
+- **Emphasise**: Constraints removed, risk reduced, learning speed increased, decision quality improved
+- **Assume**: Issues are systemic, not people failures
 
 ## Structure
 
@@ -23,11 +32,17 @@ Each outcome page must:
 
 ## Writing Standards
 
+- **British English only**
+- **No em dashes** (use full stops, commas, or shorter sentences)
+- **No analogies** (say what you mean directly)
 - Lead with results, not methodology.
 - Use client language, not consultant speak. "Faster releases" not "accelerated delivery cadence."
-- Provide real metrics from past engagements (anonymized if needed).
+- Provide real metrics from past engagements (anonymised if needed).
 - Be honest about timelines. "This takes 3-6 months" is better than vague "we'll work together to..."
 - Link to relevant case studies that demonstrate this outcome.
+- Direct, pragmatic, executive-safe language.
+- Start with buyer problem/risk, explain the constraint, state consequences of inaction.
+- Stop short of prescribing solutions unless explicitly asked.
 
 ## Front Matter Requirements
 
@@ -59,6 +74,12 @@ categories: ["outcomes"]
 - Process outputs masquerading as outcomes ("implemented Scrum" is not an outcome)
 - Ignoring the effort required
 - Overselling what's achievable
+- "Agile transformation" (prefer "systems of work redesign")
+- "ways of working" (prefer "systems of work" or "operating model")
+- "mindset" (prefer "ethos" when culture is relevant)
+- "maturity models" (use specific capability assessments)
+- Guaranteed results or fixed methodologies
+- Hype or evangelism
 
 If you can't point to multiple clients who've achieved this outcome working with you, don't claim it.
 
@@ -90,3 +111,5 @@ Use consistent, precise terminology when describing organisational design and wo
 - If describing how work is designed to flow (processes, practices, governance, funding): use "systems of work".
 - If speaking to executives about organisational design and constraints: use "operating model".
 - If discussing software, platforms, or technical architecture: use explicit technical terms, not "systems".
+
+````

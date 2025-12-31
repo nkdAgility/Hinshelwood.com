@@ -1,9 +1,16 @@
+````instructions
 ---
 applyTo:
   - site/content/problems/**
 ---
 
-Problem pages define specific challenges that clients face. The focus is on clear problem articulation, not selling solutions.
+# Problems Instructions
+
+## Purpose
+
+Problem pages for hinshelwood.com define specific challenges for senior buyers evaluating systems of work decisions. Write for CTOs, engineering/product/platform leaders, growth and revenue leaders, boards, and executive sponsors.
+
+Focus on clear problem articulation, not selling solutions. Emphasise constraints, risk, and systemic issues. Produce buyer-diagnostic insight that shapes decisions upstream of buying, without promotional tone or demand-gen tactics.
 
 ## Content Requirements
 
@@ -11,7 +18,10 @@ Each problem page must:
 - **Define the problem precisely**: What specifically goes wrong?
 - **Explain why it matters**: What's the business impact?
 - **Show what it looks like**: Concrete symptoms and scenarios
-- **Indicate who faces this**: What types of organizations or teams?
+- **Indicate who faces this**: What types of organisations or teams?
+- **Emphasise**: Constraints, risk, learning speed limitations, decision quality issues
+- **Assume**: Issues are systemic, not people failures
+- **Stop short of prescribing solutions** unless explicitly asked
 
 Do NOT:
 - Jump to solutions (that comes later)
@@ -23,17 +33,22 @@ Do NOT:
 
 1. **Problem statement**: One clear sentence (the page title)
 2. **What this looks like**: 2-3 specific scenarios or symptoms
-3. **Why it happens**: Root causes, not just surface issues
+3. **Why it happens**: Root causes, not just surface issues (identify the constraint)
 4. **The impact**: Business consequences (time, money, quality, morale)
 5. **Who experiences this**: Company size, team structure, industry factors
 
 ## Writing Standards
 
+- **British English only**
+- **No em dashes** (use full stops, commas, or shorter sentences)
+- **No analogies** (say what you mean directly)
 - Be descriptive, not prescriptive. You're diagnosing, not solving.
 - Use real examples. Change names, but keep scenarios authentic.
 - Quantify impact when possible. "Teams spend 40% of sprint time fixing production issues."
 - Avoid blame. Focus on systemic issues, not people failures.
 - Link to related problems when relevant.
+- Direct, pragmatic, executive-safe language.
+- Start with buyer problem/risk, name why it persists, identify the constraint, state consequences of inaction.
 
 ## Front Matter Requirements
 
@@ -54,8 +69,12 @@ categories: ["problems"]
 - Using generic problems that apply to everyone and no one
 - Ignoring context (company size, maturity, industry)
 - Technical jargon that obscures the real problem
+- "Agile transformation" language
+- "ways of working" (prefer "systems of work" or "operating model")
+- "mindset" problems (prefer "ethos" when culture is relevant)
+- Hype or evangelism
 
-The best problem pages make readers say "Yes, that's exactly what we're dealing with" - not "Maybe we have that problem?"
+The best problem pages make readers say "Yes, that's exactly what we're dealing with", not "Maybe we have that problem?"
 
 ## Language Rules
 
@@ -85,3 +104,5 @@ Use consistent, precise terminology when describing organisational design and wo
 - If describing how work is designed to flow (processes, practices, governance, funding): use "systems of work".
 - If speaking to executives about organisational design and constraints: use "operating model".
 - If discussing software, platforms, or technical architecture: use explicit technical terms, not "systems".
+
+````
