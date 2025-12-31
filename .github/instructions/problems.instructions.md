@@ -56,3 +56,32 @@ categories: ["problems"]
 - Technical jargon that obscures the real problem
 
 The best problem pages make readers say "Yes, that's exactly what we're dealing with" - not "Maybe we have that problem?"
+
+## Language Rules
+
+Use consistent, precise terminology when describing organisational design and work structures:
+
+**Default term**: Use "systems of work" when describing processes, practices, funding flows, decision patterns, and governance mechanics.
+
+**Executive context**: When addressing executives, boards, investors, or C-suite audiences, prefer "operating model" or "operating model hygiene" over "systems of work".
+
+**Banned terms**: Never introduce or reintroduce "ways of working", "ways of work", or "mindset shifts" as preferred terms. These are vague and lack precision.
+
+**Software systems**: If discussing software systems, technology architecture, or platforms, use explicit terms like "software systems", "technical architecture", or "platforms" to avoid ambiguity with "systems of work".
+
+### Example Rewrites
+
+**Before**: "Their ways of working create coordination bottlenecks and require mindset shifts."
+**After**: "Their systems of work create coordination bottlenecks."
+
+**Before**: "The organisation's ways of work slow decision-making."
+**After**: "The organisation's systems of work slow decision-making."
+
+**Executive context before**: "Your systems of work limit responsiveness."
+**Executive context after**: "Your operating model limits responsiveness."
+
+### Decision Rule
+
+- If describing how work is designed to flow (processes, practices, governance, funding): use "systems of work".
+- If speaking to executives about organisational design and constraints: use "operating model".
+- If discussing software, platforms, or technical architecture: use explicit technical terms, not "systems".

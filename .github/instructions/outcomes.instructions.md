@@ -61,3 +61,32 @@ categories: ["outcomes"]
 - Overselling what's achievable
 
 If you can't point to multiple clients who've achieved this outcome working with you, don't claim it.
+
+## Language Rules
+
+Use consistent, precise terminology when describing organisational design and work structures:
+
+**Default term**: Use "systems of work" when describing processes, practices, funding flows, decision patterns, and governance mechanics.
+
+**Executive context**: When addressing executives, boards, investors, or C-suite audiences, prefer "operating model" or "operating model hygiene" over "systems of work".
+
+**Banned terms**: Never introduce or reintroduce "ways of working", "ways of work", or "mindset shifts" as preferred terms. These are vague and lack precision.
+
+**Software systems**: If discussing software systems, technology architecture, or platforms, use explicit terms like "software systems", "technical architecture", or "platforms" to avoid ambiguity with "systems of work".
+
+### Example Rewrites
+
+**Before**: "Teams adopt new ways of working and mindset shifts."
+**After**: "Teams adopt new systems of work that enable continuous improvement."
+
+**Before**: "The organisation's ways of work support rapid learning."
+**After**: "The organisation's systems of work support rapid learning."
+
+**Executive context before**: "Your systems of work enable faster delivery."
+**Executive context after**: "Your operating model enables faster delivery."
+
+### Decision Rule
+
+- If describing how work is designed to flow (processes, practices, governance, funding): use "systems of work".
+- If speaking to executives about organisational design and constraints: use "operating model".
+- If discussing software, platforms, or technical architecture: use explicit technical terms, not "systems".
