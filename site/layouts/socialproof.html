@@ -17,9 +17,9 @@
   {{- $sortedQuotes := sort $quotes "date" "desc" -}}
 
   <nav class="d-flex justify-content-start gap-2 mb-4 flex-wrap">
-    <a href="/social-proof/" class="btn btn-sm {{- if not $category }}btn-primary{{- else }}btn-outline-primary{{- end }}">All ({{ len .Site.Data.socialproof.quotes }})</a>
-    <a href="/social-proof/consulting/" class="btn btn-sm {{- if eq $category "consulting" }}btn-primary{{- else }}btn-outline-primary{{- end }}">Consulting ({{ len (where .Site.Data.socialproof.quotes "category" "consulting") }})</a>
-    <a href="/social-proof/training/" class="btn btn-sm {{- if eq $category "training" }}btn-primary{{- else }}btn-outline-primary{{- end }}">Training ({{ len (where .Site.Data.socialproof.quotes "category" "training") }})</a>
+    <a href="/social-proof/" class="btn btn-sm {{ if not $category }}btn-primary{{ else }}btn-outline-primary{{ end }}">All ({{ len .Site.Data.socialproof.quotes }})</a>
+    <a href="/social-proof/consulting/" class="btn btn-sm {{ if eq $category "consulting" }}btn-primary{{ else }}btn-outline-primary{{ end }}">Consulting ({{ len (where .Site.Data.socialproof.quotes "category" "consulting") }})</a>
+    <a href="/social-proof/training/" class="btn btn-sm {{ if eq $category "training" }}btn-primary{{ else }}btn-outline-primary{{ end }}">Training ({{ len (where .Site.Data.socialproof.quotes "category" "training") }})</a>
   </nav>
 
   <div class="text-muted mb-4" style="font-size: 0.9rem;">
