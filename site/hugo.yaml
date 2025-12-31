@@ -39,9 +39,6 @@ sitemap:
 
 menus:
   main:
-    - name: Home
-      pageRef: /
-      weight: 20
 
     - name: Problems I Solve
       identifier: problems
