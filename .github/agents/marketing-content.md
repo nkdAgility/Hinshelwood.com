@@ -117,7 +117,7 @@ Teams achieve [engineering excellence]({{< ref "outcomes/engineering-excellence/
 ### Reference Problems
 Address reader pain points directly:
 ```markdown
-If your [DevOps transformation is stalling]({{< ref "problems/devops/index.md" >}}), you're not alone.
+If your [DevOps enablement is stalling]({{< ref "problems/devops/index.md" >}}), you're not alone.
 ```
 
 ## Quality Standards

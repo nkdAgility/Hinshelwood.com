@@ -19,7 +19,7 @@ Every case study must include:
 - Start with the outcome. Lead with the impact, not the backstory.
 - Use real numbers. "Reduced deployment time by 60%" beats "significantly improved."
 - Show your work. Explain the reasoning behind decisions.
-- Avoid generic consulting speak. "We partnered to drive transformation" says nothing.
+- Avoid generic consulting speak. "We partnered to drive enablement" says nothing.
 - Make it scannable. Use subheadings for each major section.
 
 ## Front Matter Requirements

@@ -135,7 +135,7 @@ Ask yourself:
 title: "Client Name or Problem Focus"
 date: YYYY-MM-DD
 description: "One sentence outcome with metrics"
-tags: ["devops", "azure-devops", "transformation"]
+tags: ["devops", "azure-devops", "enablement"]
 categories: ["case-studies"]
 ---
 ```
@@ -158,7 +158,7 @@ hugo --config hugo.yaml,hugo.local.yaml --logLevel info
 
 ## Common Scenarios
 
-### Technology Transformations
+### Technology Modernisation
 Document:
 - Previous tech stack and limitations
 - Migration approach and timeline

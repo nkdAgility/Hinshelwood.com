@@ -37,7 +37,7 @@ They come because they need to:
 - Scale without creating coordination drag
 - Turn engineering into a revenue-enabling capability
 - Make better decisions with less noise and fewer opinions
-- Stop transformation theatre and start seeing measurable change
+- Stop readiness theatre and start seeing measurable change
 
 Everything I do is designed to support those outcomes.
 
@@ -55,7 +55,7 @@ That system includes:
 - How leadership behaviour shapes outcomes
 
 I do not take work away from your teams.  
-I do not “run” your transformation.  
+I do not "run" your enablement.  
 I help you **understand and lead your system more effectively**.
 
 ---

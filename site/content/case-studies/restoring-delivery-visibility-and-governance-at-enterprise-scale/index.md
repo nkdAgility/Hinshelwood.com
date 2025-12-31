@@ -67,7 +67,7 @@ This was not a people problem. It was the inevitable outcome of unmanaged decent
 
 The engagement combined system design, automation, and leadership alignment.
 
-Senior leaders were supported through a multi-year transformation that included:
+Senior leaders were supported through a multi-year modernisation that included:
 
 * **Creation of a single, standard work model**
   A unified organisational process was defined, enabling consistent work item structure, traceability, and reporting without forcing identical workflows.

@@ -131,7 +131,7 @@ That is where leverage is lost.
 
 I work with leadership teams who recognise that scaling has become a constraint rather than an advantage.
 
-Not to run a transformation.
+Not to run an enablement programme.
 Not to “fix” teams.
 Not to implement a framework.
 

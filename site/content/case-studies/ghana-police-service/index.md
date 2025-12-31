@@ -52,7 +52,7 @@ The advisory stance was deliberate:
 
 Instead, the work focused on establishing a **repeatable decision-to-delivery capability** at the top of the organisation, while simultaneously proving that the approach could operate inside real policing constraints.
 
-The Inspector General assumed direct ownership of transformation priorities. Leadership objectives were converted into short execution cycles with visible outcomes and measurable feedback. Progress was reviewed publicly. Failures were treated as data, not blame.
+The Inspector General assumed direct ownership of enablement priorities. Leadership objectives were converted into short execution cycles with visible outcomes and measurable feedback. Progress was reviewed publicly. Failures were treated as data, not blame.
 
 At the same time, cross-rank teams, including both officers and civilians, were required to deliver tangible results against real institutional problems. Not simulations. Not case studies. Real work, in real time.
 
@@ -69,7 +69,7 @@ Within weeks, the organisation began to behave differently.
 Concrete outcomes followed quickly:
 
 * New public-facing digital services delivered incrementally, not as multi-year projects
-* National transformation priorities surfaced from the field, not imposed centrally
+* National capability priorities surfaced from the field, not imposed centrally
 * Regional teams initiated their own improvements using the same execution rhythm
 * Leadership conversations moved from opinion to evidence
 
@@ -81,7 +81,7 @@ Most importantly, scepticism dissolved without persuasion. Experience replaced b
 
 This engagement demonstrated a truth many executives recognise but rarely address directly:
 
-> Transformation fails when leaders outsource change to programmes instead of owning it as a discipline.
+> Enablement fails when leaders outsource change to programmes instead of owning it as a discipline.
 
 The Ghana Police Service did not “adopt” anything. They built an internal capability to decide, execute, review, and adapt, under pressure, across a hierarchy.
 

@@ -55,17 +55,17 @@ This creates **capability uplift**, not temporary acceleration.
 
 ## Why organisations trust me
 
-I bring over **20 years of hands-on engineering and transformation experience** across global enterprises, financial services, technology firms, and scale-ups.
+I bring over **20 years of hands-on engineering and enablement experience** across global enterprises, financial services, technology firms, and scale-ups.
 
 I am a **17-time Microsoft MVP (DevOps & GitHub)** and a long-standing **Professional Scrum Trainer and Professional Kanban Trainer**, with deep experience in Azure DevOps, GitHub, CI/CD, platform engineering, and operating-model design.
 
-I have led and advised transformations at organisations including Microsoft, global financial institutions, and complex regulated environments, always with a focus on **execution discipline and measurable outcomes**.
+I have led and advised modernisation at organisations including Microsoft, global financial institutions, and complex regulated environments, always with a focus on **execution discipline and measurable outcomes**.
 
 ---
 
 ## What makes this different
 
-Most transformations fail because they focus on frameworks, tools, or ceremonies.
+Most enablement fails because they focus on frameworks, tools, or ceremonies.
 
 My work focuses on **how work actually flows**, how decisions are made, and how engineering systems behave under real pressure.
 

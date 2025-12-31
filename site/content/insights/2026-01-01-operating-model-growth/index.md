@@ -153,7 +153,7 @@ The shift requires:
 * Redefining leadership as system stewardship
 * Allowing teams to shape how work actually happens
 
-This is not a multi-year transformation programme.
+This is not a multi-year enablement programme.
 It is a **decision**, followed by disciplined execution.
 
 ## The Real Question

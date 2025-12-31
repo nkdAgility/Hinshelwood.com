@@ -86,7 +86,7 @@ At scale, unclear AI inputs become business risk.
 - Delivery confidence drops
 - Leaders stop trusting forecasts and recommendations
 - Manual checks creep back into automated workflows
-- “AI transformation” becomes an expensive side project
+- "AI enablement" becomes an expensive side project
 
 The organisation is doing AI work, but not becoming an AI-capable organisation.
 

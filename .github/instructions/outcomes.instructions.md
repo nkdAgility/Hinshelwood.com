@@ -3,7 +3,7 @@ applyTo:
   - site/content/outcomes/**
 ---
 
-Outcome pages describe the measurable results and business value clients achieve. Focus on transformation and tangible impact, not process descriptions.
+Outcome pages describe the measurable results and business value clients achieve. Focus on capability development and tangible impact, not process descriptions.
 
 ## Content Requirements
 
@@ -54,7 +54,7 @@ categories: ["outcomes"]
 
 ## Avoid
 
-- Vague transformation promises
+- Vague enablement promises
 - Outcomes that can't be measured or verified
 - Process outputs masquerading as outcomes ("implemented Scrum" is not an outcome)
 - Ignoring the effort required
