@@ -1,5 +1,6 @@
 ---
 title: Predictable Delivery Without Increasing Engineering Risk
+subtitle: Engineering Excellence that allows leaders to commit with confidence and scale without hidden risk
 shortTitle: Engineering Excellence
 date: 2026-01-01
 slug: engineering-excellence
@@ -46,7 +47,6 @@ It is capital committed earlier than it should be, options closed before they ar
 
 They are signals that engineering excellence is missing at the **system level**, not the individual level.
 
----
 
 ## What Leaders Actually Mean When They Say “We Need Engineering Excellence”
 
@@ -64,8 +64,6 @@ They ask because they need to:
 Engineering excellence is the **condition** that makes those outcomes possible.
 
 Without it, every initiative costs more than expected and teaches less than it should.
-
----
 
 ## The Cost of Weak Engineering Excellence
 
@@ -85,7 +83,6 @@ From the inside, learning slows and risk accumulates quietly.
 This is why problems labelled as DevOps, scaling, or AI reliability often share the same root cause.
 This is why many organisations “improve” engineering for years without seeing strategic impact.
 
----
 
 ## Engineering Excellence Is an Operating-Model Issue
 
@@ -111,8 +108,6 @@ In other words, engineering excellence is the result of **deliberate operating-m
 These conditions do not emerge accidentally.
 They reflect how leadership has chosen to balance speed, risk, and control over time.
 
----
-
 ## What Changes When Engineering Excellence Is in Place
 
 When engineering excellence exists as a capability, leaders experience tangible shifts:
@@ -125,8 +120,6 @@ When engineering excellence exists as a capability, leaders experience tangible 
 * Improvement compounds instead of resetting each year
 
 Engineering stops being a risk to manage and becomes a **strategic asset**.
-
----
 
 ## How I Help
 
@@ -146,8 +139,6 @@ This is not delivery execution.
 
 It is **capability enablement at the points of highest leverage**.
 
----
-
 ## Who This Is For
 
 This work is relevant if:
@@ -159,8 +150,6 @@ This work is relevant if:
 * Engineering effort is high, but confidence is low
 
 If engineering excellence is spoken about but not felt in results, this is the gap.
-
----
 
 ## The Question That Matters
 

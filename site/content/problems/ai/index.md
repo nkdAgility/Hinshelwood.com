@@ -38,8 +38,6 @@ AI simply makes these issues visible, faster and at scale.
 
 This page is for leaders who recognise that problem and want AI to move from experimentation to dependable value.
 
----
-
 ## Stage 1: Excitement Turns into Friction
 
 The journey usually starts with optimism.
@@ -61,8 +59,6 @@ At this stage, AI feels expensive and fragile.
 Most organisations respond by adding more tools, more data, or more governance.
 
 None of those address the root cause.
-
----
 
 ## Stage 2: Leaders Realise AI Is a Clarity Problem
 
@@ -87,8 +83,6 @@ It magnifies them.
 
 This is also where many AI programmes stall permanently.
 
----
-
 ## Stage 3: The Cost of Ambiguity Becomes Visible
 
 At scale, unclear AI inputs become business risk.
@@ -102,8 +96,6 @@ At scale, unclear AI inputs become business risk.
 The organisation is doing AI work, but not becoming an AI-capable organisation.
 
 This is the moment where enablement matters.
-
----
 
 ## Stage 4: Enablement Means Making the Organisation Legible
 
@@ -122,7 +114,6 @@ It is about creating the conditions where AI can operate safely and predictably:
 
 When these exist, AI stops producing “interesting output” and starts producing trusted signals.
 
----
 
 ## Stage 5: AI Becomes a Multiplier, Not a Risk
 
@@ -139,8 +130,6 @@ AI no longer feels fragile.
 It becomes boring, predictable, and useful.
 
 That is success.
-
----
 
 ## How I Help
 
@@ -159,8 +148,6 @@ This work sits at the intersection of leadership, delivery, and decision-making.
 The outcome is not “doing more AI”.  
 It is building an organisation that AI can actually serve.
 
----
-
 ## Who This Is For
 
 This work is relevant if:
@@ -172,8 +159,6 @@ This work is relevant if:
 - You want AI to compound, not reset every quarter
 
 If your organisation is already buying AI tools but still relying on heroics, this is the gap.
-
----
 
 ## The Real Question
 

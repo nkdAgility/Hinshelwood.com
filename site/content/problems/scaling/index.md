@@ -39,8 +39,6 @@ If scaling has made everything harder rather than easier, you are not alone, and
 
 You are experiencing the consequences of how your organisation is designed to scale.
 
----
-
 ## The Moment Scaling Starts to Hurt
 
 Scaling problems rarely show up as collapse.
@@ -57,7 +55,6 @@ This is usually blamed on communication, process, or middle management.
 
 It is none of those things.
 
----
 
 ## Why Execution Isn’t the Constraint
 
@@ -80,8 +77,6 @@ You preserved assumptions that only worked when the organisation was smaller.
 
 The result is a system that looks busy, but loses leverage as it grows.
 
----
-
 ## When Growth Starts to Feel Risky
 
 As scale increases, growth decisions begin to feel heavier than they should.
@@ -97,8 +92,6 @@ This is the point where growth leaders feel trapped.
 They are accountable for outcomes, but constrained by a system that requires certainty before learning.
 
 Growth slows not because opportunity disappears, but because the organisation cannot safely adapt while opportunity still exists.
-
----
 
 ## Why This Escalates to the Board
 
@@ -119,8 +112,6 @@ From the inside, adaptability is collapsing.
 This is not a delivery failure.
 It is a governance and operating-model problem.
 
----
-
 ## What This Really Is
 
 This is not about Agile.
@@ -137,8 +128,6 @@ Every organisation makes an implicit trade-off between:
 Most never revisit that trade-off as they grow.
 
 That is where leverage is lost.
-
----
 
 ## Where I Come In
 
@@ -158,8 +147,6 @@ I don’t own delivery.
 I don’t promise outcomes I can’t control.
 
 I help leaders steward their operating model deliberately, rather than inheriting it by accident.
-
----
 
 ## The Question That Matters
 

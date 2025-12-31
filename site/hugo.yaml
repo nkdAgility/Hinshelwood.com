@@ -70,19 +70,19 @@ menus:
       parent: outcomes
       weight: 31
 
-    - name: Faster, Safer Technical Decisions at Scale
+    - name: Reducing Decision Risk at Scale
       pageRef: /outcomes/technical-leadership/
       parent: outcomes
       weight: 32
 
-    - name: What I do
+    - name: How I Work With Leaders
       pageRef: /about/
       weight: 50
 
-    - name: Insights
+    - name: Executive Insights
       pageRef: /insights/
       weight: 60
     
-    - name: Case Studies
+    - name: Evidence of Success
       pageRef: /case-studies/
       weight: 70

@@ -1,6 +1,6 @@
 ---
-title: About Martin Hinshelwood Engineering Leadership and Delivery Systems Consultant
-shortTitle: About Martin Hinshelwood
+title: Martin Hinshelwood Engineering Leadership and Delivery Systems Consultant
+shortTitle: Martin Hinshelwood
 keywords: ["Martin Hinshelwood","engineering leadership consultant","software delivery consulting","engineering operating model","delivery constraints","predictable delivery","flow efficiency","Azure DevOps consulting","GitHub consulting","technical leadership","engineering excellence","systems of work","AI-enabled engineering","DevOps consulting"]
 date: 2026-01-01
 slug: about
@@ -21,7 +21,6 @@ My role is not to “do DevOps for you”.
 
 My role is to **strengthen your organisation’s ability to deliver software reliably, predictably, and at speed**, without creating dependency on consultants.
 
----
 
 ## What clients engage me to achieve
 
@@ -35,8 +34,6 @@ Clients typically engage me when they need to:
 - Introduce AI-enabled engineering practices safely and pragmatically  
 
 The outcome is **stronger flow, clearer signals, and leadership confidence in delivery**.
-
----
 
 ## How I work
 
@@ -52,8 +49,6 @@ My work focuses on:
 
 This creates **capability uplift**, not temporary acceleration.
 
----
-
 ## Why organisations trust me
 
 I bring over **20 years of hands-on engineering and enablement experience** across global enterprises, financial services, technology firms, and scale-ups.
@@ -62,8 +57,6 @@ I am a **17-time Microsoft MVP (DevOps & GitHub)** and a long-standing **Profess
 
 I have led and advised modernisation at organisations including Microsoft, global financial institutions, and complex regulated environments, always with a focus on **execution discipline and measurable outcomes**.
 
----
-
 ## What makes this different
 
 Most enablement fails because they focus on frameworks, tools, or ceremonies.
@@ -71,8 +64,6 @@ Most enablement fails because they focus on frameworks, tools, or ceremonies.
 My work focuses on **how work actually flows**, how decisions are made, and how engineering systems behave under real pressure.
 
 That is where predictability, speed, and quality are either enabled or constrained.
-
----
 
 ## When this is a fit
 
@@ -85,7 +76,6 @@ This is a fit if:
 
 If you are looking for a vendor to “run DevOps for you”, this is not a fit.
 
----
 
 ## Credentials (for those who care)
 
@@ -94,8 +84,6 @@ If you are looking for a vendor to “run DevOps for you”, this is not a fit.
 - Professional Kanban Trainer
 - Author and long-time engineering thought leader  
 - Founder of Naked Agility  
-
----
 
 ## Next step
 

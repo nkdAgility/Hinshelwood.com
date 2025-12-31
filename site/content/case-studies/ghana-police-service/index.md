@@ -20,8 +20,6 @@ The Inspector General of Police, **David Asante-Apeatu**, had publicly committed
 
 The real problem was not policing capability. It was execution capability.
 
----
-
 ### The Executive Challenge
 
 The leadership question was not “What should we change?”
@@ -38,8 +36,6 @@ The organisation was optimised for control and compliance, not for learning, ins
 
 The leadership needed a way to **practice change**, not discuss it.
 
----
-
 ### Advisory Strategy
 
 NKD Agility was engaged, alongside a regional delivery partner, to work directly with the Inspector General and his senior leadership team.
@@ -55,8 +51,6 @@ Instead, the work focused on establishing a **repeatable decision-to-delivery ca
 The Inspector General assumed direct ownership of enablement priorities. Leadership objectives were converted into short execution cycles with visible outcomes and measurable feedback. Progress was reviewed publicly. Failures were treated as data, not blame.
 
 At the same time, cross-rank teams, including both officers and civilians, were required to deliver tangible results against real institutional problems. Not simulations. Not case studies. Real work, in real time.
-
----
 
 ### What Changed
 
@@ -75,8 +69,6 @@ Concrete outcomes followed quickly:
 
 Most importantly, scepticism dissolved without persuasion. Experience replaced belief. People changed their behaviour because the system required it and rewarded it.
 
----
-
 ### Business Insight for Leaders
 
 This engagement demonstrated a truth many executives recognise but rarely address directly:
@@ -86,8 +78,6 @@ This engagement demonstrated a truth many executives recognise but rarely addres
 The Ghana Police Service did not “adopt” anything. They built an internal capability to decide, execute, review, and adapt, under pressure, across a hierarchy.
 
 The advisory value was not in providing answers. It was in designing conditions where answers emerged through action.
-
----
 
 ### Why This Matters to Senior leaders
 

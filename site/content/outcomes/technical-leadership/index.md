@@ -1,9 +1,10 @@
 ---
-title: Faster, Safer Technical Decisions at Scale
+title: Reducing Decision Risk Without Centralising Control
+subtitle: "Technical leadership that enables faster, safer decisions as organisations scale"
 shortTitle: Technical Leadership
 date: 2026-01-01
 slug: technical-leadership
-description: "Faster, safer technical decisions that scale with organisational growth. Reduce delivery risk, shorten decision latency, and strengthen engineering outcomes without centralising control or relying on a few senior individuals."
+description: "Reducing decision risk as organisations scale, without centralising control or creating dependency on a few senior individuals. Strengthen technical judgment, shorten decision latency, and improve delivery confidence through operating models that allow technical decisions to scale safely."
 keywords: [
   "technical leadership",
   "engineering leadership",
@@ -36,8 +37,6 @@ This shows up as missed commitments, late technical surprises, and confidence ga
 
 This page is for leaders who are technically accountable, but structurally constrained.
 
----
-
 ## The Problem Technical Leaders Actually Face
 
 Most organisations believe their technical problems are execution problems.
@@ -59,8 +58,6 @@ None of this is caused by poor engineers.
 
 It is caused by **unclear technical authority, weak decision hygiene, and operating models that do not scale judgment**.
 
----
-
 ## What Effective Technical Leadership Changes
 
 Strong technical leadership does not “fix” teams.
@@ -79,8 +76,6 @@ When technical leadership is working, organisations experience:
 The outcome is not more control.
 
 The outcome is **more leverage**.
-
----
 
 ## Why This Breaks at Scale
 
@@ -102,8 +97,6 @@ They are accountable for outcomes they can no longer directly influence.
 
 Over time, this converts technical leadership from a leverage function into a personal risk position.
 
----
-
 ## What This Work Actually Focuses On
 
 This is not coaching engineers to “think differently”.
@@ -121,8 +114,6 @@ The work focuses on:
 
 This is leadership enablement, not execution support.
 
----
-
 ## How Leaders Use This Work
 
 Leaders engage this work when they need to:
@@ -135,8 +126,6 @@ Leaders engage this work when they need to:
 * Ensure technology enables strategy rather than limits it
 
 The result is **an organisation that can move faster without betting the company each time**.
-
----
 
 ## What This Is Not
 
@@ -152,8 +141,6 @@ If you are looking for someone to “own” your technical problems, this is not
 
 If you want your organisation to **become capable of owning them**, it is.
 
----
-
 ## When This Is a Fit
 
 This work is relevant if:
@@ -165,8 +152,6 @@ This work is relevant if:
 * You want technical leadership to outlast any individual
 
 If technical leadership currently depends on a few heroic people, it is already a risk.
-
----
 
 ## The Real Question
 

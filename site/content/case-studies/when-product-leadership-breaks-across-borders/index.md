@@ -31,7 +31,6 @@ The leadership tension was subtle but corrosive:
 
 The organisation wasn’t failing due to capability. It was failing due to **misaligned leadership assumptions**.
 
----
 
 ### The Initial Request, and the Real Problem
 
@@ -50,8 +49,6 @@ Processes existed. Context did not.
 Good people existed. Alignment did not.
 
 This was a **system failure**, not an individual one.
-
----
 
 ### The Leadership Diagnosis
 
@@ -72,8 +69,6 @@ Several constraints became immediately visible:
   Leaders wanted empowerment, but continued to intervene when discomfort appeared. Teams noticed. Trust eroded.
 
 From a senior leadership lens, the risk was clear: **the organisation was scaling cost faster than clarity**.
-
----
 
 ### The Intervention: Mentorship, Not Instruction
 
@@ -101,8 +96,6 @@ The other solved it within existing constraints.
 
 That contrast did more to reset leadership thinking than any slide deck could have.
 
----
-
 ### What Changed for Leadership
 
 Within eight weeks, the shifts were unmistakable.
@@ -123,7 +116,6 @@ One executive captured it succinctly after a full day of intense work across tim
 
 > “They were still engaged, still thinking, still asking how to make this work. That’s when I knew this wasn’t just training.”
 
----
 
 ### Why This Matters to Senior Leaders
 
@@ -134,8 +126,6 @@ You cannot scale decision-making without redesigning trust.
 You cannot fix leadership problems by sending people on courses.
 
 What changed here was not capability, but **operating conditions**.
-
----
 
 ### The Leadership Takeaway
 
