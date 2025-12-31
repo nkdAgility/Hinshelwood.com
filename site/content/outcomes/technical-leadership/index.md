@@ -32,6 +32,8 @@ Senior leaders rarely suffer from a lack of ideas, tools, or talent.
 
 They suffer from **decision drag**, **invisible risk**, and **systems of work that no longer support the outcomes they are accountable for**.
 
+This shows up as missed commitments, late technical surprises, and confidence gaps that surface at board level.
+
 This page is for leaders who are technically accountable, but structurally constrained.
 
 ---
@@ -98,6 +100,8 @@ At this point, even strong technical leaders feel exposed.
 
 They are accountable for outcomes they can no longer directly influence.
 
+Over time, this converts technical leadership from a leverage function into a personal risk position.
+
 ---
 
 ## What This Work Actually Focuses On
@@ -123,7 +127,7 @@ This is leadership enablement, not execution support.
 
 Leaders engage this work when they need to:
 
-* Restore confidence in engineering delivery
+* Restore confidence in engineering delivery decisions that currently feel higher risk than they should
 * Reduce platform friction without centralising control
 * Scale engineering without multiplying coordination cost
 * Make better technical trade-offs under uncertainty
@@ -143,7 +147,7 @@ This is not:
 * A transformation initiative
 * A DevOps or Agile implementation
 * A delegation of technical responsibility
-
+If your current approach relies on escalation, exception handling, or stronger personalities, it will not scale.
 If you are looking for someone to “own” your technical problems, this is not a fit.
 
 If you want your organisation to **become capable of owning them**, it is.
@@ -170,7 +174,7 @@ Before adding more governance, roles, or tools, ask this:
 
 **Where does technical judgment live in our organisation, and what prevents it from scaling safely?**
 
-If that answer is unclear, technical leadership is already constraining your outcomes.
+If that answer is unclear, technical leadership is already constraining outcomes, whether you acknowledge it or not.
 
 ---
 
