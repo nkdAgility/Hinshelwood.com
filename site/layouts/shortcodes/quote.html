@@ -1,0 +1,48 @@
+{{- $id := .Get "id" -}}
+{{- $name := .Get "name" -}}
+{{- $date := .Get "date" -}}
+{{- $relationship := .Get "relationship" -}}
+{{- $class := .Get "class" -}}
+
+{{- $quote := "" -}}
+
+{{- if $id -}}
+  {{- $quote = index (where $.Site.Data.socialproof.quotes "id" $id) 0 -}}
+{{- else if and $name $date -}}
+  {{- range $.Site.Data.socialproof.quotes -}}
+    {{- if and (eq .name $name) (eq .date $date) -}}
+      {{- $quote = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if and $name $relationship -}}
+  {{- range $.Site.Data.socialproof.quotes -}}
+    {{- if and (eq .name $name) (eq .relationship $relationship) -}}
+      {{- $quote = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if and $name $class -}}
+  {{- range $.Site.Data.socialproof.quotes -}}
+    {{- if and (eq .name $name) (eq .class $class) -}}
+      {{- $quote = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if $name -}}
+  {{- $quote = index (where $.Site.Data.socialproof.quotes "name" $name) 0 -}}
+{{- end -}}
+
+{{- with $quote -}}
+<blockquote class="testimonial">
+  <p>{{ .text }}</p>
+  <footer>
+    <cite>
+      <strong>{{ .name }}</strong>
+      {{- with .title }}{{ if ne . "" }} - {{ . }}{{ end }}{{ end -}}
+      {{- with .relationship }} ({{ . }}){{ end -}}
+      {{- with .class }} - {{ . | upper }}{{ end -}}
+      {{- with .stars }} - {{ range seq . }}⭐{{ end }}{{ end -}}
+    </cite>
+  </footer>
+</blockquote>
+{{- else -}}
+<p><em>Quote not found</em></p>
+{{- end -}}
