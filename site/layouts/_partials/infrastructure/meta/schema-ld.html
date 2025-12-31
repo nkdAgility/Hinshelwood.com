@@ -1,0 +1,53 @@
+{{- /* JSON-LD Structured Data - Site-level only, page content uses inline microdata */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ printf "%s#person" site.BaseURL }},
+      "name": {{ site.Params.author }},
+      "url": {{ site.BaseURL }},
+      {{- with site.Params.twitter_handle }}
+      "sameAs": [{{ . | replaceRE "@" "https://twitter.com/" }}],
+      {{- end }}
+      "jobTitle": "Independent Consultant",
+      "description": {{ site.Params.description }},
+      "knowsAbout": ["DevOps", "Agile", "Lean", "AI Enablement", "Technical Leadership", "Systems of Work", "Azure DevOps", "GitHub"]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": {{ printf "%s#organization" site.BaseURL }},
+      "name": {{ site.Title }},
+      "url": {{ site.BaseURL }},
+      "founder": {
+        "@id": {{ printf "%s#person" site.BaseURL }}
+      },
+      "description": {{ site.Params.description }},
+      "areaServed": "Global",
+      "serviceType": "Professional Consulting",
+      "priceRange": "$$$$"
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ printf "%s#website" site.BaseURL }},
+      "url": {{ site.BaseURL }},
+      "name": {{ site.Title }},
+      "description": {{ site.Params.description }},
+      "publisher": {
+        "@id": {{ printf "%s#person" site.BaseURL }}
+      },
+      "inLanguage": "en-GB",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": {{ printf "%s?s={search_term_string}" site.BaseURL }}
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+

@@ -1,4 +1,4 @@
-baseURL: "https://yellow-pond-042d21b03-#{PR_Number}#.westeurope.5.azurestaticapps.net/"
+baseURL: "https://calm-island-0dc928510-#{PR_Number}#.centralus.4.azurestaticapps.net/"
 environment: "canary"
 minifyOutput: true
 
