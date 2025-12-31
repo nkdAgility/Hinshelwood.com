@@ -1,6 +1,15 @@
 /* Global readable width */
 .container {
   max-width: 40rem;
+  padding-left: 1.5rem;  /* 24px side margins on mobile */
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;  /* 32px side margins on tablet and up */
+    padding-right: 2rem;
+  }
 }
 
 @media (min-width: 992px) { /* Bootstrap lg */
