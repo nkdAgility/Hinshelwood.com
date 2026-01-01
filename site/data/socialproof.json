@@ -215,6 +215,7 @@
       "title": "✨Leadership ⛵️ Culture 🎤 Speaking 🎢 Founder 💻 Women in Tech & Leadership Advocate",
       "date": "2017-10-08",
       "relationship": "Client",
+      "buyer": true,
       "category": "consulting",
       "text": "Martin's depth and breadth of knowledge and experience of the world of Agile/DevOps is incredible. He will switch between hands on development to advanced consulting or training on process, practices and tools to help you in your own DevOps journey. When the going gets tough in challenging situations he is super responsive and goes the extra mile to find solutions. He is passionate about what he does and is always trying to improve the way we work to build high value products and solutions. In particular his knowledge of all things TFS/VSTS is second to none. Down to earth and straight talking. Highly recommend!",
       "id": "UB9YRG79",
@@ -225,6 +226,7 @@
       "title": "Director Quality Engineering at Wondr Health",
       "date": "2017-09-05",
       "relationship": "Client",
+      "buyer": true,
       "text": "Martin came to our organization to deliver the Scrum Foundations class and it was a complete pleasure to have him. He really knows his stuff, and was so patient and pragmatic with his knowledge that he won the respect of our most stubborn skeptics. Martin has the ability to get all sorts of people truly excited about the possibilities of Scrum, and the class he teaches then sets them up for success. He was also very generous with his time when we hung around for lots of overtime implementation questions, for which we are very grateful.",
       "id": "HKQ8DE56",
       "category": "training",
@@ -236,6 +238,7 @@
       "date": "2016-10-31",
       "relationship": "Client",
       "category": "consulting",
+      "buyer": true,
       "text": "Martin cuts to the chase with whatever you throw at him. Having worked with him extensively over the last 3 years, I can strongly recommend Martin whether your needs are broadly across the Software Application Lifecycle Development spectrum (including scrum training) or deeply into the most complex enterprise wide Team Foundation Server / Visual Studio Team Services migrations. This is a fast moving field in which Martin typically provides rapid responses and solutions, or facilitates them through his worldwide network. More than happy to talk with anyone needing further encouragement to engage in his services!",
       "id": "8MXE929U",
       "weight": 20
@@ -267,6 +270,7 @@
       "relationship": "Client",
       "text": "Martin is an excellent trainer with incredible in-depth knowledge of TFS/ALM/SCRUM. It was an pleasure to spend 2 days with him learning advanced Team Foundation Server topics and I sincerely hope that I will have the opportunity to work with him again.",
       "id": "8CKMQAWC",
+      "buyer": true,
       "category": "consulting",
       "weight": 180
     },
@@ -275,6 +279,7 @@
       "title": "Development Operations Manager",
       "date": "2014-01-13",
       "relationship": "Client",
+      "buyer": true,
       "category": "consulting",
       "text": "Martin has a deep and comprehensive understanding of Team Foundation Server and its implementation. His knowledge of Scrum combined with understanding the business need, give formidable insights into what process improvements are required and how they might be made.",
       "id": "7H7H3D2R",
@@ -287,7 +292,8 @@
       "relationship": "Client",
       "text": "Martin did Scrum training for Backcountry through Scrum.org for three days and I must say it was very useful three days for us. The whole team of about 50+ people thoroughly enjoyed the training and got a lot out of it. In addition to great material and exercises Martin had a great style of delivery and won the respect of everyone including our engineers, which is a big deal. In addition to the in-class effort, Martin was also very forthcoming in helping folks outside class and still communicates with members of the team via e-mail. Great guy, very knowledgeable & great trainer. Highly recommend him and wish him the best.",
       "id": "HXMPFUEA",
-      "category": "training",
+      "buyer": true,
+      "category": "consulting",
       "weight": 600
     },
     {
@@ -336,6 +342,7 @@
       "date": "2011-10-15",
       "relationship": "Client",
       "category": "consulting",
+      "buyer": true,
       "text": "I have been in IT hiring consultants on and off for 15 years. Martin is BY FAR the most knowledgeable consultant in breadth and depth I have ever had the privilege of working with. He was not only intelligent and skilled, his personality made him a joy to work with. If you need TFS or Scrum consulting, Martin is your man!!",
       "id": "W72KAYY8",
       "weight": 40
@@ -346,6 +353,7 @@
       "date": "2011-04-03",
       "relationship": "Client",
       "category": "consulting",
+      "buyer": true,
       "text": "Thanks to Martin's guidance and support we successfully upgraded to TFS 2010 from an unstable TFS 2005 database, moved our dev team to Visual Studio 2010 and implemented the finest product build process ever known! I would recommend Martin to anyone, in fact I would insist they use him as he's the best ALM consultant I've worked with.",
       "id": "33MHKUH7",
       "weight": 18

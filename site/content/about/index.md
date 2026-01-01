@@ -57,6 +57,8 @@ I am a **17-time Microsoft MVP (DevOps & GitHub)** and a long-standing **Profess
 
 I have led and advised modernisation at organisations including Microsoft, global financial institutions, and complex regulated environments, always with a focus on **execution discipline and measurable outcomes**.
 
+{{< quote id="8MXE929U" >}}
+
 ## What makes this different
 
 Most enablement fails because they focus on frameworks, tools, or ceremonies.
@@ -73,6 +75,8 @@ This is a fit if:
 - You want measurable improvement, not methodology adoption  
 - You value strong engineering judgment over dogma  
 - You want your organisation to get better after I leave  
+
+{{< quote id="W72KAYY8" >}}
 
 ## When this is NOT a fit
 
