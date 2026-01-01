@@ -19,7 +19,7 @@
 {{- else -}}
   <div>
     {{- range $pages -}}
-      <div class="mb-4 pb-4 border-bottom">
+      <div class="mb-2 pb-2 border-bottom">
         {{ partial "components/social-proof.html" (dict "page" . "truncate" $truncate "showBadges" $showBadges) }}
       </div>
     {{- end -}}

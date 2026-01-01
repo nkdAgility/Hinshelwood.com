@@ -1,7 +1,7 @@
 /* Social proof blockquotes */
 blockquote.social-proof {
   position: relative;
-  margin: 2rem 0;
+  margin: 0;
   padding: 1.5rem 2rem 1.5rem 3rem;
   background-color: #f8f9fa;
   border-left: 4px solid #0066cc;
