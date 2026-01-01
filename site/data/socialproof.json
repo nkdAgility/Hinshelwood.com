@@ -367,7 +367,7 @@
       "relationship": "Colleague",
       "text": "Martin is a great ALM guy who really knows his stuff. He has valuable knowledge in this space and is well respected.",
       "id": "XMHAEQMR",
-      "category": "training",
+      "category": "fte",
       "weight": 220
     },
     {
@@ -395,7 +395,7 @@
       "title": "Retirement unless something interesting from somebody I know turns up!",
       "date": "2010-09-17",
       "relationship": "Colleague",
-      "category": "consulting",
+      "category": "fte",
       "text": "Martin fully understands the importance of process in software development and is particularly good at keeping teams focused and on track. His knowledge and blogging seem limitless in this arena and he knows ALM & TFS inside out. He is also a joy to work with,",
       "id": "9258XX9Q",
       "weight": 75
@@ -407,7 +407,7 @@
       "relationship": "Colleague",
       "text": "Working with Martin was a pleasure. His knowledge inspires learning and he makes the work environment a enjoyable place with his sense of humor.",
       "id": "2MVN6S2T",
-      "category": "training",
+      "category": "fte",
       "weight": 800
     },
     {
@@ -415,7 +415,7 @@
       "title": "Innovation Leader, Inventor, Entrepreneur, Technologist",
       "date": "2010-09-13",
       "relationship": "Colleague",
-      "category": "consulting",
+      "category": "fte",
       "text": "I had the pleasure to work with Martin at SSW. He was an extremely capable professional who picked up new technology with ease and joined project teams quickly and with passion. The depth of his knowledge and his work ethic made him a \"go to\" person in our organisation soon after he started. Martin showed particular knowledge and interest in ALM and contributed significantly to the improvement of ALM rules and procedures while at SSW. He made those practices available not only internally, but also made them available to the IT community in his blog, where they were widely read and positively received. Martin also advanced the SSW engineering practices through his involvement with the Visual Studio ALM Rangers and his work within SSW during our introduction of Scrum as our primary development planning and tracking methodology. Martin's skills and passion showed in this area too as our solution at SSW for tracking the Sprint and Product backlogs is based on TFS. He also completed the Scrum Developer Trainer course and became accredited with Microsoft and Scrum.org, flying out to Sydney from his home in Scotland to complete the intensive 5 day course. I would recommend Martin to any employer who has the good fortune to be in the position to offer Martin a role in their organisation.",
       "id": "8XRETDFM",
       "weight": 30
@@ -427,7 +427,7 @@
       "relationship": "Manager",
       "text": "I found Martin to be technically brilliant and personally very easy to work with. His dedication to getting the job done the best way and his attention to detail to the process, as well as the result, made for a highly reproducable level of excellence in our work together. He is very interested in Microsoft technology such as TFS and knows development methodologies such as Scrum back to front.",
       "id": "CE6DWVVW",
-      "category": "training",
+      "category": "fte",
       "weight": 200
     },
     {
@@ -435,7 +435,7 @@
       "title": "Principal Consultant @ Rapid Circle | Founder 🛠 Flow Studio Solutions | M365, Power Platform MVP Alumni",
       "date": "2010-09-13",
       "relationship": "Colleague",
-      "category": "consulting",
+      "category": "fte",
       "text": "Martin was a joy to work with. He really knows Team Foundation Server (TFS) inside out, got our TFS migrated to 2010, get build server off the ground properly, and set in place many of the processes as well as the process templates that we'll continue to use in SSW. Ever full of wit, self motivated, hardworking and shares his learnings with the world. I wish all the best with Martin's future, and thanks for being a great colleague.",
       "id": "GF2WU96L",
       "weight": 25
@@ -445,7 +445,7 @@
       "title": "Principal Site Reliability Engineer at Stack Overflow",
       "date": "2010-09-13",
       "relationship": "Colleague",
-      "category": "consulting",
+      "category": "fte",
       "text": "I worked with Martin on several Team Foundation Server 2010 setups, he was very knowledgeable in regards to TFS2010 and was able to help rectify the weird and wonderful issues that pop up during the TFS2010 server setup.",
       "id": "AB3XY6U3",
       "weight": 180
@@ -455,7 +455,7 @@
       "title": "Tech loving Software & Data Engineering Professional",
       "date": "2009-09-28",
       "relationship": "Colleague",
-      "category": "consulting",
+      "category": "fte",
       "text": "Martin oozes enthusiasm for all new technology and get's to grips with it in a comparitively short time compared with most people I've worked with. As an IT professional, Martin has embraced life long learning and is on top of the latest technology before it hits the critical mass. Martin's evangelizing of technology brought a paradigm shift in the approach taken to development and his application of Microsoft Team Foundation Server delivered massive productivity gains for our team as a whole.",
       "id": "3P37SAZS",
       "weight": 90
@@ -465,7 +465,7 @@
       "title": "Global Principal AI & Data Expert | Machine Learning & Data Engineering Strategist | AI-First Business Transformation | Cloud-First Business Transformation | CxO advisor",
       "date": "2009-09-28",
       "relationship": "Manager",
-      "category": "consulting",
+      "category": "fte",
       "text": "I hired Martin after an extensive hiring process of several months. Martin has brought a massive amount of experience to my team when he joined and I will always be thankful for his knowledge he added to my experiences. He took over the intranet (SharePoint) portion and over the last two years directly assisted me with installing a MOSS 2007 farm and a workflow proof of concept. He designed our current Business Intelligence Portal User Interface and is an expert in the field. His biggest support came as massive extra … Martin introduced me and my team to Team Foundation Server to streamline our development. I then believed he is one of the best TFS techies I knew. He as proved me believes right by achieving a MVP in Team Foundation Server for 2009 and I believe he will get it again for 2010. There is several members of my team that believe the day they cut Martin open it will say … Made by Microsoft. Techie to the core!! I was honoured to work with Martin as his manager But more important I would count on Martin as a technical person I would trust if I ever need any technical advice in future. Martin is a bonus asset to any team. I wish him well with his future.",
       "id": "ZQHF475N",
       "weight": 50
@@ -477,7 +477,7 @@
       "relationship": "Colleague",
       "text": "If you want the bleeding edge but you don't want to run the risk of head explosion from the sheer volume of content you'd need to consume, Martin is the answer. A genuine technology enthusiast with a real passion for software, Martin is an oracle of all things Microsoft. The biggest challenge in working in the software development industry is the constant change. For most developers, keeping track is practically impossible. Martin's genuine enthusiasm for the subject keeps him ahead of the game and for that reason he will undoubtedly be a valuable asset for any forward thinking organization.",
       "id": "YAUZRDNM",
-      "category": "training",
+      "category": "fte",
       "weight": 280
     },
     {
@@ -487,7 +487,7 @@
       "relationship": "Senior colleague",
       "text": "Martin is a very driven Developer, extremely keen and always thinking out of the box.",
       "id": "DGDMMRCB",
-      "category": "training",
+      "category": "fte",
       "weight": 800
     },
     {
@@ -547,7 +547,7 @@
       "relationship": "Colleague",
       "text": "If you need someone with a detailed understanding of Microsoft technologies and of Microsoft Team System in particular, Martin is your man. Martin has an infectious enthusiasm about technology and its application to the software development process. He's an accomplished software engineer with a pragmatic, considered approach.",
       "id": "S9Q6KF8S",
-      "category": "training",
+      "category": "fte",
       "weight": 180
     },
     {

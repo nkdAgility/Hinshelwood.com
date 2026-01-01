@@ -1,6 +1,6 @@
 ---
 title: Martin Hinshelwood Engineering Leadership and Delivery Systems Consultant
-shortTitle: Martin Hinshelwood
+shortTitle: How I Work with Leaders
 keywords: ["Martin Hinshelwood","engineering leadership consultant","software delivery consulting","engineering operating model","delivery constraints","predictable delivery","flow efficiency","Azure DevOps consulting","GitHub consulting","technical leadership","engineering excellence","systems of work","AI-enabled engineering","DevOps consulting"]
 date: 2026-01-01
 slug: about
@@ -13,7 +13,7 @@ sitemap:
 ---
 
 
-## I help engineering leaders remove delivery constraints
+**I help engineering leaders remove delivery constraints**
 
 I work with CTOs, Heads of Engineering, and senior technical leaders who are accountable for delivery outcomes but constrained by legacy systems of work, fragmented tooling, and inconsistent execution.
 

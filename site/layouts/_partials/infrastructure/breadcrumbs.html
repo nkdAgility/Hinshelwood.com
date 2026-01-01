@@ -15,10 +15,13 @@
       <meta itemprop="position" content="1" />
     </li>
     
-    {{- /* Build breadcrumb trail from page ancestors */ -}}
+    {{- /* Build breadcrumb trail */ -}}
     {{- $position := 2 -}}
-    {{- range .Ancestors.Reverse -}}
-      {{- if not .IsHome -}}
+    {{- $isSocialProofTaxonomy := or (in .RelPermalink "/social-proof/categories") (in .RelPermalink "/social-proof/consulting") (in .RelPermalink "/social-proof/training") (in .RelPermalink "/social-proof/fte") -}}
+    
+    {{- /* For social-proof taxonomy/term pages, add Social Proof as parent */ -}}
+    {{- if $isSocialProofTaxonomy -}}
+      {{- with .Site.GetPage "/social-proof" -}}
         <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="{{ .RelPermalink }}" itemprop="item">
             <span itemprop="name">{{ .Title }}</span>
@@ -27,11 +30,24 @@
         </li>
         {{- $position = add $position 1 -}}
       {{- end -}}
+    {{- else -}}
+      {{- /* For normal pages, use ancestors */ -}}
+      {{- range .Ancestors.Reverse -}}
+        {{- if not .IsHome -}}
+          <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="{{ .RelPermalink }}" itemprop="item">
+              <span itemprop="name">{{ .Title }}</span>
+            </a>
+            <meta itemprop="position" content="{{ $position }}" />
+          </li>
+          {{- $position = add $position 1 -}}
+        {{- end -}}
+      {{- end -}}
     {{- end -}}
     
     {{- /* Current page (no link) */ -}}
     <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
-      <span itemprop="name">{{ .Title }}</span>
+      <span itemprop="name">{{ .Params.shortTitle | default .Title }}</span>
       <meta itemprop="position" content="{{ $position }}" />
     </li>
   </ol>
