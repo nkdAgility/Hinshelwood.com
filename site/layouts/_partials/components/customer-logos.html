@@ -1,0 +1,30 @@
+{{- /* Customer logo grid component */ -}}
+{{- $customers := .customers -}}
+{{- $limit := .limit | default 8 -}}
+
+<div class="row g-4">
+  {{- range first $limit $customers -}}
+    <div class="col-md-3 col-sm-4 col-6">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        {{- if .image -}}
+          {{- $imagePath := printf "images/customers/%s" .image -}}
+          {{- $imageResource := resources.Get $imagePath -}}
+          {{- if $imageResource -}}
+            {{- $resized := $imageResource.Fit "200x75" -}}
+            <div class="d-flex align-items-center justify-content-center" style="min-height: 100px;">
+              <img src="{{ $resized.RelPermalink }}" alt="{{ .title }}" class="img-fluid" style="max-height: 80px; max-width: 100%;" loading="lazy">
+            </div>
+          {{- else -}}
+            <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
+              <h5 class="mb-0 text-center">{{ .title }}</h5>
+            </div>
+          {{- end -}}
+        {{- else -}}
+          <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
+            <h5 class="mb-0 text-center">{{ .title }}</h5>
+          </div>
+        {{- end -}}
+      </div>
+    </div>
+  {{- end -}}
+</div>

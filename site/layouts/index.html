@@ -57,6 +57,14 @@
     </div>
   </section>
 
+  {{- /* Customers - 8 logos */ -}}
+  <section class="container my-5">
+    <h2>Trusted By</h2>
+    <p class="text-muted mb-4">Organisations I've worked with to improve delivery outcomes and engineering excellence</p>
+    {{ $customersData := .Site.Data.customers }}
+    {{ partial "components/customer-logos.html" (dict "customers" $customersData "limit" 8) }}
+  </section>
+
   {{- /* Case Studies - 3 items */ -}}
   <section class="container my-5">
       {{ $caseStudiesSection := .Site.GetPage "section" "case-studies" }}
