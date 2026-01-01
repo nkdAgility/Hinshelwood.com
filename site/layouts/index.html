@@ -43,34 +43,14 @@
     </div>
   </section>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.quote-toggle').forEach(function(btn) {
-      let expanded = false;
-      const fullText = btn.getAttribute('data-full-text');
-      const shortText = btn.getAttribute('data-short-text');
-      const textSpan = btn.previousElementSibling;
-      
-      btn.addEventListener('click', function() {
-        expanded = !expanded;
-        if (expanded) {
-          textSpan.textContent = fullText;
-          btn.textContent = 'less';
-        } else {
-          textSpan.textContent = shortText + '...';
-          btn.textContent = 'more...';
-        }
-      });
-    });
-  });
-  </script>
-
   {{- /* Clients - 8 logos */ -}}
   <section class="container my-5">
     <h2>Trusted By</h2>
     <p class="text-muted mb-4">Organisations I've worked with to improve delivery outcomes and engineering excellence</p>
     {{ $clientsData := .Site.Data.clients }}
     {{ partial "components/client-logos.html" (dict "clients" $clientsData "limit" 8) }}
+
+    
   </section>
 
   {{- /* Case Studies - 3 items */ -}}
