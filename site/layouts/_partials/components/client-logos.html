@@ -1,27 +1,27 @@
 {{- /* Client logo grid component */ -}}
-{{- $clients := .clients -}}
+{{- $pages := .pages -}}
 {{- $limit := .limit | default 8 -}}
 
 <div class="row g-4">
-  {{- range first $limit $clients -}}
+  {{- range first $limit $pages -}}
     <div class="col-md-3 col-sm-4 col-6">
       <div class="card h-100 border-0 shadow-sm p-3">
-        {{- if .image -}}
-          {{- $imagePath := printf "images/clients/%s" .image -}}
+        {{- if .Params.image -}}
+          {{- $imagePath := printf "images/clients/%s" .Params.image -}}
           {{- $imageResource := resources.Get $imagePath -}}
           {{- if $imageResource -}}
             {{- $resized := $imageResource.Fit "200x75" -}}
             <div class="d-flex align-items-center justify-content-center" style="min-height: 100px;">
-              <img src="{{ $resized.RelPermalink }}" alt="{{ .title }}" class="img-fluid" style="max-height: 80px; max-width: 100%;" loading="lazy">
+              <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}" class="img-fluid" style="max-height: 80px; max-width: 100%;" loading="lazy">
             </div>
           {{- else -}}
             <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
-              <h5 class="mb-0 text-center">{{ .title }}</h5>
+              <h5 class="mb-0 text-center">{{ .Title }}</h5>
             </div>
           {{- end -}}
         {{- else -}}
           <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
-            <h5 class="mb-0 text-center">{{ .title }}</h5>
+            <h5 class="mb-0 text-center">{{ .Title }}</h5>
           </div>
         {{- end -}}
       </div>

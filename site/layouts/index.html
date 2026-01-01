@@ -44,13 +44,15 @@
   </section>
 
   {{- /* Clients - 8 logos */ -}}
+  {{ $clientsSection := .Site.GetPage "section" "clients" }}
   <section class="container my-5">
     <h2>Trusted By</h2>
     <p class="text-muted mb-4">Organisations I've worked with to improve delivery outcomes and engineering excellence</p>
-    {{ $clientsData := .Site.Data.clients }}
-    {{ partial "components/client-logos.html" (dict "clients" $clientsData "limit" 8) }}
-
-    
+    {{ $clientPages := $clientsSection.Pages.ByWeight }}
+    {{ partial "components/client-logos.html" (dict "pages" $clientPages "limit" 8) }}
+    <div class="text-center mt-5">
+      <a href="{{ $clientsSection.Permalink }}" class="btn btn-primary">View All Clients</a>
+    </div>
   </section>
 
   {{- /* Case Studies - 3 items */ -}}
