@@ -1,11 +1,9 @@
 ---
-title: "Customers"
-slug: customers
+title: "Clients"
 sitemap:
   priority: 0.5
 menu:
   main:
-    name: Customers
     weight: 800
 ---
 

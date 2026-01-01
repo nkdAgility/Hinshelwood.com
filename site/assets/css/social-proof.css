@@ -1,5 +1,5 @@
-/* Testimonial blockquotes */
-blockquote.testimonial {
+/* Social proof blockquotes */
+blockquote.social-proof {
   position: relative;
   margin: 2rem 0;
   padding: 1.5rem 2rem 1.5rem 3rem;
@@ -11,7 +11,7 @@ blockquote.testimonial {
   color: #333;
 }
 
-blockquote.testimonial::before {
+blockquote.social-proof::before {
   content: '"';
   position: absolute;
   left: 0.5rem;
@@ -23,13 +23,13 @@ blockquote.testimonial::before {
   font-family: Georgia, serif;
 }
 
-blockquote.testimonial p {
+blockquote.social-proof p {
   margin: 0 0 1rem 0;
   font-style: italic;
   color: #2c3e50;
 }
 
-blockquote.testimonial footer {
+blockquote.social-proof footer {
   margin-top: 1rem;
   font-style: normal;
   font-size: 0.9rem;
@@ -38,12 +38,12 @@ blockquote.testimonial footer {
   padding-top: 0.75rem;
 }
 
-blockquote.testimonial cite {
+blockquote.social-proof cite {
   font-style: normal;
   display: block;
 }
 
-blockquote.testimonial cite strong {
+blockquote.social-proof cite strong {
   font-weight: 600;
   color: #0066cc;
   font-size: 1rem;
@@ -51,19 +51,19 @@ blockquote.testimonial cite strong {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  blockquote.testimonial {
+  blockquote.social-proof {
     padding: 1rem 1rem 1rem 2.5rem;
     font-size: 1rem;
   }
   
-  blockquote.testimonial::before {
+  blockquote.social-proof::before {
     font-size: 2.5rem;
     left: 0.25rem;
   }
 }
 
 /* Hover effect for visual interest */
-blockquote.testimonial:hover {
+blockquote.social-proof:hover {
   background-color: #f0f4f8;
   border-left-color: #0052a3;
   transition: background-color 0.3s ease, border-left-color 0.3s ease;

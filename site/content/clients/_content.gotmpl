@@ -1,5 +1,5 @@
-{{- range $index, $customer := site.Data.customers -}}
-  {{- $path := printf "/customers/%s" ($customer.ItemId | default (printf "customer-%d" $index)) -}}
+{{- range $index, $customer := site.Data.clients -}}
+  {{- $path := printf "/clients/%s" ($customer.ItemId | default (printf "client-%d" $index)) -}}
   
   {{- $.AddPage (dict
     "kind" "page"

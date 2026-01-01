@@ -20,7 +20,7 @@
       <div class="col-md-3 col-sm-4 col-6">
         <div class="card h-100 border-0 shadow-sm p-3">
           {{- if .Params.image -}}
-            {{- $imagePath := printf "images/customers/%s" .Params.image -}}
+            {{- $imagePath := printf "images/clients/%s" .Params.image -}}
             {{- $imageResource := resources.Get $imagePath -}}
             {{- if $imageResource -}}
               {{- $resized := $imageResource.Fit "200x75" -}}

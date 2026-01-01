@@ -40,8 +40,17 @@
       {{ $socialProofPages :=  first 3 $socialProofSection.Pages.ByWeight }}
       {{ range $socialProofPages }}
         <div class="col-12">
-          <blockquote class="testimonial card h-100 p-4 border-0 shadow-sm">
-            <p class="card-text">"{{ .Params.text }}"</p>
+          <blockquote class="social-proof card h-100 p-4 border-0 shadow-sm">
+            {{- $truncateResult := partial "functions/truncate-text.html" (dict "text" .Params.text "limit" 30) -}}
+            <p class="card-text">
+              "<span class="quote-text">{{ $truncateResult.text }}{{ if $truncateResult.truncated }}...{{ end }}</span>"
+              {{- if $truncateResult.truncated }}
+                <button class="btn btn-link btn-sm p-0 ms-1 text-decoration-none quote-toggle" 
+                        data-full-text="{{ .Params.text | htmlEscape }}"
+                        data-short-text="{{ $truncateResult.text | htmlEscape }}"
+                        aria-label="Expand quote">more...</button>
+              {{- end }}
+            </p>
             <footer class="mt-3">
               <cite>
                 <strong>{{ .Params.name }}</strong>
@@ -53,16 +62,38 @@
       {{ end }}
     </div>
     <div class="text-center mt-4">
-      <a href="{{ $socialProofSection.Permalink }}" class="btn btn-outline-primary">View All Testimonials</a>
+      <a href="{{ $socialProofSection.Permalink }}" class="btn btn-outline-primary">View All Social Proof</a>
     </div>
   </section>
 
-  {{- /* Customers - 8 logos */ -}}
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.quote-toggle').forEach(function(btn) {
+      let expanded = false;
+      const fullText = btn.getAttribute('data-full-text');
+      const shortText = btn.getAttribute('data-short-text');
+      const textSpan = btn.previousElementSibling;
+      
+      btn.addEventListener('click', function() {
+        expanded = !expanded;
+        if (expanded) {
+          textSpan.textContent = fullText;
+          btn.textContent = 'less';
+        } else {
+          textSpan.textContent = shortText + '...';
+          btn.textContent = 'more...';
+        }
+      });
+    });
+  });
+  </script>
+
+  {{- /* Clients - 8 logos */ -}}
   <section class="container my-5">
     <h2>Trusted By</h2>
     <p class="text-muted mb-4">Organisations I've worked with to improve delivery outcomes and engineering excellence</p>
-    {{ $customersData := .Site.Data.customers }}
-    {{ partial "components/customer-logos.html" (dict "customers" $customersData "limit" 8) }}
+    {{ $clientsData := .Site.Data.clients }}
+    {{ partial "components/client-logos.html" (dict "clients" $clientsData "limit" 8) }}
   </section>
 
   {{- /* Case Studies - 3 items */ -}}

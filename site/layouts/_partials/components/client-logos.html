@@ -1,13 +1,13 @@
-{{- /* Customer logo grid component */ -}}
-{{- $customers := .customers -}}
+{{- /* Client logo grid component */ -}}
+{{- $clients := .clients -}}
 {{- $limit := .limit | default 8 -}}
 
 <div class="row g-4">
-  {{- range first $limit $customers -}}
+  {{- range first $limit $clients -}}
     <div class="col-md-3 col-sm-4 col-6">
       <div class="card h-100 border-0 shadow-sm p-3">
         {{- if .image -}}
-          {{- $imagePath := printf "images/customers/%s" .image -}}
+          {{- $imagePath := printf "images/clients/%s" .image -}}
           {{- $imageResource := resources.Get $imagePath -}}
           {{- if $imageResource -}}
             {{- $resized := $imageResource.Fit "200x75" -}}

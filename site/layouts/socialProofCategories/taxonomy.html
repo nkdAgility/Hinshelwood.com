@@ -3,7 +3,7 @@
   <header class="mb-5">
     <h1>Social Proof Categories</h1>
     <div class="text-muted">
-      <p>Browse testimonials by engagement type.</p>
+      <p>Browse Social Proofs by engagement type.</p>
     </div>
   </header>
 
@@ -21,9 +21,9 @@
               <a href="{{ .Page.Permalink }}" class="text-decoration-none">{{ .Name }}</a>
             </h2>
             <p class="card-text text-muted">
-              {{ $categoryCount }} testimonial{{ if ne $categoryCount 1 }}s{{ end }}
+              {{ $categoryCount }} Social Proof{{ if ne $categoryCount 1 }}s{{ end }}
             </p>
-            <a href="{{ .Page.Permalink }}" class="btn btn-sm btn-primary">View {{ .Name }} Testimonials →</a>
+            <a href="{{ .Page.Permalink }}" class="btn btn-sm btn-primary">View {{ .Name }} Social Proofs →</a>
           </div>
         </div>
       </div>

@@ -1,0 +1,12 @@
+{{- /* Truncates text to specified word count and adds ellipsis */ -}}
+{{- $text := .text -}}
+{{- $limit := .limit | default 50 -}}
+{{- $words := split $text " " -}}
+{{- $truncated := false -}}
+
+{{- if gt (len $words) $limit -}}
+  {{- $truncated = true -}}
+  {{- $text = delimit (first $limit $words) " " -}}
+{{- end -}}
+
+{{- return (dict "text" $text "truncated" $truncated) -}}

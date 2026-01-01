@@ -28,7 +28,7 @@
   {{- $paginator := .Paginate $pages 20 -}}
 
   <div class="text-muted mb-4" style="font-size: 0.9rem;">
-    <p>Showing {{ len $paginator.Pages }} of {{ $paginator.TotalNumberOfElements }} testimonials</p>
+    <p>Showing {{ len $paginator.Pages }} of {{ $paginator.TotalNumberOfElements }} social proof items</p>
   </div>
 
   <div>
@@ -54,7 +54,7 @@
   </div>
 
   {{- if gt $paginator.TotalPages 1 -}}
-  <nav class="d-flex justify-content-center gap-2 mt-5 flex-wrap" aria-label="Testimonials pagination">
+  <nav class="d-flex justify-content-center gap-2 mt-5 flex-wrap" aria-label="Social proof pagination">
     {{- if $paginator.HasPrev -}}
       <a href="{{ $paginator.Prev.URL }}" class="btn btn-sm btn-outline-primary">← Previous</a>
     {{- end -}}

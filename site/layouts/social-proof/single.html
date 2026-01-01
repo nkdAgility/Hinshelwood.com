@@ -1,0 +1,83 @@
+{{- define "main" -}}
+<section class="container my-5">
+  <article>
+    <header class="mb-5">
+      <nav aria-label="breadcrumb" class="mb-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item"><a href="/social-proof/">Social Proofs</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{ .Params.name }}</li>
+        </ol>
+      </nav>
+      <h1>Social Proof from {{ .Params.name }}</h1>
+      {{- with .Params.title }}
+        {{ if ne . "" }}
+          <p class="lead text-muted">{{ . }}</p>
+        {{ end }}
+      {{ end -}}
+    </header>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <blockquote class="social-proof-full border-start border-primary border-4 ps-4 py-3 mb-4">
+          <p class="fs-5">{{ .Params.text }}</p>
+        </blockquote>
+
+        <footer class="mt-4 mb-5">
+          <div class="d-flex flex-wrap gap-3 align-items-center">
+            {{- with .Params.relationship }}
+              <span class="badge bg-primary-subtle text-primary fs-6">{{ . }}</span>
+            {{ end -}}
+            {{- with .Params.class }}
+              <span class="badge bg-warning-subtle text-warning fs-6">{{ . | upper }}</span>
+            {{ end -}}
+            {{- with .Params.stars }}
+              <span class="text-warning fs-5">{{ range seq . }}⭐{{ end }}</span>
+            {{ end -}}
+            {{- with .Date }}
+              <time datetime="{{ .Format "2006-01-02" }}" class="text-muted">{{ .Format "2 January 2006" }}</time>
+            {{ end -}}
+          </div>
+        </footer>
+
+        {{- with .Content -}}
+          <div class="mt-5">
+            {{ . }}
+          </div>
+        {{- end -}}
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm p-4">
+          <h3 class="h5 mb-3">About This Social Proof</h3>
+          <dl class="mb-0">
+            <dt class="text-muted small">From</dt>
+            <dd class="mb-3"><strong>{{ .Params.name }}</strong></dd>
+            
+            {{- with .Params.title }}
+              {{ if ne . "" }}
+                <dt class="text-muted small">Role</dt>
+                <dd class="mb-3">{{ . }}</dd>
+              {{ end }}
+            {{ end -}}
+            
+            {{- with .Params.relationship }}
+              <dt class="text-muted small">Relationship</dt>
+              <dd class="mb-3">{{ . }}</dd>
+            {{ end -}}
+            
+            {{- with .Date }}
+              <dt class="text-muted small">Date</dt>
+              <dd class="mb-0">{{ .Format "January 2006" }}</dd>
+            {{ end -}}
+          </dl>
+        </div>
+
+        <div class="mt-4">
+          <a href="/social-proof/" class="btn btn-outline-primary w-100">← All Social Proofs</a>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+{{- end -}}
