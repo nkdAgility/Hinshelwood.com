@@ -1,14 +1,9 @@
-/* Social proof blockquotes */
+/* Minimal custom styling - most styling handled by Bootstrap */
 blockquote.social-proof {
   position: relative;
   margin: 0;
-  padding: 1.5rem 2rem 1.5rem 3rem;
-  background-color: #f8f9fa;
   border-left: 4px solid #0066cc;
-  font-size: 1.05rem;
-  line-height: 1.7;
   font-style: italic;
-  color: #333;
 }
 
 blockquote.social-proof::before {
@@ -24,53 +19,22 @@ blockquote.social-proof::before {
 }
 
 blockquote.social-proof p {
-  margin: 0 0 1rem 0;
   font-style: italic;
-  color: #2c3e50;
 }
 
 blockquote.social-proof footer {
-  margin-top: 1rem;
   font-style: normal;
-  font-size: 0.9rem;
-  color: #666;
   border-top: 1px solid #dee2e6;
   padding-top: 0.75rem;
 }
 
 blockquote.social-proof cite {
   font-style: normal;
-  display: block;
 }
 
-blockquote.social-proof cite strong {
-  font-weight: 600;
-  color: #0066cc;
-  font-size: 1rem;
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  blockquote.social-proof {
-    padding: 1rem 1rem 1rem 2.5rem;
-    font-size: 1rem;
-  }
-  
   blockquote.social-proof::before {
     font-size: 2.5rem;
     left: 0.25rem;
   }
-}
-
-/* Hover effect for visual interest */
-blockquote.social-proof:hover {
-  background-color: #f0f4f8;
-  border-left-color: #0052a3;
-  transition: background-color 0.3s ease, border-left-color 0.3s ease;
-}
-
-/* When used with card class, ensure proper spacing and stacking */
-blockquote.social-proof.card {
-  margin-bottom: 1rem;
-  z-index: 1;
 }
