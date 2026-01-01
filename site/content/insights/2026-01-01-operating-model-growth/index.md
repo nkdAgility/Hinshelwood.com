@@ -6,6 +6,9 @@ description: "Most organisations run an Industrial Operating Model in markets th
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.6
 ---
 
 Most organisations believe they have a delivery problem.

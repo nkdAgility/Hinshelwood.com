@@ -8,6 +8,9 @@ image:
 related:
   - "problems/devops"
   - "outcomes/engineering-excellence/"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.7
 ---
 
 

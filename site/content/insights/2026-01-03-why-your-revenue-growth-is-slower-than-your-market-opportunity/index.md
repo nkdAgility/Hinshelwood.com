@@ -6,6 +6,9 @@ description: "Most organisations struggle to turn market signals into revenue gr
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.6
 ---
 
 Most growth leaders are not short of ideas.

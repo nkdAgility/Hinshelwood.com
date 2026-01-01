@@ -6,6 +6,9 @@ description: "Most organisations are designed for stability, not agility. This m
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.6
 ---
 
 

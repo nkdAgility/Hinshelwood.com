@@ -8,6 +8,9 @@ slug: when-product-leadership-breaks-across-borders
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.7
 ---
 
 A UK-based insurance software firm serving major comparison platforms had reached a familiar but dangerous inflection point.

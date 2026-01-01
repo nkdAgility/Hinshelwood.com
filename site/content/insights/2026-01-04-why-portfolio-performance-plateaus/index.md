@@ -6,6 +6,9 @@ description: "Boards see busy organisations hitting delivery targets, yet strate
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.6
 ---
 
 

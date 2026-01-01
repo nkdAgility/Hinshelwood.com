@@ -6,12 +6,10 @@ description: "Growth leaders invest in AI to accelerate revenue, but often find 
 related:
   - "problems/ai"
   - "outcomes/technical-leadership"
----
-
-Growth and revenue leaders do not buy AI for curiosity.
-They buy it to increase throughput, conversion, margin, or speed to market.
-
-What many are discovering is uncomfortable:
+sitemap:
+  filename: sitemap.xml
+  priority: 0.6
+---What many are discovering is uncomfortable:
 AI activity is increasing, but revenue impact is not.
 
 More dashboards.

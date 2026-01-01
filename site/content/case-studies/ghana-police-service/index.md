@@ -8,6 +8,9 @@ image:
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.7
 ---
 
 Ghana Police Service is one of West Africa’s largest public institutions. It employs more than 47,000 officers and staff and operates under intense public scrutiny. At the time of engagement, the organisation faced three compounding pressures:

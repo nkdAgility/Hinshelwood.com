@@ -6,6 +6,9 @@ description:  "AI is often seen as a productivity booster for development teams,
 related:
   - "problems/ai"
   - "outcomes/technical-leadership"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.6
 ---
 
 

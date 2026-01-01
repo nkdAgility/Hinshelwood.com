@@ -6,6 +6,9 @@ slug: restoring-delivery-visibility-and-governance-at-enterprise-scale
 related:
   - "problems/devops"
   - "outcomes/engineering-excellence/"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.7
 ---
 
 A global oil and gas service company had grown successfully for decades through decentralised decision-making. Local autonomy delivered speed in the early years, but at enterprise scale it produced a different reality.

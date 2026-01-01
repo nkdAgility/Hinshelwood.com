@@ -6,6 +6,9 @@ description: "AI initiatives often stall not because the technology is immature,
 related:
   - "problems/ai"
   - "outcomes/technical-leadership"
+sitemap:
+  filename: sitemap.xml
+  priority: 0.6
 ---
 
 
