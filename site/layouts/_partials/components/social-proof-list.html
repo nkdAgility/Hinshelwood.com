@@ -1,0 +1,27 @@
+{{- $pages := .pages -}}
+{{- $limit := .limit | default 0 -}}
+{{- $truncate := .truncate | default 0 -}}
+{{- $layout := .layout | default "list" -}}
+{{- $showBadges := .showBadges | default false -}}
+
+{{- if gt $limit 0 -}}
+  {{- $pages = first $limit $pages -}}
+{{- end -}}
+
+{{- if eq $layout "grid" -}}
+  <div class="row g-4">
+    {{- range $pages -}}
+      <div class="col-12">
+        {{ partial "components/social-proof.html" (dict "page" . "truncate" $truncate "showBadges" $showBadges) }}
+      </div>
+    {{- end -}}
+  </div>
+{{- else -}}
+  <div>
+    {{- range $pages -}}
+      <div class="mb-4 pb-4 border-bottom">
+        {{ partial "components/social-proof.html" (dict "page" . "truncate" $truncate "showBadges" $showBadges) }}
+      </div>
+    {{- end -}}
+  </div>
+{{- end -}}

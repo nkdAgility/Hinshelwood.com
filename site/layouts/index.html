@@ -36,31 +36,8 @@
   {{ $socialProofSection := .Site.GetPage "section" "social-proof" }}
   <section class="container my-5">
     <h2>What Clients Say</h2>
-    <div class="row g-4">
-      {{ $socialProofPages :=  first 3 $socialProofSection.Pages.ByWeight }}
-      {{ range $socialProofPages }}
-        <div class="col-12">
-          <blockquote class="social-proof card h-100 p-4 border-0 shadow-sm">
-            {{- $truncateResult := partial "functions/truncate-text.html" (dict "text" .Params.text "limit" 30) -}}
-            <p class="card-text">
-              "<span class="quote-text">{{ $truncateResult.text }}{{ if $truncateResult.truncated }}...{{ end }}</span>"
-              {{- if $truncateResult.truncated }}
-                <button class="btn btn-link btn-sm p-0 ms-1 text-decoration-none quote-toggle" 
-                        data-full-text="{{ .Params.text | htmlEscape }}"
-                        data-short-text="{{ $truncateResult.text | htmlEscape }}"
-                        aria-label="Expand quote">more...</button>
-              {{- end }}
-            </p>
-            <footer class="mt-3">
-              <cite>
-                <strong>{{ .Params.name }}</strong>
-                {{- with .Params.title }}{{ if ne . "" }}<br><small class="text-muted">{{ . }}</small>{{ end }}{{ end -}}
-              </cite>
-            </footer>
-          </blockquote>
-        </div>
-      {{ end }}
-    </div>
+    {{ $socialProofPages := $socialProofSection.Pages.ByWeight }}
+    {{ partial "components/social-proof-list.html" (dict "pages" $socialProofPages "limit" 3 "truncate" 30 "layout" "grid") }}
     <div class="text-center mt-5">
       <a href="{{ $socialProofSection.Permalink }}" class="btn btn-primary">View All Social Proof</a>
     </div>

@@ -1,0 +1,36 @@
+{{- $page := .page -}}
+{{- $truncate := .truncate | default 0 -}}
+{{- $showBadges := .showBadges | default false -}}
+
+{{- $displayText := $page.Params.text -}}
+{{- $isTruncated := false -}}
+{{- if gt $truncate 0 -}}
+  {{- $truncateResult := partial "functions/truncate-text.html" (dict "text" $page.Params.text "limit" $truncate) -}}
+  {{- $displayText = $truncateResult.text -}}
+  {{- $isTruncated = $truncateResult.truncated -}}
+{{- end -}}
+
+<blockquote class="social-proof card p-4 border-0 shadow-sm">
+  <p>
+    <span class="quote-text">{{ $displayText }}{{ if $isTruncated }}...{{ end }}</span>
+    {{- if $isTruncated }}
+      <button class="btn btn-link btn-sm p-0 ms-1 text-decoration-none quote-toggle" 
+              data-full-text="{{ $page.Params.text | htmlEscape }}"
+              data-short-text="{{ $displayText | htmlEscape }}"
+              aria-label="Expand quote">more...</button>
+    {{- end }}
+  </p>
+  <footer>
+    <cite>
+      <strong>{{ $page.Params.name }}</strong>
+      {{- with $page.Params.title }}{{ if ne . "" }}<br><small class="text-muted">{{ . }}</small>{{ end }}{{ end -}}
+    </cite>
+    {{- if $showBadges }}
+      <div class="d-flex flex-wrap gap-2 align-items-center mt-2" style="font-size: 0.9rem;">
+        {{- with $page.Params.relationship }}<span class="badge bg-primary-subtle text-primary">{{ . }}</span>{{ end -}}
+        {{- with $page.Params.class }}<span class="badge bg-warning-subtle text-warning">{{ . | upper }}</span>{{ end -}}
+        {{- with $page.Params.stars }}<span class="text-warning">{{ range seq . }}⭐{{ end }}</span>{{ end -}}
+      </div>
+    {{- end }}
+  </footer>
+</blockquote>
