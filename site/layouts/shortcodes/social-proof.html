@@ -14,8 +14,7 @@
 {{- with $page -}}
 
     {{ partial "components/social-proof.html" (dict "page" . "truncate" $truncate) }}
-
-  <script>
+ <script>
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.quote-toggle').forEach(function(btn) {
       let expanded = false;
