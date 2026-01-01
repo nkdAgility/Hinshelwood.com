@@ -11,7 +11,9 @@ sitemap:
 ---
 
 
-I help organisations improve delivery and outcomes through technical leadership and engineering excellence.
+I help engineering leaders restore predictability, reduce operational cost, and regain leverage—without creating dependency on consultants.
+
+**This is for CTOs and engineering leaders accountable for delivery outcomes, not project managers seeking process compliance.**
 
 My work focuses on first principles and measurable results, using evidence to understand what is really happening in your system of work. I work directly with leaders and teams to remove friction, improve flow, and enable reliable delivery of valuable software.
 
