@@ -1,0 +1,34 @@
+{{- define "main" -}}
+<section class="container my-5">
+  <header class="mb-5">
+    <h1>Social Proof Categories</h1>
+    <div class="text-muted">
+      <p>Browse testimonials by engagement type.</p>
+    </div>
+  </header>
+
+  {{- $allQuotes := .Site.Data.socialproof.quotes -}}
+  
+  <div class="row g-4">
+    {{- range .Data.Terms.Alphabetical -}}
+      {{- $category := .Name | lower -}}
+      {{- $categoryCount := len (where $allQuotes "category" $category) -}}
+      
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h4">
+              <a href="{{ .Page.Permalink }}" class="text-decoration-none">{{ .Name }}</a>
+            </h2>
+            <p class="card-text text-muted">
+              {{ $categoryCount }} testimonial{{ if ne $categoryCount 1 }}s{{ end }}
+            </p>
+            <a href="{{ .Page.Permalink }}" class="btn btn-sm btn-primary">View {{ .Name }} Testimonials →</a>
+          </div>
+        </div>
+      </div>
+    {{- end -}}
+  </div>
+</section>
+
+{{- end -}}

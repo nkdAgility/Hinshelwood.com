@@ -1,0 +1,91 @@
+{{- define "main" -}}
+<section class="container my-5">
+  <header class="mb-5">
+    <h1>{{ .Title }} Testimonials</h1>
+    <div class="text-muted">
+      <p>Client feedback and testimonials for {{ .Title | lower }} engagements with Martin Hinshelwood.</p>
+    </div>
+  </header>
+
+  {{- $currentCategory := .Title | lower -}}
+  {{- $allQuotes := .Site.Data.socialproof.quotes -}}
+  
+  <nav class="d-flex justify-content-start gap-2 mb-4 flex-wrap">
+    <a href="/social-proof/" class="btn btn-sm btn-outline-primary">All ({{ len $allQuotes }})</a>
+    <a href="/social-proof/consulting/" class="btn btn-sm {{ if eq $currentCategory "consulting" }}btn-primary{{ else }}btn-outline-primary{{ end }}">Consulting ({{ len (where $allQuotes "category" "consulting") }})</a>
+    <a href="/social-proof/training/" class="btn btn-sm {{ if eq $currentCategory "training" }}btn-primary{{ else }}btn-outline-primary{{ end }}">Training ({{ len (where $allQuotes "category" "training") }})</a>
+  </nav>
+
+  {{- $pages := .Pages -}}
+  {{- $pages = sort $pages "Date" "desc" -}}
+  
+  {{- $paginator := .Paginate $pages 20 -}}
+
+  <div class="text-muted mb-4" style="font-size: 0.9rem;">
+    <p>Showing {{ len $paginator.Pages }} of {{ $paginator.TotalNumberOfElements }} testimonials</p>
+  </div>
+
+  <div>
+    {{- range $paginator.Pages -}}
+      <div class="mb-4 pb-4 border-bottom">
+        <blockquote class="mb-3">
+          <p>{{ .Params.text }}</p>
+        </blockquote>
+        <footer>
+          <cite class="text-body not-italic">
+            <strong>{{ .Params.name }}</strong>
+            {{- with .Params.title }}{{ if ne . "" }}<br><span class="text-muted" style="font-size: 0.9rem;">{{ . }}</span>{{ end }}{{ end -}}
+          </cite>
+          <div class="d-flex flex-wrap gap-2 align-items-center mt-2" style="font-size: 0.9rem;">
+            {{- with .Params.relationship }}<span class="badge bg-primary-subtle text-primary">{{ . }}</span>{{ end -}}
+            {{- with .Params.class }}<span class="badge bg-warning-subtle text-warning">{{ . | upper }}</span>{{ end -}}
+            {{- with .Params.stars }}<span class="text-warning">{{ range seq . }}⭐{{ end }}</span>{{ end -}}
+            {{- with .Date }}<time datetime="{{ .Format "2006-01-02" }}" class="text-muted">{{ .Format "2 Jan 2006" }}</time>{{ end -}}
+          </div>
+        </footer>
+      </div>
+    {{- end -}}
+  </div>
+
+  {{- if gt $paginator.TotalPages 1 -}}
+  <nav class="d-flex justify-content-center gap-2 mt-5 flex-wrap" aria-label="Testimonials pagination">
+    {{- if $paginator.HasPrev -}}
+      <a href="{{ $paginator.Prev.URL }}" class="btn btn-sm btn-outline-primary">← Previous</a>
+    {{- end -}}
+    
+    {{- $currentPage := $paginator.PageNumber -}}
+    {{- $totalPages := $paginator.TotalPages -}}
+    
+    {{- if gt $currentPage 2 -}}
+      <a href="{{ $paginator.First.URL }}" class="btn btn-sm btn-outline-primary">1</a>
+      {{- if gt $currentPage 3 -}}
+        <span class="btn btn-sm btn-outline-secondary disabled">...</span>
+      {{- end -}}
+    {{- end -}}
+    
+    {{- range $paginator.Pagers -}}
+      {{- $distance := sub $currentPage .PageNumber -}}
+      {{- if le (math.Abs $distance) 1 -}}
+        {{- if eq .PageNumber $currentPage -}}
+          <span class="btn btn-sm btn-primary">{{ .PageNumber }}</span>
+        {{- else -}}
+          <a href="{{ .URL }}" class="btn btn-sm btn-outline-primary">{{ .PageNumber }}</a>
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    
+    {{- if lt $currentPage (sub $totalPages 1) -}}
+      {{- if lt $currentPage (sub $totalPages 2) -}}
+        <span class="btn btn-sm btn-outline-secondary disabled">...</span>
+      {{- end -}}
+      <a href="{{ $paginator.Last.URL }}" class="btn btn-sm btn-outline-primary">{{ $totalPages }}</a>
+    {{- end -}}
+    
+    {{- if $paginator.HasNext -}}
+      <a href="{{ $paginator.Next.URL }}" class="btn btn-sm btn-outline-primary">Next →</a>
+    {{- end -}}
+  </nav>
+  {{- end -}}
+</section>
+
+{{- end -}}
