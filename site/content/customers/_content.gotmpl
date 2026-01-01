@@ -1,0 +1,18 @@
+{{- range $index, $customer := site.Data.customers -}}
+  {{- $path := printf "/customers/%s" ($customer.ItemId | default (printf "customer-%d" $index)) -}}
+  
+  {{- $.AddPage (dict
+    "kind" "page"
+    "path" $path
+    "title" $customer.title
+    "date" $customer.date
+    "sitemap" (dict "priority" 0.4)
+    "weight" $customer.weight
+    "params" (dict
+      "ItemId" $customer.ItemId
+      "image" $customer.image
+      "industries" $customer.industries
+      "customer" true
+    )
+  ) -}}
+{{- end -}}

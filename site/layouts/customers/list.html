@@ -1,0 +1,46 @@
+{{- define "main" -}}
+<section class="container my-5">
+  <header class="mb-5">
+    <h1>{{ .Title }}</h1>
+    {{- with .Content -}}
+      <div class="text-muted">
+        {{ . }}
+      </div>
+    {{- end -}}
+  </header>
+
+  {{- $pages := .Pages.ByWeight -}}
+  
+  <div class="text-muted mb-4" style="font-size: 0.9rem;">
+    <p>{{ len $pages }} organisations</p>
+  </div>
+
+  <div class="row g-4">
+    {{- range $pages -}}
+      <div class="col-md-3 col-sm-4 col-6">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          {{- if .Params.image -}}
+            {{- $imagePath := printf "images/customers/%s" .Params.image -}}
+            {{- $imageResource := resources.Get $imagePath -}}
+            {{- if $imageResource -}}
+              {{- $resized := $imageResource.Fit "200x75" -}}
+              <div class="d-flex align-items-center justify-content-center" style="min-height: 100px;">
+                <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}" class="img-fluid" style="max-height: 80px; max-width: 100%;" loading="lazy">
+              </div>
+            {{- else -}}
+              <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
+                <h5 class="mb-0 text-center">{{ .Title }}</h5>
+              </div>
+            {{- end -}}
+          {{- else -}}
+            <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
+              <h5 class="mb-0 text-center">{{ .Title }}</h5>
+            </div>
+          {{- end -}}
+        </div>
+      </div>
+    {{- end -}}
+  </div>
+</section>
+
+{{- end -}}
