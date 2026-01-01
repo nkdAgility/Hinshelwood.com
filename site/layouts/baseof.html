@@ -115,6 +115,9 @@
       </section>
     {{- end }}
 
+    {{- partial "infrastructure/footer.html" . }}
+
+     <!-- Development Debug Information -->
 
     {{- if eq hugo.Environment "development" }}
      <hr />
@@ -272,5 +275,6 @@
           });
         });
       </script>
+      
   </body>
 </html>
