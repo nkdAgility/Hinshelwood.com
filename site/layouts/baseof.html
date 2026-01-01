@@ -76,6 +76,7 @@
     {{ $css := slice
     (resources.Get "css/promo-card.css")
     (resources.Get "css/breadcrumbs.css")
+    (resources.Get "css/testimonials.css")
     (resources.Get "css/site-wide-overrides.css")
   | resources.Concat "css/main.css"
   | resources.Minify
