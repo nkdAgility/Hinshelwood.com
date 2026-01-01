@@ -22,6 +22,10 @@ weight: 200
 sitemap:
   filename: sitemap.xml
   priority: 0.9
+menu:
+  main:
+    parent: problems
+    weight: 300
 ---
 
 Most organisations don’t fail at AI because they chose the wrong model, tool, or vendor.

@@ -24,6 +24,10 @@ image:
 sitemap:
   filename: sitemap.xml
   priority: 0.9
+menu:
+  main:
+    parent: outcomes
+    weight: 100
 ---
 
 **Technical leadership is not about being the smartest engineer in the room.

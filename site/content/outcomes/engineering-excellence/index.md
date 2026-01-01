@@ -24,6 +24,10 @@ image:
 sitemap:
   filename: sitemap.xml
   priority: 0.9
+menu:
+  main:
+    parent: outcomes
+    weight: 100
 ---
 
 Most organisations believe engineering excellence is about skill, standards, or tools.

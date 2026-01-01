@@ -9,6 +9,9 @@ ItemKind: case-studies
 sitemap:
   filename: sitemap.xml
   priority: 0.9
+menu:
+  main:
+    weight: 600
 ---
 
 These case studies show what changes when organisations stop treating delivery, technology, and leadership as separate concerns. They focus on the commercial and organisational outcomes achieved, not on methods, tools, or frameworks. Each example illustrates how clearer accountability, better decision-making, and disciplined execution translated into measurable progress for leaders who were prepared to act.

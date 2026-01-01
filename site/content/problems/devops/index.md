@@ -23,6 +23,10 @@ weight: 100
 sitemap:
   filename: sitemap.xml
   priority: 0.9
+menu:
+  main:
+    parent: problems
+    weight: 100
 ---
 
 Most organisations don’t fail because they picked the wrong tools.  

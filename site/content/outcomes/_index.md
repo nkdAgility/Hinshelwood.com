@@ -9,6 +9,10 @@ ItemKind: marketing
 sitemap:
   filename: sitemap.xml
   priority: 0.9
+menu:
+  main:
+    weight: 300
+    identifier: outcomes
 ---
 
 Engineering excellence enables faster delivery without increasing risk. By embedding disciplined engineering practices, organisations reduce defects, improve reliability, and create systems that can evolve safely over time.

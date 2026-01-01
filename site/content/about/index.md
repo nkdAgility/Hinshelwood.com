@@ -10,6 +10,10 @@ ItemKind: marketing
 sitemap:
   filename: sitemap.xml
   priority: 0.8
+menu:
+  main:
+    name: How I Work With Leaders
+    weight: 400
 ---
 
 

@@ -22,6 +22,10 @@ weight: 300
 sitemap:
   filename: sitemap.xml
   priority: 0.9
+menu:
+  main:
+    parent: problems
+    weight: 200
 ---
 
 
