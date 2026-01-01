@@ -1,12 +1,11 @@
 ---
 title: "Customers"
-layout: customers
+slug: customers
 sitemap:
   priority: 0.5
 menu:
   main:
-    name: Client List
-    identifier: customers
+    name: Customers
     weight: 800
 ---
 

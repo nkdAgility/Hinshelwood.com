@@ -9,18 +9,18 @@
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="{{ .PageRef | relURL }}" id="navbarDropdown{{ .Identifier }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="{{ .Page.RelPermalink | relURL }}" id="navbarDropdown{{ .Identifier }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ .Name }}
               </a>
               <ul class="dropdown-menu bg-light border-0 shadow-none" aria-labelledby="navbarDropdown{{ .Identifier }}">
                 {{ range .Children }}
-                  <li><a class="dropdown-item" href="{{ .PageRef | relURL }}">{{ .Name }}</a></li>
+                  <li><a class="dropdown-item" href="{{ .Page.RelPermalink | relURL }}">{{ .Name }}</a></li>
                 {{ end }}
               </ul>
             </li>
           {{ else }}
             <li class="nav-item">
-              <a class="nav-link" href="{{ .PageRef | relURL }}">{{ .Name }}</a>
+              <a class="nav-link" href="{{ .Page.RelPermalink | relURL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}
