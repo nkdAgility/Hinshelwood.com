@@ -12,7 +12,9 @@
 {{- end -}}
 
 {{- with $page -}}
-  {{ partial "components/social-proof.html" (dict "page" . "truncate" $truncate "showBadges" true) }}
+
+    {{ partial "components/social-proof.html" (dict "page" . "truncate" $truncate) }}
+
   <script>
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.quote-toggle').forEach(function(btn) {
