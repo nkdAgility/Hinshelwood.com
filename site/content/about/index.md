@@ -132,4 +132,6 @@ Engagements are non-cancellable but may be rescheduled without penalty.
 If delivery predictability, flow, or engineering confidence are limiting your organisation’s performance, the next step is a short conversation to determine whether there is a meaningful constraint worth addressing.
 
 No sales theatre. No obligation.
-**To discuss your situation**: martin@nkdagility.com
+
+**To discuss your situation**: martin@nkdagility.com  
+**Location**: Mexico / UK
