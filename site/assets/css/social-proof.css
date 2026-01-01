@@ -68,3 +68,9 @@ blockquote.social-proof:hover {
   border-left-color: #0052a3;
   transition: background-color 0.3s ease, border-left-color 0.3s ease;
 }
+
+/* When used with card class, ensure proper spacing and stacking */
+blockquote.social-proof.card {
+  margin-bottom: 1rem;
+  z-index: 1;
+}
