@@ -1,0 +1,20 @@
+{{- range $index, $quote := site.Data.socialproof.quotes -}}
+  {{- $path := printf "/%s/%s" $quote.category $quote.id -}}
+  
+  {{- $.AddPage (dict
+    "kind" "page"
+    "path" $path
+    "title" $quote.name
+    "date" $quote.date
+    "params" (dict
+      "text" $quote.text
+      "name" $quote.name
+      "title" $quote.title
+      "relationship" $quote.relationship
+      "class" $quote.class
+      "stars" $quote.stars
+      "socialProofCategories" (slice $quote.category)
+      "testimonial" true
+    )
+  ) -}}
+{{- end -}}

@@ -31,6 +31,15 @@ params:
 pagination:
   pagerSize: 30
 
+taxonomies:
+  socialProofCategory: socialProofCategories
+
+permalinks:
+  taxonomy:
+    socialProofCategories: "/social-proof/categories/"
+  term:
+    socialProofCategories: "/social-proof/:slug/"
+
 # Enable sitemap and robots.txt
 sitemap:
   filename: "sitemap.xml"
