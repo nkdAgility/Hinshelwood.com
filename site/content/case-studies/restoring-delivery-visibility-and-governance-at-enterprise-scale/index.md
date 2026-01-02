@@ -120,3 +120,5 @@ When work is defined consistently, autonomy becomes sustainable.
 When fragmentation is addressed deliberately, scale stops being a tax.
 
 That is the role of effective technical leadership: designing systems where clarity, accountability, and adaptability can coexist.
+
+{{< contact-cta heading="Assess Whether Fragmentation Is Preventing Leadership Visibility" text="If you cannot answer basic questions about investment, constraints, or emerging risks with confidence, or if reporting is unreliable due to inconsistent systems, a diagnostic conversation can identify how to restore governance coherence at scale." >}}

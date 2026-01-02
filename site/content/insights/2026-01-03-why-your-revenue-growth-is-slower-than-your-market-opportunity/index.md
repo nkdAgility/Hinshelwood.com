@@ -114,3 +114,4 @@ That answer will tell you far more about your revenue ceiling than any forecast.
 
 Until learning speed becomes a first-class constraint, growth will always lag opportunity.
 
+{{< contact-cta heading="Assess Whether Learning Speed Is Constraining Your Revenue Growth" text="If market opportunities are clear but revenue growth is lagging, a diagnostic conversation can identify where your operating model is preventing fast, safe learning at the speed growth requires." >}}

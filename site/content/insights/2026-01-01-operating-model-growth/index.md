@@ -170,3 +170,5 @@ If your growth depends on learning, responsiveness, and relevance, then continui
 Every day.
 
 **What part of your operating model still assumes the world is stable, and what would change if you stopped pretending it was?**
+
+{{< contact-cta heading="Assess Whether Your Operating Model Still Fits Your Market" text="If your organisation feels busy but slow, or if execution is strong but strategic returns are lagging, a diagnostic conversation can reveal which operating model assumptions are destroying value." >}}

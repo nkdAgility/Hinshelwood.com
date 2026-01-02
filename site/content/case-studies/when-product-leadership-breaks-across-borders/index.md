@@ -141,3 +141,4 @@ For senior leaders, the lesson is direct:
 > Sustainable improvement does not come from better people.
 > It comes from better conditions for people to lead.
 
+{{< contact-cta heading="Assess Whether Leadership Structure Is Constraining Your Distributed Organisation" text="If decisions are centralised, context is leaking across borders, or teams lack clarity despite having capable people, a diagnostic conversation can identify where leadership design needs to change." >}}
