@@ -2,7 +2,7 @@
 title: AI Is Creating Risk Instead of Reliable Capability
 shortTitle: AI Enablement
 date: 2026-01-01
-slug: AI
+slug: ai
 description: "AI initiatives stall and create risk when organisations lack clarity, ownership, and decision discipline. As AI scales, ambiguity undermines trust, increases delivery risk, and prevents experiments from becoming reliable capability."
 keywords: [
   "AI enablement",
