@@ -128,4 +128,4 @@ It requires confronting uncomfortable truths about how revenue actually flows.
 
 It is also the only path where AI materially changes growth outcomes.
 
-
+{{< contact-cta heading="Assess Whether AI Can Actually Move Your Revenue Needle" text="If AI activity is increasing but revenue impact is not, a diagnostic conversation can identify where go-to-market alignment and decision clarity need to improve before AI can compound growth." >}}

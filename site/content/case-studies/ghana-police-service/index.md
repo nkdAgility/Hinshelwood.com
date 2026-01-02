@@ -89,3 +89,5 @@ If you are a senior leader facing stalled initiatives, digital investments that 
 It is almost always a missing execution system.
 
 This case illustrates what becomes possible when leadership stops funding change and starts **operating change**.
+
+{{< contact-cta heading="Assess Whether Your Organisation Can Turn Intent into Coordinated Action" text="If reform initiatives stall, digital investments underperform, or change fatigue is setting in despite capable leadership, a diagnostic conversation can identify what execution capability is missing and how to build it." >}}

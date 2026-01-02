@@ -132,3 +132,4 @@ The other improves flow, predictability, and trust.
 AI will not simplify delivery by default.
 But in the hands of a disciplined development manager, it can expose exactly what needs fixing.
 
+{{< contact-cta heading="Assess Whether AI Is Amplifying Delivery Risk in Your Team" text="If AI is creating more rework than value, or if teams are slowing down to validate outputs, a diagnostic conversation can identify where clarity and discipline need to improve before AI can help." >}}

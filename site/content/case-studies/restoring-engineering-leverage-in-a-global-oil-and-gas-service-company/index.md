@@ -113,3 +113,5 @@ High-performing engineering organisations are not controlled tightly. They are *
 When teams own the systems they work within, leaders regain leverage, predictability improves, and cost follows value instead of chasing failure.
 
 That is the role of effective technical leadership advice: not doing the work for teams, but helping leaders design systems where accountability can actually function.
+
+{{< contact-cta heading="Assess Whether Engineering Complexity Is Destroying Your Leverage" text="If delivery is slowing despite more resources, central teams are growing to compensate, or accountability for outcomes is diffuse, a diagnostic conversation can reveal what structural changes will restore engineering leverage." >}}

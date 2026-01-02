@@ -1,0 +1,20 @@
+{{- $variant := .Get "variant" | default "default" -}}
+{{- $heading := .Get "heading" | default "" -}}
+{{- $text := .Get "text" | default "" -}}
+{{- $showLocation := .Get "showLocation" | default false -}}
+
+{{- if eq $showLocation "false" -}}
+  {{- $showLocation = false -}}
+{{- end -}}
+
+{{- $params := dict "variant" $variant "showLocation" $showLocation -}}
+
+{{- if $heading -}}
+  {{- $params = merge $params (dict "heading" $heading) -}}
+{{- end -}}
+
+{{- if $text -}}
+  {{- $params = merge $params (dict "text" $text) -}}
+{{- end -}}
+
+{{ partial "components/contact-cta.html" $params }}

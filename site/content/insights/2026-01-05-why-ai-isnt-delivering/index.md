@@ -126,3 +126,5 @@ Leaders who ignore it keep funding pilots that never compound.
 
 The technology is ready.
 The question is whether your organisation is.
+
+{{< contact-cta variant="compact" heading="Assess Whether Your Organisation Is Ready for AI" text="If AI initiatives feel slower or messier than expected, a diagnostic conversation can reveal where organisational ambiguity is blocking AI value." >}}

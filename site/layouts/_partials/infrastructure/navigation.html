@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light my-2">
   <div class="container">
-    <a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}">{{ .Site.Title }}</a>
+    <a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}" title="{{ .Site.Params.title }}">{{ .Site.Title }}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,10 +9,11 @@
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="{{ .Page.RelPermalink | relURL }}" id="navbarDropdown{{ .Identifier }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ .Identifier }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ .Name }}
               </a>
               <ul class="dropdown-menu bg-light border-0 shadow-none" aria-labelledby="navbarDropdown{{ .Identifier }}">
+                <li><a class="dropdown-item" href="{{ .Page.RelPermalink | relURL }}"><strong>{{ .Name }}</strong></a></li>
                 {{ range .Children }}
                   <li><a class="dropdown-item" href="{{ .Page.RelPermalink | relURL }}">{{ .Name }}</a></li>
                 {{ end }}
@@ -20,7 +21,7 @@
             </li>
           {{ else }}
             <li class="nav-item">
-              <a class="nav-link" href="{{ .Page.RelPermalink | relURL }}">{{ .Name }}</a>
+              <a class="nav-link{{ with .Params.class }} {{ . }}{{ end }}" href="{{ .Page.RelPermalink | relURL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}

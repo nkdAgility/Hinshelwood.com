@@ -97,3 +97,4 @@ There is one question that separates organisations that adapt from those that st
 
 Until that question is answered honestly, delivery improvements will remain local, temporary, and insufficient.
 
+{{< contact-cta variant="compact" heading="Does This Describe Your Organisation?" text="If your organisation feels busy but slow, a diagnostic conversation can help identify which operating model assumptions are creating drag." >}}

@@ -7,7 +7,7 @@ ItemType: home
 ItemKind: marketing
 sitemap:
   filename: sitemap.xml
-  priority: 0.9
+  priority: 1.0
 ---
 
 
@@ -22,3 +22,32 @@ I support organisations in evolving their operating model beyond rigid processes
 DevOps, Agile, Lean, and AI are treated as enablers of delivery, not ends in themselves. My background in Scrum and Kanban, combined with deep technical experience across Azure DevOps, GitHub, .NET, Azure, and AI, allows me to help organisations make better decisions, strengthen delivery capability, and achieve outcomes that matter.
 
 {{< social-proof id="2W8KLTEV" >}}
+
+## Investment and Economics
+
+Typical diagnostic and advisory engagements range from £80,000 to £120,000, structured around measurable outcomes rather than time.
+
+### What This Prevents
+
+A single delayed quarter typically costs organisations £2M-£5M in missed revenue, depending on scale. Failed platform migrations cost £500K-£2M in abandoned work. Poor technical decisions compound quarterly, accumulating 15-25% additional operational cost year on year.
+
+One prevented failure pays for the engagement multiple times over.
+
+### What This Enables
+
+Restored predictability lets you commit to revenue forecasts with confidence. Reduced coordination cost frees engineering capacity for value work. Better technical decisions reduce future cost and increase strategic optionality.
+
+The return shows up in shorter cycle times, lower defect rates, and reliable delivery of committed features.
+
+### Cost of Not Acting
+
+Organisations that delay addressing systemic delivery constraints face:
+
+- 20-40% of engineering capacity lost to coordination overhead and rework
+- Quarterly revenue targets missed by 15-30% due to unpredictable delivery
+- Technical debt accumulating at 3-5x the rate of feature development
+- Leadership decisions based on lag indicators, opinion, or optimism rather than evidence
+
+The cost of continuing with a system that does not reliably deliver is measurably higher than the cost of fixing it.
+
+{{< contact-cta >}}

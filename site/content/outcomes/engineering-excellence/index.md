@@ -21,7 +21,7 @@ ItemType: outcome
 ItemKind: marketing
 sitemap:
   filename: sitemap.xml
-  priority: 0.9
+  priority: 0.8
 menu:
   main:
     parent: outcomes
@@ -161,3 +161,6 @@ It is the mechanism that allows you to operate at speed without betting the orga
 The question is not whether you are paying for it.
 The question is whether you are paying deliberately, or through missed commitments, rework, and declining confidence.
 
+---
+
+{{< contact-cta heading="Assess Whether Engineering Risk Is Constraining Your Delivery" text="If engineering problems appear late, require heroics to resolve, or make commitments feel risky, a diagnostic conversation can identify where engineering excellence needs to shift from individual capability to system design." >}}
