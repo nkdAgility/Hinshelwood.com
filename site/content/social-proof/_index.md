@@ -1,7 +1,7 @@
 ---
 title: "Social Proofs"
 sitemap:
-  priority: 0.4
+  priority: 0.7
 menu:
   main:
     weight: 700

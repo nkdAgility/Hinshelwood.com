@@ -1,4 +1,4 @@
-# NKDAgility Robots File {{hugo.Environment}}
+# Hinshelwood Robots File {{hugo.Environment}}
 {{ if eq hugo.Environment "production" }}
 User-agent: *
 Allow: /
@@ -7,6 +7,3 @@ Sitemap: {{ "/sitemap.xml" | absURL }}
 User-agent: *
 Disallow: /
 {{ end }}
-
-
-https://hinshelwood.com/sitemap.xml

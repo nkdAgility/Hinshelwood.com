@@ -21,7 +21,7 @@ ItemType: outcome
 ItemKind: marketing
 sitemap:
   filename: sitemap.xml
-  priority: 0.9
+  priority: 0.8
 menu:
   main:
     parent: outcomes

@@ -8,7 +8,7 @@ ItemKind: insights
 
 sitemap:
   filename: sitemap.xml
-  priority: 0.9
+  priority: 0.8
 menu:
   main:
     weight: 500

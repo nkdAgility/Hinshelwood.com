@@ -9,7 +9,7 @@ ItemType: home
 ItemKind: marketing
 sitemap:
   filename: sitemap.xml
-  priority: 0.8
+  priority: 0.9
 menu:
   main:
     name: Work With Me
