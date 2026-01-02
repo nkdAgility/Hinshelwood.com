@@ -1,7 +1,7 @@
 ---
 title: Restoring Engineering Leverage in a Global Oil and Gas Service Company
 description: "How a global oil and gas service company regained engineering leverage by restructuring accountability and simplifying their build system."
-date: 2026-05-15
+date: 2026-01-01
 slug: restoring-engineering-leverage-in-a-global-oil-and-gas-service-company
 image:
   position: left

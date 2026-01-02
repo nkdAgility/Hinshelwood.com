@@ -1,7 +1,7 @@
 ---
 title: When Product Leadership Breaks Across Borders
 description: "How a distributed product and engineering organisation overcame leadership misalignment to regain decision clarity, team autonomy, and delivery momentum."
-date: 2026-05-15
+date: 2026-01-01
 image:
   position: left
 slug: when-product-leadership-breaks-across-borders
