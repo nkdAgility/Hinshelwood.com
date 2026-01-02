@@ -128,6 +128,8 @@ For specialized content creation, use these custom agents:
 - **Marketing Content**: `.github/agents/marketing-content.md` - Homepage, about pages, landing pages, service descriptions
 - **Insights**: `.github/agents/insights.md` - Technical articles, thought leadership, opinionated analysis
 - **Case Studies**: `.github/agents/case-studies.md` - Client engagement documentation with measurable outcomes
+- **Social Proof**: `.github/agents/social-proof.md` - Client testimonials and feedback curation
+- **Clients**: `.github/agents/clients.md` - Client roster and logo management
 
 Each agent provides:
 - Specific persona and role
@@ -169,9 +171,11 @@ hugo new insights/my-new-article.md --source site
 ### Content Sections
 - **about/**: Company/consultant information (use marketing-content agent)
 - **case-studies/**: Real client engagements with outcomes (use case-studies agent)
+- **clients/**: Client roster and logos demonstrating experience breadth (use clients agent)
 - **insights/**: Technical articles and opinions (use insights agent)
 - **outcomes/**: Success stories categorized by type
 - **problems/**: Problem domains (devops, scaling, ai)
+- **social-proof/**: Client testimonials and feedback (use social-proof agent)
 
 **See `.github/instructions/*.instructions.md` for section-specific writing standards.**
 

@@ -10,6 +10,7 @@ summaryLength: 30
 
 enableRobotsTXT: true
 enableGitInfo: true
+uglyURLs: false
 
 frontmatter:
   lastmod: ["lastmod", "publishDate", ":git"]
@@ -31,14 +32,21 @@ params:
 pagination:
   pagerSize: 30
 
+outputs:
+  home: [html, rss]
+  section: [html, rss]
+  taxonomy: [html]
+  term: [html, rss]
+  page: [html]
+
 taxonomies:
   socialProofCategory: socialProofCategories
 
 permalinks:
-  taxonomy:
-    socialProofCategories: "/social-proof/categories/"
   term:
     socialProofCategories: "/social-proof/:slug/"
+  taxonomy:
+    socialProofCategories: "/social-proof/categories/"
 
 # Enable sitemap and robots.txt
 sitemap:

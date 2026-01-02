@@ -13,8 +13,7 @@
   <nav class="d-flex justify-content-start gap-2 mb-4 flex-wrap">
     <a href="/social-proof/" class="btn btn-sm btn-outline-primary">All ({{ len $allQuotes }})</a>
     {{- range $name, $taxonomy := .Site.Taxonomies.socialProofCategories -}}
-      {{- $termTitle := $name | humanize | title -}}
-      <a href="/social-proof/{{ $name | urlize }}/" class="btn btn-sm {{ if eq $currentCategory $name }}btn-primary{{ else }}btn-outline-primary{{ end }}">{{ $termTitle }} ({{ len (where $allQuotes "category" $name) }})</a>
+      <a href="{{ $taxonomy.Page.Permalink }}" class="btn btn-sm {{ if eq $currentCategory $name }}btn-primary{{ else }}btn-outline-primary{{ end }}">{{ $taxonomy.Page.Title }} ({{ len (where $allQuotes "category" $name) }})</a>
     {{- end -}}
   </nav>
 
