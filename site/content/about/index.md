@@ -13,7 +13,9 @@ sitemap:
 menu:
   main:
     name: Work With Me
-    weight: 400
+    weight: 10
+    params:
+      class: attention-cta
 ---
 
 
