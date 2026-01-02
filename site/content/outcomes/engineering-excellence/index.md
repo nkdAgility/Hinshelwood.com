@@ -20,7 +20,7 @@ keywords: [
 ItemType: outcome
 ItemKind: marketing
 image:
-  position: left top
+  position: centre
 sitemap:
   filename: sitemap.xml
   priority: 0.9

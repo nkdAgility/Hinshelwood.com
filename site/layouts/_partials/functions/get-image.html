@@ -16,16 +16,31 @@
   {{- if .File -}}
     {{- $section := .Section -}}
     {{- $slug := .Params.slug | default .File.ContentBaseName -}}
-    {{- $imagePath := printf "images/%s/%s.webp" $section $slug -}}
-    {{- $image := resources.Get $imagePath -}}
+    {{- $image := false -}}
+    {{- $imagePath := "" -}}
+    
+    {{- /* Try multiple formats */ -}}
+    {{- range slice "webp" "png" -}}
+      {{- if not $image -}}
+        {{- $imagePath = printf "images/%s/%s.%s" $section $slug . -}}
+        {{- $image = resources.Get $imagePath -}}
+      {{- end -}}
+    {{- end -}}
+    
     {{- if $image -}}
       {{- $resized := $image.Resize "800x" -}}
       {{- $imageSrc = $resized.RelPermalink -}}
     {{- else -}}
-      {{- $staticPath := printf "static/images/%s/%s.webp" $section $slug -}}
-      {{- if fileExists $staticPath -}}
-        {{- $imageSrc = printf "/images/%s/%s.webp" $section $slug -}}
-      {{- else -}}
+      {{- /* Check static directory */ -}}
+      {{- range slice "webp" "png" -}}
+        {{- if not $imageSrc -}}
+          {{- $staticPath := printf "static/images/%s/%s.%s" $section $slug . -}}
+          {{- if fileExists $staticPath -}}
+            {{- $imageSrc = printf "/images/%s/%s.%s" $section $slug . -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if not $imageSrc -}}
         {{- $imageSrc = printf "%s#missing#%s" site.Params.og_image $imagePath -}}
         {{- $imagePos = "left" -}}
       {{- end -}}
