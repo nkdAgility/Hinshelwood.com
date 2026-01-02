@@ -27,6 +27,8 @@ My role is not to “do DevOps for you”.
 
 My role is to **strengthen your organisation’s ability to deliver software reliably, predictably, and at speed**, without creating dependency on consultants.
 
+{{< contact-cta >}}
+
 
 ## What clients engage me to achieve
 
