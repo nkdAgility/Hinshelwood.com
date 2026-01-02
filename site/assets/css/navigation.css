@@ -1,7 +1,18 @@
 /* Brand styling */
 .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0066cc;
+}
+
+.navbar-brand:hover {
+  color: #004d99;
+}
+
+.navbar .nav-link {
+
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Navigation hover effect for all menu items */
@@ -9,9 +20,22 @@
   background-color: rgba(0, 102, 204, 0.08);
   border-radius: 0.25rem;
   color: inherit;
+
 }
 
 /* Call-to-action menu item styling */
 .nav-link.attention-cta {
   font-weight: 600;
+  color: #0066cc;
+  
+}
+
+.nav-link.attention-cta:hover {
+  color: #004d99;
+  background-color: rgba(0, 102, 204, 0.12);
+}
+/* Dropdown item hover effect */
+.dropdown-item:hover {
+  background-color: rgba(0, 102, 204, 0.08);
+  color: inherit;
 }
