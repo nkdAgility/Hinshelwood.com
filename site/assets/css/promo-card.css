@@ -58,7 +58,7 @@
 
 .promo-card-title {
   color: white;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4vw, 1.5rem);
   font-weight: bold;
   margin-bottom: 0.5rem;
   text-decoration: none;
@@ -72,22 +72,26 @@
 
 .promo-card-description {
   color: rgba(255,255,255,0.9);
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 4vw, 1rem);;
   line-height: 1.5;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
   transition: all 0.4s ease;
   margin: 0;
+  min-height: 0;
 }
 
 .promo-card:hover .promo-card-description {
   opacity: 1;
-  max-height: 500px;
+  max-height: none;
+  flex: 1;
+  overflow: auto;
+  margin-bottom: 1rem;
 }
 
 .promo-card-button {
-  margin-top: auto;
+  flex-shrink: 0;
   padding-top: 1rem;
   opacity: 0;
   max-height: 0;
