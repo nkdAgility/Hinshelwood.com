@@ -24,6 +24,7 @@ Follow Allan Weiss standards for case studies:
 - **No analogies** (say what you mean directly)
 - **Emphasise**: Constraints, risk, learning speed, decision quality, evidence, flow, strategic optionality
 - **Assume**: Issues are systemic, not people failures
+- **Approach**: Start with buyer problem/risk, name why it persists, identify the constraint, state consequences of inaction, stop short of prescribing solutions unless explicitly asked
 
 ## Content Guidelines
 
