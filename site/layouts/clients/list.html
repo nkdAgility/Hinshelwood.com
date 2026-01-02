@@ -1,9 +1,12 @@
 {{- define "main" -}}
-<section class="container my-5">
+<article class="container my-5" itemscope itemtype="https://schema.org/CollectionPage">
   <header class="mb-5">
-    <h1>{{ .Title }}</h1>
+    <h1 itemprop="name">{{ .Title }}</h1>
+    {{- with .Description -}}
+      <meta itemprop="description" content="{{ . }}">
+    {{- end -}}
     {{- with .Content -}}
-      <div class="text-muted">
+      <div class="text-muted" itemprop="description">
         {{ . }}
       </div>
     {{- end -}}
@@ -11,36 +14,48 @@
 
   {{- $pages := .Pages.ByWeight -}}
   
-  <div class="text-muted mb-4" style="font-size: 0.9rem;">
-    <p>{{ len $pages }} organisations</p>
-  </div>
+  <p class="text-muted mb-4" style="font-size: 0.9rem;" aria-label="Total number of client organisations">
+    {{ len $pages }} organisations
+  </p>
 
-  <div class="row g-4">
+  <div class="row g-4" role="list" aria-label="Client organisations">
     {{- range $pages -}}
-      <div class="col-md-3 col-sm-4 col-6">
+      <div class="col-md-3 col-sm-4 col-6" role="listitem" itemscope itemtype="https://schema.org/Organization">
         <div class="card h-100 border-0 shadow-sm p-3">
+          <meta itemprop="name" content="{{ .Title }}">
+          {{- if .Params.url -}}
+            <meta itemprop="url" content="{{ .Params.url }}">
+          {{- end -}}
           {{- if .Params.image -}}
             {{- $imagePath := printf "images/clients/%s" .Params.image -}}
             {{- $imageResource := resources.Get $imagePath -}}
             {{- if $imageResource -}}
               {{- $resized := $imageResource.Fit "200x75" -}}
               <div class="d-flex align-items-center justify-content-center" style="min-height: 100px;">
-                <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}" class="img-fluid" style="max-height: 80px; max-width: 100%;" loading="lazy">
+                <img src="{{ $resized.RelPermalink }}" 
+                     alt="{{ .Title }} logo" 
+                     title="{{ .Title }}" 
+                     class="img-fluid" 
+                     style="max-height: 80px; max-width: 100%;" 
+                     loading="lazy"
+                     width="{{ $resized.Width }}"
+                     height="{{ $resized.Height }}"
+                     itemprop="logo">
               </div>
             {{- else -}}
               <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
-                <h5 class="mb-0 text-center">{{ .Title }}</h5>
+                <span class="h5 mb-0 text-center" itemprop="name">{{ .Title }}</span>
               </div>
             {{- end -}}
           {{- else -}}
             <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
-              <h5 class="mb-0 text-center">{{ .Title }}</h5>
+              <span class="h5 mb-0 text-center" itemprop="name">{{ .Title }}</span>
             </div>
           {{- end -}}
         </div>
       </div>
     {{- end -}}
   </div>
-</section>
+</article>
 
 {{- end -}}
