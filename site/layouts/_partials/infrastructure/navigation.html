@@ -9,10 +9,11 @@
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="{{ .Page.RelPermalink | relURL }}" id="navbarDropdown{{ .Identifier }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ .Identifier }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ .Name }}
               </a>
               <ul class="dropdown-menu bg-light border-0 shadow-none" aria-labelledby="navbarDropdown{{ .Identifier }}">
+                <li><a class="dropdown-item" href="{{ .Page.RelPermalink | relURL }}"><strong>{{ .Name }}</strong></a></li>
                 {{ range .Children }}
                   <li><a class="dropdown-item" href="{{ .Page.RelPermalink | relURL }}">{{ .Name }}</a></li>
                 {{ end }}
