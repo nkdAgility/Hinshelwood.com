@@ -4,7 +4,7 @@ description: "How a global oil and gas service company regained engineering leve
 date: 2026-01-01
 slug: restoring-engineering-leverage-in-a-global-oil-and-gas-service-company
 image:
-  position: left
+  position: top
 related:
   - "problems/devops"
   - "outcomes/engineering-excellence/"
