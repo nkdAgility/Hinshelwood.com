@@ -1,6 +1,6 @@
 ---
 title: Martin Hinshelwood Engineering Leadership and Delivery Systems Consultant
-shortTitle: How I Work with Leaders
+shortTitle: Work With Me
 keywords: ["Martin Hinshelwood","engineering leadership consultant","software delivery consulting","engineering operating model","delivery constraints","predictable delivery","flow efficiency","Azure DevOps consulting","GitHub consulting","technical leadership","engineering excellence","systems of work","AI-enabled engineering","DevOps consulting"]
 date: 2026-01-01
 slug: about
@@ -12,7 +12,7 @@ sitemap:
   priority: 0.8
 menu:
   main:
-    name: How I Work With Leaders
+    name: Work With Me
     weight: 400
 ---
 
@@ -147,9 +147,4 @@ Engagements are non-cancellable but may be rescheduled without penalty.
 
 ## Next step
 
-If delivery predictability, flow, or engineering confidence are limiting your organisation’s performance, the next step is a short conversation to determine whether there is a meaningful constraint worth addressing.
-
-No sales theatre. No obligation.
-
-**To discuss your situation**: martin@nkdagility.com  
-**Location**: Mexico / UK
+{{< contact-cta >}}

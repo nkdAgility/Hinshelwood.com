@@ -165,5 +165,4 @@ If that answer is unclear, technical leadership is already constraining outcomes
 
 ---
 
-*The next step is not a programme or a proposal.
-It is a diagnostic conversation to determine whether a real constraint exists.*
+{{< contact-cta heading="Determine Whether Technical Leadership Is Your Constraint" text="If technical decisions are slow, inconsistent, or dependent on a few key people, a diagnostic conversation can reveal where technical leadership needs to become a system capability." >}}

@@ -174,7 +174,4 @@ The only question is whether you do that deliberately, or let AI expose the prob
 
 ---
 
-If you want to explore whether this applies to your organisation, the next step is not a demo.
-
-It is a diagnostic conversation.
-
+{{< contact-cta heading="Explore Whether AI Can Work in Your Organisation" text="If AI is producing interesting outputs but not delivering business value, a diagnostic conversation can reveal where ambiguity and complexity are blocking progress." >}}

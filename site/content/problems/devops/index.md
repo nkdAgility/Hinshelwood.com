@@ -197,4 +197,6 @@ At that point, the question is not which method to adopt.
 
 It is whether your operating model still serves your strategy.
 
+---
 
+{{< contact-cta heading="Explore Whether This Applies to Your Situation" text="If these patterns describe what you're seeing, the next step is a diagnostic conversation to determine where constraints are creating delivery risk." >}}

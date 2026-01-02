@@ -1,0 +1,30 @@
+{{- $variant := .variant | default "default" -}}
+{{- $heading := .heading | default "Ready to Address Your Delivery Constraints?" -}}
+{{- $text := .text | default "If delivery predictability, flow, or engineering confidence are limiting your organisation's performance, the next step is a short conversation to determine whether there is a meaningful constraint worth addressing." -}}
+{{- $showLocation := .showLocation | default true -}}
+
+<div class="contact-cta card border-primary {{ if eq $variant "compact" }}p-3{{ else }}p-4{{ end }} my-4">
+  <div class="card-body p-0">
+    {{- if ne $variant "minimal" }}
+      <h3 class="{{ if eq $variant "compact" }}h5{{ else }}h4{{ end }} mb-3">{{ $heading }}</h3>
+    {{- end }}
+    
+    <p class="{{ if eq $variant "compact" }}mb-2 small{{ else }}mb-3{{ end }}">{{ $text }}</p>
+    
+    <p class="mb-2"><strong>No sales theatre. No obligation.</strong></p>
+    
+    <div class="contact-methods {{ if eq $variant "compact" }}d-flex flex-wrap gap-2 align-items-center{{ else }}mb-2{{ end }}">
+      <div class="{{ if eq $variant "compact" }}{{ else }}mb-2{{ end }}">
+        <strong>Email:</strong> <a href="mailto:martin@nkdagility.com" class="text-decoration-none">martin@nkdagility.com</a>
+      </div>
+      <div class="{{ if eq $variant "compact" }}{{ else }}mb-2{{ end }}">
+        <strong>Schedule:</strong> <a href="https://outlook.office.com/bookwithme/user/ee9f3ad4c36a4455bd6925cd99e2192c@nkdagility.com/meetingtype/yAUp9As3uE-ocExerASCFA2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" rel="noopener" class="text-decoration-none">Book a conversation</a>
+      </div>
+      {{- if $showLocation }}
+        <div class="text-muted {{ if eq $variant "compact" }}small{{ end }}">
+          <strong>Location:</strong> Mexico / UK
+        </div>
+      {{- end }}
+    </div>
+  </div>
+</div>
