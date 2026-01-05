@@ -127,9 +127,9 @@ Fees are structured around engagement level and duration. You retain a percentag
 
 | Engagement Level | 1 Week | 30 Days | 90 Days |
 |-----------------|--------|---------|---------|
-| **Supportive** (~5% capacity) | £2,500–£4,000 | £8,000–£12,000 | £20,000–£30,000 |
-| **Regular** (~25% capacity) | £6,000–£9,000 | £18,000–£28,000 | £45,000–£70,000 |
-| **Deep** (~50% capacity) | £10,000–£15,000 | £32,000–£48,000 | £80,000–£120,000 |
+| **Supportive** | £2,500–£4,000 | £8,000–£12,000 | £20,000–£30,000 |
+| **Regular** | £6,000–£9,000 | £18,000–£28,000 | £45,000–£70,000 |
+| **Deep** | £10,000–£15,000 | £32,000–£48,000 | £80,000–£120,000 |
 
 Fees vary based on complexity, urgency, location requirements, and purchasing power parity adjustments for your region. UK IR35-risky contracts incur an additional 40% surcharge.
 
