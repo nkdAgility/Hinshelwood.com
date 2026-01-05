@@ -8,7 +8,7 @@
   "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   "editor.codeActionsOnSave": {
-    "source.fixAll.markdownlint": true
+    "source.fixAll.markdownlint": "explicit"
   },
 
   "markdownlint.config": {
