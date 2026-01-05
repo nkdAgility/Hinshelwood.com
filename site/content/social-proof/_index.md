@@ -1,5 +1,5 @@
 ---
-title: "Social Proofs"
+title: "Social Proof"
 sitemap:
   priority: 0.7
 menu:
