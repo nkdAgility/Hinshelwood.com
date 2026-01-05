@@ -123,26 +123,27 @@ I don't track hours. The focus is on removing constraints and delivering measura
 
 Fees are structured around engagement level and duration. You retain a percentage of my capacity, not individual hours.
 
-**Indicative fee ranges:**
+**Fee ranges:**
 
 | Engagement Level | 1 Week | 30 Days | 90 Days |
 |-----------------|--------|---------|---------|
-| **Supportive** | £2,500–£4,000 | £8,000–£12,000 | £20,000–£30,000 |
-| **Regular** | £6,000–£9,000 | £18,000–£28,000 | £45,000–£70,000 |
-| **Deep** | £10,000–£15,000 | £32,000–£48,000 | £80,000–£120,000 |
+| **Supportive** | £600 | £1,200 | £2,500 |
+| **Regular** | £7,000 | £15,000 | £30,000 |
+| **Deep** | £14,000 | £29,000 | £59,000 |
 
-*Mentorship engagements are available for £1000 per month for 1h per week.*
+**Mentorship**: £1,000 per month, 1 hour per week.
 
 Fees vary based on complexity, urgency, location requirements, and purchasing power parity adjustments for your region. UK IR35-risky contracts incur an additional 40% surcharge.
 
 **Payment terms:**
-- 50% due upon acceptance  
+- 50% due upon acceptance
 - 50% due 15 days after engagement start  
 - 5% discount available for full payment upfront  
 
 **Satisfaction guarantee:** If the engagement doesn't meet agreed standards, I refund your fee.
 
 Engagements are non-cancellable but may be rescheduled without penalty.
+
 ## Credentials
 
 - 17× Microsoft MVP (DevOps & GitHub)  
