@@ -9,7 +9,7 @@ resourceDir: ../resources
 summaryLength: 30
 
 enableRobotsTXT: true
-enableGitInfo: trueW
+enableGitInfo: true
 uglyURLs: false
 
 frontmatter:
