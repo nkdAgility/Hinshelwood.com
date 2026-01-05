@@ -23,9 +23,8 @@ DevOps, Agile, Lean, and AI are treated as enablers of delivery, not ends in the
 
 {{< social-proof id="2W8KLTEV" >}}
 
-## Investment and Economics
 
-Typical diagnostic and advisory 90-day engagements range from £40,000 to £120,000, structured around measurable outcomes rather than time.
+Typical diagnostic and advisory engagements are 90-day engagements and are structured around measurable outcomes rather than time.
 
 ### What This Prevents
 
