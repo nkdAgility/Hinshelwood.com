@@ -23,9 +23,9 @@ DevOps, Agile, Lean, and AI are treated as enablers of delivery, not ends in the
 
 {{< social-proof id="2W8KLTEV" >}}
 
-## Investment and Economics
+## Investment
 
-Typical diagnostic and advisory 90-day engagements range from £40,000 to £120,000, structured around measurable outcomes rather than time.
+Typical diagnostic and advisory engagements are from 10 to 90-day engagements and are structured around measurable outcomes rather than time.
 
 ### What This Prevents
 
@@ -46,7 +46,7 @@ Organisations that delay addressing systemic delivery constraints face:
 - 20-40% of engineering capacity lost to coordination overhead and rework
 - Quarterly revenue targets missed by 15-30% due to unpredictable delivery
 - Technical debt accumulating at 3-5x the rate of feature development
-- Leadership decisions based on lag indicators, opinion, or optimism rather than evidence
+- 40-60% of strategic initiatives failing to deliver expected value due to decisions made without evidence
 
 The cost of continuing with a system that does not reliably deliver is measurably higher than the cost of fixing it.
 
