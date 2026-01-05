@@ -119,20 +119,6 @@ Deep collaboration, hands-on stakeholder engagement, platform and operating-mode
 
 I don't track hours. The focus is on removing constraints and delivering measurable improvement within the agreed timebox.
 
-### Pricing and terms
-
-Fees are structured around engagement level and duration. You retain a percentage of my capacity, not individual hours.
-
-**Fee ranges:**
-
-| Engagement Level | 1 Week | 30 Days | 90 Days |
-|-----------------|--------|---------|---------|
-| **Supportive** | £600 | £1,200 | £2,500 |
-| **Regular** | £7,000 | £15,000 | £30,000 |
-| **Deep** | £14,000 | £29,000 | £59,000 |
-
-**Mentorship**: £1,000 per month, 1 hour per week.
-
 Fees vary based on complexity, urgency, location requirements, and purchasing power parity adjustments for your region. UK IR35-risky contracts incur an additional 40% surcharge.
 
 **Payment terms:**
