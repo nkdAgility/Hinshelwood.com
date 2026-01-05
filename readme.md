@@ -4,8 +4,11 @@ The official website for Martin Hinshelwood - Independent consultant specialisin
 
 ## 🌐 Live Deployments
 
-- **Production**: https://calm-island-0dc928510.4.azurestaticapps.net/
-- **Preview**: https://calm-island-0dc928510-preview.centralus.4.azurestaticapps.net/
+| Environment | AFD | Azure Static Site |
+|-------------|-----|-------------------|
+| **Production** | https://hinshelwood.com | https://calm-island-0dc928510.4.azurestaticapps.net/ |
+| **Preview** | https://preview.hinshelwood.com | https://calm-island-0dc928510-preview.centralus.4.azurestaticapps.net/ |
+| **Canary** | n/a | https://calm-island-0dc928510-{{#PullRequestID#}}.centralus.4.azurestaticapps.net/ |
 
 ## 📋 About
 
