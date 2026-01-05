@@ -131,6 +131,8 @@ Fees are structured around engagement level and duration. You retain a percentag
 | **Regular** | £6,000–£9,000 | £18,000–£28,000 | £45,000–£70,000 |
 | **Deep** | £10,000–£15,000 | £32,000–£48,000 | £80,000–£120,000 |
 
+*Mentorship engagements are available for £1000 per month for 1h per week.*
+
 Fees vary based on complexity, urgency, location requirements, and purchasing power parity adjustments for your region. UK IR35-risky contracts incur an additional 40% surcharge.
 
 **Payment terms:**
