@@ -4,7 +4,7 @@ date: 2026-01-12
 slug: estimate-accuracy-increasing-delivery-risk
 description: Demanding accurate estimates creates false certainty and changes team behaviour. Teams inflate estimates, defer risk, and avoid complex work. Leadership loses decision quality whilst believing they have control.
 related:
-  - "problems/ai"
+  - "problems/scaling"
   - "outcomes/technical-leadership"
 sitemap:
   filename: sitemap.xml
