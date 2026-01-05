@@ -9,7 +9,9 @@ related:
 sitemap:
   filename: sitemap.xml
   priority: 0.6
----What many are discovering is uncomfortable:
+---
+
+What many are discovering is uncomfortable:
 AI activity is increasing, but revenue impact is not.
 
 More dashboards.

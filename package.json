@@ -1,0 +1,25 @@
+{
+  "name": "hinshelwood.com",
+  "version": "1.0.0",
+  "description": "The official website for Martin Hinshelwood - Independent consultant specialising in DevOps, Agile, Lean, and AI enablement.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkdAgility/Hinshelwood.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nkdAgility/Hinshelwood.com/issues"
+  },
+  "homepage": "https://github.com/nkdAgility/Hinshelwood.com#readme",
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "prettier-plugin-go-template": "^0.0.15"
+  }
+}
