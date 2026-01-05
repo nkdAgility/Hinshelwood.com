@@ -15,6 +15,8 @@ I help engineering leaders restore predictability, reduce operational cost, and 
 
 **This is for CTOs and engineering leaders accountable for delivery outcomes, not project managers seeking process compliance.**
 
+{{< youtube "pnlYTYixYOE" >}}
+
 My work focuses on first principles and measurable results, using evidence to understand what is really happening in your system of work. I work directly with leaders and teams to remove friction, improve flow, and enable reliable delivery of valuable software.
 
 I support organisations in evolving their operating model beyond rigid processes, towards a co-adaptive flow of value that responds to real conditions rather than frameworks alone.
