@@ -21,6 +21,10 @@ I support organisations in evolving their operating model beyond rigid processes
 
 DevOps, Agile, Lean, and AI are treated as enablers of delivery, not ends in themselves. My background in Scrum and Kanban, combined with deep technical experience across Azure DevOps, GitHub, .NET, Azure, and AI, allows me to help organisations make better decisions, strengthen delivery capability, and achieve outcomes that matter.
 
+In this short overview I explain how I diagnose systemic delivery constraints so you can assess how your own system of work compares and whether a focused diagnostic would be useful.
+
+{{< youtube "ebvigDpxFl4" >}}
+
 {{< social-proof id="2W8KLTEV" >}}
 
 ## Investment
