@@ -141,7 +141,7 @@ Fees vary based on complexity, urgency, location requirements, and purchasing po
 **Satisfaction guarantee:** If the engagement doesn't meet agreed standards, I refund your fee.
 
 Engagements are non-cancellable but may be rescheduled without penalty.
-## Credentials (for those who care)
+## Credentials
 
 - 17× Microsoft MVP (DevOps & GitHub)  
 - Professional Scrum Trainer (PSM III, PSPO III)  
