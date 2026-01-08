@@ -94,4 +94,14 @@ It is almost always a missing execution system.
 
 This case illustrates what becomes possible when leadership stops funding change and starts **operating change**.
 
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Understand the broader constraint**: Read about [Scaling constraints when growth creates friction]({{< ref "problems/scaling" >}})
+2. **See what technical leadership looks like**: Explore [Technical Leadership outcomes]({{< ref "outcomes/technical-leadership" >}})
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+
+---
+
 {{< contact-cta heading="Assess Whether Your Organization Can Turn Intent into Coordinated Action" text="If reform initiatives stall, digital investments underperform, or change fatigue is setting in despite capable leadership, a diagnostic conversation can identify what execution capability is missing and how to build it." >}}

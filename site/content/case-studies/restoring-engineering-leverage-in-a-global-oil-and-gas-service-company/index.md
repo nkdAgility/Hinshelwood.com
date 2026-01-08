@@ -117,4 +117,14 @@ When teams own the systems they work within, leaders regain leverage, predictabi
 
 That is the role of effective technical leadership advice: not doing the work for teams, but helping leaders design systems where accountability can actually function.
 
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Understand the broader constraint**: Read about [DevOps constraints in the operating model]({{< ref "problems/devops" >}})
+2. **See what engineering excellence looks like**: Explore [Engineering Excellence outcomes]({{< ref "outcomes/engineering-excellence" >}})
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+
+---
+
 {{< contact-cta heading="Assess Whether Engineering Complexity Is Destroying Your Leverage" text="If delivery is slowing despite more resources, central teams are growing to compensate, or accountability for outcomes is diffuse, a diagnostic conversation can reveal what structural changes will restore engineering leverage." >}}

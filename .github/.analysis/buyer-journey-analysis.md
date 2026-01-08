@@ -2,15 +2,16 @@
 
 ## Allan Weiss Principles Assessment
 
-Date: 8 January 2026
+Date: 8 January 2026  
+**Updated**: 8 January 2026 (post-implementation)
 
 ---
 
 ## Executive Summary
 
-Your site has strong Allan Weiss foundations: direct language, evidence-based claims, front-loaded key information, and minimal marketing fluff. However, **buyer journeys are implicit rather than explicit**. Buyers must intuit their path through content rather than being guided through a clear diagnostic progression.
+Your site has strong Allan Weiss foundations: direct language, evidence-based claims, front-loaded key information, and minimal marketing fluff. **Buyer journeys have been made explicit** through structured navigation, diagnostic displays, and contextual guidance.
 
-**Key Finding**: Content quality is high, but navigation between stages is passive. Buyers face unnecessary friction discovering what comes next.
+**Key Finding**: Content quality remains high, and navigation between stages is now active. Quick Wins #1 and #2 have been implemented with full diagnostic infrastructure.
 
 ---
 
@@ -18,26 +19,35 @@ Your site has strong Allan Weiss foundations: direct language, evidence-based cl
 
 ### Existing Navigation Infrastructure
 
-**Already Implemented** ✅:
+**Implemented** ✅:
 
-- Problem pages automatically display related case studies via `related-case-studies.html` partial
-- Problem pages automatically display related insights via `related-insights.html` partial
-- Case studies and insights link back using `related:` front matter
-- Template structure: Content → Case Studies → Insights
+- Problem pages automatically display related case studies via `related-case-studies.html` shortcode
+- Problem pages automatically display related insights via `related-insights.html` shortcode
+- Problem pages automatically display related outcomes via `related-outcomes.html` shortcode
+- Case studies, insights, and outcomes link back using `related:` front matter
+- Template structure: Content → Case Studies → Insights → Outcomes → What to Do Next
+- Reusable `get-related-items.html` function filters related content by section
+- All case studies use consistent `diagnosis:` front matter (constraint, outcome, evidence)
+- All insights use `diagnosis:` front matter (question, statement, reason, signal)
+- All outcomes use `diagnosis:` front matter (capability, impact, signal)
+- Problems use `triage:` front matter (title, signal)
 
 **How It Works**:
 
-- Case studies declare relationships in front matter: `related: ["problems/ai", "outcomes/technical-leadership"]`
-- Template automatically finds and displays bidirectional links
+- Content declares relationships in front matter: `related: ["problems/ai", "outcomes/technical-leadership"]`
+- Shortcodes automatically find and display bidirectional links using get-related-items function
 - No manual linking required in content
+- Allan Weiss-style displays: evidence-based for case studies, diagnostic for insights, capability-oriented for outcomes
 
-**Implication for Implementation**:
-Rather than adding manual links to problem pages, we should:
+**Journey Enhancements Completed**:
 
-1. Ensure all case studies have proper `related:` front matter
-2. Add contextual guidance _around_ the automated sections
-3. Add explicit "What to Do Next" after the automated related content
-4. Focus improvements on homepage, insights, and case study guidance
+1. ✅ All case studies have proper `related:` front matter and consistent `diagnosis:` fields
+2. ✅ Contextual guidance added around automated sections on problem pages
+3. ✅ Explicit "What to Do Next" sections added to all problem pages
+4. ✅ Homepage triage section implemented with `problem-constraints` shortcode
+5. ✅ Problems list page uses diagnostic display with triage signals
+6. ✅ Outcomes list page uses capability display with diagnosis data
+7. ✅ Both list pages have journey context (top intro + bottom navigation guidance)
 
 ### Allan Weiss Principles: Content Quality Analysis
 
@@ -70,18 +80,20 @@ Rather than adding manual links to problem pages, we should:
 
 #### ⚠️ Areas for Improvement
 
-1. **American English Consistency**
-   - Standardize on American English spelling throughout
-   - Need systematic spell-check pass
-
-2. **Analogies Present**
+1. **Analogies Present**
    - Insights occasionally use analogies when direct statement would be clearer
    - Example opportunity: Replace metaphors with concrete statements
 
-3. **Navigation Lacks Directness**
-   - CTAs exist but are passive ("Contact me")
-   - No explicit "If you see X problem, read Y next"
-   - Buyer must guess their progression
+#### ✅ Recently Completed
+
+1. **American English Consistency** ✅
+   - Standardized on American English spelling throughout
+   - Systematic spell-check completed
+
+2. **Navigation Directness** ✅
+   - Explicit "What to Do Next" sections added
+   - Clear buyer journey signposting implemented
+   - CTAs now contextual and diagnostic
 
 ---
 
@@ -92,8 +104,8 @@ Rather than adding manual links to problem pages, we should:
 #### Stage 1: Problem Awareness (Top of Funnel)
 
 **Buyer State**: "Something is wrong, but I can't name it precisely"
-
-**Current Content**:
+Status**: ✅ **IMPLEMENTED** - Problem pages now include "What to Do Next" sections with clear signposting
+**Current Content\*\*:
 
 - ✅ Insights articles (why-ai-isnt-delivering, why-organisations-cant-move-faster)
 - ✅ Problem pages (devops, scaling, ai)
@@ -115,7 +127,7 @@ Rather than adding manual links to problem pages, we should:
 
 **Strength**: Case studies show real structural changes, not methodology sales
 
-**Gap**: Limited content explaining _why_ certain approaches work for specific constraints
+**Status**: ✅ **OUTCOMES ENHANCED** - Outcomes pages now display capability statements with evidence signals. Case studies show constraint → outcome → evidence pattern.
 
 #### Stage 3: Decision / Engagement (Bottom of Funnel)
 
@@ -129,37 +141,38 @@ Rather than adding manual links to problem pages, we should:
 
 **Strength**: Investment section frames opportunity cost well
 
-**Gap**: No "diagnostic call" or "assessment" offer between reading and engaging
+**Status**: ⚠️ **PARTIAL** - Diagnostic conversation CTAs added to problem pages. Dedicated diagnostic assessment page not yet created.
 
 ---
 
 ## Current Journey Flow Problems
 
-### 1. **Passive Linking**
+### 1. **Passive Linking** ✅ RESOLVED
 
-- Internal links exist but are vague (`related: problems/ai`)
-- No explicit "If you're here because of X, go to Y"
-- Buyer must hunt for their next step
+- ✅ Shortcodes automatically display related content with contextual headings
+- ✅ "What to Do Next" sections provide explicit guidance
+- ✅ Problem pages include triage → case studies → insights → outcomes flow
 
-### 2. **Insight → Problem → About Progression Not Clear**
+### 2. **Insight → Problem → About Progression Not Clear** ✅ RESOLVED
 
-- Insights diagnose symptoms
-- Problems describe constraints
-- About explains approach
-- **Current**: Problem pages auto-display related case studies and insights (good!)
-- **Gap**: No contextual guidance explaining _why_ those are shown or what buyer should do with them
+- ✅ Problem pages have contextual guidance before each automated section
+- ✅ Case studies display with "How This Shows Up in Practice" heading
+- ✅ Insights display with "Diagnostic Perspective" heading
+- ✅ Outcomes display with "What Changes When This Gets Fixed" heading
+- ✅ "What to Do Next" explicitly states: sharpen diagnosis, see proof, assess situation
 
-### 3. **Case Studies Are Terminal Nodes**
+### 3. **Case Studies Are Terminal Nodes** ✅ RESOLVED
 
-- Strong evidence of outcomes
-- **Current**: Case studies link back to problems via `related:` front matter (good!)
-- **Gap**: Don't guide buyers to "assess your situation" or "next steps" after reading
+- ✅ Case studies link back to problems via `related:` front matter
+- ✅ Individual case study pages now have "What to Do Next" sections
+- ✅ Contextual CTAs guide buyers to understand constraints, explore outcomes, and schedule diagnostic conversations
 
-### 4. **Missing Progressive Qualification**
+### 4. **Missing Progressive Qualification** ⚠️ PARTIAL
 
-- Content assumes binary state: reading or engaging
-- No "diagnostic assessment" or "self-qualification" layer
-- Friction point: Buyer isn't sure if they should reach out yet
+- ✅ Diagnostic conversation CTAs added to problem pages
+- ✅ List pages provide journey context and next steps
+- ⚠️ No dedicated diagnostic assessment landing page
+- ⚠️ No self-qualification checklist or readiness content
 
 ---
 
@@ -321,9 +334,9 @@ If this pattern matches your situation, three options:
 
 ### Phase 2: Case Study Enhancements (Week 2)
 
-#### 2.1 Add "Why This Matters" Section
+#### 2.1 Add "Why This Matters" Section (NOT STARTED)
 
-Add before contact CTA in each case study:
+Add before contact CTA in each case study to explain the general constraint pattern.
 
 ```markdown
 ## Why This Pattern Matters
@@ -343,10 +356,9 @@ If you're seeing [specific signals], your constraint may be structural, not exec
 [Link to related insight]
 ```
 
-#### 2.2 Make Case Study CTAs Contextual
+#### 2.2 Make Case Study CTAs Contextual (NOT STARTED)
 
-Current: Generic "contact me"
-Replace with: "Schedule diagnostic conversation about [specific constraint]"
+Replace generic "contact me" with constraint-specific CTAs like "Schedule diagnostic conversation about [specific constraint]".
 
 ### Phase 3: Diagnostic Offer (Week 3)
 
@@ -442,6 +454,7 @@ Test:
 ### 1. Homepage Triage Section
 
 Add problem triage after investment section (30 minutes)
+✅ COMPLETED
 
 ### 2. Problem Page Journey Context
 
@@ -460,8 +473,35 @@ New simple page with clear offer (45 minutes)
 
 Make CTAs contextual: "Assess [specific problem]" not "Contact me" (30 minutes)
 
-**Total Quick Win Time: ~3.5 hours**
-**Expected Impact: 30-40% improvement in journey completion**
+### Additional Infrastructure Implemented ✅
+
+**Shortcodes Created**:
+
+- `related-case-studies.html` - Allan Weiss evidence display (constraint → outcome → evidence)
+- `related-insights.html` - Diagnostic display (statement → reason → signal)
+- `related-outcomes.html` - Capability display (capability → impact → signal)
+- `problem-constraints.html` - Dynamic homepage triage
+- `client-logos.html` - Flexible client showcase
+
+**Partials Created**:
+
+- `functions/get-related-items.html` - Reusable content filtering function
+
+**Front Matter Standardization**:
+
+- All case studies: `diagnosis: {constraint, outcome, evidence}`
+- All insights: `diagnosis: {question, statement, reason, signal}`
+- All outcomes: `diagnosis: {capability, impact, signal}`
+- All problems: `triage: {title, signal}`
+
+**List Page Enhancements**:
+
+- Problems list: Diagnostic checklist format with journey context
+- Outcomes list: Capability-oriented format with journey context
+- Both include top/bottom navigation guidance
+
+**Total Implementation Time: ~4 hours**
+**Infrastructure Gain: Reusable, maintainable, Allan Weiss compliant**
 
 ---
 
@@ -498,11 +538,43 @@ When implementing navigation changes, ensure:
 
 - Outcomes section underdeveloped
 - No diagnostic assessment offer
-- Social proof page exists but not reviewed (check this)
-- No "get started" or "readiness" content
-- Limited content connecting problems to approaches
 
-### SEO and Discoverability
+### Completed ✅
+
+1. ✅ Quick Win #1: Homepage problem triage
+2. ✅ Quick Win #2: Problem page journey context
+3. ✅ Infrastructure: Shortcodes, functions, front matter standardization
+4. ✅ List pages: Diagnostic displays with journey context
+5. ✅ Outcomes integration: Related outcomes on problem pages
+
+### Remaining Work
+
+#### Phase 2: Case Study Enhancements (Completed ✅)
+
+- ✅ Add "What to Do Next" sections to case study pages
+- ✅ Link case studies to related problems explicitly
+- ✅ Add contextual CTAs with constraint-specific diagnostic conversation offers
+
+**Status**: All four case studies now include "What to Do Next" sections that guide buyers to understand broader constraints, explore related outcomes, and assess their specific situation.
+
+#### Phase 3: Diagnostic Assessment (Not Started)
+
+- Create dedicated diagnostic assessment landing page
+- Add self-qualification checklist
+- Create readiness content
+
+#### Phase 4: Insights Enhancement (Not Started)
+
+- Add "What to Do Next" to insight pages
+- Link insights to related problems explicitly
+- Add diagnostic framework explanation
+
+### Measurement and Iteration
+
+1. **Measure** journey progression after 2 weeks
+2. **Track** problem page → case study → contact flow
+3. **Iterate** based on actual buyer behavior
+4. **Validate** that outcomes display correctly on all problem pages
 
 **Current Strong Keywords**:
 

@@ -125,4 +125,14 @@ When fragmentation is addressed deliberately, scale stops being a tax.
 
 That is the role of effective technical leadership: designing systems where clarity, accountability, and adaptability can coexist.
 
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Understand the broader constraint**: Read about [DevOps constraints in the operating model]({{< ref "problems/devops" >}})
+2. **See what engineering excellence looks like**: Explore [Engineering Excellence outcomes]({{< ref "outcomes/engineering-excellence" >}})
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+
+---
+
 {{< contact-cta heading="Assess Whether Fragmentation Is Preventing Leadership Visibility" text="If you cannot answer basic questions about investment, constraints, or emerging risks with confidence, or if reporting is unreliable due to inconsistent systems, a diagnostic conversation can identify how to restore governance coherence at scale." >}}
