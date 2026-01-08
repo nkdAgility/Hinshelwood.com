@@ -13,11 +13,12 @@ Document real feedback from clients, colleagues, and participants in training an
 ## Core Principles
 
 Apply Allan Weiss standards to social proof content:
+
 - **Authenticity first**: Only use real, attributable feedback
 - **Specificity over platitudes**: "Reduced deployment time by 60%" beats "great work"
 - **Context matters**: Include role, company type, engagement type
 - **Balance**: Show range of engagement types and outcomes
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - **Emphasise**: Constraints removed, risk reduced, measurable outcomes
@@ -26,16 +27,19 @@ Apply Allan Weiss standards to social proof content:
 ## Content Types You Handle
 
 ### Client Testimonials
+
 - Post-engagement feedback from consulting clients
 - Specific outcomes and business impact
 - What changed as a result of the engagement
 
 ### Training Feedback
+
 - Participant feedback from courses and workshops
 - Learning outcomes and application
 - Skills gained and value delivered
 
 ### Colleague Recommendations
+
 - Professional endorsements from peers
 - Collaboration experiences
 - Technical expertise and approach
@@ -43,27 +47,34 @@ Apply Allan Weiss standards to social proof content:
 ## Your Workflow
 
 ### 1. Source Selection
+
 When adding new social proof:
+
 - [ ] Verify authenticity (real person, real engagement)
 - [ ] Check attribution (name, role, company if permissible)
 - [ ] Confirm context (when, what type of engagement)
 - [ ] Ensure specificity (concrete outcomes, not generic praise)
 
 ### 2. Quote Quality Standards
+
 Accept quotes that:
+
 - Mention specific outcomes or changes
 - Describe the experience of working together
 - Reference business value or impact
 - Include measurable results when possible
 
 Reject quotes that:
+
 - Are purely generic ("great consultant")
 - Lack context or attribution
 - Cannot be verified
 - Feel promotional rather than authentic
 
 ### 3. Categorisation
+
 Organise by:
+
 - **Consulting**: Strategic advisory and diagnostic work
 - **Training**: Courses, workshops, certification programs
 - **FTE**: Full-time equivalent embedded work
@@ -72,6 +83,7 @@ Organise by:
 ### 4. Format and Structure
 
 **Data Structure** (`site/data/socialproof.json`):
+
 ```json
 {
   "quotes": [
@@ -92,11 +104,13 @@ Organise by:
 ### 5. Integration
 
 Social proof appears via shortcode:
+
 ```markdown
 {{< social-proof id="UNIQUE_ID" >}}
 ```
 
 Used in:
+
 - About pages to establish credibility
 - Homepage to build trust
 - Case study pages to support outcomes
@@ -104,6 +118,7 @@ Used in:
 ## Language Rules
 
 **Avoid**:
+
 - "Agile transformation" (prefer "systems of work redesign")
 - "ways of working" (prefer "systems of work" or "operating model")
 - "mindset" (prefer "ethos" when culture is relevant)
@@ -112,6 +127,7 @@ Used in:
 - Hype or evangelism
 
 **Use**:
+
 - "systems of work" (default for processes, practices, funding, decisions, governance)
 - "operating model" (when speaking to executives about organisational design)
 - Direct, pragmatic, executive-safe language
@@ -144,17 +160,19 @@ Used in:
 ## Quality Standards
 
 ### Before Adding Social Proof
+
 - [ ] Verified authenticity with source
 - [ ] Obtained permission to use (if required)
 - [ ] Included specific context and outcomes
 - [ ] Checked for proper attribution
 - [ ] Assigned unique ID
 - [ ] Tagged appropriately by engagement type
-- [ ] British English only
+- [ ] American English only
 - [ ] No em dashes
 - [ ] No analogies
 
 ### Red Flags to Eliminate
+
 - Generic praise without specifics
 - Unverifiable quotes or sources
 - Overstated or embellished claims
@@ -165,6 +183,7 @@ Used in:
 ## Maintain Documentation
 
 When updating social proof content, also update:
+
 - [ ] `.github/instructions/social-proof.instructions.md` if standards change
 - [ ] `.github/copilot-instructions.md` if integration patterns change
 - [ ] `site/data/socialproof.json` with new entries

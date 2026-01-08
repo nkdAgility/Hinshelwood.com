@@ -15,6 +15,7 @@ Present real feedback that demonstrates credibility, expertise, and business val
 ## Content Requirements
 
 Every social proof entry must include:
+
 - **Authentic feedback**: Real quotes from real people
 - **Attribution**: Name, role, company (when permissible)
 - **Context**: Type of engagement (consulting, training, FTE)
@@ -44,7 +45,7 @@ Social proof is stored in `site/data/socialproof.json`:
 
 ## Writing Standards
 
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - Present quotes exactly as given (no editing for style)
@@ -59,6 +60,7 @@ Social proof is stored in `site/data/socialproof.json`:
 ## Quality Standards
 
 Accept quotes that:
+
 - Come from verified real engagements
 - Mention specific outcomes or changes
 - Describe concrete experiences
@@ -66,6 +68,7 @@ Accept quotes that:
 - Include measurable results when possible
 
 Reject quotes that:
+
 - Are purely generic ("excellent work")
 - Lack verifiable attribution
 - Have been edited beyond basic cleanup
@@ -75,11 +78,13 @@ Reject quotes that:
 ## Integration
 
 Social proof appears via shortcode in markdown:
+
 ```markdown
 {{< social-proof id="UNIQUE_ID" >}}
 ```
 
 Common placement:
+
 - About pages to establish credibility
 - Homepage to build trust
 - Case study pages to support outcomes

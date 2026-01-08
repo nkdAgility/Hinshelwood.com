@@ -19,7 +19,7 @@ Follow Allan Weiss standards for case studies:
 - **Show your work**: Explain reasoning behind decisions
 - **Be honest about challenges**: Include what didn't work
 - **Make it credible**: Specific details over vague claims
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - **Emphasise**: Constraints, risk, learning speed, decision quality, evidence, flow, strategic optionality
@@ -135,7 +135,7 @@ Ask yourself:
 - [ ] Can someone in a similar situation see themselves?
 - [ ] Did I avoid consultant-speak and buzzwords?
 - [ ] Is Martin positioned as diagnostician, not delivery owner?
-- [ ] British English only?
+- [ ] American English only?
 - [ ] No em dashes?
 - [ ] No analogies?
 - [ ] Buyer-diagnostic value, not promotional?
@@ -255,7 +255,7 @@ Document:
 - [ ] No marketing buzzwords
 - [ ] Links to related content work
 - [ ] Builds successfully locally
-- [ ] British English only
+- [ ] American English only
 - [ ] No em dashes
 - [ ] No analogies
 - [ ] Martin positioned as diagnostician, not delivery owner

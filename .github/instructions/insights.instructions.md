@@ -36,7 +36,7 @@ Every insight article must:
 
 ## Writing Standards
 
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - Use "I" and "you." This is personal expertise, not a research paper.
@@ -90,13 +90,13 @@ Use consistent, precise terminology when describing organisational design and wo
 
 ### Example Rewrites
 
-**Before**: "We need to change our ways of working and adopt new mindset shifts."  
+**Before**: "We need to change our ways of working and adopt new mindset shifts."
 **After**: "We need to redesign our systems of work to support faster decision-making."
 
-**Before**: "The organisation's ways of work prevent teams from adapting quickly."  
+**Before**: "The organisation's ways of work prevent teams from adapting quickly."
 **After**: "The organisation's systems of work prevent teams from adapting quickly."
 
-**Executive context before**: "Your systems of work create unnecessary coordination overhead."  
+**Executive context before**: "Your systems of work create unnecessary coordination overhead."
 **Executive context after**: "Your operating model creates unnecessary coordination overhead."
 
 ### Decision Rule

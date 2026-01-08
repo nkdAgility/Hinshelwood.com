@@ -25,7 +25,7 @@ Every case study must include:
 
 ## Writing Standards
 
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - Start with the outcome. Lead with the impact, not the backstory.

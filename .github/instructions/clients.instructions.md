@@ -15,6 +15,7 @@ Present accurate client roster that shows range of industries, company sizes, an
 ## Content Requirements
 
 Every client entry must include:
+
 - **Company name**: Official name (or descriptor if confidential)
 - **Industry**: Sector or classification
 - **Engagement type**: Consulting, training, FTE, advisory
@@ -22,6 +23,7 @@ Every client entry must include:
 - **Permission**: Appropriate clearance to display
 
 Optional details (when permissible):
+
 - Company logo
 - Engagement dates
 - Company size
@@ -51,7 +53,7 @@ Clients are stored in `site/data/clients.json`:
 
 ## Writing Standards
 
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - Use official company names
@@ -65,6 +67,7 @@ Clients are stored in `site/data/clients.json`:
 ## Confidentiality Handling
 
 When client cannot be named:
+
 - Use industry descriptor: "Global Financial Services Company"
 - Include company scale: "FTSE 100", "Fortune 500", "Series B Startup"
 - Omit logo but include in client count
@@ -76,11 +79,12 @@ When client cannot be named:
 **Consulting**: Strategic advisory, diagnostic work, systems of work redesign  
 **Training**: Courses, workshops, certification programs  
 **FTE**: Full-time equivalent embedded work with teams  
-**Advisory**: Board advisory, executive coaching, ongoing counsel  
+**Advisory**: Board advisory, executive coaching, ongoing counsel
 
 ## Quality Standards
 
 Accept client entries that:
+
 - Have confirmed, verified engagements
 - Include proper attribution and permission
 - Respect confidentiality requirements
@@ -88,6 +92,7 @@ Accept client entries that:
 - Use properly licensed logos
 
 Reject client entries that:
+
 - Cannot be verified
 - Lack necessary permissions
 - Violate confidentiality agreements
@@ -148,11 +153,13 @@ Use consistent, precise terminology when describing engagement types:
 ## Display Integration
 
 Clients appear on:
+
 - Homepage (featured clients)
 - About page (full client list)
 - Dedicated clients page with filtering
 
 Common layouts:
+
 - Logo grid (alphabetical or by industry)
 - List with descriptions
 - Filterable by industry, size, or engagement type

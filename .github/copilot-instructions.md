@@ -259,7 +259,7 @@ Apply Allan Weiss principles to all content:
 - Front-load key information
 - Short paragraphs (3-4 lines max)
 - Challenge vague or unsupported assertions
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 

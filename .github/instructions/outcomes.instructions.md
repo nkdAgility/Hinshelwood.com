@@ -32,7 +32,7 @@ Each outcome page must:
 
 ## Writing Standards
 
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - Lead with results, not methodology.
