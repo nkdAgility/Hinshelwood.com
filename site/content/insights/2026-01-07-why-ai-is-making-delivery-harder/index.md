@@ -12,7 +12,6 @@ related:
   - "problems/ai"
   - "outcomes/technical-leadership"
   - "case-studies/when-product-leadership-breaks-across-borders"
-  - "case-studies/restoring-delivery-visibility-and-governance-at-enterprise-scale"
 sitemap:
   filename: sitemap.xml
   priority: 0.6

@@ -11,7 +11,7 @@ diagnosis:
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
-  - "case-studies/restoring-delivery-visibility-and-governance-at-enterprise-scale"
+  - "case-studies/restoring-engineering-leverage-in-a-global-oil-and-gas-service-company"
   - "case-studies/when-product-leadership-breaks-across-borders"
 sitemap:
   filename: sitemap.xml

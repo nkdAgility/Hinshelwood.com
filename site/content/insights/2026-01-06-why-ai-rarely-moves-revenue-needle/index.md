@@ -11,8 +11,7 @@ diagnosis:
 related:
   - "problems/ai"
   - "outcomes/technical-leadership"
-  - "case-studies/when-product-leadership-breaks-across-borders"
-  - "case-studies/restoring-delivery-visibility-and-governance-at-enterprise-scale"
+  - "case-studies/ghana-police-service"
 sitemap:
   filename: sitemap.xml
   priority: 0.6
