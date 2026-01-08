@@ -1,0 +1,35 @@
+{{ $relatedItems := partial "functions/get-related-items.html" (dict "section" "problems" "relatedToPath" .Page.RelPermalink) }}
+{{ $display := .Get 0 | default "structured" }}
+
+{{- if eq hugo.Environment "development" -}}
+  <span>[related-problems display="{{ $display }}"]</span>
+{{- end -}}
+
+{{ if $relatedItems }}
+  {{ if eq $display "inline" }}
+    {{- range $index, $page := $relatedItems -}}
+      {{- with $page.Params.triage -}}
+        <a href="{{- $page.RelPermalink -}}">{{ .title }}</a>{{- if ne $index (sub (len $relatedItems) 1) -}},{{ end -}}
+      {{- end -}}
+    {{- end -}}
+  {{ else }}
+    <section class="related-problems">
+      <h2>Understanding the Constraint</h2>
+      <p>These constraints often prevent this capability from emerging. Understanding the root cause helps determine where to focus:</p>
+
+      <ul>
+        {{ range $relatedItems }}
+          {{ $page := . }}
+          {{ with .Params.triage }}
+            <li>
+              <strong><a href="{{ $page.RelPermalink }}">{{ .title }}</a>:</strong> {{ .signal }}
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+{{ end }}
+{{- if eq hugo.Environment "development" -}}
+  <span>[/related-problems]</span>
+{{- end -}}

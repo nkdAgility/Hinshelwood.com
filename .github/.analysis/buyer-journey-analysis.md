@@ -3,7 +3,7 @@
 ## Allan Weiss Principles Assessment
 
 Date: 8 January 2026  
-**Updated**: 8 January 2026 (post-implementation)
+**Updated**: 8 January 2026 - Post-Implementation Review
 
 ---
 
@@ -11,7 +11,150 @@ Date: 8 January 2026
 
 Your site has strong Allan Weiss foundations: direct language, evidence-based claims, front-loaded key information, and minimal marketing fluff. **Buyer journeys have been made explicit** through structured navigation, diagnostic displays, and contextual guidance.
 
-**Key Finding**: Content quality remains high, and navigation between stages is now active. Quick Wins #1 and #2 have been implemented with full diagnostic infrastructure.
+**Key Finding**: Core navigation infrastructure is complete. Content pages have journey guidance. Templates are basic but functional. Next phase focuses on template enhancement and insights/outcomes content completion.
+
+---
+
+## Implementation Status Review: What Buyers Actually See
+
+**Assessment Method**: Reviewed rendered HTML in `/public/` folder to evaluate complete buyer experience (content + templates).
+
+### ✅ COMPLETE BUYER JOURNEYS
+
+**Problem Pages** (e.g., /problems/devops/):
+
+- ✅ Full diagnostic content with constraint explanation
+- ✅ Structured related case studies section with evidence display: "How This Shows Up in Practice"
+- ✅ Related insights section: "Diagnostic Perspective" (currently empty but infrastructure present)
+- ✅ Related outcomes section with capability statements: "What Changes When This Gets Fixed"
+- ✅ "What to Do Next" section with three clear options
+- ✅ Contextual diagnostic conversation CTA
+- **Buyer sees complete journey**: Problem → Evidence → Capabilities → Next Steps
+
+**Case Study Pages** (e.g., /case-studies/restoring-delivery-visibility...):
+
+- ✅ Constraint → Outcome → Evidence structure visible
+- ✅ "What to Do Next" section with three navigation options
+- ✅ Links back to related problems and outcomes
+- ✅ Contextual diagnostic conversation CTA specific to constraint
+- **Buyer sees complete journey**: Evidence → Constraint → Capabilities → Next Steps
+
+**Outcomes Pages** (e.g., /outcomes/engineering-excellence/):
+
+- ✅ Capability statement and impact description
+- ✅ Related case studies displayed as cards with images
+- ✅ Related insights section (template present, awaiting content connections)
+- ✅ Contextual diagnostic conversation CTA
+- ✅ **"What to Do Next" sections added with three clear navigation options**
+- **Buyer sees complete journey**: Capability → Evidence → Related Constraints → Next Steps
+
+**Homepage** (/):
+
+- ✅ Clear value proposition
+- ✅ Problem triage section implemented
+- ✅ Investment/cost framing
+- ✅ Client logos
+- ✅ Contact CTA
+- **Buyer sees complete entry journey**: Value → Problems → Investment → Action
+
+### ⚠️ PARTIAL: Insights Pages
+
+**Current State** (e.g., /insights/why-ai-is-making-delivery-harder/):
+
+- ✅ Strong diagnostic content
+- ✅ Contextual diagnostic conversation CTA
+- ❌ No "What to Do Next" section
+- ❌ No related problems section visible
+- ❌ No related case studies section visible
+- ❌ No related outcomes section visible
+- **Buyer sees**: Diagnostic content → CTA (journey stops, no onward navigation except CTA)
+
+**Impact**: Insights are currently **terminal nodes**. Buyers reading insights cannot easily progress to:
+
+- Problem pages (to understand constraint)
+- Case studies (to see evidence)
+- Outcomes (to see what changes)
+
+### ❌ NOT STARTED
+
+**Diagnostic Assessment Page**:
+
+- No dedicated `/diagnostic-assessment/` page
+- All CTAs link directly to calendar booking
+- **Missing**: Self-qualification content, readiness signals, what to expect
+
+---
+
+## Priority Actions Based on Rendered Output
+
+### IMMEDIATE (Fixes Critical Journey Break)
+
+**1. Fix Insights Template to Add Journey Navigation**
+
+**Why**: Insights are currently terminal nodes with no onward journey. The template (`insights/single.html`) only renders content + CTA, missing all related content sections that Problem and Outcomes pages have.
+
+**Action**: Update `site/layouts/insights/single.html` to match the journey structure:
+
+- Add related problems section (to understand constraint)
+- Add related case studies section (to see evidence)
+- Add related outcomes section (to see what changes)
+- Add "What to Do Next" section in template or add to each insight's content
+
+**Impact**: Converts insights from dead-ends into journey entry points. Buyers can progress from symptom → constraint → evidence → outcome.
+
+**Estimated time**: 1 hour template work + content review
+
+---
+
+### HIGH PRIORITY (Completes Journey Infrastructure)
+
+**2. Add "What to Do Next" Sections to Insights Content**
+
+Once template displays related content, add explicit guidance in each insight explaining how to use the related sections.
+
+**3. ~~Add "What to Do Next" to Outcomes Pages~~** ✅ **COMPLETED**
+
+Both outcomes pages now have "What to Do Next" sections that:
+
+- Guide buyers to review related case studies above
+- Link to relevant problem pages to understand constraints
+- Offer diagnostic conversation for specific situation assessment
+
+**4. Create Diagnostic Assessment Landing Page**
+
+Create `/diagnostic-assessment/` page that explains:
+
+- What happens in the conversation
+- Who it's for (self-qualification)
+- What you'll leave with (clarity, not pitch)
+- Links to booking
+
+This gives buyers a "decision page" between reading and engaging.
+
+---
+
+### MEDIUM PRIORITY (Enriches Journey)
+
+**5. Connect Insights to Problems via Front Matter**
+
+Review insights and ensure `related:` front matter connects to relevant problems. Currently problem pages expect insights to link to them, but insights don't have onward navigation.
+
+**6. Review Empty Related Sections**
+
+Some problem pages have empty "related-insights" sections (shortcode renders but no content). Either:
+
+- Add insight connections via front matter
+- Remove empty sections from display
+
+---
+
+## What's Working Well (Don't Change)
+
+1. **Problem pages are excellent** - Full journey visible, clear navigation, evidence displayed, outcomes shown, next steps explicit
+2. **Case studies are excellent** - Complete constraint → outcome → evidence pattern, clear next steps, contextual CTAs
+3. **Outcomes display well** - Case studies shown as visual cards, capability statements clear
+4. **CTAs are contextual** - Not generic "contact me" but specific "Assess whether [constraint] is preventing [outcome]"
+5. **Homepage triage works** - Problem selection visible and clear
 
 ---
 
@@ -591,13 +734,55 @@ When implementing navigation changes, ensure:
 
 ---
 
-## Next Steps
+## Next Steps (Updated Based on Rendered Site Review)
 
-1. **Review and approve** this analysis
-2. **Prioritise** quick wins vs. full phases
-3. **Implement** Phase 1 (navigation infrastructure)
-4. **Measure** journey progression after 2 weeks
-5. **Iterate** based on actual buyer behaviour
+### Immediate Action: Fix Insights Journey
+
+**Problem**: Insights are terminal nodes. Buyers land on diagnostic content but have nowhere to go except a CTA.
+
+**Solution**: Update `/site/layouts/insights/single.html` to add:
+
+1. Related problems section (like outcomes template has)
+2. Related case studies section (like outcomes template has)
+3. Related outcomes section (like outcomes template has)
+4. Consider adding "What to Do Next" in template
+
+**Reference template**: `/site/layouts/outcomes/single.html` (already has partials structure)
+
+---
+
+### High Priority: Complete Journey Guidance
+
+1. **Add "What to Do Next" to all insights** (content layer, 8 files)
+2. ~~**Add "What to Do Next" to outcomes**~~ ✅ **COMPLETED** (content layer, 2 files)
+3. **Create diagnostic assessment page** (new page)
+4. **Review and connect insights to problems** (front matter updates)
+
+---
+
+### Validation Checklist
+
+Before considering buyer journey complete, verify in `/public/`:
+
+- [ ] Insights pages display related problems, case studies, and outcomes
+- [ ] All insights have explicit "What to Do Next" guidance
+- [ ] All outcomes have explicit "What to Do Next" guidance
+- [ ] Diagnostic assessment page exists and is linked from key points
+- [ ] No empty "related" sections render (or they gracefully hide)
+- [ ] Each content type can progress to at least two other types
+
+---
+
+### Success Criteria
+
+**A complete buyer journey means**:
+
+- Buyer can enter anywhere (insight, problem, case study, homepage) and navigate to decision point
+- No content type is a dead end
+- Next steps are always clear and contextual
+- Evidence and capability are always one click away from any starting point
+
+**Current state**: 80% there. Problem pages and case studies are excellent. Insights are the critical gap.
 
 ---
 

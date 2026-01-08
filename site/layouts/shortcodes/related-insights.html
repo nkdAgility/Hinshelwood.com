@@ -1,43 +1,50 @@
 {{ $currentPath := .Page.RelPermalink }}
 {{ $relatedInsights := partial "functions/get-related-items.html" (dict "section" "insights" "relatedToPath" $currentPath) }}
+{{ $display := .Get 0 | default "structured" }}
 
 {{- if eq hugo.Environment "development" -}}
-  <div>[related-insights]</div>
+  <span>[related-insights display="{{ $display }}"]</span>
 {{- end -}}
 
 {{ if $relatedInsights }}
-  <h2>Diagnostic Perspective</h2>
-  <p>These insights help sharpen your understanding of where this constraint comes from.</p>
+  {{ if eq $display "inline" }}
+    {{- range $index, $page := $relatedInsights -}}
+      <a href="{{- $page.RelPermalink -}}">{{ $page.Params.shortTitle | default $page.Title }}</a>{{- if ne $index (sub (len $relatedInsights) 1) -}},{{ end -}}
+    {{- end -}}
+  {{ else }}
+    <h2>Diagnostic Perspective</h2>
+    <p>These insights help sharpen your understanding of where this constraint comes from.</p>
 
-  <div class="insight-diagnostic-list">
-    {{ range $relatedInsights }}
-      <article class="insight-diagnostic-item mb-4 pb-4 border-bottom">
-        <h3 class="h5 mb-2">
-          <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.shortTitle | default .Title }}</a>
-        </h3>
+    <div class="insight-diagnostic-list">
+      {{ range $relatedInsights }}
+        <article class="insight-diagnostic-item mb-4 pb-4 border-bottom">
+          <h3 class="h5 mb-2">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.shortTitle | default .Title }}</a>
+          </h3>
 
-        {{- with .Params.diagnosis.statement -}}
-          <p class="mb-2">{{ . }}</p>
-        {{- end -}}
+          {{- with .Params.diagnosis.statement -}}
+            <p class="mb-2">{{ . }}</p>
+          {{- end -}}
 
-        {{- with .Params.diagnosis.reason -}}
-          <p class="mb-2 small text-muted"><strong>Why it persists:</strong> {{ . }}</p>
-        {{- end -}}
+          {{- with .Params.diagnosis.reason -}}
+            <p class="mb-2 small text-muted"><strong>Why it persists:</strong> {{ . }}</p>
+          {{- end -}}
 
-        {{- with .Params.diagnosis.signal -}}
-          <p class="mb-2 small"><strong>Relevance:</strong> {{ . }}</p>
-        {{- end -}}
+          {{- with .Params.diagnosis.signal -}}
+            <p class="mb-2 small"><strong>Relevance:</strong> {{ . }}</p>
+          {{- end -}}
 
-        {{- if not .Params.diagnosis.statement -}}
-          <p class="mb-2">{{ .Description }}</p>
-        {{- end -}}
+          {{- if not .Params.diagnosis.statement -}}
+            <p class="mb-2">{{ .Description }}</p>
+          {{- end -}}
 
 
-        <a href="{{ .RelPermalink }}" class="small">Read full insight →</a>
-      </article>
-    {{ end }}
-  </div>
+          <a href="{{ .RelPermalink }}" class="small">Read full insight →</a>
+        </article>
+      {{ end }}
+    </div>
+  {{ end }}
 {{ end }}
 {{- if eq hugo.Environment "development" -}}
-  <div>[/related-insights]</div>
+  <span>[/related-insights]</span>
 {{- end -}}

@@ -1,26 +1,35 @@
 {{ $relatedItems := partial "functions/get-related-items.html" (dict "section" "outcomes" "relatedToPath" .Page.RelPermalink) }}
+{{ $display := .Get 0 | default "structured" }}
 
 {{- if eq hugo.Environment "development" -}}
-  <div>[related-outcomes]</div>
+  <span>[related-outcomes display="{{ $display }}"]</span>
 {{- end -}}
 
 {{ if $relatedItems }}
-  <section class="related-outcomes">
-    <h2>What Changes When This Gets Fixed</h2>
-    <p>When these constraints are resolved, organizations unlock specific capabilities. These outcomes show what becomes possible:</p>
+  {{ if eq $display "inline" }}
+    {{- range $index, $page := $relatedItems -}}
+      {{- with $page.Params.diagnosis -}}
+        <a href="{{- $page.RelPermalink -}}">{{ .capability }}</a>{{- if ne $index (sub (len $relatedItems) 1) -}},{{ end -}}
+      {{- end -}}
+    {{- end -}}
+  {{ else }}
+    <section class="related-outcomes">
+      <h2>What Changes When This Gets Fixed</h2>
+      <p>When these constraints are resolved, organizations unlock specific capabilities. These outcomes show what becomes possible:</p>
 
-    <ul>
-      {{ range $relatedItems }}
-        {{ $page := . }}
-        {{ with .Params.diagnosis }}
-          <li>
-            <strong><a href="{{ $page.RelPermalink }}">{{ .capability }}</a>:</strong> {{ .impact }} <br /><span class="signal"><strong>Evidence signal:</strong> {{ .signal }}</span>
-          </li>
+      <ul>
+        {{ range $relatedItems }}
+          {{ $page := . }}
+          {{ with .Params.diagnosis }}
+            <li>
+              <strong><a href="{{ $page.RelPermalink }}">{{ .capability }}</a>:</strong> {{ .impact }} <br /><span class="signal"><strong>Evidence signal:</strong> {{ .signal }}</span>
+            </li>
+          {{ end }}
         {{ end }}
-      {{ end }}
-    </ul>
-  </section>
+      </ul>
+    </section>
+  {{ end }}
 {{ end }}
 {{- if eq hugo.Environment "development" -}}
-  <div>[/related-outcomes]</div>
+  <span>[/related-outcomes]</span>
 {{- end -}}

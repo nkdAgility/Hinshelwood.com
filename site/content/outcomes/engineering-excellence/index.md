@@ -155,6 +155,12 @@ It is the mechanism that allows you to operate at speed without betting the orga
 The question is not whether you are paying for it.
 The question is whether you are paying deliberately, or through missed commitments, rework, and declining confidence.
 
----
+## What to Do Next
+
+If this capability is what your organization needs, three options:
+
+1. **See how this shows up in practice**: Review the case studies above to see how other leaders achieved engineering excellence at scale
+2. **Understand the constraint**: Read about {{< related-problems "inline" >}} to see where engineering excellence typically breaks
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below to determine where engineering excellence is constrained in your system
 
 {{< contact-cta heading="Assess Whether Engineering Risk Is Constraining Your Delivery" text="If engineering problems appear late, require heroics to resolve, or make commitments feel risky, a diagnostic conversation can identify where engineering excellence needs to shift from individual capability to system design." >}}
