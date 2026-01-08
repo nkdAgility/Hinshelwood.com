@@ -57,23 +57,32 @@ Your site has strong Allan Weiss foundations: direct language, evidence-based cl
 - ✅ Contact CTA
 - **Buyer sees complete entry journey**: Value → Problems → Investment → Action
 
-### ⚠️ PARTIAL: Insights Pages
+### ✅ COMPLETE: Insights Pages
 
-**Current State** (e.g., /insights/why-ai-is-making-delivery-harder/):
+**Current State** (verified in /public/):
 
-- ✅ Strong diagnostic content
+- ✅ Strong diagnostic content with diagnosis front matter (question, statement, reason, signal)
 - ✅ Contextual diagnostic conversation CTA
-- ❌ No "What to Do Next" section
-- ❌ No related problems section visible
-- ❌ No related case studies section visible
-- ❌ No related outcomes section visible
-- **Buyer sees**: Diagnostic content → CTA (journey stops, no onward navigation except CTA)
+- ✅ Related problems section displaying with "Understanding the Constraint" heading
+- ✅ Related case studies section displaying with "How This Shows Up in Practice" heading
+- ✅ Related outcomes section displaying with "What Changes When This Gets Fixed" heading
+- ✅ Case studies limited to 1-2 per insight, selected for genuine relevance (not forced)
+- ⚠️ No "What to Do Next" section in content (but journey navigation is present via related sections)
+- **Buyer sees complete journey**: Diagnostic content → Related constraint → Evidence → Capabilities → CTA
 
-**Impact**: Insights are currently **terminal nodes**. Buyers reading insights cannot easily progress to:
+**Impact**: Insights are now **active journey nodes**. Buyers reading insights can:
 
-- Problem pages (to understand constraint)
-- Case studies (to see evidence)
-- Outcomes (to see what changes)
+- Navigate to problem pages (to understand constraint in depth)
+- See case study evidence (constraint → outcome → measurable results)
+- See related outcomes (what changes when constraint is removed)
+- Book diagnostic conversation via contextual CTA
+
+**Template Structure Working**:
+
+- `site/layouts/insights/single.html` displays all three related content sections via partials
+- `related-problems.html`, `related-case-studies.html`, `related-outcomes.html` all rendering correctly
+- Bidirectional linking via `get-related-items.html` function working as designed
+- `related-insights.html` component limits display to first 5 items
 
 ### ❌ NOT STARTED
 
@@ -87,30 +96,27 @@ Your site has strong Allan Weiss foundations: direct language, evidence-based cl
 
 ## Priority Actions Based on Rendered Output
 
-### IMMEDIATE (Fixes Critical Journey Break)
+### ~~IMMEDIATE (Fixes Critical Journey Break)~~ ✅ COMPLETED
 
-**1. Fix Insights Template to Add Journey Navigation**
+**~~1. Fix Insights Template to Add Journey Navigation~~** ✅ **COMPLETED**
 
-**Why**: Insights are currently terminal nodes with no onward journey. The template (`insights/single.html`) only renders content + CTA, missing all related content sections that Problem and Outcomes pages have.
+**Status**: Insights template (`site/layouts/insights/single.html`) now includes all related content sections. Verified in rendered HTML:
 
-**Action**: Update `site/layouts/insights/single.html` to match the journey structure:
+- ✅ Related problems section displays with contextual heading
+- ✅ Related case studies section displays with evidence framing
+- ✅ Related outcomes section displays with capability framing
+- ✅ All 8 insights have 1-2 relevant case studies linked (not forced, genuinely related)
+- ✅ Bidirectional linking working via `get-related-items.html` function
 
-- Add related problems section (to understand constraint)
-- Add related case studies section (to see evidence)
-- Add related outcomes section (to see what changes)
-- Add "What to Do Next" section in template or add to each insight's content
-
-**Impact**: Converts insights from dead-ends into journey entry points. Buyers can progress from symptom → constraint → evidence → outcome.
-
-**Estimated time**: 1 hour template work + content review
+**Impact**: Insights converted from terminal nodes to active journey nodes. Buyers can progress from symptom → constraint → evidence → outcome.
 
 ---
 
 ### HIGH PRIORITY (Completes Journey Infrastructure)
 
-**2. Add "What to Do Next" Sections to Insights Content**
+**1. Add "What to Do Next" Sections to Insights Content** ⚠️ OPTIONAL
 
-Once template displays related content, add explicit guidance in each insight explaining how to use the related sections.
+Insights now have journey navigation via related content sections. Explicit "What to Do Next" text may be redundant given the automated sections. Consider adding only if user testing shows buyers need more guidance.
 
 **3. ~~Add "What to Do Next" to Outcomes Pages~~** ✅ **COMPLETED**
 
