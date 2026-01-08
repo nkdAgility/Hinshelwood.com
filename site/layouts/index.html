@@ -1,22 +1,10 @@
-
 {{- define "headline" }}
-  <section class="container my-5">
-    {{ .Content }}
-  </section>
+
 {{- end }}
 
 {{- define "main" }}
-  {{- /* Problems I Solve - 3 items */ -}}
-  {{ $problemsSection := .Site.GetPage "section" "problems" }}
   <section class="container my-5">
-    <h2>{{ $problemsSection.Title }}</h2>
-    {{ $problemsSection.Content }}
-    <div class="row g-4">
-      {{ $problems := where .Site.RegularPages "Section" "problems" }}
-      {{ range first 3 $problems }}
-        {{ partial "components/promo-card.html" . }}
-      {{ end }}
-    </div>
+    {{ .Content }}
   </section>
 
   {{- /* Outcomes I Deliver - 2 items */ -}}
@@ -57,7 +45,7 @@
 
   {{- /* Case Studies - 3 items */ -}}
   <section class="container my-5">
-      {{ $caseStudiesSection := .Site.GetPage "section" "case-studies" }}
+    {{ $caseStudiesSection := .Site.GetPage "section" "case-studies" }}
     <h2>{{ $caseStudiesSection.Title }}</h2>
     {{ $caseStudiesSection.Content }}
     <div class="row g-4">
@@ -78,15 +66,14 @@
     {{ $insightsSection.Content }}
     <div class="row g-4">
       {{ $insights := where .Site.RegularPages "Section" "insights" }}
-       <div class="row g-4">
-      {{ range first 9 $insights }}
-        {{ partial "components/promo-card.html" . }}
-      {{ end }}
+      <div class="row g-4">
+        {{ range first 9 $insights }}
+          {{ partial "components/promo-card.html" . }}
+        {{ end }}
       </div>
     </div>
     <div class="text-center mt-4">
       <a href="{{ $insightsSection.Permalink }}" class="btn btn-primary">View All Insights</a>
     </div>
   </section>
-
 {{- end }}

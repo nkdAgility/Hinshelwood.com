@@ -12,19 +12,19 @@
           <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.shortTitle | default .Title }}</a>
         </h3>
 
-        {{- with .Params.diagnostics.constraint -}}
+        {{- with .Params.diagnosis.constraint -}}
           <p class="text-muted mb-2 small"><strong>Constraint:</strong> {{ . }}</p>
         {{- end -}}
 
-        {{- with .Params.diagnostics.outcome -}}
+        {{- with .Params.diagnosis.outcome -}}
           <p class="mb-2"><strong>What changed:</strong> {{ . }}</p>
         {{- end -}}
 
-        {{- with .Params.diagnostics.evidence -}}
+        {{- with .Params.diagnosis.evidence -}}
           <p class="mb-2 small text-muted"><strong>Evidence:</strong> {{ . }}</p>
         {{- end -}}
 
-        {{- if not .Params.diagnostics.outcome -}}
+        {{- if not .Params.diagnosis.outcome -}}
           <p class="mb-2">{{ .Description }}</p>
         {{- end -}}
 
