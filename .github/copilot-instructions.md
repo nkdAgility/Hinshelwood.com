@@ -5,7 +5,7 @@
 **Repository**: https://github.com/nkdAgility/Hinshelwood.com  
 **Type**: Hugo static site (Extended version required)  
 **Primary Language**: Markdown content, Go templates, YAML configuration  
-**Deployment**: Azure Static Web Apps  
+**Deployment**: Azure Static Web Apps
 
 Trust these instructions. Only search for additional information if you find gaps or errors.
 
@@ -16,32 +16,40 @@ Trust these instructions. Only search for additional information if you find gap
 **IMPORTANT**: Always run Hugo commands from the repository root, not from the `site/` directory.
 
 ### Local Development
+
 ```pwsh
 hugo serve --source site --config hugo.yaml,hugo.local.yaml
 ```
+
 - Run from repository root
 - Opens at `http://localhost:1313`
 - Hot reloads on file changes
 
 ### Production Build
+
 ```pwsh
 hugo --source site --config hugo.yaml,hugo.production.yaml --logLevel info
 ```
+
 - Run from repository root
 - Output: `public/` directory at repo root (not `site/public/`)
 - Typical output: 23 pages, <1MB
 - Environment configs overlay base `hugo.yaml`: production, preview, canary, local
 
 ### Preview Build
+
 ```pwsh
 hugo --source site --config hugo.yaml,hugo.preview.yaml
 ```
+
 - Run from repository root
 
 ### Canary Build
+
 ```pwsh
 hugo --source site --config hugo.yaml,hugo.canary.yaml
 ```
+
 - Run from repository root
 
 **Important**: Always specify both base config and environment config when building. Hugo merges them in order.
@@ -52,6 +60,8 @@ hugo --source site --config hugo.yaml,hugo.canary.yaml
 /
 ├── .github/
 │   ├── copilot-instructions.md          # This file
+│   ├── .analysis/
+│   │   └── buyer-journey-analysis.md    # Buyer journey mapping and implementation plan
 │   ├── instructions/*.instructions.md    # Scoped rules for content sections
 │   ├── workflows/
 │   │   ├── main.yaml                     # Primary CI/CD pipeline (GitVersion, multi-environment deploy)
@@ -93,32 +103,39 @@ hugo --source site --config hugo.yaml,hugo.canary.yaml
 **Primary Pipeline**: `.github/workflows/main.yaml`
 
 ### Triggers
+
 - Push to `main` branch
 - Pull requests to `main`
 - Manual workflow dispatch
 
 ### Pipeline Stages
+
 1. **Setup**: GitVersion, ring determination (Production/Preview/Canary)
 2. **BuildSite**: Hugo build with token replacement, artifact upload
 3. **Publish**: Merge SWA configs, deploy to Azure Static Web Apps
 
 ### Ring Determination
+
 - **Production**: When `GitVersion_PreReleaseLabel` is empty (release tags)
 - **Preview**: When `GitVersion_PreReleaseLabel` is "Preview"
 - **Canary**: Default for all other branches/PRs (includes PR number in environment name)
 
 ### Token Replacement
+
 Template tokens use format `#{VariableName}#` in HTML/YAML files. Replaced before build with:
+
 - GitVersion outputs (SemVer, Major, Minor, etc.)
 - Hinshelwood-specific config (AzureSitesConfig, PR_Number)
 
 ### Deployment
+
 - Uses `Azure/static-web-apps-deploy@v1` action
 - Requires secret: `AZURE_STATIC_WEB_APPS_API_TOKEN_CALM_ISLAND_0DC928510`
 - Deploys to environment-specific slot based on ring
 - Output URL available as `steps.azureDeploy.outputs.static_web_app_url`
 
 ### Size Validation
+
 Pipeline checks if `public/` exceeds 500MB (Azure SWA limit). Current size: ~0.08MB (safe).
 
 ## Custom Agents
@@ -132,6 +149,7 @@ For specialized content creation, use these custom agents:
 - **Clients**: `.github/agents/clients.md` - Client roster and logo management
 
 Each agent provides:
+
 - Specific persona and role
 - Content structure templates
 - Quality checklists
@@ -140,11 +158,13 @@ Each agent provides:
 ## Content Guidelines
 
 ### File Requirements
+
 - **Format**: Markdown with YAML front matter
 - **Naming**: lowercase-with-hyphens.md
 - **Location**: `site/content/<section>/`
 
 ### Front Matter Template
+
 ```yaml
 ---
 title: "Page Title"
@@ -156,19 +176,24 @@ categories: ["section-name"]
 ```
 
 ### Internal Links
+
 Use Hugo shortcodes (NOT relative markdown links):
+
 ```
 {{< ref "path/to/file.md" >}}
 {{< relref "file.md" >}}
 ```
 
 ### Creating New Content
+
 ```pwsh
 hugo new insights/my-new-article.md --source site
 ```
+
 - Run from repository root
 
 ### Content Sections
+
 - **about/**: Company/consultant information (use marketing-content agent)
 - **case-studies/**: Real client engagements with outcomes (use case-studies agent)
 - **clients/**: Client roster and logos demonstrating experience breadth (use clients agent)
@@ -179,9 +204,55 @@ hugo new insights/my-new-article.md --source site
 
 **See `.github/instructions/*.instructions.md` for section-specific writing standards.**
 
+## Buyer Journey Architecture
+
+**Reference**: `.github/.analysis/buyer-journey-analysis.md`
+
+The site implements explicit buyer journeys aligned with Allan Weiss principles. Content guides buyers through three stages:
+
+1. **Problem Awareness** (Insights, Problem pages)
+2. **Solution Education** (Case studies, About page, Outcomes)
+3. **Decision/Engagement** (Diagnostic assessment, Contact)
+
+### Navigation Infrastructure
+
+**Automated Linking** (already implemented):
+
+- Problem pages auto-display related case studies via `site/layouts/_partials/components/related-case-studies.html`
+- Problem pages auto-display related insights via `site/layouts/_partials/components/related-insights.html`
+- Case studies and insights link back using `related:` front matter array
+- Template: `site/layouts/problems/single.html` structures content → case studies → insights
+
+**Manual Guidance** (content layer):
+
+- Contextual text around automated sections explaining why they matter
+- "What to Do Next" sections after automated content
+- Homepage triage routing buyers to appropriate problem page
+- Diagnostic assessment offer between reading and engaging
+
+### Creating Journey-Aligned Content
+
+When creating new content:
+
+1. **Add `related:` front matter** to link back to relevant problems/outcomes
+2. **Add contextual guidance** explaining what buyer should do with information
+3. **Include next-step CTAs** that are specific, not generic ("Assess your scaling constraint" not "Contact me")
+4. **Test journey flow** by following links as if you were a buyer in that stage
+
+Example front matter for case study:
+
+```yaml
+related:
+  - "problems/devops"
+  - "outcomes/engineering-excellence"
+```
+
+See buyer-journey-analysis.md for full journey maps, identified gaps, and implementation phases.
+
 ## Communication Style
 
 Apply Allan Weiss principles to all content:
+
 - Direct, active voice
 - No marketing buzzwords or corporate speak
 - Evidence-backed claims
@@ -214,6 +285,7 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 ## Language Rules (Non-Negotiable)
 
 **Avoid**:
+
 - "Agile transformation" (prefer "systems of work redesign")
 - "ways of working" (prefer "systems of work" or "operating model")
 - "mindset" (prefer "ethos" when culture is relevant)
@@ -222,6 +294,7 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 - Hype or evangelism
 
 **Use**:
+
 - "systems of work" (default for processes, practices, funding, decisions, governance)
 - "operating model" (when speaking to executives about organisational design)
 - Direct, pragmatic, executive-safe language
@@ -229,16 +302,19 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 ## Configuration Files
 
 ### Hugo Configs (`site/hugo.*.yaml`)
+
 - `hugo.yaml`: Base config (menus, params, site title)
 - Environment configs: Override `baseURL`, `publishDir`, environment variables
 - Merged at build time with `--config hugo.yaml,hugo.<env>.yaml`
 
 ### Static Web App Configs (`staticwebapp.config.*.json`)
+
 - Control routing, redirects, security headers
 - Pipeline merges base + environment config with `jq` before deployment
 - Merged output placed in `public/` for deployment
 
 ### Spell Check (`.spellcheck.yml`)
+
 - Uses `pyspelling` with aspell
 - Custom wordlist: `.wordlist.txt`
 - Runs on markdown files
@@ -320,17 +396,19 @@ Update these files whenever you:
 
 ### Documentation Files to Maintain
 
-| File | Purpose | Update When |
-|------|---------|-------------|
-| `.github/copilot-instructions.md` | Repository-wide guidance | Build changes, new patterns, architecture changes |
-| `.github/instructions/*.instructions.md` | Content-specific rules | Writing standards evolve, new content patterns |
-| `.github/agents/*.md` | Specialized content agents | Workflow improvements, quality standards change |
-| `readme.md` | User-facing documentation | Setup changes, deployment changes |
-| `.wordlist.txt` | Spell check dictionary | New technical terms added |
+| File                                          | Purpose                         | Update When                                       |
+| --------------------------------------------- | ------------------------------- | ------------------------------------------------- |
+| `.github/copilot-instructions.md`             | Repository-wide guidance        | Build changes, new patterns, architecture changes |
+| `.github/.analysis/buyer-journey-analysis.md` | Buyer journey strategy and gaps | Journey flow changes, new navigation patterns     |
+| `.github/instructions/*.instructions.md`      | Content-specific rules          | Writing standards evolve, new content patterns    |
+| `.github/agents/*.md`                         | Specialized content agents      | Workflow improvements, quality standards change   |
+| `readme.md`                                   | User-facing documentation       | Setup changes, deployment changes                 |
+| `.wordlist.txt`                               | Spell check dictionary          | New technical terms added                         |
 
 ### Quality Check Before Committing
 
 When updating documentation:
+
 - [ ] All referenced files exist and paths are correct
 - [ ] Commands have been tested and work
 - [ ] Cross-references between docs are accurate
@@ -341,6 +419,7 @@ When updating documentation:
 ### Documentation Debt
 
 If you discover outdated information:
+
 1. Fix it immediately if straightforward
 2. Document as a TODO in the relevant file if complex
 3. Never leave known-incorrect information uncommented
