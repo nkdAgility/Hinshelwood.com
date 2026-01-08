@@ -5,6 +5,71 @@
 {{- define "main" }}
   <section class="container my-5">
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
+
+    <p class="lead">These case studies show what changes when organizations stop treating delivery, technology, and leadership as separate concerns. They focus on the commercial and organizational outcomes achieved, not on methods, tools, or frameworks. Each example illustrates how clearer accountability, better decision-making, and disciplined execution translated into measurable progress for leaders who were prepared to act.</p>
+
+    <h2>How to Use These Case Studies</h2>
+
+    <p>Each case study shows:</p>
+
+    <ul>
+      <li><strong>The constraint</strong>: What specific structural problem was limiting the organization</li>
+      <li><strong>The outcome</strong>: What changed measurably when that constraint was addressed</li>
+      <li><strong>The evidence</strong>: Specific results leaders could see and verify</li>
+    </ul>
+
+    <p>If you're looking for proof that systematic constraints can be resolved without organizational upheaval, this is where to find it. If you need to understand the broader pattern first, start with <a href="/problems/">problems I solve</a>.</p>
+
+    {{ $paginator := .Paginate .Pages 10 }}
+    {{ if $paginator.Pages }}
+      <h2 class="mt-5 mb-4">Evidence from Client Engagements</h2>
+      <p class="mb-4">Each case study shows a specific constraint addressed and the measurable outcome achieved. Review the constraint to identify which pattern matches your situation.</p>
+
+      <div class="case-study-evidence-list">
+        {{ range $paginator.Pages }}
+          <article class="case-study-evidence-item mb-4 pb-4 border-bottom">
+            <h3 class="h4 mb-2">
+              <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.shortTitle | default .Title }}</a>
+            </h3>
+
+            {{- with .Params.diagnosis.constraint -}}
+              <p class="text-muted mb-2"><strong>Constraint:</strong> {{ . }}</p>
+            {{- end -}}
+
+            {{- with .Params.diagnosis.outcome -}}
+              <p class="mb-2"><strong>What changed:</strong> {{ . }}</p>
+            {{- end -}}
+
+            {{- with .Params.diagnosis.evidence -}}
+              <p class="mb-2 small text-muted"><strong>Evidence:</strong> {{ . }}</p>
+            {{- end -}}
+
+            {{- if not .Params.diagnosis.outcome -}}
+              <p class="mb-2">{{ .Description }}</p>
+            {{- end -}}
+
+
+            <a href="{{ .RelPermalink }}" class="small">Read full case study →</a>
+          </article>
+        {{ end }}
+      </div>
+
+      {{ template "_internal/pagination.html" . }}
+    {{ end }}
+
+
+    <div class="mt-5 pt-4 border-top">
+      <h2>What to Do After Reviewing Case Studies</h2>
+
+      <p>Once you've seen evidence that resonates with your situation:</p>
+
+      <ol>
+        <li><strong>Understand the broader constraint pattern</strong>: Each case study links to the relevant <a href="/problems/">problem page</a> that explains why this pattern persists</li>
+        <li><strong>See what outcomes become available</strong>: Explore the <a href="/outcomes/">outcomes</a> that emerge when these constraints are resolved</li>
+        <li><strong>Assess your specific situation</strong>: If the pattern matches, schedule a diagnostic conversation to determine whether your constraint is addressable</li>
+      </ol>
+
+      <p class="mb-0">Case studies show what's possible. The diagnostic conversation determines what's relevant to your situation.</p>
+    </div>
   </section>
 {{- end }}
