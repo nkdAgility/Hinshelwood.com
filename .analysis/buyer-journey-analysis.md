@@ -67,8 +67,8 @@ Your site has strong Allan Weiss foundations: direct language, evidence-based cl
 - ✅ Related case studies section displaying with "How This Shows Up in Practice" heading
 - ✅ Related outcomes section displaying with "What Changes When This Gets Fixed" heading
 - ✅ Case studies limited to 1-2 per insight, selected for genuine relevance (not forced)
-- ⚠️ No "What to Do Next" section in content (but journey navigation is present via related sections)
-- **Buyer sees complete journey**: Diagnostic content → Related constraint → Evidence → Capabilities → CTA
+- ✅ "What to Do Next" sections added to all 8 insights with contextual guidance
+- **Buyer sees complete journey**: Diagnostic content → Related constraint → Evidence → Capabilities → Next Steps → CTA
 
 **Impact**: Insights are now **active journey nodes**. Buyers reading insights can:
 
@@ -114,9 +114,13 @@ Your site has strong Allan Weiss foundations: direct language, evidence-based cl
 
 ### HIGH PRIORITY (Completes Journey Infrastructure)
 
-**1. Add "What to Do Next" Sections to Insights Content** ⚠️ OPTIONAL
+**~~1. Add "What to Do Next" Sections to Insights Content~~** ✅ **COMPLETED**
 
-Insights now have journey navigation via related content sections. Explicit "What to Do Next" text may be redundant given the automated sections. Consider adding only if user testing shows buyers need more guidance.
+All 8 insights now have "What to Do Next" sections that:
+
+- Reference the related content sections displaying above (problems, case studies, outcomes)
+- Provide three clear options for buyers to progress through the journey
+- Use contextual language specific to each insight's diagnostic point
 
 **3. ~~Add "What to Do Next" to Outcomes Pages~~** ✅ **COMPLETED**
 

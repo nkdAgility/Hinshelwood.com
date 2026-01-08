@@ -137,4 +137,12 @@ The other improves flow, predictability, and trust.
 AI will not simplify delivery by default.
 But in the hands of a disciplined development manager, it can expose exactly what needs fixing.
 
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Understand the broader constraint**: Review the related constraint above to see why this pattern persists across organizations.
+2. **See proof of resolution**: The case studies above show how other leaders addressed similar organizational clarity problems.
+3. **Assess your specific situation**: If AI is creating more rework than value in your team, a diagnostic conversation can identify where clarity needs to improve.
+
 {{< contact-cta heading="Assess Whether AI Is Amplifying Delivery Risk in Your Team" text="If AI is creating more rework than value, or if teams are slowing down to validate outputs, a diagnostic conversation can identify where clarity and discipline need to improve before AI can help." >}}

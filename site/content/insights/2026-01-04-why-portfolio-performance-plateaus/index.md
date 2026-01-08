@@ -128,4 +128,12 @@ There is one question that reveals whether a portfolio is resilient or fragile:
 If the answer is “annually” or “after re-approval”, the risk profile is already higher than it appears.
 
 Until learning speed becomes a governance concern, portfolio performance will remain constrained by outdated assumptions about control.
-{{< contact-cta heading="Assess Whether Your Portfolio Is Designed for Learning or Control" text="If strategic returns are plateauing despite busy teams and met forecasts, a diagnostic conversation can reveal whether governance mechanisms are suppressing adaptability at portfolio scale." >}}
+
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Understand the portfolio constraint**: Review the related constraint above to see why governance creates false confidence at scale.
+2. **See portfolio transformation**: The case studies above show how organizations regained strategic adaptability through institutional execution capability.
+3. **Assess your portfolio learning speed**: If the board sees busy execution but strategic returns plateau, a diagnostic conversation can reveal where governance is preventing adaptation.
+   {{< contact-cta heading="Assess Whether Your Portfolio Is Designed for Learning or Control" text="If strategic returns are plateauing despite busy teams and met forecasts, a diagnostic conversation can reveal whether governance mechanisms are suppressing adaptability at portfolio scale." >}}

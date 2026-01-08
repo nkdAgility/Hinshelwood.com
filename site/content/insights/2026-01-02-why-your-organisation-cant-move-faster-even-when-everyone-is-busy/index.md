@@ -102,4 +102,12 @@ There is one question that separates organizations that adapt from those that st
 
 Until that question is answered honestly, delivery improvements will remain local, temporary, and insufficient.
 
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Understand the scaling constraint**: Review the related constraint above to see why coordination creates organizational drag.
+2. **See how others regained speed**: The case studies above show what changed when organizations addressed governance overhead.
+3. **Assess your coordination cost**: If teams are busy but results lag, a diagnostic conversation can identify where effort is being absorbed without producing value.
+
 {{< contact-cta variant="compact" heading="Does This Describe Your Organization?" text="If your organization feels busy but slow, a diagnostic conversation can help identify which operating model assumptions are creating drag." >}}

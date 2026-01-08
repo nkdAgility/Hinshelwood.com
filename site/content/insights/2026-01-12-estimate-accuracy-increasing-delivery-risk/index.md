@@ -136,4 +136,12 @@ If your delivery system looks predictable but still feels risky, ask this:
 
 That answer will tell you far more about your true delivery risk than any estimate variance chart.
 
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Understand the scaling constraint**: Review the related constraint above to see why estimate accuracy creates false confidence.
+2. **See accountability in practice**: The case studies above show how organizations restored decision quality by returning ownership to teams.
+3. **Assess your estimate-driven risk**: If your organization appears predictable on paper but feels fragile in reality, a diagnostic conversation can reveal where control is creating illusion.
+
 {{< contact-cta heading="Assess Whether Your Measurement System Is Creating Risk" text="If your organization appears predictable on paper but delivery still feels fragile, a diagnostic conversation can reveal whether your measurement approach is encouraging defensive behavior and obscuring actual constraints." >}}

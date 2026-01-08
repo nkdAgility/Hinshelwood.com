@@ -178,4 +178,12 @@ Every day.
 
 **What part of your operating model still assumes the world is stable, and what would change if you stopped pretending it was?**
 
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Understand the scaling constraint**: Review the related constraint above to see why industrial operating models create friction at scale.
+2. **See transformation in practice**: The case studies above show how organizations redesigned their operating models to regain strategic optionality.
+3. **Assess your operating model fit**: If your organization feels busy but slow, a diagnostic conversation can reveal which assumptions are destroying value.
+
 {{< contact-cta heading="Assess Whether Your Operating Model Still Fits Your Market" text="If your organization feels busy but slow, or if execution is strong but strategic returns are lagging, a diagnostic conversation can reveal which operating model assumptions are destroying value." >}}
