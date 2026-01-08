@@ -11,11 +11,10 @@ sitemap:
   priority: 0.6
 ---
 
-
 Most leaders didn’t decide to “do AI” because it sounded fashionable.
 They did it because growth stalled, margins tightened, decisions slowed, or competitors moved faster.
 
-AI looked like leverage.
+They expected AI to provide leverage.
 
 What many Senior leaders are discovering instead is this:
 AI isn’t failing because the technology is immature.
@@ -25,17 +24,17 @@ It’s failing because the organization isn’t clear enough for it to work.
 
 The typical journey starts with enthusiasm:
 
-* An executive sponsor
-* A pilot budget
-* A tool selection
-* A partner or internal team tasked with “finding use cases”
+- An executive sponsor
+- A pilot budget
+- A tool selection
+- A partner or internal team tasked with “finding use cases”
 
 What follows is familiar:
 
-* Proofs of concept that impress but don’t stick
-* Outputs that look plausible but can’t be trusted
-* Teams arguing about data quality, ownership, or intent
-* A growing sense that “AI is harder than advertised”
+- Proofs of concept that impress but don’t stick
+- Outputs that look plausible but can’t be trusted
+- Teams arguing about data quality, ownership, or intent
+- A growing sense that “AI is harder than advertised”
 
 At this point, many organizations double down on technology.
 New tools. Better prompts. More data.
@@ -69,11 +68,11 @@ But:
 
 When leaders answer that honestly, patterns emerge:
 
-* Decisions depend on tribal knowledge
-* Context lives in people’s heads, not in usable form
-* Teams optimize locally but conflict globally
-* Strategy exists, but cannot be operationalised cleanly
-* Success is discussed, but not measurably defined
+- Decisions depend on tribal knowledge
+- Context lives in people’s heads, not in usable form
+- Teams optimize locally but conflict globally
+- Strategy exists, but cannot be operationalised cleanly
+- Success is discussed, but not measurably defined
 
 AI does not fix these problems.
 It surfaces them.
@@ -86,11 +85,11 @@ They slow down before they scale.
 
 They invest in:
 
-* Shared language before automation
-* Problem clarity before solution design
-* Stakeholder accountability before model deployment
-* Constraints and boundaries before experimentation
-* Learning loops before rollout promises
+- Shared language before automation
+- Problem clarity before solution design
+- Stakeholder accountability before model deployment
+- Constraints and boundaries before experimentation
+- Learning loops before rollout promises
 
 This does not feel like “AI work” at first.
 It feels like leadership work.
@@ -103,11 +102,11 @@ Every serious leader reaches a moment of choice.
 
 Either:
 
-* Treat AI as a technology project and accept diminishing returns
+- Treat AI as a technology project and accept diminishing returns
 
 Or:
 
-* Treat AI as a forcing function for organizational clarity
+- Treat AI as a forcing function for organizational clarity
 
 Those who choose the second path stop chasing tools.
 They start redesigning how decisions are made, how problems are framed, and how context is preserved.
