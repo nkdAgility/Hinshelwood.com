@@ -1,4 +1,8 @@
-{{ $relatedItems := partial "functions/get-related-items.html" (dict "Section" "outcomes" "RelatedToPath" .Page.RelPermalink) }}
+{{ $relatedItems := partial "functions/get-related-items.html" (dict "section" "outcomes" "relatedToPath" .Page.RelPermalink) }}
+
+{{- if eq hugo.Environment "development" -}}
+  <div>[related-outcomes]</div>
+{{- end -}}
 
 {{ if $relatedItems }}
   <section class="related-outcomes">
@@ -10,10 +14,13 @@
         {{ $page := . }}
         {{ with .Params.diagnosis }}
           <li>
-            <strong><a href="{{ $page.RelPermalink }}">{{ .capability }}</a>:</strong> {{ .impact }} <br /><span class="signal">Evidence signal: {{ .signal }}</span>
+            <strong><a href="{{ $page.RelPermalink }}">{{ .capability }}</a>:</strong> {{ .impact }} <br /><span class="signal"><strong>Evidence signal:</strong> {{ .signal }}</span>
           </li>
         {{ end }}
       {{ end }}
     </ul>
   </section>
 {{ end }}
+{{- if eq hugo.Environment "development" -}}
+  <div>[/related-outcomes]</div>
+{{- end -}}

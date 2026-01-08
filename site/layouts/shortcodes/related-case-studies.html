@@ -1,6 +1,10 @@
 {{ $currentPath := .Page.RelPermalink }}
 {{ $relatedCaseStudies := partial "functions/get-related-items.html" (dict "section" "case-studies" "relatedToPath" $currentPath) }}
 
+{{- if eq hugo.Environment "development" -}}
+  <div>[related-case-studies]</div>
+{{- end -}}
+
 {{ if $relatedCaseStudies }}
   <h2>How This Shows Up in Practice</h2>
   <p>The case studies below show what changes when organizations address this constraint directly.</p>
@@ -34,3 +38,7 @@
     {{ end }}
   </div>
 {{ end }}
+
+{{- if eq hugo.Environment "development" -}}
+  <div>[/related-case-studies]</div>
+{{- end -}}

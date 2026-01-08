@@ -5,7 +5,7 @@ date: 2026-01-01
 slug: turning-intent-into-capability-in-a-national-institution
 image:
   position: left
-diagnostics:
+diagnosis:
   constraint: "Large institution unable to translate reform intent into coordinated action"
   outcome: "Established repeatable decision-to-delivery capability at executive level, enabling sustained institutional change"
   evidence: "47,000-person organization shifted from directive compliance to delivery accountability, digital services delivered incrementally, regional teams initiated improvements independently"

@@ -12,6 +12,10 @@ diagnosis:
   capability: "Technical decisions scale without centralized bottlenecks"
   impact: "Organizations make faster, safer technical decisions without depending on a few senior individuals or creating escalation paths that slow delivery."
   signal: "Decision latency drops, technical surprises reduce, and delivery confidence increases even as the organization scales."
+related:
+  - "problems/devops"
+  - "problems/scaling"
+  - "problems/ai"
 sitemap:
   filename: sitemap.xml
   priority: 0.8

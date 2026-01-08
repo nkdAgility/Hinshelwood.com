@@ -1,6 +1,10 @@
 {{ $currentPath := .Page.RelPermalink }}
 {{ $relatedInsights := partial "functions/get-related-items.html" (dict "section" "insights" "relatedToPath" $currentPath) }}
 
+{{- if eq hugo.Environment "development" -}}
+  <div>[related-insights]</div>
+{{- end -}}
+
 {{ if $relatedInsights }}
   <h2>Diagnostic Perspective</h2>
   <p>These insights help sharpen your understanding of where this constraint comes from.</p>
@@ -34,3 +38,6 @@
     {{ end }}
   </div>
 {{ end }}
+{{- if eq hugo.Environment "development" -}}
+  <div>[/related-insights]</div>
+{{- end -}}

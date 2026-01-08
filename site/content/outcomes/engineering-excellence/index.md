@@ -12,6 +12,9 @@ diagnosis:
   capability: "Intent converts to reliable outcomes without accumulating hidden risk"
   impact: "Organizations scale engineering performance, reduce delivery surprises, and maintain confidence in commitments without depending on heroics or adding governance overhead."
   signal: "Quality issues surface early, platforms enable rather than constrain, and leaders can commit with confidence quarter after quarter."
+related:
+  - "problems/devops"
+  - "problems/ai"
 sitemap:
   filename: sitemap.xml
   priority: 0.8

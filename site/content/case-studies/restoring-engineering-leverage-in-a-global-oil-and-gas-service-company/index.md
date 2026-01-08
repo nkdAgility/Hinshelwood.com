@@ -5,7 +5,7 @@ date: 2026-01-01
 slug: restoring-engineering-leverage-in-a-global-oil-and-gas-service-company
 image:
   position: top
-diagnostics:
+diagnosis:
   constraint: "Centralized build bottleneck removed team accountability"
   outcome: "Consolidated to single source control, returned build ownership to teams, restored engineering leverage"
   evidence: "11,000 builds per day, tens of petabytes annually reduced to predictable monthly releases with team ownership"

@@ -3,7 +3,7 @@ title: Restoring Delivery Visibility and Governance at Enterprise Scale
 description: "How a global oil and gas service company consolidated fragmented systems to regain delivery visibility, reduce duplication, and restore leadership governance."
 date: 2026-01-01
 slug: restoring-delivery-visibility-and-governance-at-enterprise-scale
-diagnostics:
+diagnosis:
   constraint: "Fragmented systems destroyed enterprise visibility and governance"
   outcome: "Consolidated 27 collections into unified system with enterprise-level visibility and standardized processes"
   evidence: "800+ projects and 900+ custom processes standardized, enabling reliable enterprise reporting and investment decisions"
