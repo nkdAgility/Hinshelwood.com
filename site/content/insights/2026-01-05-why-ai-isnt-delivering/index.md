@@ -11,6 +11,8 @@ diagnosis:
 related:
   - "problems/ai"
   - "outcomes/technical-leadership"
+  - "case-studies/restoring-delivery-visibility-and-governance-at-enterprise-scale"
+  - "case-studies/restoring-engineering-leverage-in-a-global-oil-and-gas-service-company"
 sitemap:
   filename: sitemap.xml
   priority: 0.6

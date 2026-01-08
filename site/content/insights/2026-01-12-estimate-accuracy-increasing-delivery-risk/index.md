@@ -11,6 +11,8 @@ diagnosis:
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
+  - "case-studies/restoring-delivery-visibility-and-governance-at-enterprise-scale"
+  - "case-studies/when-product-leadership-breaks-across-borders"
 sitemap:
   filename: sitemap.xml
   priority: 0.6
