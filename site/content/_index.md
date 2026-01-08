@@ -51,6 +51,8 @@ Organizations that delay addressing systemic delivery constraints face:
 
 The cost of continuing with a system that does not reliably deliver is measurably higher than the cost of fixing it.
 
+{{< client-logos limit="8" >}}
+
 {{< problem-constraints >}}
 
 {{< contact-cta >}}
