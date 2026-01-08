@@ -7,5 +7,3 @@ menu:
   main:
     weight: 800
 ---
-
-Organizations that have trusted Martin Hinshelwood and Naked Agility for consulting, advisory, and training engagements.

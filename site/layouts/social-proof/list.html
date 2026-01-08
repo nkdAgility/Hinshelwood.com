@@ -1,96 +1,95 @@
 {{- define "main" -}}
-<section class="container my-5">
-  <header class="mb-5">
-    <h1>{{ .Title }}</h1>
-    {{- with .Content -}}
+  <section class="container my-5">
+    <header class="mb-5">
+      <h1>{{ .Title }}</h1>
       <div class="text-muted">
-        {{ . }}
+        <p>Real feedback from clients and colleagues who have worked with Martin Hinshelwood on training, consulting, and advisory engagements.</p>
       </div>
+    </header>
+
+    {{- $isTaxonomyPage := eq .Kind "term" -}}
+    {{- $currentTerm := "" -}}
+    {{- if $isTaxonomyPage -}}
+      {{- $currentTerm = .Title -}}
     {{- end -}}
-  </header>
 
-  {{- $isTaxonomyPage := eq .Kind "term" -}}
-  {{- $currentTerm := "" -}}
-  {{- if $isTaxonomyPage -}}
-    {{- $currentTerm = .Title -}}
-  {{- end -}}
-  
-  <nav class="d-flex justify-content-start gap-2 mb-4 flex-wrap">
-    <a href="/social-proof/" class="btn btn-sm {{ if not $isTaxonomyPage }}btn-primary{{ else }}btn-outline-primary{{ end }}">All ({{ len .Site.Data.socialproof.quotes }})</a>
-    {{- range $name, $taxonomy := .Site.Taxonomies.socialProofCategories -}}
-      <a href="{{ $taxonomy.Page.Permalink }}" class="btn btn-sm {{ if eq $currentTerm $name }}btn-primary{{ else }}btn-outline-primary{{ end }}">{{ $taxonomy.Page.Title }} ({{ len (where $.Site.Data.socialproof.quotes "category" $name) }})</a>
-    {{- end -}}
-  </nav>
 
-  {{- $pages := .Pages.ByWeight -}}
-  
-  {{- $paginator := .Paginate $pages 20 -}}
-
-  <div class="text-muted mb-4" style="font-size: 0.9rem;">
-    <p>Showing {{ len $paginator.Pages }} of {{ $paginator.TotalNumberOfElements }} social proof items</p>
-  </div>
-
-  <div>
-    {{- range $paginator.Pages -}}
-      <div class="mb-4 pb-4 border-bottom">
-        <blockquote class="mb-3">
-          <p>{{ .Params.text }}</p>
-        </blockquote>
-        <footer>
-          <cite class="text-body not-italic">
-            <strong>{{ .Params.name }}</strong>
-            {{- with .Params.title }}{{ if ne . "" }}<br><span class="text-muted" style="font-size: 0.9rem;">{{ . }}</span>{{ end }}{{ end -}}
-          </cite>
-          <div class="d-flex flex-wrap gap-2 align-items-center mt-2" style="font-size: 0.9rem;">
-            {{- with .Params.relationship }}<span class="badge bg-primary-subtle text-primary">{{ . }}</span>{{ end -}}
-            {{- with .Params.class }}<span class="badge bg-warning-subtle text-warning">{{ . | upper }}</span>{{ end -}}
-            {{- with .Params.stars }}<span class="text-warning">{{ range seq . }}⭐{{ end }}</span>{{ end -}}
-            {{- with .Date }}<time datetime="{{ .Format "2006-01-02" }}" class="text-muted">{{ .Format "2 Jan 2006" }}</time>{{ end -}}
-          </div>
-        </footer>
-      </div>
-    {{- end -}}
-  </div>
-
-  {{- if gt $paginator.TotalPages 1 -}}
-  <nav class="d-flex justify-content-center gap-2 mt-5 flex-wrap" aria-label="Social proof pagination">
-    {{- if $paginator.HasPrev -}}
-      <a href="{{ $paginator.Prev.URL }}" class="btn btn-sm btn-outline-primary">← Previous</a>
-    {{- end -}}
-    
-    {{- $currentPage := $paginator.PageNumber -}}
-    {{- $totalPages := $paginator.TotalPages -}}
-    
-    {{- if gt $currentPage 2 -}}
-      <a href="{{ $paginator.First.URL }}" class="btn btn-sm btn-outline-primary">1</a>
-      {{- if gt $currentPage 3 -}}
-        <span class="btn btn-sm btn-outline-secondary disabled">...</span>
+    <nav class="d-flex justify-content-start gap-2 mb-4 flex-wrap">
+      <a href="/social-proof/" class="btn btn-sm {{ if not $isTaxonomyPage }}btn-primary{{ else }}btn-outline-primary{{ end }}">All ({{ len .Site.Data.socialproof.quotes }})</a>
+      {{- range $name, $taxonomy := .Site.Taxonomies.socialProofCategories -}}
+        <a href="{{ $taxonomy.Page.Permalink }}" class="btn btn-sm {{ if eq $currentTerm $name }}btn-primary{{ else }}btn-outline-primary{{ end }}">{{ $taxonomy.Page.Title }} ({{ len (where $.Site.Data.socialproof.quotes "category" $name) }})</a>
       {{- end -}}
-    {{- end -}}
-    
-    {{- range $paginator.Pagers -}}
-      {{- $distance := sub $currentPage .PageNumber -}}
-      {{- if le (math.Abs $distance) 1 -}}
-        {{- if eq .PageNumber $currentPage -}}
-          <span class="btn btn-sm btn-primary">{{ .PageNumber }}</span>
-        {{- else -}}
-          <a href="{{ .URL }}" class="btn btn-sm btn-outline-primary">{{ .PageNumber }}</a>
+    </nav>
+
+    {{- $pages := .Pages.ByWeight -}}
+
+    {{- $paginator := .Paginate $pages 20 -}}
+
+
+    <div class="text-muted mb-4" style="font-size: 0.9rem;">
+      <p>Showing {{ len $paginator.Pages }} of {{ $paginator.TotalNumberOfElements }} social proof items</p>
+    </div>
+
+    <div>
+      {{- range $paginator.Pages -}}
+        <div class="mb-4 pb-4 border-bottom">
+          <blockquote class="mb-3">
+            <p>{{ .Params.text }}</p>
+          </blockquote>
+          <footer>
+            <cite class="text-body not-italic">
+              <strong>{{ .Params.name }}</strong>
+              {{- with .Params.title }}{{ if ne . "" }}<br /><span class="text-muted" style="font-size: 0.9rem;">{{ . }}</span>{{ end }}{{ end -}}
+            </cite>
+            <div class="d-flex flex-wrap gap-2 align-items-center mt-2" style="font-size: 0.9rem;">
+              {{- with .Params.relationship }}<span class="badge bg-primary-subtle text-primary">{{ . }}</span>{{ end -}}
+              {{- with .Params.class }}<span class="badge bg-warning-subtle text-warning">{{ . | upper }}</span>{{ end -}}
+              {{- with .Params.stars }}<span class="text-warning">{{ range seq . }}⭐{{ end }}</span>{{ end -}}
+              {{- with .Date }}<time datetime="{{ .Format "2006-01-02" }}" class="text-muted">{{ .Format "2 Jan 2006" }}</time>{{ end -}}
+            </div>
+          </footer>
+        </div>
+      {{- end -}}
+    </div>
+
+    {{- if gt $paginator.TotalPages 1 -}}
+      <nav class="d-flex justify-content-center gap-2 mt-5 flex-wrap" aria-label="Social proof pagination">
+        {{- if $paginator.HasPrev -}}
+          <a href="{{ $paginator.Prev.URL }}" class="btn btn-sm btn-outline-primary">← Previous</a>
         {{- end -}}
-      {{- end -}}
-    {{- end -}}
-    
-    {{- if lt $currentPage (sub $totalPages 1) -}}
-      {{- if lt $currentPage (sub $totalPages 2) -}}
-        <span class="btn btn-sm btn-outline-secondary disabled">...</span>
-      {{- end -}}
-      <a href="{{ $paginator.Last.URL }}" class="btn btn-sm btn-outline-primary">{{ $totalPages }}</a>
-    {{- end -}}
-    
-    {{- if $paginator.HasNext -}}
-      <a href="{{ $paginator.Next.URL }}" class="btn btn-sm btn-outline-primary">Next →</a>
-    {{- end -}}
-  </nav>
-  {{- end -}}
-</section>
 
+        {{- $currentPage := $paginator.PageNumber -}}
+        {{- $totalPages := $paginator.TotalPages -}}
+
+        {{- if gt $currentPage 2 -}}
+          <a href="{{ $paginator.First.URL }}" class="btn btn-sm btn-outline-primary">1</a>
+          {{- if gt $currentPage 3 -}}
+            <span class="btn btn-sm btn-outline-secondary disabled">...</span>
+          {{- end -}}
+        {{- end -}}
+
+        {{- range $paginator.Pagers -}}
+          {{- $distance := sub $currentPage .PageNumber -}}
+          {{- if le (math.Abs $distance) 1 -}}
+            {{- if eq .PageNumber $currentPage -}}
+              <span class="btn btn-sm btn-primary">{{ .PageNumber }}</span>
+            {{- else -}}
+              <a href="{{ .URL }}" class="btn btn-sm btn-outline-primary">{{ .PageNumber }}</a>
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+
+        {{- if lt $currentPage (sub $totalPages 1) -}}
+          {{- if lt $currentPage (sub $totalPages 2) -}}
+            <span class="btn btn-sm btn-outline-secondary disabled">...</span>
+          {{- end -}}
+          <a href="{{ $paginator.Last.URL }}" class="btn btn-sm btn-outline-primary">{{ $totalPages }}</a>
+        {{- end -}}
+
+        {{- if $paginator.HasNext -}}
+          <a href="{{ $paginator.Next.URL }}" class="btn btn-sm btn-outline-primary">Next →</a>
+        {{- end -}}
+      </nav>
+    {{- end -}}
+  </section>
 {{- end -}}
