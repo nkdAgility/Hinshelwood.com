@@ -51,10 +51,33 @@ Each outcome page must:
 title: "Clear Outcome Description"
 date: YYYY-MM-DD
 description: "One sentence describing the business impact"
+diagnosis:
+  capability: "The capability this outcome represents"
+  impact: "Business value and strategic benefit"
+  signal: "Evidence this outcome is relevant"
+related:
+  - "problems/scaling"
 tags: ["relevant", "tags"]
 categories: ["outcomes"]
 ---
 ```
+
+### Related Items Linking (CRITICAL)
+
+**Outcomes typically link TO problems** using the `related:` array (if they address specific constraints).
+
+**Most linking TO outcomes happens FROM other content types.** Case studies and insights link to outcomes to show what changes when constraints are removed.
+
+**DO NOT add reverse links.** The system handles bidirectional display automatically via `get-related-items.html` function.
+
+**Path format**: Use `section/slug` without leading or trailing slashes:
+- ✅ `"problems/scaling"`
+- ❌ `"case-studies/..."` (case studies link TO outcomes, not reverse)
+- ❌ `"insights/..."` (insights link TO outcomes, not reverse)
+
+**What gets displayed**:
+- Outcome page automatically displays: related case studies → related insights → related problems
+- Display is populated by case studies and insights that list this outcome in their `related:` arrays
 
 ## Examples of Good vs. Bad Outcome Descriptions
 

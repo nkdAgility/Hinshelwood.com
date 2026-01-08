@@ -54,11 +54,35 @@ Every insight article must:
 title: "Clear, Specific Title"
 date: YYYY-MM-DD
 description: "Your main point in one sentence"
+diagnosis:
+  question: "The question this insight answers"
+  statement: "Core diagnostic statement"
+  reason: "Why this problem persists"
+  signal: "Evidence this insight is relevant to the reader"
+related:
+  - "problems/ai"
+  - "outcomes/technical-leadership"
+  - "case-studies/when-product-leadership-breaks-across-borders"
 tags: ["relevant", "tags"]
 categories: ["insights"]
 author: "Martin Hinshelwood"
 ---
 ```
+
+### Related Items Linking (CRITICAL)
+
+**Insights should link TO problems, outcomes, and case studies** using the `related:` array.
+
+**DO NOT add insights to case study `related:` arrays.** The system handles bidirectional linking automatically via `get-related-items.html` function. If you add relationships in both directions, content will display duplicate links.
+
+**Path format**: Use `section/slug` without leading or trailing slashes:
+- ✅ `"problems/ai"`
+- ✅ `"case-studies/restoring-delivery-visibility-and-governance-at-enterprise-scale"`
+- ✅ `"outcomes/technical-leadership"`
+
+**What gets displayed**:
+- Insights page automatically displays: related problems → related case studies → related outcomes
+- Any content that lists this insight in its `related:` array will also appear automatically
 
 ## Avoid
 

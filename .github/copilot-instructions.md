@@ -216,12 +216,72 @@ The site implements explicit buyer journeys aligned with Allan Weiss principles.
 
 ### Navigation Infrastructure
 
-**Automated Linking** (already implemented):
+**Automated Linking** (implemented via bidirectional front matter relationships):
 
-- Problem pages auto-display related case studies via `site/layouts/_partials/components/related-case-studies.html`
-- Problem pages auto-display related insights via `site/layouts/_partials/components/related-insights.html`
-- Case studies and insights link back using `related:` front matter array
-- Template: `site/layouts/problems/single.html` structures content → case studies → insights
+All buyer journey navigation is automated using the `related:` front matter array and the `site/layouts/_partials/functions/get-related-items.html` function. The system finds related content bidirectionally, so you only need to declare the relationship once.
+
+**How it Works**:
+
+1. Content pages use `related:` front matter array to declare relationships
+2. Hugo templates use partial components to display related content:
+   - `related-problems.html` - Shows related problem pages
+   - `related-case-studies.html` - Shows related case studies
+   - `related-insights.html` - Shows related insights (limited to first 5)
+   - `related-outcomes.html` - Shows related outcome pages
+3. The `get-related-items.html` function searches bidirectionally:
+   - **Forward**: If page A lists page B in its `related:` array, page A displays page B
+   - **Reverse**: If page B lists page A in its `related:` array, page A automatically displays page B
+4. No need to add relationships in both directions
+
+**Current Template Structure**:
+
+- **Problem pages**: Display related case studies → related insights → related outcomes
+- **Insights pages**: Display related problems → related case studies → related outcomes
+- **Case study pages**: Display related outcomes → related problems
+- **Outcome pages**: Display related case studies → related insights
+
+**CRITICAL: One-Direction Linking Only**
+
+**DO NOT add related items in both directions.** The system handles bidirectional linking automatically.
+
+**Examples**:
+
+✅ **Correct** - Add relationship in one place only:
+
+```yaml
+# In insights/why-ai-is-making-delivery-harder/index.md
+related:
+  - "problems/ai"
+  - "outcomes/technical-leadership"
+  - "case-studies/when-product-leadership-breaks-across-borders"
+```
+
+Result: The insight displays the case study, AND the case study automatically displays the insight.
+
+❌ **Wrong** - Do not add the reverse relationship:
+
+```yaml
+# DO NOT do this in case-studies/when-product-leadership-breaks-across-borders/index.md
+related:
+  - "insights/2026-01-07-why-ai-is-making-delivery-harder" # WRONG - creates duplicate linking
+```
+
+**Where to Add Related Items**:
+
+- **Insights → Problems, Outcomes, Case Studies**: Add to insight front matter
+- **Case Studies → Problems, Outcomes**: Add to case study front matter (do NOT add insights)
+- **Problems → Outcomes**: Add to problem front matter (case studies and insights link TO problems, not from)
+- **Outcomes**: Generally link FROM other content types (insights, case studies link to outcomes)
+
+**Path Format**:
+
+Use section/slug format without leading slash or trailing slash:
+
+- ✅ `"problems/ai"`
+- ✅ `"case-studies/when-product-leadership-breaks-across-borders"`
+- ✅ `"outcomes/technical-leadership"`
+- ✅ `"insights/2026-01-07-why-ai-is-making-delivery-harder"`
+- ❌ `"/problems/ai/"` (will work but inconsistent)
 
 **Manual Guidance** (content layer):
 
@@ -234,10 +294,20 @@ The site implements explicit buyer journeys aligned with Allan Weiss principles.
 
 When creating new content:
 
-1. **Add `related:` front matter** to link back to relevant problems/outcomes
+1. **Add `related:` front matter** to link to relevant problems/outcomes/case studies (only in ONE direction)
 2. **Add contextual guidance** explaining what buyer should do with information
 3. **Include next-step CTAs** that are specific, not generic ("Assess your scaling constraint" not "Contact me")
 4. **Test journey flow** by following links as if you were a buyer in that stage
+
+Example front matter for insight:
+
+```yaml
+related:
+  - "problems/ai"
+  - "outcomes/technical-leadership"
+  - "case-studies/when-product-leadership-breaks-across-borders"
+  - "case-studies/restoring-delivery-visibility-and-governance-at-enterprise-scale"
+```
 
 Example front matter for case study:
 

@@ -45,10 +45,34 @@ Every case study must include:
 title: "Client Name or Problem Focus"
 date: YYYY-MM-DD
 description: "One sentence outcome"
+diagnosis:
+  constraint: "The constraint this engagement addressed"
+  outcome: "What changed"
+  evidence: "Measurable results"
+related:
+  - "problems/devops"
+  - "outcomes/engineering-excellence"
 tags: ["relevant", "tags"]
 categories: ["case-studies"]
 ---
 ```
+
+### Related Items Linking (CRITICAL)
+
+**Case studies should link TO problems and outcomes** using the `related:` array.
+
+**DO NOT add case studies to insight `related:` arrays.** Insights link TO case studies, not the other way around. The system handles bidirectional display automatically via `get-related-items.html` function.
+
+**DO NOT add insights to case study `related:` arrays.** Let insights declare the relationship.
+
+**Path format**: Use `section/slug` without leading or trailing slashes:
+- ✅ `"problems/devops"`
+- ✅ `"outcomes/engineering-excellence"`
+- ❌ `"insights/why-ai-is-making-delivery-harder"` (insights link TO case studies, not reverse)
+
+**What gets displayed**:
+- Case study page automatically displays: related outcomes → related problems
+- Any insights that list this case study in their `related:` array will automatically display this case study
 
 ## Red Flags to Eliminate
 
