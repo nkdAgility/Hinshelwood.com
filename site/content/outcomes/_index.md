@@ -14,7 +14,3 @@ menu:
     weight: 300
     identifier: outcomes
 ---
-
-These capabilities become available when operating model constraints are resolved. If you recognize your problem but want to understand what changes, this shows the destination.
-
-Each outcome maps to specific problem patterns. See [problems I solve](/problems/) to identify which constraint you're addressing first. Outcomes don't happen through methodology adoption. They emerge when your system of work supports them. The case studies show how.
