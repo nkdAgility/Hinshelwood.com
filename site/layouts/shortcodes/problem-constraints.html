@@ -3,7 +3,7 @@
 
 {{ if $problems }}
   <h2>Which Constraint Are You Facing?</h2>
-  <p>Your symptoms might show up as missed deadlines, rising costs, or strategic initiatives that stall. The root cause usually sits in one of three places:</p>
+  <p>Your symptoms might show up as missed deadlines, rising costs, or strategic initiatives that stall. The root cause usually sits in one of three places. Start with the constraint that matches your situation:</p>
 
   {{ range $problems }}
     {{ $page := . }}
@@ -17,5 +17,5 @@
   {{ end }}
 
 
-  <p>Not sure? Start with <a href="{{ "insights" | relURL }}">insights</a> to sharpen your diagnosis.</p>
+  <p>Not sure? Read <a href="{{ "insights" | relURL }}">insights</a> to sharpen your diagnosis, or <a href="{{ "diagnostic-assessment" | relURL }}">book a diagnostic conversation</a> to identify your specific constraint.</p>
 {{ end }}
