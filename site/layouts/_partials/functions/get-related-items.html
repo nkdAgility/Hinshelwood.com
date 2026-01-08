@@ -1,7 +1,32 @@
 {{- $section := .section -}}
 {{- $relatedToPath := .relatedToPath -}}
+{{- $currentPage := .currentPage -}}
 {{- $relatedItems := slice -}}
+{{- $seenPaths := slice -}}
 
+{{- /* Forward lookup: Check current page's related array for items in target section */ -}}
+{{- if $currentPage -}}
+  {{- if $currentPage.Params.related -}}
+    {{- range $currentPage.Params.related -}}
+      {{- $relatedPath := . -}}
+      {{- if not (hasPrefix $relatedPath "/") -}}
+        {{- $relatedPath = printf "/%s" $relatedPath -}}
+      {{- end -}}
+      {{- if not (hasSuffix $relatedPath "/") -}}
+        {{- $relatedPath = printf "%s/" $relatedPath -}}
+      {{- end -}}
+      {{- $foundPage := site.GetPage $relatedPath -}}
+      {{- if $foundPage -}}
+        {{- if eq $foundPage.Section $section -}}
+          {{- $relatedItems = $relatedItems | append $foundPage -}}
+          {{- $seenPaths = $seenPaths | append $foundPage.RelPermalink -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Reverse lookup: Find items in target section that list current page in their related array */ -}}
 {{- range where site.RegularPages "Section" $section -}}
   {{- $item := . -}}
   {{- $isPublished := le .Date now -}}
@@ -17,7 +42,10 @@
           {{- $relatedPath = printf "%s/" $relatedPath -}}
         {{- end -}}
         {{- if eq $relatedPath $relatedToPath -}}
-          {{- $relatedItems = $relatedItems | append $item -}}
+          {{- if not (in $seenPaths $item.RelPermalink) -}}
+            {{- $relatedItems = $relatedItems | append $item -}}
+            {{- $seenPaths = $seenPaths | append $item.RelPermalink -}}
+          {{- end -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}

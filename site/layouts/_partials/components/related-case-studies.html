@@ -1,10 +1,52 @@
-{{ $currentPath := .RelPermalink }}
-{{ $relatedCaseStudies := partial "functions/get-related-items.html" (dict "section" "case-studies" "relatedToPath" $currentPath) }}
+{{- $currentPage := .page -}}
+{{- $currentPath := .page.RelPermalink -}}
+{{- $display := .display | default "structured" -}}
+{{- $relatedCaseStudies := partial "functions/get-related-items.html" (dict "section" "case-studies" "relatedToPath" $currentPath "currentPage" $currentPage) -}}
+
+{{- if eq hugo.Environment "development" -}}
+  <span>[related-case-studies display="{{ $display }}"]</span>
+{{- end -}}
 
 {{ if $relatedCaseStudies }}
-  <div class="row g-4">
-    {{ range $relatedCaseStudies }}
-      {{ partial "components/promo-card.html" . }}
-    {{ end }}
-  </div>
+  {{ if eq $display "inline" }}
+    {{- range $index, $page := $relatedCaseStudies -}}
+      <a href="{{- $page.RelPermalink -}}">{{ $page.Params.shortTitle | default $page.Title }}</a>{{- if ne $index (sub (len $relatedCaseStudies) 1) -}},{{ end -}}
+    {{- end -}}
+  {{ else }}
+    <h2>How This Shows Up in Practice</h2>
+    <p>The case studies below show what changes when organizations address this constraint directly.</p>
+
+    <div class="case-study-evidence-list">
+      {{ range $relatedCaseStudies }}
+        <article class="case-study-evidence-item mb-4 pb-4 border-bottom">
+          <h3 class="h5 mb-2">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.shortTitle | default .Title }}</a>
+          </h3>
+
+          {{- with .Params.diagnosis.constraint -}}
+            <p class="text-muted mb-2 small"><strong>Constraint:</strong> {{ . }}</p>
+          {{- end -}}
+
+          {{- with .Params.diagnosis.outcome -}}
+            <p class="mb-2"><strong>What changed:</strong> {{ . }}</p>
+          {{- end -}}
+
+          {{- with .Params.diagnosis.evidence -}}
+            <p class="mb-2 small text-muted"><strong>Evidence:</strong> {{ . }}</p>
+          {{- end -}}
+
+          {{- if not .Params.diagnosis.outcome -}}
+            <p class="mb-2">{{ .Description }}</p>
+          {{- end -}}
+
+
+          <a href="{{ .RelPermalink }}" class="small">Read full case study →</a>
+        </article>
+      {{ end }}
+    </div>
+  {{ end }}
 {{ end }}
+
+{{- if eq hugo.Environment "development" -}}
+  <span>[/related-case-studies]</span>
+{{- end -}}

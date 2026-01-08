@@ -4,19 +4,19 @@
 
 {{- define "main" }}
   <div itemscope itemtype="https://schema.org/Service">
-    <meta itemprop="name" content="{{ .Title }}">
-    <meta itemprop="description" content="{{ .Description }}">
-    <meta itemprop="serviceType" content="Professional Consulting">
+    <meta itemprop="name" content="{{ .Title }}" />
+    <meta itemprop="description" content="{{ .Description }}" />
+    <meta itemprop="serviceType" content="Professional Consulting" />
     <span itemprop="provider" itemscope itemtype="https://schema.org/Person">
-      <meta itemprop="name" content="{{ site.Params.author }}">
+      <meta itemprop="name" content="{{ site.Params.author }}" />
     </span>
 
     <section class="container my-5">
       <header>
         <h1>{{ .Title }}</h1>
-         {{- with .Params.subtitle }}
+        {{- with .Params.subtitle }}
           <p class="lead">{{ . }}</p>
-         {{- end }}
+        {{- end }}
       </header>
     </section>
 
@@ -25,12 +25,11 @@
     </section>
 
     <section class="container my-5">
-      {{ partial "components/related-case-studies.html" . }}
+      {{ partial "components/related-case-studies.html" (dict "page" . "display" "structured") }}
     </section>
 
     <section class="container my-5">
-      {{ partial "components/related-insights.html" . }}
+      {{ partial "components/related-insights.html" (dict "page" . "display" "structured") }}
     </section>
-
   </div>
 {{- end }}
