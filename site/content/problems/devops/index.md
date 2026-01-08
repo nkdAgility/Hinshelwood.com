@@ -8,6 +8,9 @@ keywords: ["devops consulting", "delivery risk", "engineering operating model", 
 triage:
   title: "DevOps: Delivery Risk in the Operating Model"
   signal: "If you're adding resources but delivery isn't speeding up, or technical decisions keep getting revisited."
+related:
+  - "/outcomes/engineering-excellence"
+  - "/outcomes/technical-leadership"
 ItemType: problem
 ItemKind: marketing
 weight: 100
@@ -174,6 +177,8 @@ It is whether your operating model still serves your strategy.
 {{< related-case-studies >}}
 
 {{< related-insights >}}
+
+{{< related-outcomes >}}
 
 ## What to Do Next
 

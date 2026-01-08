@@ -8,6 +8,9 @@ keywords: ["AI enablement", "AI operating model", "AI at scale", "AI delivery ri
 triage:
   title: "AI: Experimentation Isn't Becoming Capability"
   signal: "If AI pilots impress but don't stick, or teams can't agree on what success looks like."
+related:
+  - "/outcomes/engineering-excellence"
+  - "/outcomes/technical-leadership"
 ItemType: problem
 ItemKind: marketing
 weight: 200
@@ -146,6 +149,8 @@ It is building an organization that AI can actually serve.
 {{< related-case-studies >}}
 
 {{< related-insights >}}
+
+{{< related-outcomes >}}
 
 ## What to Do Next
 

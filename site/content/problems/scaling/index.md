@@ -19,6 +19,8 @@ keywords: [
 triage:
   title: "Scaling: Growth Is Creating Friction"
   signal: "If coordination cost is rising faster than output, or decisions are escalating instead of resolving."
+related:
+  - "/outcomes/technical-leadership"
 ItemType: problem
 ItemKind: marketing
 weight: 300
@@ -158,6 +160,8 @@ I help leaders steward their operating model deliberately, rather than inheritin
 {{< related-case-studies >}}
 
 {{< related-insights >}}
+
+{{< related-outcomes >}}
 
 ## What to Do Next
 

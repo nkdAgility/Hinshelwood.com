@@ -1,0 +1,19 @@
+{{ $relatedItems := partial "functions/get-related-items.html" (dict "Section" "outcomes" "RelatedToPath" .Page.RelPermalink) }}
+
+{{ if $relatedItems }}
+  <section class="related-outcomes">
+    <h2>What Changes When This Gets Fixed</h2>
+    <p>When these constraints are resolved, organizations unlock specific capabilities. These outcomes show what becomes possible:</p>
+
+    <ul>
+      {{ range $relatedItems }}
+        {{ $page := . }}
+        {{ with .Params.diagnosis }}
+          <li>
+            <strong><a href="{{ $page.RelPermalink }}">{{ .capability }}</a>:</strong> {{ .impact }} <br /><span class="signal">Evidence signal: {{ .signal }}</span>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
