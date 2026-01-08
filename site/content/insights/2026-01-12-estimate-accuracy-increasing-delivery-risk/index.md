@@ -2,7 +2,7 @@
 title: "Why “Estimate Accuracy” Is Quietly Increasing Your Delivery Risk"
 date: 2026-01-12
 slug: estimate-accuracy-increasing-delivery-risk
-description: Demanding accurate estimates creates false certainty and changes team behaviour. Teams inflate estimates, defer risk, and avoid complex work. Leadership loses decision quality whilst believing they have control.
+description: Demanding accurate estimates creates false certainty and changes team behavior. Teams inflate estimates, defer risk, and avoid complex work. Leadership loses decision quality while believing they have control.
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
@@ -17,7 +17,7 @@ They are not.
 
 They are replacing uncertainty with **false certainty**, and the cost shows up later, when options are fewer and consequences are higher.
 
-If your organisation appears predictable on paper but still feels fragile in reality, this is why.
+If your organization appears predictable on paper but still feels fragile in reality, this is why.
 
 ## The Belief That Creates the Problem
 
@@ -31,11 +31,11 @@ It supports reporting, budgeting, and governance conversations.
 It is also wrong in complex, knowledge-based work.
 
 Estimation accuracy does not increase control.
-It changes behaviour.
+It changes behavior.
 
-And behaviour is what determines outcomes.
+And behavior is what determines outcomes.
 
-## What Your Organisation Learns When You Measure Estimates
+## What Your Organization Learns When You Measure Estimates
 
 Once estimate accuracy becomes visible to leadership, it stops being information and becomes **judgement**.
 
@@ -63,21 +63,21 @@ Teams do not decide what “good performance” means.
 
 Leadership does.
 
-When leadership rewards forecast accuracy, the organisation optimises for **looking predictable**, not for **being reliable**.
+When leadership rewards forecast accuracy, the organization optimizes for **looking predictable**, not for **being reliable**.
 
 That trade-off is invisible in monthly reports, but expensive over time.
 
-The organisation becomes very good at meeting expectations that no longer reflect reality.
+The organization becomes very good at meeting expectations that no longer reflect reality.
 
 - **The Hidden Cost to You as a Leader** - This pattern creates risks leaders rarely see until they materialise.
 - **Decision Quality Degrades** - You are making investment decisions based on numbers that have been padded, smoothed, or simplified to survive scrutiny.
 - **Risk Arrives Late** - Issues surface when commitments are already made and options are limited.
 - **Trust Erodes Quietly** - Teams stop raising uncertainty early. Silence increases. Confidence becomes performative.
-- **Strategic Options Narrow** - Work is shaped to fit forecasts rather than opportunity. Adaptability declines. The organisation feels governed, but becomes brittle.
+- **Strategic Options Narrow** - Work is shaped to fit forecasts rather than opportunity. Adaptability declines. The organization feels governed, but becomes brittle.
 
 ## Why This Persists at Scale
 
-As organisations grow, leaders lose direct contact with delivery reality.
+As organizations grow, leaders lose direct contact with delivery reality.
 
 Metrics become proxies for insight.
 
@@ -95,7 +95,7 @@ Leaders who genuinely improve predictability do not demand better guesses.
 
 They shift the conversation.
 
-They ask questions that reveal **system behaviour**, not individual prediction error:
+They ask questions that reveal **system behavior**, not individual prediction error:
 
 - How long does work actually take from request to usable outcome?
 - Where does work wait, stall, or loop?
@@ -109,13 +109,13 @@ They improve decision quality without demanding certainty that does not exist.
 
 ## The Trade-Off You Cannot Avoid
 
-You must choose what your organisation optimises for.
+You must choose what your organization optimizes for.
 
 - Predictability of reports
   or
 - Reliability of outcomes
 
-Optimising for estimate accuracy improves the first while undermining the second.
+Optimizing for estimate accuracy improves the first while undermining the second.
 
 That is not a tooling or process problem.
 
@@ -129,4 +129,4 @@ If your delivery system looks predictable but still feels risky, ask this:
 
 That answer will tell you far more about your true delivery risk than any estimate variance chart.
 
-{{< contact-cta heading="Assess Whether Your Measurement System Is Creating Risk" text="If your organisation appears predictable on paper but delivery still feels fragile, a diagnostic conversation can reveal whether your measurement approach is encouraging defensive behaviour and obscuring actual constraints." >}}
+{{< contact-cta heading="Assess Whether Your Measurement System Is Creating Risk" text="If your organization appears predictable on paper but delivery still feels fragile, a diagnostic conversation can reveal whether your measurement approach is encouraging defensive behavior and obscuring actual constraints." >}}

@@ -1,6 +1,6 @@
 ---
 title: When Product Leadership Breaks Across Borders
-description: "How a distributed product and engineering organisation overcame leadership misalignment to regain decision clarity, team autonomy, and delivery momentum."
+description: "How a distributed product and engineering organization overcame leadership misalignment to regain decision clarity, team autonomy, and delivery momentum."
 date: 2026-01-01
 image:
   position: left
@@ -17,8 +17,8 @@ A UK-based insurance software firm serving major comparison platforms had reache
 
 On paper, things looked reasonable:
 
-* A growing product organisation in the UK
-* A capable engineering organisation in Poland
+* A growing product organization in the UK
+* A capable engineering organization in Poland
 * Five Product Owners and a senior product manager
 * A clear market and steady demand
 
@@ -30,9 +30,9 @@ The leadership tension was subtle but corrosive:
 
 * Decisions were centralised because leaders didn’t trust the system to make them well
 * Teams wanted autonomy but lacked clarity
-* “Agile” was spoken about, but leadership behaviour had not changed
+* “Agile” was spoken about, but leadership behavior had not changed
 
-The organisation wasn’t failing due to capability. It was failing due to **misaligned leadership assumptions**.
+The organization wasn’t failing due to capability. It was failing due to **misaligned leadership assumptions**.
 
 
 ### The Initial Request, and the Real Problem
@@ -45,7 +45,7 @@ From a senior leader’s perspective, this often translates to:
 * “We need consistency.”
 * “We need execution without chaos.”
 
-The real issue was not skill gaps. It was that **no one had explicitly redesigned how decisions, learning, and accountability should work in a distributed organisation**.
+The real issue was not skill gaps. It was that **no one had explicitly redesigned how decisions, learning, and accountability should work in a distributed organization**.
 
 Titles existed. Authority did not.
 Processes existed. Context did not.
@@ -60,10 +60,10 @@ Early engagement focused on how work actually flowed, not on what leaders believ
 Several constraints became immediately visible:
 
 * **Product leadership without decision clarity**
-  Product Owners were expected to “own outcomes” but were still operating under implicit approval chains. This created hesitation, backlog churn, and passive behaviour.
+  Product Owners were expected to “own outcomes” but were still operating under implicit approval chains. This created hesitation, backlog churn, and passive behavior.
 
 * **Engineering operating without market context**
-  Engineers were implementing features accurately, but not insightfully. When context is missing, teams optimise for compliance rather than value.
+  Engineers were implementing features accurately, but not insightfully. When context is missing, teams optimize for compliance rather than value.
 
 * **Geographical separation amplifying weak leadership signals**
   Ambiguity that might survive in a co-located team becomes lethal when teams are distributed. Every gap widens.
@@ -71,7 +71,7 @@ Several constraints became immediately visible:
 * **Agile language masking unchanged control structures**
   Leaders wanted empowerment, but continued to intervene when discomfort appeared. Teams noticed. Trust eroded.
 
-From a senior leadership lens, the risk was clear: **the organisation was scaling cost faster than clarity**.
+From a senior leadership lens, the risk was clear: **the organization was scaling cost faster than clarity**.
 
 ### The Intervention: Mentorship, Not Instruction
 
@@ -90,7 +90,7 @@ Key elements included:
 * Weekly leadership-level conversations grounded in live work
 * Direct inspection of decision paths, not artefacts
 * Deliberate practice applied inside active backlogs and planning conversations
-* Immediate feedback on behaviour, not theory
+* Immediate feedback on behavior, not theory
 
 At one point, two sub-teams were given the same leadership challenge.
 
@@ -141,4 +141,4 @@ For senior leaders, the lesson is direct:
 > Sustainable improvement does not come from better people.
 > It comes from better conditions for people to lead.
 
-{{< contact-cta heading="Assess Whether Leadership Structure Is Constraining Your Distributed Organisation" text="If decisions are centralised, context is leaking across borders, or teams lack clarity despite having capable people, a diagnostic conversation can identify where leadership design needs to change." >}}
+{{< contact-cta heading="Assess Whether Leadership Structure Is Constraining Your Distributed Organization" text="If decisions are centralised, context is leaking across borders, or teams lack clarity despite having capable people, a diagnostic conversation can identify where leadership design needs to change." >}}

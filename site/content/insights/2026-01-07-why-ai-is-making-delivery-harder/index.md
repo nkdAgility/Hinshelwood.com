@@ -2,7 +2,7 @@
 title: "Why AI Is Making Delivery Harder for Development Managers, Not Easier"
 date: 2026-01-01
 slug:  why-ai-is-making-delivery-harder
-description:  "AI is often seen as a productivity booster for development teams, but without organisational clarity, it can increase complexity and risk. Here’s how development managers can navigate this challenge."
+description:  "AI is often seen as a productivity booster for development teams, but without organizational clarity, it can increase complexity and risk. Here’s how development managers can navigate this challenge."
 related:
   - "problems/ai"
   - "outcomes/technical-leadership"

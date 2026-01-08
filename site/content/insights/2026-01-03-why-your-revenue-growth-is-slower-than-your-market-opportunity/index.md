@@ -2,7 +2,7 @@
 title: "Why Your Revenue Growth Is Slower Than Your Market Opportunity"
 date: 2026-01-01
 slug: why-your-revenue-growth-is-slower-than-your-market-opportunity
-description: "Most organisations struggle to turn market signals into revenue growth. The hidden constraint is learning speed."
+description: "Most organizations struggle to turn market signals into revenue growth. The hidden constraint is learning speed."
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
@@ -17,11 +17,11 @@ There is no shortage of markets to pursue, features to ship, segments to test, o
 
 What’s missing is **speed to evidence**.
 
-Revenue growth is constrained not by ambition, but by how quickly your organisation can test, learn, and adjust without betting the company each time.
+Revenue growth is constrained not by ambition, but by how quickly your organization can test, learn, and adjust without betting the company each time.
 
 ## The Symptom Shows Up in the Numbers
 
-You may recognise some of these patterns:
+You may recognize some of these patterns:
 
 * Pipeline looks strong, but conversion lags.
 * Sales feedback arrives too late to influence delivery.
@@ -51,7 +51,7 @@ If learning is slow, revenue becomes a lagging indicator of outdated assumptions
 
 ## Why Growth Feels Riskier Than It Should
 
-In many organisations, growth initiatives are treated like capital investments:
+In many organizations, growth initiatives are treated like capital investments:
 
 * Large upfront commitments.
 * Fixed targets.
@@ -62,7 +62,7 @@ That structure forces leaders to seek certainty before acting.
 
 But certainty only arrives *after* the market has responded.
 
-So growth slows, not because the opportunity is unclear, but because the organisation cannot safely learn its way forward.
+So growth slows, not because the opportunity is unclear, but because the organization cannot safely learn its way forward.
 
 ## Output Is Being Mistaken for Progress
 
@@ -77,7 +77,7 @@ These are outputs.
 
 Revenue responds to outcomes.
 
-When the operating model rewards delivery of plans rather than validation of assumptions, teams optimise for completion instead of learning. That creates motion without momentum.
+When the operating model rewards delivery of plans rather than validation of assumptions, teams optimize for completion instead of learning. That creates motion without momentum.
 
 ## Why Scaling Magnifies the Problem
 
@@ -87,14 +87,14 @@ As coordination increases, decision-making centralises.
 
 As decision-making centralises, learning slows.
 
-This is why many organisations stall after early success. The very structures that once enabled scale begin to suppress adaptability.
+This is why many organizations stall after early success. The very structures that once enabled scale begin to suppress adaptability.
 
 Growth doesn’t fail because the market changes.
-It fails because the organisation cannot change **fast enough** without increasing risk exposure.
+It fails because the organization cannot change **fast enough** without increasing risk exposure.
 
 ## This Is an Operating-Model Choice
 
-Every organisation makes an implicit trade-off:
+Every organization makes an implicit trade-off:
 
 * **Predictability vs responsiveness**
 * **Control vs learning**

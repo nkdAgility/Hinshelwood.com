@@ -25,7 +25,7 @@ The underlying system had quietly fractured:
 * Over 800 active projects
 * More than 900 custom processes and workflows
 
-Even teams working on the same product were using different fields, forms, and definitions of work. Reporting existed, but it could not be trusted. Visibility was local, not organisational.
+Even teams working on the same product were using different fields, forms, and definitions of work. Reporting existed, but it could not be trusted. Visibility was local, not organizational.
 
 ### The Leadership Risk
 
@@ -38,7 +38,7 @@ When every team defines work differently:
 * Duplication becomes invisible
 * Leaders manage by exception and escalation
 
-Senior leaders recognised that without intervention, scale itself had become the constraint.
+Senior leaders recognized that without intervention, scale itself had become the constraint.
 
 ### The Ask from Senior Leadership
 
@@ -47,7 +47,7 @@ Leadership committed to a bold outcome:
 * Consolidate fragmented systems
 * Standardise how work is represented
 * Enable enterprise-level visibility and collaboration
-* Achieve this without halting delivery or triggering organisational revolt
+* Achieve this without halting delivery or triggering organizational revolt
 
 This required more than policy. It required system-level change.
 
@@ -59,7 +59,7 @@ The assessment identified three systemic constraints that leadership needed to a
    Hundreds of customised processes meant that roll-ups, dashboards, and portfolio views were structurally unreliable.
 
 2. **Structural silos reinforced duplication**
-   Funding and decision-making aligned to regional technology centres rather than products, causing parallel work and fragmented ownership.
+   Funding and decision-making aligned to regional technology centers rather than products, causing parallel work and fragmented ownership.
 
 3. **Leadership lacked a usable control surface**
    Code was flowing, features were shipping, but leaders had no dependable way to see flow of value, emerging risks, or comparative performance.
@@ -73,7 +73,7 @@ The engagement combined system design, automation, and leadership alignment.
 Senior leaders were supported through a multi-year modernisation that included:
 
 * **Creation of a single, standard work model**
-  A unified organisational process was defined, enabling consistent work item structure, traceability, and reporting without forcing identical workflows.
+  A unified organizational process was defined, enabling consistent work item structure, traceability, and reporting without forcing identical workflows.
 
 * **Automated large-scale migration capability**
   Custom automation was developed to safely transform and migrate data at scale, reducing risk and eliminating manual effort.
@@ -103,7 +103,7 @@ Most importantly, leadership regained the ability to **see and steer the system*
 
 ### Why This Matters to Senior Leaders
 
-Many large organisations reach a point where decentralisation turns from strength to liability. The signals are familiar:
+Many large organizations reach a point where decentralisation turns from strength to liability. The signals are familiar:
 
 * Too many tools, too many processes
 * Inconsistent data

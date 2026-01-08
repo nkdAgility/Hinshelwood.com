@@ -1,10 +1,10 @@
 ---
 title: Reducing Decision Risk Without Centralising Control
-subtitle: "Technical leadership that enables faster, safer decisions as organisations scale"
+subtitle: "Technical leadership that enables faster, safer decisions as organizations scale"
 shortTitle: Technical Leadership
 date: 2026-01-01
 slug: technical-leadership
-description: "Reducing decision risk as organisations scale, without centralising control or creating dependency on a few senior individuals. Strengthen technical judgment, shorten decision latency, and improve delivery confidence through operating models that allow technical decisions to scale safely."
+description: "Reducing decision risk as organizations scale, without centralising control or creating dependency on a few senior individuals. Strengthen technical judgment, shorten decision latency, and improve delivery confidence through operating models that allow technical decisions to scale safely."
 keywords: [
   "technical leadership",
   "engineering leadership",
@@ -29,7 +29,7 @@ menu:
 ---
 
 **Technical leadership is not about being the smartest engineer in the room.
-It is about ensuring your organisation can make, sustain, and trust technical decisions at scale.**
+It is about ensuring your organization can make, sustain, and trust technical decisions at scale.**
 
 Senior leaders rarely suffer from a lack of ideas, tools, or talent.
 
@@ -41,7 +41,7 @@ This page is for leaders who are technically accountable, but structurally const
 
 ## The Problem Technical Leaders Actually Face
 
-Most organisations believe their technical problems are execution problems.
+Most organizations believe their technical problems are execution problems.
 
 They are not.
 
@@ -64,9 +64,9 @@ It is caused by **unclear technical authority, weak decision hygiene, and operat
 
 Strong technical leadership does not “fix” teams.
 
-It changes what the organisation can safely do.
+It changes what the organization can safely do.
 
-When technical leadership is working, organisations experience:
+When technical leadership is working, organizations experience:
 
 * **Faster decisions with lower delivery risk**
 * **Clear technical boundaries that reduce coordination cost**
@@ -81,7 +81,7 @@ The outcome is **more leverage**.
 
 ## Why This Breaks at Scale
 
-As organisations grow, technical leadership often degrades silently.
+As organizations grow, technical leadership often degrades silently.
 
 Not because leaders become weaker, but because **their system of work no longer supports technical judgment**.
 
@@ -127,7 +127,7 @@ Leaders engage this work when they need to:
 * Create technical leadership capacity beyond a few individuals
 * Ensure technology enables strategy rather than limits it
 
-The result is **an organisation that can move faster without betting the company each time**.
+The result is **an organization that can move faster without betting the company each time**.
 
 ## What This Is Not
 
@@ -141,7 +141,7 @@ This is not:
 If your current approach relies on escalation, exception handling, or stronger personalities, it will not scale.
 If you are looking for someone to “own” your technical problems, this is not a fit.
 
-If you want your organisation to **become capable of owning them**, it is.
+If you want your organization to **become capable of owning them**, it is.
 
 ## When This Is a Fit
 
@@ -159,7 +159,7 @@ If technical leadership currently depends on a few heroic people, it is already 
 
 Before adding more governance, roles, or tools, ask this:
 
-**Where does technical judgment live in our organisation, and what prevents it from scaling safely?**
+**Where does technical judgment live in our organization, and what prevents it from scaling safely?**
 
 If that answer is unclear, technical leadership is already constraining outcomes, whether you acknowledge it or not.
 

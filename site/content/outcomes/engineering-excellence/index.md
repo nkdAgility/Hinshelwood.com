@@ -28,11 +28,11 @@ menu:
     weight: 100
 ---
 
-Most organisations believe engineering excellence is about skill, standards, or tools.
+Most organizations believe engineering excellence is about skill, standards, or tools.
 
 It isn’t.
 
-Engineering excellence is the organisation’s **ability to turn intent into reliable outcomes without accumulating invisible risk**.
+Engineering excellence is the organization’s **ability to turn intent into reliable outcomes without accumulating invisible risk**.
 
 When that capability is weak, leaders experience:
 
@@ -83,7 +83,7 @@ From the outside, everything still appears governed.
 
 From the inside, learning slows and risk accumulates quietly.
 This is why problems labelled as DevOps, scaling, or AI reliability often share the same root cause.
-This is why many organisations “improve” engineering for years without seeing strategic impact.
+This is why many organizations “improve” engineering for years without seeing strategic impact.
 
 
 ## Engineering Excellence Is an Operating-Model Issue
@@ -93,7 +93,7 @@ Engineering excellence does not come from:
 * Coding standards
 * Tooling upgrades
 * Training programmes
-* Centres of excellence
+* Centers of excellence
 
 Those are inputs.
 
@@ -125,14 +125,14 @@ Engineering stops being a risk to manage and becomes a **strategic asset**.
 
 ## How I Help
 
-This work is not for organisations looking for faster delivery through more pressure, more process, or more tooling.
+This work is not for organizations looking for faster delivery through more pressure, more process, or more tooling.
 
 I work with senior leaders who already know this is not a tooling or talent problem.
 
 My role is to help you:
 
 * See where engineering excellence is being constrained by your current system
-* Surface hidden technical and organisational risk before it materialises
+* Surface hidden technical and organizational risk before it materialises
 * Clarify decision ownership across product, platform, and engineering
 * Establish engineering signals leadership can trust
 * Strengthen engineering capability without creating consultant dependency
@@ -156,7 +156,7 @@ If engineering excellence is spoken about but not felt in results, this is the g
 ## The Question That Matters
 
 Engineering excellence is not a goal.
-It is the mechanism that allows you to operate at speed without betting the organisation each quarter.
+It is the mechanism that allows you to operate at speed without betting the organization each quarter.
 
 The question is not whether you are paying for it.
 The question is whether you are paying deliberately, or through missed commitments, rework, and declining confidence.

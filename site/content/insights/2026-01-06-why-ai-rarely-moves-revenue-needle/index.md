@@ -2,7 +2,7 @@
 title: "Why AI Rarely Moves the Revenue Needle the Way Growth Leaders Expect"
 date: 2026-01-01
 slug:  why-ai-rarely-moves-revenue-needle
-description: "Growth leaders invest in AI to accelerate revenue, but often find impact elusive. The missing link is organisational clarity around decisions."
+description: "Growth leaders invest in AI to accelerate revenue, but often find impact elusive. The missing link is organizational clarity around decisions."
 related:
   - "problems/ai"
   - "outcomes/technical-leadership"
@@ -35,7 +35,7 @@ Yet in practice, AI initiatives often stall between signal and action.
 Why?
 
 Because revenue systems depend on **decisions**, not data.
-AI cannot improve decisions when the organisation cannot agree on intent, ownership, or success criteria.
+AI cannot improve decisions when the organization cannot agree on intent, ownership, or success criteria.
 
 Growth leaders feel this first.
 
@@ -54,7 +54,7 @@ Instead, it finds:
 
 * Competing definitions of “qualified”
 * Multiple versions of customer truth
-* Forecasts optimised for politics, not accuracy
+* Forecasts optimized for politics, not accuracy
 * Incentives that reward local wins over global outcomes
 * Lagging feedback between delivery and revenue impact
 
@@ -71,7 +71,7 @@ But growth systems don’t fail due to lack of information.
 They fail due to lack of alignment.
 
 If sales and marketing disagree on what matters, AI learns noise.
-If customer success isn’t reflected in pipeline decisions, AI optimises churn.
+If customer success isn’t reflected in pipeline decisions, AI optimizes churn.
 If pricing authority is unclear, AI produces recommendations no one trusts.
 
 Growth leaders then lose confidence, not in AI, but in its relevance.
@@ -108,7 +108,7 @@ It multiplies whatever system it is embedded in.
 If your go-to-market motion is fragmented, AI accelerates fragmentation.
 If your revenue engine is coherent, AI compounds it.
 
-That is why AI returns feel uneven across organisations with similar tools and budgets.
+That is why AI returns feel uneven across organizations with similar tools and budgets.
 
 The difference is not sophistication.
 It is clarity.

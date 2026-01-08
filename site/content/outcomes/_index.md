@@ -15,4 +15,4 @@ menu:
     identifier: outcomes
 ---
 
-Engineering excellence enables faster delivery without increasing risk. By embedding disciplined engineering practices, organisations reduce defects, improve reliability, and create systems that can evolve safely over time.
+Engineering excellence enables faster delivery without increasing risk. By embedding disciplined engineering practices, organizations reduce defects, improve reliability, and create systems that can evolve safely over time.

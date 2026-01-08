@@ -2,7 +2,7 @@
 title: "Why Portfolio Performance Plateaus Even When Individual Teams Appear Productive"
 date: 2026-01-01
 slug: why-portfolio-performance-plateaus
-description: "Boards see busy organisations hitting delivery targets, yet strategic returns stall. The hidden issue is how the portfolio learns."
+description: "Boards see busy organizations hitting delivery targets, yet strategic returns stall. The hidden issue is how the portfolio learns."
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
@@ -19,7 +19,7 @@ Margins are under pressure, but still defensible.
 Forecasts are met, until suddenly they aren’t.
 Risk appears controlled, until it materialises late and expensively.
 
-From a distance, the organisation looks busy, governed, and operationally sound.
+From a distance, the organization looks busy, governed, and operationally sound.
 
 The problem is not execution.
 
@@ -74,7 +74,7 @@ As a result:
 
 This creates portfolios that are stable, but brittle.
 
-Returns plateau not because opportunities are scarce, but because the organisation cannot safely change direction at speed.
+Returns plateau not because opportunities are scarce, but because the organization cannot safely change direction at speed.
 
 ## Productivity Is Not the Same as Portfolio Performance
 
@@ -85,7 +85,7 @@ Boards often receive detailed reporting on activity:
 * Milestone achievement
 * Budget adherence
 
-These indicators say little about whether the organisation is learning faster than its market.
+These indicators say little about whether the organization is learning faster than its market.
 
 A productive portfolio can still be strategically blind.
 
@@ -93,13 +93,13 @@ When output replaces evidence as the basis for confidence, governance becomes ce
 
 ## The Scaling Trap
 
-As organisations grow, they naturally introduce coordination mechanisms.
+As organizations grow, they naturally introduce coordination mechanisms.
 
 Over time, those mechanisms centralise decision-making and delay learning.
 
 What began as prudent oversight becomes a constraint on responsiveness.
 
-This is why portfolio returns often peak before market saturation. The organisation’s ability to adapt collapses under its own weight.
+This is why portfolio returns often peak before market saturation. The organization’s ability to adapt collapses under its own weight.
 
 ## This Is a Portfolio Design Question
 
@@ -111,7 +111,7 @@ Is the portfolio designed to **reduce uncertainty early**, or to **manage commit
 
 Those are mutually exclusive priorities.
 
-You cannot optimise for certainty and adaptability at the same time.
+You cannot optimize for certainty and adaptability at the same time.
 
 ## The Diagnostic Question Boards Should Ask
 

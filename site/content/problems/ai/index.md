@@ -3,14 +3,14 @@ title: AI Is Creating Risk Instead of Reliable Capability
 shortTitle: AI Enablement
 date: 2026-01-01
 slug: ai
-description: "AI initiatives stall and create risk when organisations lack clarity, ownership, and decision discipline. As AI scales, ambiguity undermines trust, increases delivery risk, and prevents experiments from becoming reliable capability."
+description: "AI initiatives stall and create risk when organizations lack clarity, ownership, and decision discipline. As AI scales, ambiguity undermines trust, increases delivery risk, and prevents experiments from becoming reliable capability."
 keywords: [
   "AI enablement",
   "AI operating model",
   "AI at scale",
   "AI delivery risk",
   "AI in production",
-  "organisational clarity",
+  "organizational clarity",
   "decision-making discipline",
   "AI governance",
   "AI capability building",
@@ -28,7 +28,7 @@ menu:
     weight: 300
 ---
 
-Most organisations don’t fail at AI because they chose the wrong model, tool, or vendor.
+Most organizations don’t fail at AI because they chose the wrong model, tool, or vendor.
 
 They fail because AI exposes problems they were previously able to ignore.
 
@@ -40,7 +40,7 @@ Knowledge trapped in people’s heads.
 
 AI simply makes these issues visible, faster and at scale.
 
-This page is for leaders who recognise that problem and want AI to move from experimentation to dependable value.
+This page is for leaders who recognize that problem and want AI to move from experimentation to dependable value.
 
 ## Stage 1: Excitement Turns into Friction
 
@@ -60,7 +60,7 @@ Then reality sets in.
 
 At this stage, AI feels expensive and fragile.
 
-Most organisations respond by adding more tools, more data, or more governance.
+Most organizations respond by adding more tools, more data, or more governance.
 
 None of those address the root cause.
 
@@ -72,7 +72,7 @@ The inflection point comes when leaders stop asking:
 
 And start asking:
 
-> “Why is our organisation so hard for AI to understand?”
+> “Why is our organization so hard for AI to understand?”
 
 This is where patterns emerge:
 
@@ -97,13 +97,13 @@ At scale, unclear AI inputs become business risk.
 - Manual checks creep back into automated workflows
 - "AI enablement" becomes an expensive side project
 
-The organisation is doing AI work, but not becoming an AI-capable organisation.
+The organization is doing AI work, but not becoming an AI-capable organization.
 
 This is the moment where enablement matters.
 
-## Stage 4: Enablement Means Making the Organisation Legible
+## Stage 4: Enablement Means Making the Organization Legible
 
-Reliable AI requires the organisation itself to be coherent.
+Reliable AI requires the organization itself to be coherent.
 
 Enablement is not about teaching prompts or deploying platforms.
 
@@ -145,12 +145,12 @@ My focus is on:
 - Establishing shared language and decision clarity
 - Creating structured context that AI can reliably use
 - Enabling teams to move from experiments to production
-- Reducing organisational risk while increasing learning speed
+- Reducing organizational risk while increasing learning speed
 
 This work sits at the intersection of leadership, delivery, and decision-making.
 
 The outcome is not “doing more AI”.  
-It is building an organisation that AI can actually serve.
+It is building an organization that AI can actually serve.
 
 ## Who This Is For
 
@@ -162,11 +162,11 @@ This work is relevant if:
 - Delivery risk increases as automation increases
 - You want AI to compound, not reset every quarter
 
-If your organisation is already buying AI tools but still relying on heroics, this is the gap.
+If your organization is already buying AI tools but still relying on heroics, this is the gap.
 
 ## The Real Question
 
-AI will not simplify your organisation.
+AI will not simplify your organization.
 
 It will demand that you simplify *for it*.
 
@@ -174,4 +174,4 @@ The only question is whether you do that deliberately, or let AI expose the prob
 
 ---
 
-{{< contact-cta heading="Explore Whether AI Can Work in Your Organisation" text="If AI is producing interesting outputs but not delivering business value, a diagnostic conversation can reveal where ambiguity and complexity are blocking progress." >}}
+{{< contact-cta heading="Explore Whether AI Can Work in Your Organization" text="If AI is producing interesting outputs but not delivering business value, a diagnostic conversation can reveal where ambiguity and complexity are blocking progress." >}}

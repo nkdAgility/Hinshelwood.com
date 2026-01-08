@@ -16,7 +16,7 @@ sitemap:
 
 A global oil and gas service company was relying on more than 90 engineering teams, spread across 13 locations in 9 countries, to deliver a single, mission-critical product.
 
-On paper, the organisation was well resourced. In practice, senior leaders were dealing with a growing operational risk:
+On paper, the organization was well resourced. In practice, senior leaders were dealing with a growing operational risk:
 
 * Delivery was slow and unpredictable
 * Costs were rising without clear value return
@@ -57,7 +57,7 @@ Three constraints stood out immediately:
    Multiple source control systems and branching models multiplied coordination cost and made end-to-end visibility impossible.
 
 2. **Centralised control removed team accountability**
-   When builds and releases are owned elsewhere, teams optimise locally and defer responsibility for quality.
+   When builds and releases are owned elsewhere, teams optimize locally and defer responsibility for quality.
 
 3. **Leaders lacked a simple governing model**
    Without a consistent engineering baseline, leaders were managing exceptions instead of outcomes.
@@ -66,7 +66,7 @@ This was a system designed for heroics, not reliability.
 
 ### The Advisory Approach
 
-The engagement was deliberately advisory. Ownership stayed with the organisation. The value came from clear, experience-based guidance.
+The engagement was deliberately advisory. Ownership stayed with the organization. The value came from clear, experience-based guidance.
 
 Senior leaders received:
 
@@ -93,11 +93,11 @@ The results were structural, not cosmetic.
 * Delivery became more predictable because responsibility sat where the work happened
 * Leaders gained a simpler, clearer model for governing engineering at scale
 
-Most importantly, the organisation reduced operational risk while increasing delivery capacity.
+Most importantly, the organization reduced operational risk while increasing delivery capacity.
 
 ### Why This Matters to Senior Leaders
 
-This case highlights a pattern many leaders face as organisations scale:
+This case highlights a pattern many leaders face as organizations scale:
 
 * Complexity accumulates quietly
 * Central teams grow to compensate
@@ -108,7 +108,7 @@ The corrective action is rarely “better tooling”. It is **restoring ownershi
 
 ### The Strategic Takeaway
 
-High-performing engineering organisations are not controlled tightly. They are **structured deliberately**.
+High-performing engineering organizations are not controlled tightly. They are **structured deliberately**.
 
 When teams own the systems they work within, leaders regain leverage, predictability improves, and cost follows value instead of chasing failure.
 
