@@ -2,12 +2,18 @@
 {{- $heading := .Get "heading" | default "" -}}
 {{- $text := .Get "text" | default "" -}}
 {{- $showLocation := .Get "showLocation" | default false -}}
+{{- $directBooking := .Get "directBooking" | default false -}}
+{{- $buttonText := .Get "buttonText" | default "" -}}
 
 {{- if eq $showLocation "false" -}}
   {{- $showLocation = false -}}
 {{- end -}}
 
-{{- $params := dict "variant" $variant "showLocation" $showLocation -}}
+{{- if eq $directBooking "false" -}}
+  {{- $directBooking = false -}}
+{{- end -}}
+
+{{- $params := dict "variant" $variant "showLocation" $showLocation "directBooking" $directBooking -}}
 
 {{- if $heading -}}
   {{- $params = merge $params (dict "heading" $heading) -}}
@@ -15,6 +21,10 @@
 
 {{- if $text -}}
   {{- $params = merge $params (dict "text" $text) -}}
+{{- end -}}
+
+{{- if $buttonText -}}
+  {{- $params = merge $params (dict "buttonText" $buttonText) -}}
 {{- end -}}
 
 {{ partial "components/contact-cta.html" $params }}
