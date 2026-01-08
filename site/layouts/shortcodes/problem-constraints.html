@@ -6,9 +6,10 @@
   <p>Your symptoms might show up as missed deadlines, rising costs, or strategic initiatives that stall. The root cause usually sits in one of three places:</p>
 
   {{ range $problems }}
+    {{ $page := . }}
     {{ with .Params.triage }}
       <p>
-        <strong><a href="{{ $.Page.RelPermalink }}">{{ .title }}</a></strong
+        <strong><a href="{{ $page.RelPermalink }}">{{ .title }}</a></strong
         ><br />
         {{ .signal }}
       </p>
