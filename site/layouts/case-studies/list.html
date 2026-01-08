@@ -7,14 +7,4 @@
     <h1>{{ .Title }}</h1>
     {{ .Content }}
   </section>
-
-  <section class="container my-5">
-   <div class="row g-4">
-      {{ range .Paginator.Pages }}
-        {{ partial "components/promo-card.html" . }}
-      {{ end }}
-    </div>
-    
-    {{ template "_internal/pagination.html" . }}
-  </section>
 {{- end }}
