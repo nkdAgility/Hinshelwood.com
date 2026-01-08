@@ -1,11 +1,16 @@
 {{- define "main" -}}
   <section class="container my-5">
-    <header class="mb-5">
+    <header class="mb-4">
       <h1>{{ .Title }}</h1>
-      <div class="text-muted">
-        <p>Real feedback from clients and colleagues who have worked with Martin Hinshelwood on training, consulting, and advisory engagements.</p>
-      </div>
+      <p>Testimonials from clients who engaged me to address specific constraints and colleagues who observed or participated in that work.</p>
+      <p>Client testimonials describe the diagnostic process, what changed, and whether the engagement resolved the constraint. Colleague testimonials describe what they observed about my approach and its effectiveness. Both are evidence, not endorsement.</p>
     </header>
+
+    <div class="mb-5">
+      <h2>How to Use This</h2>
+      <p>Look for testimonials that describe constraints similar to yours. Notice what the client valued, what changed, and whether the outcome matched their intent.</p>
+      <p>Filter by category if you want to see feedback specific to a particular engagement type or outcome area.</p>
+    </div>
 
     {{- $isTaxonomyPage := eq .Kind "term" -}}
     {{- $currentTerm := "" -}}
@@ -23,7 +28,7 @@
 
     {{- $pages := .Pages.ByWeight -}}
 
-    {{- $paginator := .Paginate $pages 20 -}}
+    {{- $paginator := .Paginate $pages 5 -}}
 
 
     <div class="text-muted mb-4" style="font-size: 0.9rem;">
@@ -91,5 +96,17 @@
         {{- end -}}
       </nav>
     {{- end -}}
+
+
+    <div class="mt-5 pt-4 border-top">
+      <h2>What to Do Next</h2>
+      <p>Testimonials show what others experienced. The relevant question is whether your constraint is addressable using a similar diagnostic process.</p>
+      <ul>
+        <li>Review <a href="/problems/">problems I solve</a> to see if your constraint fits a known pattern</li>
+        <li>Read <a href="/case-studies/">case studies</a> to see detailed evidence of diagnostic work and outcomes</li>
+        <li>Explore <a href="/insights/">insights</a> to understand the reasoning behind my approach</li>
+      </ul>
+      <p>If your situation appears similar, <a href="/about/">start a diagnostic conversation</a>.</p>
+    </div>
   </section>
 {{- end -}}
