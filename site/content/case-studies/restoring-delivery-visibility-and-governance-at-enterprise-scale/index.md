@@ -3,6 +3,10 @@ title: Restoring Delivery Visibility and Governance at Enterprise Scale
 description: "How a global oil and gas service company consolidated fragmented systems to regain delivery visibility, reduce duplication, and restore leadership governance."
 date: 2026-01-01
 slug: restoring-delivery-visibility-and-governance-at-enterprise-scale
+diagnostics:
+  constraint: "Fragmented systems destroyed enterprise visibility and governance"
+  outcome: "Consolidated 27 collections into unified system with enterprise-level visibility and standardized processes"
+  evidence: "800+ projects and 900+ custom processes standardized, enabling reliable enterprise reporting and investment decisions"
 related:
   - "problems/devops"
   - "outcomes/engineering-excellence/"
@@ -15,15 +19,15 @@ A global oil and gas service company had grown successfully for decades through 
 
 Senior leaders were responsible for thousands of engineers and hundreds of product initiatives, yet they could not answer basic questions with confidence:
 
-* Where is investment actually going?
-* Which products are constrained, and why?
-* What delivery risks are emerging before they become failures?
+- Where is investment actually going?
+- Which products are constrained, and why?
+- What delivery risks are emerging before they become failures?
 
 The underlying system had quietly fractured:
 
-* 27 separate Azure DevOps and TFS collections
-* Over 800 active projects
-* More than 900 custom processes and workflows
+- 27 separate Azure DevOps and TFS collections
+- Over 800 active projects
+- More than 900 custom processes and workflows
 
 Even teams working on the same product were using different fields, forms, and definitions of work. Reporting existed, but it could not be trusted. Visibility was local, not organizational.
 
@@ -33,10 +37,10 @@ This was not a tooling inconvenience. It was a **governance failure**.
 
 When every team defines work differently:
 
-* Enterprise reporting collapses
-* Investment decisions rely on anecdotes
-* Duplication becomes invisible
-* Leaders manage by exception and escalation
+- Enterprise reporting collapses
+- Investment decisions rely on anecdotes
+- Duplication becomes invisible
+- Leaders manage by exception and escalation
 
 Senior leaders recognized that without intervention, scale itself had become the constraint.
 
@@ -44,10 +48,10 @@ Senior leaders recognized that without intervention, scale itself had become the
 
 Leadership committed to a bold outcome:
 
-* Consolidate fragmented systems
-* Standardise how work is represented
-* Enable enterprise-level visibility and collaboration
-* Achieve this without halting delivery or triggering organizational revolt
+- Consolidate fragmented systems
+- Standardise how work is represented
+- Enable enterprise-level visibility and collaboration
+- Achieve this without halting delivery or triggering organizational revolt
 
 This required more than policy. It required system-level change.
 
@@ -72,19 +76,19 @@ The engagement combined system design, automation, and leadership alignment.
 
 Senior leaders were supported through a multi-year modernisation that included:
 
-* **Creation of a single, standard work model**
+- **Creation of a single, standard work model**
   A unified organizational process was defined, enabling consistent work item structure, traceability, and reporting without forcing identical workflows.
 
-* **Automated large-scale migration capability**
+- **Automated large-scale migration capability**
   Custom automation was developed to safely transform and migrate data at scale, reducing risk and eliminating manual effort.
 
-* **Phased consolidation strategy**
+- **Phased consolidation strategy**
   More than 800 projects were progressively migrated and regrouped, reducing collections from 27 to 7 while maintaining delivery continuity.
 
-* **Mandate paired with negotiation**
+- **Mandate paired with negotiation**
   Leadership set clear expectations for standardisation, while teams were actively engaged to ensure local needs were respected within the global model.
 
-* **Creation of an internal capability**
+- **Creation of an internal capability**
   A permanent DevOps consulting function was established to support teams, sustain standards, and prevent regression.
 
 This was not a “big bang” change. It was disciplined, incremental, and governed.
@@ -93,11 +97,11 @@ This was not a “big bang” change. It was disciplined, incremental, and gover
 
 The outcomes were structural and enduring:
 
-* Enterprise visibility became reliable and comparable
-* Collaboration across teams and locations became normal, not exceptional
-* Duplication was exposed and reduced
-* Infrastructure complexity and cost were significantly lowered
-* Leaders could forecast delivery risks earlier and make better-informed investment decisions
+- Enterprise visibility became reliable and comparable
+- Collaboration across teams and locations became normal, not exceptional
+- Duplication was exposed and reduced
+- Infrastructure complexity and cost were significantly lowered
+- Leaders could forecast delivery risks earlier and make better-informed investment decisions
 
 Most importantly, leadership regained the ability to **see and steer the system**, not just react to it.
 
@@ -105,9 +109,9 @@ Most importantly, leadership regained the ability to **see and steer the system*
 
 Many large organizations reach a point where decentralisation turns from strength to liability. The signals are familiar:
 
-* Too many tools, too many processes
-* Inconsistent data
-* Endless “alignment” conversations with no shared facts
+- Too many tools, too many processes
+- Inconsistent data
+- Endless “alignment” conversations with no shared facts
 
 This case demonstrates that consolidation is not about control. It is about **restoring coherence so leadership can function**.
 

@@ -1,32 +1,10 @@
 {{ $currentPath := .RelPermalink }}
-{{ $relatedCaseStudies := slice }}
-{{ range where site.RegularPages "Section" "case-studies" }}
-  {{ $caseStudy := . }}
-  {{ $isPublished := le .Date now }}
-  {{ $showDrafts := or (eq hugo.Environment "preview") (eq hugo.Environment "development") }}
-  {{ if or $isPublished $showDrafts }}
-    {{ if $caseStudy.Params.related }}
-      {{ range $caseStudy.Params.related }}
-        {{ $relatedPath := . }}
-        {{ if not (hasPrefix $relatedPath "/") }}
-          {{ $relatedPath = printf "/%s" $relatedPath }}
-        {{ end }}
-        {{ if not (hasSuffix $relatedPath "/") }}
-          {{ $relatedPath = printf "%s/" $relatedPath }}
-        {{ end }}
-        {{ if eq $relatedPath $currentPath }}
-          {{ $relatedCaseStudies = $relatedCaseStudies | append $caseStudy }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end }}
+{{ $relatedCaseStudies := partial "functions/get-related-items.html" (dict "section" "case-studies" "relatedToPath" $currentPath) }}
 
 {{ if $relatedCaseStudies }}
-    <h2>Related Case Studies</h2>
-    <div class="row g-4">
-      {{ range $relatedCaseStudies }}
-        {{ partial "components/promo-card.html" . }}
-      {{ end }}
-    </div>
+  <div class="row g-4">
+    {{ range $relatedCaseStudies }}
+      {{ partial "components/promo-card.html" . }}
+    {{ end }}
+  </div>
 {{ end }}

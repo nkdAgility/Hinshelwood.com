@@ -4,18 +4,10 @@ shortTitle: AI Enablement
 date: 2026-01-01
 slug: ai
 description: "AI initiatives stall and create risk when organizations lack clarity, ownership, and decision discipline. As AI scales, ambiguity undermines trust, increases delivery risk, and prevents experiments from becoming reliable capability."
-keywords: [
-  "AI enablement",
-  "AI operating model",
-  "AI at scale",
-  "AI delivery risk",
-  "AI in production",
-  "organizational clarity",
-  "decision-making discipline",
-  "AI governance",
-  "AI capability building",
-  "scalable AI"
-]
+keywords: ["AI enablement", "AI operating model", "AI at scale", "AI delivery risk", "AI in production", "organizational clarity", "decision-making discipline", "AI governance", "AI capability building", "scalable AI"]
+triage:
+  title: "AI: Experimentation Isn't Becoming Capability"
+  signal: "If AI pilots impress but don't stick, or teams can't agree on what success looks like."
 ItemType: problem
 ItemKind: marketing
 weight: 200
@@ -46,17 +38,17 @@ This page is for leaders who recognize that problem and want AI to move from exp
 
 The journey usually starts with optimism.
 
-- Pilots show promise  
-- Demos look impressive  
-- Early outputs feel “close enough”  
+- Pilots show promise
+- Demos look impressive
+- Early outputs feel “close enough”
 
 Then reality sets in.
 
-- Teams don’t trust the results  
-- Outputs require constant correction  
-- Experiments don’t compound into capability  
-- Production feels risky  
-- No one can clearly explain why progress is slow  
+- Teams don’t trust the results
+- Outputs require constant correction
+- Experiments don’t compound into capability
+- Production feels risky
+- No one can clearly explain why progress is slow
 
 At this stage, AI feels expensive and fragile.
 
@@ -118,7 +110,6 @@ It is about creating the conditions where AI can operate safely and predictably:
 
 When these exist, AI stops producing “interesting output” and starts producing trusted signals.
 
-
 ## Stage 5: AI Becomes a Multiplier, Not a Risk
 
 Once clarity and discipline are in place:
@@ -152,6 +143,18 @@ This work sits at the intersection of leadership, delivery, and decision-making.
 The outcome is not “doing more AI”.  
 It is building an organization that AI can actually serve.
 
+{{< related-case-studies >}}
+
+{{< related-insights >}}
+
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Sharpen your diagnosis**: Read the related insights above
+2. **See proof of resolution**: Review the case studies above
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+
 ## Who This Is For
 
 This work is relevant if:
@@ -168,7 +171,7 @@ If your organization is already buying AI tools but still relying on heroics, th
 
 AI will not simplify your organization.
 
-It will demand that you simplify *for it*.
+It will demand that you simplify _for it_.
 
 The only question is whether you do that deliberately, or let AI expose the problem for you.
 

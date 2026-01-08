@@ -3,6 +3,11 @@ title: "Your Operating Model Is Costing You Growth"
 date: 2026-01-01
 slug: operating-model-growth
 description: "Most organizations run an Industrial Operating Model in markets that reward agility. This mismatch destroys value. Here’s how to fix it."
+diagnosis:
+  question: "Why organizations run industrial models in markets that reward agility"
+  statement: "Industrial Operating Models optimize for planning, efficiency, and control. They win when environments are predictable. In dynamic markets, this design creates measurable loss of revenue, relevance, and strategic optionality."
+  reason: "Organizations inherit operating models from past conditions and never consciously redesign them. The model that created success becomes the constraint on growth."
+  signal: "If efficiency is high but strategic impact is low, or if planning is rigorous but adaptation is slow, this explains the operating model mismatch."
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"
@@ -37,12 +42,12 @@ The Industrial Operating Model assumes the environment is sufficiently predictab
 
 Under this model:
 
-* Work is planned upfront and executed later.
-* Efficiency is prioritised over learning.
-* Variance is treated as failure rather than information.
-* Decision-making is escalated upward.
-* Output is mistaken for value.
-* People are managed as capacity, not capability.
+- Work is planned upfront and executed later.
+- Efficiency is prioritised over learning.
+- Variance is treated as failure rather than information.
+- Decision-making is escalated upward.
+- Output is mistaken for value.
+- People are managed as capacity, not capability.
 
 This model works extremely well **when the assumptions hold**: stable demand, long product lifecycles, limited competition, and slow change.
 
@@ -56,12 +61,12 @@ The Agile Product Operating Model assumes the environment is too volatile to pre
 
 Under this model:
 
-* Work is discovered, not predefined.
-* Decisions are made close to customers and technology.
-* Feedback replaces speculation.
-* Teams are persistent and cross-functional.
-* Outcomes matter more than outputs.
-* Management designs enabling systems rather than issuing instructions.
+- Work is discovered, not predefined.
+- Decisions are made close to customers and technology.
+- Feedback replaces speculation.
+- Teams are persistent and cross-functional.
+- Outcomes matter more than outputs.
+- Management designs enabling systems rather than issuing instructions.
 
 This is not about speed for its own sake.
 It is about **economic responsiveness**.
@@ -72,21 +77,21 @@ In dynamic markets, relevance decays quickly. Organizations that cannot learn an
 
 Most markets today are defined by:
 
-* Rapid shifts in customer expectations
-* Shortened product lifecycles
-* Low barriers to entry
-* Technology-enabled competitors
-* Regulatory and geopolitical volatility
+- Rapid shifts in customer expectations
+- Shortened product lifecycles
+- Low barriers to entry
+- Technology-enabled competitors
+- Regulatory and geopolitical volatility
 
 Yet most organizations still plan annually, govern quarterly, and deliver in large batches.
 
 That mismatch creates predictable forms of waste:
 
-* **Planning waste**: months invested in plans invalidated by reality before delivery begins.
-* **Decision latency**: opportunities missed while approvals work their way up the hierarchy.
-* **Innovation suppression**: experimentation blocked by governance designed for capital expenditure, not learning.
-* **Talent waste**: capable people constrained by process rather than enabled by purpose.
-* **Market disconnect**: success measured by delivery of plans, not impact on customers.
+- **Planning waste**: months invested in plans invalidated by reality before delivery begins.
+- **Decision latency**: opportunities missed while approvals work their way up the hierarchy.
+- **Innovation suppression**: experimentation blocked by governance designed for capital expenditure, not learning.
+- **Talent waste**: capable people constrained by process rather than enabled by purpose.
+- **Market disconnect**: success measured by delivery of plans, not impact on customers.
 
 This is not accidental.
 It is exactly what an Industrial Operating Model produces when applied outside its natural habitat.
@@ -114,12 +119,12 @@ You cannot change behavior sustainably without changing the underlying assumptio
 
 A shift to an Agile Product Operating Model produces tangible, commercial outcomes:
 
-* Faster time-to-market without sacrificing quality
-* Earlier validation of product bets
-* Reduced investment risk through smaller decisions
-* Increased customer relevance
-* Improved retention of high-value talent
-* Leadership leverage through system design rather than intervention
+- Faster time-to-market without sacrificing quality
+- Earlier validation of product bets
+- Reduced investment risk through smaller decisions
+- Increased customer relevance
+- Improved retention of high-value talent
+- Leadership leverage through system design rather than intervention
 
 This is not cultural theatre.
 It is structural economics.
@@ -150,11 +155,11 @@ You cannot ease your way from one operating model to another by optimizing parts
 
 The shift requires:
 
-* Structuring around products, not projects
-* Funding learning, not plans
-* Measuring outcomes, not activity
-* Redefining leadership as system stewardship
-* Allowing teams to shape how work actually happens
+- Structuring around products, not projects
+- Funding learning, not plans
+- Measuring outcomes, not activity
+- Redefining leadership as system stewardship
+- Allowing teams to shape how work actually happens
 
 This is not a multi-year enablement programme.
 It is a **decision**, followed by disciplined execution.

@@ -3,6 +3,11 @@ title: "Why AI Isn’t Delivering What You Were Sold"
 date: 2026-01-01
 slug: why-ai-isnt-delivering
 description: "AI initiatives often stall not because the technology is immature, but because organizational clarity is lacking. Here’s how to fix that."
+diagnosis:
+  question: "Why AI isn't delivering value despite impressive pilots"
+  statement: "AI fails when organizations lack decision clarity. Experiments produce interesting outputs, but ambiguous priorities prevent those outputs from becoming trusted signals teams will act on."
+  reason: "Leaders treat AI as a technology problem rather than an organizational clarity problem."
+  signal: "If your AI initiatives feel expensive and fragile, this explains where the constraint sits."
 related:
   - "problems/ai"
   - "outcomes/technical-leadership"

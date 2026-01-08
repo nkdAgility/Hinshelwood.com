@@ -16,6 +16,9 @@ keywords: [
 "scaling governance",
 "systems of work"
 ]
+triage:
+  title: "Scaling: Growth Is Creating Friction"
+  signal: "If coordination cost is rising faster than output, or decisions are escalating instead of resolving."
 ItemType: problem
 ItemKind: marketing
 weight: 300
@@ -27,7 +30,6 @@ menu:
     parent: problems
     weight: 200
 ---
-
 
 Most organizations expect growth to create momentum.
 
@@ -58,7 +60,6 @@ They show up as drag.
 This is usually blamed on communication, process, or middle management.
 
 It is none of those things.
-
 
 ## Why Execution Isn’t the Constraint
 
@@ -125,6 +126,7 @@ It is not about tools, teams, or training.
 It is about **how your organization is designed to make decisions as it scales**.
 
 Every organization makes an implicit trade-off between:
+
 - Predictability and responsiveness
 - Control and learning
 - Efficiency and optionality
@@ -142,6 +144,7 @@ Not to “fix” teams.
 Not to implement a framework.
 
 My role is to help you:
+
 - See the system of work you have built
 - Understand where it no longer fits your context
 - Redesign how decisions, learning, and accountability scale
@@ -152,6 +155,18 @@ I don’t promise outcomes I can’t control.
 
 I help leaders steward their operating model deliberately, rather than inheriting it by accident.
 
+{{< related-case-studies >}}
+
+{{< related-insights >}}
+
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Sharpen your diagnosis**: Read the related insights above
+2. **See proof of resolution**: Review the case studies above
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+
 ## The Question That Matters
 
 Before adding more people, initiatives, or plans, ask this:
@@ -159,4 +174,3 @@ Before adding more people, initiatives, or plans, ask this:
 **Where in our organization does scaling assume certainty that no longer exists?**
 
 If you can’t answer that clearly, scaling will continue to reduce leverage, not increase it.
-

@@ -1,0 +1,20 @@
+{{ $problems := where site.RegularPages "Section" "problems" }}
+{{ $problems = $problems | first 10 }}
+
+{{ if $problems }}
+  <h2>Which Constraint Are You Facing?</h2>
+  <p>Your symptoms might show up as missed deadlines, rising costs, or strategic initiatives that stall. The root cause usually sits in one of three places:</p>
+
+  {{ range $problems }}
+    {{ with .Params.triage }}
+      <p>
+        <strong><a href="{{ $.Page.RelPermalink }}">{{ .title }}</a></strong
+        ><br />
+        {{ .signal }}
+      </p>
+    {{ end }}
+  {{ end }}
+
+
+  <p>Not sure? Start with <a href="{{ "insights" | relURL }}">insights</a> to sharpen your diagnosis.</p>
+{{ end }}

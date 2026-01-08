@@ -3,6 +3,11 @@ title: "Why “Estimate Accuracy” Is Quietly Increasing Your Delivery Risk"
 date: 2026-01-12
 slug: estimate-accuracy-increasing-delivery-risk
 description: Demanding accurate estimates creates false certainty and changes team behavior. Teams inflate estimates, defer risk, and avoid complex work. Leadership loses decision quality while believing they have control.
+diagnosis:
+  question: "Why demanding estimate accuracy increases delivery risk"
+  statement: "Estimate accuracy does not increase control. It changes behavior. Teams inflate estimates to reduce exposure, defer risk rather than surface it, and avoid complex work. False certainty replaces real learning."
+  reason: "Organizations treat estimates as commitments rather than information. Once accuracy becomes visible to leadership, it becomes judgement, and the system adapts rationally to protect itself."
+  signal: "If your organization appears predictable on paper but feels fragile in reality, this explains why control is an illusion."
 related:
   - "problems/scaling"
   - "outcomes/technical-leadership"

@@ -10,7 +10,6 @@ sitemap:
   priority: 1.0
 ---
 
-
 I help engineering leaders restore predictability, reduce operational cost, and regain leverage—without creating dependency on consultants.
 
 **This is for CTOs and engineering leaders accountable for delivery outcomes, not project managers seeking process compliance.**
@@ -51,5 +50,7 @@ Organizations that delay addressing systemic delivery constraints face:
 - 40-60% of strategic initiatives failing to deliver expected value due to decisions made without evidence
 
 The cost of continuing with a system that does not reliably deliver is measurably higher than the cost of fixing it.
+
+{{< problem-constraints >}}
 
 {{< contact-cta >}}

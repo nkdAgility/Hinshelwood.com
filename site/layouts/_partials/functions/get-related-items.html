@@ -1,0 +1,27 @@
+{{- $section := .section -}}
+{{- $relatedToPath := .relatedToPath -}}
+{{- $relatedItems := slice -}}
+
+{{- range where site.RegularPages "Section" $section -}}
+  {{- $item := . -}}
+  {{- $isPublished := le .Date now -}}
+  {{- $showDrafts := or (eq hugo.Environment "preview") (eq hugo.Environment "development") -}}
+  {{- if or $isPublished $showDrafts -}}
+    {{- if $item.Params.related -}}
+      {{- range $item.Params.related -}}
+        {{- $relatedPath := . -}}
+        {{- if not (hasPrefix $relatedPath "/") -}}
+          {{- $relatedPath = printf "/%s" $relatedPath -}}
+        {{- end -}}
+        {{- if not (hasSuffix $relatedPath "/") -}}
+          {{- $relatedPath = printf "%s/" $relatedPath -}}
+        {{- end -}}
+        {{- if eq $relatedPath $relatedToPath -}}
+          {{- $relatedItems = $relatedItems | append $item -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $relatedItems -}}

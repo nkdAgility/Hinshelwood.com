@@ -1,0 +1,36 @@
+{{ $currentPath := .Page.RelPermalink }}
+{{ $relatedCaseStudies := partial "functions/get-related-items.html" (dict "section" "case-studies" "relatedToPath" $currentPath) }}
+
+{{ if $relatedCaseStudies }}
+  <h2>How This Shows Up in Practice</h2>
+  <p>The case studies below show what changes when organizations address this constraint directly.</p>
+
+  <div class="case-study-evidence-list">
+    {{ range $relatedCaseStudies }}
+      <article class="case-study-evidence-item mb-4 pb-4 border-bottom">
+        <h3 class="h5 mb-2">
+          <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.shortTitle | default .Title }}</a>
+        </h3>
+
+        {{- with .Params.diagnostics.constraint -}}
+          <p class="text-muted mb-2 small"><strong>Constraint:</strong> {{ . }}</p>
+        {{- end -}}
+
+        {{- with .Params.diagnostics.outcome -}}
+          <p class="mb-2"><strong>What changed:</strong> {{ . }}</p>
+        {{- end -}}
+
+        {{- with .Params.diagnostics.evidence -}}
+          <p class="mb-2 small text-muted"><strong>Evidence:</strong> {{ . }}</p>
+        {{- end -}}
+
+        {{- if not .Params.diagnostics.outcome -}}
+          <p class="mb-2">{{ .Description }}</p>
+        {{- end -}}
+
+
+        <a href="{{ .RelPermalink }}" class="small">Read full case study →</a>
+      </article>
+    {{ end }}
+  </div>
+{{ end }}
