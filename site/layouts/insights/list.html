@@ -5,16 +5,73 @@
 {{- define "main" }}
   <section class="container my-5">
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
-  </section>
 
-  <section class="container my-5">
-   <div class="row g-4">
-      {{ range .Paginator.Pages }}
-        {{ partial "components/promo-card.html" . }}
-      {{ end }}
+    <p class="lead">
+      These insights are written for leaders who want clarity before they want solutions. They focus on patterns I see repeatedly in organizations struggling to scale delivery, improve reliability, or turn technical investment into business outcomes. This is not thought leadership for its own sake. Each piece is designed to sharpen your diagnosis, challenge assumptions, and help you decide whether intervention is needed, and where it should start.
+    </p>
+
+    <h2>How to Use These Insights</h2>
+
+    <p>Each insight answers a specific diagnostic question:</p>
+
+    <ul>
+      <li><strong>The statement</strong>: What pattern creates this problem</li>
+      <li><strong>Why it persists</strong>: What keeps this constraint in place</li>
+      <li><strong>Relevance signal</strong>: How to recognize if this applies to your situation</li>
+    </ul>
+
+    <p>If you already know your problem, start with <a href="/problems/">problems I solve</a> to see related case studies and outcomes. If you need to sharpen your diagnosis first, these insights provide that perspective.</p>
+
+    {{ $paginator := .Paginate .Pages 5 }}
+    {{ if $paginator.Pages }}
+      <h2 class="mt-5 mb-4">Diagnostic Perspectives</h2>
+      <p class="mb-4">Each insight addresses a specific question that senior leaders face. Review the relevance signal to identify which patterns match your situation.</p>
+
+      <div class="insight-diagnostic-list">
+        {{ range $paginator.Pages }}
+          <article class="insight-diagnostic-item mb-4 pb-4 border-bottom">
+            <h3 class="h4 mb-2">
+              <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.shortTitle | default .Title }}</a>
+            </h3>
+
+            {{- with .Params.diagnosis.statement -}}
+              <p class="mb-2">{{ . }}</p>
+            {{- end -}}
+
+            {{- with .Params.diagnosis.reason -}}
+              <p class="mb-2 small text-muted"><strong>Why it persists:</strong> {{ . }}</p>
+            {{- end -}}
+
+            {{- with .Params.diagnosis.signal -}}
+              <p class="mb-2 small"><strong>Relevance:</strong> {{ . }}</p>
+            {{- end -}}
+
+            {{- if not .Params.diagnosis.statement -}}
+              <p class="mb-2">{{ .Description }}</p>
+            {{- end -}}
+
+
+            <a href="{{ .RelPermalink }}" class="small">Read full insight →</a>
+          </article>
+        {{ end }}
+      </div>
+
+      {{ template "_internal/pagination.html" . }}
+    {{ end }}
+
+
+    <div class="mt-5 pt-4 border-top">
+      <h2>What to Do After Reading</h2>
+
+      <p>Once an insight resonates with your situation:</p>
+
+      <ol>
+        <li><strong>Identify the underlying constraint</strong>: Review the <a href="/problems/">related problem page</a> to understand the structural pattern</li>
+        <li><strong>See proof of resolution</strong>: Explore <a href="/case-studies/">case studies</a> that show how this constraint was addressed</li>
+        <li><strong>Understand what changes</strong>: Review <a href="/outcomes/">outcomes</a> that become available when this constraint is resolved</li>
+      </ol>
+
+      <p class="mb-0">Insights sharpen your diagnosis. The diagnostic conversation determines whether the constraint is addressable in your context.</p>
     </div>
-    
-    {{ template "_internal/pagination.html" . }}
   </section>
 {{- end }}

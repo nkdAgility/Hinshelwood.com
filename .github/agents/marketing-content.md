@@ -19,7 +19,7 @@ Apply Allan Weiss standards to all marketing content:
 - **Evidence-backed claims**: Every assertion needs support from case studies or experience
 - **No empty promises**: Don't claim outcomes you can't deliver
 - **Active, direct language**: Cut passive voice and hedging
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - **Emphasise**: Constraints, risk, learning speed, decision quality, evidence, flow, strategic optionality
@@ -187,7 +187,7 @@ If your [DevOps enablement is stalling]({{< ref "problems/devops/index.md" >}}),
 - [ ] Links to supporting content work
 - [ ] Front matter is complete
 - [ ] Builds successfully locally
-- [ ] British English only
+- [ ] American English only
 - [ ] No em dashes
 - [ ] No analogies
 - [ ] Buyer-diagnostic, not promotional

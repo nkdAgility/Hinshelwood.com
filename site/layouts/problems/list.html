@@ -4,15 +4,40 @@
 
 {{- define "main" }}
   <section class="container my-5">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-  </section>
+    <header class="mb-4">
+      <h1>{{ .Title }}</h1>
+      <p>Most delivery problems are not caused by a lack of effort or capability. They arise when systems of work no longer scale with the organization's ambition.</p>
+      <p>The patterns below are where constraints most commonly surface. If you arrived here directly and aren't sure which constraint applies, the <a href="/">homepage</a> provides a clearer triage path. If the relevance signal matches your situation, the problem page shows related case studies and insights that sharpen your diagnosis.</p>
+    </header>
 
-  <section class="container my-5">
-    <div class="row g-4">
+    <h2 class="mb-4">Which Pattern Matches Your Situation?</h2>
+    <p class="mb-4">These are the constraints that most often create delivery risk. If the signal resonates, that's where to focus your diagnosis.</p>
+
+    <div class="problem-triage-list">
       {{ range .Pages }}
-        {{ partial "components/promo-card.html" . }}
+        <article class="mb-4 pb-4 border-bottom">
+          <h3 class="h4 mb-2">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.triage.title | default .Title }}</a>
+          </h3>
+
+          {{- with .Params.triage.signal -}}
+            <p class="mb-2"><strong>Relevance signal:</strong> {{ . }}</p>
+          {{- end -}}
+
+          {{- if .Description -}}
+            <p class="mb-2 text-muted">{{ .Description }}</p>
+          {{- end -}}
+
+
+          <a href="{{ .RelPermalink }}" class="small">Read detailed analysis →</a>
+        </article>
       {{ end }}
+    </div>
+
+    <div class="mt-5 pt-4 ">
+      <h2 class=" mb-3">What to Do Next</h2>
+      <p>Once you identify your pattern, the problem page shows related case studies and insights that sharpen your diagnosis.</p>
+      <p class="mb-0">Not sure which applies? <a href="/about/">Schedule a diagnostic conversation</a> to map your specific constraints.</p>
     </div>
   </section>
 {{- end }}

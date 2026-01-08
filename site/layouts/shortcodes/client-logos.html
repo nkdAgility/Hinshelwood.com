@@ -1,0 +1,15 @@
+{{ $limit := .Get "limit" | default 8 }}
+{{ $showViewAll := .Get "showViewAll" | default false }}
+{{ $clientsSection := site.GetPage "section" "clients" }}
+
+{{ if $clientsSection }}
+  <h2>Organizations I've Worked With</h2>
+  <p class="text-muted mb-4">Senior leaders at these organizations engaged me to diagnose and address delivery constraints.</p>
+  {{ $clientPages := $clientsSection.Pages.ByWeight }}
+  {{ partial "components/client-logos.html" (dict "pages" $clientPages "limit" $limit) }}
+  {{ if $showViewAll }}
+    <div class="text-center mt-5">
+      <a href="{{ $clientsSection.Permalink }}" class="btn btn-primary">View All Clients</a>
+    </div>
+  {{ end }}
+{{ end }}

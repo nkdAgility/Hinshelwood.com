@@ -1,32 +1,52 @@
-{{ $currentPath := .RelPermalink }}
-{{ $relatedCaseStudies := slice }}
-{{ range where site.RegularPages "Section" "case-studies" }}
-  {{ $caseStudy := . }}
-  {{ $isPublished := le .Date now }}
-  {{ $showDrafts := or (eq hugo.Environment "preview") (eq hugo.Environment "development") }}
-  {{ if or $isPublished $showDrafts }}
-    {{ if $caseStudy.Params.related }}
-      {{ range $caseStudy.Params.related }}
-        {{ $relatedPath := . }}
-        {{ if not (hasPrefix $relatedPath "/") }}
-          {{ $relatedPath = printf "/%s" $relatedPath }}
-        {{ end }}
-        {{ if not (hasSuffix $relatedPath "/") }}
-          {{ $relatedPath = printf "%s/" $relatedPath }}
-        {{ end }}
-        {{ if eq $relatedPath $currentPath }}
-          {{ $relatedCaseStudies = $relatedCaseStudies | append $caseStudy }}
-        {{ end }}
+{{- $currentPage := .page -}}
+{{- $currentPath := .page.RelPermalink -}}
+{{- $display := .display | default "structured" -}}
+{{- $relatedCaseStudies := partial "functions/get-related-items.html" (dict "section" "case-studies" "relatedToPath" $currentPath "currentPage" $currentPage) -}}
+
+{{- if eq hugo.Environment "development" -}}
+  <span>[related-case-studies display="{{ $display }}"]</span>
+{{- end -}}
+
+{{ if $relatedCaseStudies }}
+  {{ if eq $display "inline" }}
+    {{- range $index, $page := $relatedCaseStudies -}}
+      <a href="{{- $page.RelPermalink -}}">{{ $page.Params.shortTitle | default $page.Title }}</a>{{- if ne $index (sub (len $relatedCaseStudies) 1) -}},{{ end -}}
+    {{- end -}}
+  {{ else }}
+    <h2>How This Shows Up in Practice</h2>
+    <p>The case studies below show what changes when organizations address this constraint directly.</p>
+
+    <div class="case-study-evidence-list">
+      {{ range $relatedCaseStudies }}
+        <article class="case-study-evidence-item mb-4 pb-4 border-bottom">
+          <h3 class="h5 mb-2">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.shortTitle | default .Title }}</a>
+          </h3>
+
+          {{- with .Params.diagnosis.constraint -}}
+            <p class="text-muted mb-2 small"><strong>Constraint:</strong> {{ . }}</p>
+          {{- end -}}
+
+          {{- with .Params.diagnosis.outcome -}}
+            <p class="mb-2"><strong>What changed:</strong> {{ . }}</p>
+          {{- end -}}
+
+          {{- with .Params.diagnosis.evidence -}}
+            <p class="mb-2 small text-muted"><strong>Evidence:</strong> {{ . }}</p>
+          {{- end -}}
+
+          {{- if not .Params.diagnosis.outcome -}}
+            <p class="mb-2">{{ .Description }}</p>
+          {{- end -}}
+
+
+          <a href="{{ .RelPermalink }}" class="small">Read full case study →</a>
+        </article>
       {{ end }}
-    {{ end }}
+    </div>
   {{ end }}
 {{ end }}
 
-{{ if $relatedCaseStudies }}
-    <h2>Related Case Studies</h2>
-    <div class="row g-4">
-      {{ range $relatedCaseStudies }}
-        {{ partial "components/promo-card.html" . }}
-      {{ end }}
-    </div>
-{{ end }}
+{{- if eq hugo.Environment "development" -}}
+  <span>[/related-case-studies]</span>
+{{- end -}}

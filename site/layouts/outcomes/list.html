@@ -4,15 +4,44 @@
 
 {{- define "main" }}
   <section class="container my-5">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-  </section>
+    <header class="mb-4">
+      <h1>{{ .Title }}</h1>
+      <p>These capabilities become available when operating model constraints are resolved. If you recognize your problem but want to understand what changes, this shows the destination.</p>
+      <p>Each outcome maps to specific problem patterns. See <a href="/problems/">problems I solve</a> to identify which constraint you're addressing first. Outcomes don't happen through methodology adoption. They emerge when your system of work supports them. The case studies show how.</p>
+    </header>
 
-  <section class="container my-5">
-    <div class="row g-4">
+    <h2 class="mb-4">What Changes When Constraints Are Resolved</h2>
+    <p class="mb-4">These capabilities become available when the underlying operating model constraints are addressed.</p>
+
+    <div class="outcomes-capability-list">
       {{ range .Pages }}
-        {{ partial "components/promo-card.html" . }}
+        <article class="mb-4 pb-4 border-bottom">
+          <h3 class="h4 mb-2">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.diagnosis.capability | default .Title }}</a>
+          </h3>
+
+          {{- with .Params.diagnosis.impact -}}
+            <p class="mb-2">{{ . }}</p>
+          {{- end -}}
+
+          {{- with .Params.diagnosis.signal -}}
+            <p class="mb-2 small text-muted"><strong>Evidence signal:</strong> {{ . }}</p>
+          {{- end -}}
+
+          {{- if and (not .Params.diagnosis.impact) .Description -}}
+            <p class="mb-2 text-muted">{{ .Description }}</p>
+          {{- end -}}
+
+
+          <a href="{{ .RelPermalink }}" class="small">Read full outcome →</a>
+        </article>
       {{ end }}
+    </div>
+
+    <div class="mt-5 pt-4 ">
+      <h2 class=" mb-3">How Outcomes Are Achieved</h2>
+      <p>These capabilities don't come from adopting frameworks or tools. They emerge when operating model constraints are resolved.</p>
+      <p class="mb-0">To understand which constraints are blocking your outcomes, see <a href="/problems/">problems I solve</a> or <a href="/about/">schedule a diagnostic conversation</a>.</p>
     </div>
   </section>
 {{- end }}

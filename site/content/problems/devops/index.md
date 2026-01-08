@@ -3,20 +3,14 @@ title: Delivery Risk Embedded in the Operating Model
 shortTitle: DevOps
 date: 2026-01-01
 slug: devops
-description: "Delivery risk increases when the system of work cannot reliably turn intent into outcomes. Slow flow, delayed decisions, and operating model constraints undermine the benefits organisations expect from DevOps."
-keywords: [
-  "devops consulting",
-  "delivery risk",
-  "engineering operating model",
-  "systems of work",
-  "flow and feedback loops",
-  "predictable delivery",
-  "decision latency",
-  "engineering leadership",
-  "software delivery capability",
-  "devops beyond tools"
-]
-
+description: "Delivery risk increases when the system of work cannot reliably turn intent into outcomes. Slow flow, delayed decisions, and operating model constraints undermine the benefits organizations expect from DevOps."
+keywords: ["devops consulting", "delivery risk", "engineering operating model", "systems of work", "flow and feedback loops", "predictable delivery", "decision latency", "engineering leadership", "software delivery capability", "devops beyond tools"]
+triage:
+  title: "DevOps: Delivery Risk in the Operating Model"
+  signal: "If you're adding resources but delivery isn't speeding up, or technical decisions keep getting revisited."
+related:
+  - "/outcomes/engineering-excellence"
+  - "/outcomes/technical-leadership"
 ItemType: problem
 ItemKind: marketing
 weight: 100
@@ -29,7 +23,7 @@ menu:
     weight: 100
 ---
 
-Most organisations don’t fail because they picked the wrong tools.  
+Most organizations don’t fail because they picked the wrong tools.  
 They fail because **their system of work cannot reliably convert intent into outcomes**.
 
 Slow delivery, missed opportunities, brittle platforms, disengaged teams, and frustrated leaders are symptoms of the same underlying issue:
@@ -37,8 +31,6 @@ Slow delivery, missed opportunities, brittle platforms, disengaged teams, and fr
 > The operating model no longer fits the environment it is competing in.
 
 My work is about correcting that mismatch.
-
-
 
 ## The Outcomes Leaders Hire Me For
 
@@ -56,24 +48,21 @@ They come because they need to:
 
 Everything I do is designed to support those outcomes.
 
-
-
 ## What I Actually Do
 
 I help leaders **see and change their system of work**.
 
 That system includes:
+
 - How decisions are made
 - How work flows from idea to value
 - How teams are structured and governed
 - How technology enables or constrains delivery
-- How leadership behaviour shapes outcomes
+- How leadership behavior shapes outcomes
 
 I do not take work away from your teams.  
 I do not "run" your enablement.  
 I help you **understand and lead your system more effectively**.
-
-
 
 ## How I Work With Clients
 
@@ -82,6 +71,7 @@ I help you **understand and lead your system more effectively**.
 I work directly with senior leaders, heads of engineering, product, and delivery.
 
 Focus areas typically include:
+
 - Diagnosing delivery constraints and systemic bottlenecks
 - Redesigning product and engineering operating models
 - Improving flow, feedback loops, and decision latency
@@ -91,28 +81,23 @@ Focus areas typically include:
 
 This is advisory work, not facilitation.
 
-
-
 ### Embedded Partnership
 
-For organisations that want sustained change, I operate as a long-term partner.
+For organizations that want sustained change, I operate as a long-term partner.
 
 This includes:
+
 - Ongoing leadership coaching
 - Real-time decision support
 - System-level diagnostics
 - Hands-on guidance with teams where it matters
 - Technical leadership across DevOps, CI/CD, and engineering practices
-- Continuous recalibration as the organisation learns
+- Continuous recalibration as the organization learns
 
 You are not buying time.  
 You are buying **judgement, pattern recognition, and intervention at leverage points**.
 
-
-
 Understood. Below is a **direct continuation only**. No existing words are changed. This completes the page in an Allan Weiss, buyer-problem-focused way.
-
-
 
 ## What Makes This Different
 
@@ -129,31 +114,27 @@ This work is different because it starts with **why performance is constrained**
 
 I do not arrive with a preferred framework.
 I do not sell a transformation roadmap.
-I do not optimise for utilisation, adoption, or compliance.
+I do not optimize for utilisation, adoption, or compliance.
 
 I work on the small number of decisions, structures, and feedback loops that are silently determining your results today.
 
 That is why the impact shows up in outcomes leaders care about, not in artefacts.
 
-
-
 ## The Problem This Work Addresses
 
-When organisations struggle to deliver, the issue is rarely effort or capability.
+When organizations struggle to deliver, the issue is rarely effort or capability.
 
 It is usually one or more of the following:
 
-* Decisions are slow, escalated, or reversible too late
-* Work accumulates faster than it can be validated
-* Coordination cost grows faster than headcount
-* Technology platforms constrain change instead of enabling it
-* Leadership intent is clear, but execution is distorted as it moves through the system
+- Decisions are slow, escalated, or reversible too late
+- Work accumulates faster than it can be validated
+- Coordination cost grows faster than headcount
+- Technology platforms constrain change instead of enabling it
+- Leadership intent is clear, but execution is distorted as it moves through the system
 
 These problems persist because they are **structural**, not operational.
 
 They cannot be fixed by asking teams to try harder.
-
-
 
 ## Why This Persists
 
@@ -163,39 +144,49 @@ Operating models accrete over time.
 Governance grows in response to past failures.
 Controls are added, but rarely removed.
 
-Eventually, the organisation becomes very good at protecting itself from risk it no longer faces, while becoming blind to the risk it now carries.
+Eventually, the organization becomes very good at protecting itself from risk it no longer faces, while becoming blind to the risk it now carries.
 
 At that point, performance plateaus.
-
-
 
 ## What Changes When the System Changes
 
 When the system of work is corrected:
 
-* Decisions are made closer to information
-* Work flows with fewer handoffs and delays
-* Risk is surfaced earlier, when it is cheaper to act
-* Teams regain autonomy without losing alignment
-* Leaders spend more time steering and less time arbitrating
+- Decisions are made closer to information
+- Work flows with fewer handoffs and delays
+- Risk is surfaced earlier, when it is cheaper to act
+- Teams regain autonomy without losing alignment
+- Leaders spend more time steering and less time arbitrating
 
 Delivery improves as a consequence, not as a target.
 
-
-
 ## How to Know If This Is Relevant
 
-This work is relevant if you recognise any of the following:
+This work is relevant if you recognize any of the following:
 
-* Results lag behind effort
-* Growth has increased complexity faster than capability
-* Delivery confidence depends on heroics
-* Investment decisions feel higher risk than they should
-* You suspect the problem is systemic, but cannot yet see where
+- Results lag behind effort
+- Growth has increased complexity faster than capability
+- Delivery confidence depends on heroics
+- Investment decisions feel higher risk than they should
+- You suspect the problem is systemic, but cannot yet see where
 
 At that point, the question is not which method to adopt.
 
 It is whether your operating model still serves your strategy.
+
+{{< related-case-studies >}}
+
+{{< related-insights >}}
+
+{{< related-outcomes >}}
+
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Sharpen your diagnosis**: Read the related insights above
+2. **See proof of resolution**: Review the case studies above
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
 
 ---
 

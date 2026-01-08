@@ -13,23 +13,26 @@ Maintain an accurate, up-to-date list of clients Martin has worked with. Documen
 ## Core Principles
 
 Apply Allan Weiss standards to client documentation:
+
 - **Accuracy first**: Only list confirmed engagements
 - **Respect confidentiality**: Honor non-disclosure requirements
 - **Context matters**: Include engagement type and industry
 - **Breadth not depth**: Show range of experience
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 
 ## Content Types You Handle
 
 ### Client Logos
+
 - Company logo and name
 - Industry/sector
 - Engagement type
 - Timeframe (if permissible)
 
 ### Client Lists
+
 - Organised by industry or sector
 - Grouped by engagement type
 - Formatted for display on site
@@ -37,7 +40,9 @@ Apply Allan Weiss standards to client documentation:
 ## Your Workflow
 
 ### 1. Client Verification
+
 Before adding a client:
+
 - [ ] Confirm engagement occurred
 - [ ] Check confidentiality requirements
 - [ ] Obtain permission if needed
@@ -45,7 +50,9 @@ Before adding a client:
 - [ ] Determine appropriate level of detail
 
 ### 2. Data Collection
+
 For each client, gather:
+
 - Official company name
 - Logo (high resolution, proper licensing)
 - Industry/sector classification
@@ -54,7 +61,9 @@ For each client, gather:
 - Company size/scale (if relevant and permissible)
 
 ### 3. Confidentiality Handling
+
 Some clients cannot be named:
+
 - Use industry descriptor: "FTSE 100 Financial Services Company"
 - Omit logo but include in count
 - Reference in case studies without naming
@@ -63,6 +72,7 @@ Some clients cannot be named:
 ### 4. Format and Structure
 
 **Data Structure** (`site/data/clients.json`):
+
 ```json
 {
   "clients": [
@@ -84,11 +94,13 @@ Some clients cannot be named:
 ### 5. Integration
 
 Clients appear on:
+
 - Homepage to establish credibility
 - About page to show experience breadth
 - Dedicated clients page with filtering
 
 Display options:
+
 - Logo grid
 - List with descriptions
 - Filterable by industry or engagement type
@@ -96,6 +108,7 @@ Display options:
 ## Language Rules
 
 **Avoid**:
+
 - "Agile transformation" (prefer "systems of work redesign")
 - "ways of working" (prefer "systems of work" or "operating model")
 - "mindset" (prefer "ethos" when culture is relevant)
@@ -104,6 +117,7 @@ Display options:
 - Hype or evangelism
 
 **Use**:
+
 - "systems of work" (default for processes, practices, funding, decisions, governance)
 - "operating model" (when speaking to executives about organisational design)
 - Direct, pragmatic, executive-safe language
@@ -126,6 +140,7 @@ Display options:
 ## Quality Standards
 
 ### Before Adding Client
+
 - [ ] Verified engagement authenticity
 - [ ] Checked confidentiality requirements
 - [ ] Obtained necessary permissions
@@ -133,9 +148,10 @@ Display options:
 - [ ] Secured proper logo licensing
 - [ ] Assigned unique ID
 - [ ] Categorised by industry and type
-- [ ] British English only
+- [ ] American English only
 
 ### Red Flags to Eliminate
+
 - Unverified or questionable engagements
 - Clients who have requested confidentiality
 - Overstated relationships ("strategic partner")
@@ -154,6 +170,7 @@ Display options:
 ## Maintain Documentation
 
 When updating client content, also update:
+
 - [ ] `.github/instructions/clients.instructions.md` if standards change
 - [ ] `.github/copilot-instructions.md` if integration patterns change
 - [ ] `site/data/clients.json` with new entries

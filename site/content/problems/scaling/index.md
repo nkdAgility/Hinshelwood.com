@@ -3,9 +3,9 @@ title: Scaling Has Increased Risk and Slowed Us Down
 shortTitle: Scaling
 date: 2026-01-01
 slug: scaling
-description: "Growth increases coordination cost, decision latency, and delivery risk. As organisations scale, their operating model often slows learning, weakens decision-making, and reduces leverage instead of increasing it."
+description: "Growth increases coordination cost, decision latency, and delivery risk. As organizations scale, their operating model often slows learning, weakens decision-making, and reduces leverage instead of increasing it."
 keywords: [
-"scaling organisations",
+"scaling organizations",
 "scaling without losing speed",
 "growth constraints",
 "operating model at scale",
@@ -16,6 +16,11 @@ keywords: [
 "scaling governance",
 "systems of work"
 ]
+triage:
+  title: "Scaling: Growth Is Creating Friction"
+  signal: "If coordination cost is rising faster than output, or decisions are escalating instead of resolving."
+related:
+  - "/outcomes/technical-leadership"
 ItemType: problem
 ItemKind: marketing
 weight: 300
@@ -28,8 +33,7 @@ menu:
     weight: 200
 ---
 
-
-Most organisations expect growth to create momentum.
+Most organizations expect growth to create momentum.
 
 Instead, it often creates friction.
 
@@ -41,7 +45,7 @@ Less speed.
 
 If scaling has made everything harder rather than easier, you are not alone, and you are not failing.
 
-You are experiencing the consequences of how your organisation is designed to scale.
+You are experiencing the consequences of how your organization is designed to scale.
 
 ## The Moment Scaling Starts to Hurt
 
@@ -59,10 +63,9 @@ This is usually blamed on communication, process, or middle management.
 
 It is none of those things.
 
-
 ## Why Execution Isn’t the Constraint
 
-Most organisations respond to scaling pain by tightening control.
+Most organizations respond to scaling pain by tightening control.
 
 More governance.
 More alignment work.
@@ -77,7 +80,7 @@ What actually changed when you scaled was not effort, but **structure**.
 
 You scaled headcount, not decision-making capability.
 You scaled delivery, not learning.
-You preserved assumptions that only worked when the organisation was smaller.
+You preserved assumptions that only worked when the organization was smaller.
 
 The result is a system that looks busy, but loses leverage as it grows.
 
@@ -95,7 +98,7 @@ This is the point where growth leaders feel trapped.
 
 They are accountable for outcomes, but constrained by a system that requires certainty before learning.
 
-Growth slows not because opportunity disappears, but because the organisation cannot safely adapt while opportunity still exists.
+Growth slows not because opportunity disappears, but because the organization cannot safely adapt while opportunity still exists.
 
 ## Why This Escalates to the Board
 
@@ -122,9 +125,10 @@ This is not about Agile.
 It is not about DevOps.
 It is not about tools, teams, or training.
 
-It is about **how your organisation is designed to make decisions as it scales**.
+It is about **how your organization is designed to make decisions as it scales**.
 
-Every organisation makes an implicit trade-off between:
+Every organization makes an implicit trade-off between:
+
 - Predictability and responsiveness
 - Control and learning
 - Efficiency and optionality
@@ -135,13 +139,14 @@ That is where leverage is lost.
 
 ## Where I Come In
 
-I work with leadership teams who recognise that scaling has become a constraint rather than an advantage.
+I work with leadership teams who recognize that scaling has become a constraint rather than an advantage.
 
 Not to run an enablement programme.
 Not to “fix” teams.
 Not to implement a framework.
 
 My role is to help you:
+
 - See the system of work you have built
 - Understand where it no longer fits your context
 - Redesign how decisions, learning, and accountability scale
@@ -152,11 +157,24 @@ I don’t promise outcomes I can’t control.
 
 I help leaders steward their operating model deliberately, rather than inheriting it by accident.
 
+{{< related-case-studies >}}
+
+{{< related-insights >}}
+
+{{< related-outcomes >}}
+
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **Sharpen your diagnosis**: Read the related insights above
+2. **See proof of resolution**: Review the case studies above
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+
 ## The Question That Matters
 
 Before adding more people, initiatives, or plans, ask this:
 
-**Where in our organisation does scaling assume certainty that no longer exists?**
+**Where in our organization does scaling assume certainty that no longer exists?**
 
 If you can’t answer that clearly, scaling will continue to reduce leverage, not increase it.
-

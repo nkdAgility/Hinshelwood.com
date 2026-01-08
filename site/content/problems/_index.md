@@ -14,5 +14,3 @@ menu:
     identifier: problems
     weight: 100
 ---
-
-Most delivery problems are not caused by a lack of effort or capability. They arise when systems of work no longer scale with the organisation’s ambition. I work with engineering leaders when DevOps stalls, growth slows execution, or AI initiatives fail to move beyond experimentation. The problems below are where these constraints most commonly surface.

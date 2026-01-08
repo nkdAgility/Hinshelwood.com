@@ -1,0 +1,43 @@
+{{ $caseStudies := where .Site.RegularPages "Section" "case-studies" }}
+
+{{- if eq hugo.Environment "development" -}}
+  <div>[case-studies-list]</div>
+{{- end -}}
+
+{{ if $caseStudies }}
+  <h2 class="mb-4">Evidence from Client Engagements</h2>
+  <p class="mb-4">Each case study shows a specific constraint addressed and the measurable outcome achieved. Review the constraint to identify which pattern matches your situation.</p>
+
+  <div class="case-study-evidence-list">
+    {{ range $caseStudies }}
+      <article class="case-study-evidence-item mb-4 pb-4 border-bottom">
+        <h3 class="h4 mb-2">
+          <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Params.shortTitle | default .Title }}</a>
+        </h3>
+
+        {{- with .Params.diagnosis.constraint -}}
+          <p class="text-muted mb-2"><strong>Constraint:</strong> {{ . }}</p>
+        {{- end -}}
+
+        {{- with .Params.diagnosis.outcome -}}
+          <p class="mb-2"><strong>What changed:</strong> {{ . }}</p>
+        {{- end -}}
+
+        {{- with .Params.diagnosis.evidence -}}
+          <p class="mb-2 small text-muted"><strong>Evidence:</strong> {{ . }}</p>
+        {{- end -}}
+
+        {{- if not .Params.diagnosis.outcome -}}
+          <p class="mb-2">{{ .Description }}</p>
+        {{- end -}}
+
+
+        <a href="{{ .RelPermalink }}" class="small">Read full case study →</a>
+      </article>
+    {{ end }}
+  </div>
+{{ end }}
+
+{{- if eq hugo.Environment "development" -}}
+  <div>[/case-studies-list]</div>
+{{- end -}}

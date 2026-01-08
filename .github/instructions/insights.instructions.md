@@ -36,7 +36,7 @@ Every insight article must:
 
 ## Writing Standards
 
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - Use "I" and "you." This is personal expertise, not a research paper.
@@ -54,11 +54,35 @@ Every insight article must:
 title: "Clear, Specific Title"
 date: YYYY-MM-DD
 description: "Your main point in one sentence"
+diagnosis:
+  question: "The question this insight answers"
+  statement: "Core diagnostic statement"
+  reason: "Why this problem persists"
+  signal: "Evidence this insight is relevant to the reader"
+related:
+  - "problems/ai"
+  - "outcomes/technical-leadership"
+  - "case-studies/when-product-leadership-breaks-across-borders"
 tags: ["relevant", "tags"]
 categories: ["insights"]
 author: "Martin Hinshelwood"
 ---
 ```
+
+### Related Items Linking (CRITICAL)
+
+**Insights should link TO problems, outcomes, and case studies** using the `related:` array.
+
+**DO NOT add insights to case study `related:` arrays.** The system handles bidirectional linking automatically via `get-related-items.html` function. If you add relationships in both directions, content will display duplicate links.
+
+**Path format**: Use `section/slug` without leading or trailing slashes:
+- ✅ `"problems/ai"`
+- ✅ `"case-studies/restoring-delivery-visibility-and-governance-at-enterprise-scale"`
+- ✅ `"outcomes/technical-leadership"`
+
+**What gets displayed**:
+- Insights page automatically displays: related problems → related case studies → related outcomes
+- Any content that lists this insight in its `related:` array will also appear automatically
 
 ## Avoid
 
@@ -90,13 +114,13 @@ Use consistent, precise terminology when describing organisational design and wo
 
 ### Example Rewrites
 
-**Before**: "We need to change our ways of working and adopt new mindset shifts."  
+**Before**: "We need to change our ways of working and adopt new mindset shifts."
 **After**: "We need to redesign our systems of work to support faster decision-making."
 
-**Before**: "The organisation's ways of work prevent teams from adapting quickly."  
+**Before**: "The organisation's ways of work prevent teams from adapting quickly."
 **After**: "The organisation's systems of work prevent teams from adapting quickly."
 
-**Executive context before**: "Your systems of work create unnecessary coordination overhead."  
+**Executive context before**: "Your systems of work create unnecessary coordination overhead."
 **Executive context after**: "Your operating model creates unnecessary coordination overhead."
 
 ### Decision Rule

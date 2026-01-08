@@ -25,7 +25,7 @@ I work with CTOs, Heads of Engineering, and senior technical leaders who are acc
 
 My role is not to “do DevOps for you”.
 
-My role is to **strengthen your organisation’s ability to deliver software reliably, predictably, and at speed**, without creating dependency on consultants.
+My role is to **strengthen your organization’s ability to deliver software reliably, predictably, and at speed**, without creating dependency on consultants.
 
 {{< contact-cta >}}
 
@@ -57,13 +57,13 @@ My work focuses on:
 
 This creates **capability uplift**, not temporary acceleration.
 
-## Why organisations trust me
+## Why organizations trust me
 
 I bring over **20 years of hands-on engineering and enablement experience** across global enterprises, financial services, technology firms, and scale-ups.
 
 I am a **17-time Microsoft MVP (DevOps & GitHub)** and a long-standing **Professional Scrum Trainer and Professional Kanban Trainer**, with deep experience in Azure DevOps, GitHub, CI/CD, platform engineering, and operating-model design.
 
-I have led and advised modernisation at organisations including Microsoft, global financial institutions, and complex regulated environments, always with a focus on **execution discipline and measurable outcomes**.
+I have led and advised modernisation at organizations including Microsoft, global financial institutions, and complex regulated environments, always with a focus on **execution discipline and measurable outcomes**.
 
 {{< social-proof id="8MXE929U" >}}
 
@@ -82,7 +82,7 @@ This is a fit if:
 - You are accountable for delivery outcomes, not just activity  
 - You want measurable improvement, not methodology adoption  
 - You value strong engineering judgment over dogma  
-- You want your organisation to get better after I leave  
+- You want your organization to get better after I leave  
 
 {{< social-proof id="W72KAYY8" >}}
 
@@ -94,7 +94,7 @@ This is not a fit if:
 - You need body-shop capacity or staff augmentation  
 - You are looking for certification theatre or framework compliance  
 - You want reassurance that your current approach is fine  
-- You expect guaranteed results without organisational commitment  
+- You expect guaranteed results without organizational commitment  
 - You need a vendor who will avoid uncomfortable conversations about constraints  
 - You are seeking a methodology to implement rather than capability to build  
 

@@ -19,7 +19,7 @@ Follow Allan Weiss critical communication standards:
 - **Support with evidence**: Personal experience, data, real examples
 - **Challenge assumptions**: Question "best practices" that lack context
 - **Make it actionable**: Readers should know what to do next
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 - **Emphasise**: Constraints, risk, learning speed, decision quality, evidence, flow, strategic optionality
@@ -135,7 +135,7 @@ Ask yourself:
 - [ ] Have I given readers something they can act on?
 - [ ] Can I defend every major claim?
 - [ ] Is this buyer-diagnostic or promotional?
-- [ ] British English throughout?
+- [ ] American English throughout?
 
 ## Language Rules
 
@@ -162,13 +162,13 @@ Ask yourself:
 
 ### Example Rewrites
 
-**Before**: "We need to change our ways of working and adopt new mindset shifts."  
+**Before**: "We need to change our ways of working and adopt new mindset shifts."
 **After**: "We need to redesign our systems of work to support faster decision-making."
 
-**Before**: "The organisation's ways of work prevent teams from adapting quickly."  
+**Before**: "The organisation's ways of work prevent teams from adapting quickly."
 **After**: "The organisation's systems of work prevent teams from adapting quickly."
 
-**Executive context before**: "Your systems of work create unnecessary coordination overhead."  
+**Executive context before**: "Your systems of work create unnecessary coordination overhead."
 **Executive context after**: "Your operating model creates unnecessary coordination overhead."
 
 ### Decision Rule
@@ -246,7 +246,7 @@ hugo serve --source site --config hugo.yaml,hugo.local.yaml
 - [ ] Links work and add value
 - [ ] Builds without errors
 - [ ] Readability: 3-4 line paragraphs max
-- [ ] British English only
+- [ ] American English only
 - [ ] No em dashes
 - [ ] No analogies
 - [ ] Buyer-diagnostic value, not promotional

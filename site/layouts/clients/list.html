@@ -1,61 +1,67 @@
 {{- define "main" -}}
-<article class="container my-5" itemscope itemtype="https://schema.org/CollectionPage">
-  <header class="mb-5">
-    <h1 itemprop="name">{{ .Title }}</h1>
-    {{- with .Description -}}
-      <meta itemprop="description" content="{{ . }}">
-    {{- end -}}
-    {{- with .Content -}}
-      <div class="text-muted" itemprop="description">
-        {{ . }}
+  <article class="container my-5" itemscope itemtype="https://schema.org/CollectionPage">
+    <header class="mb-5">
+      <h1 itemprop="name">{{ .Title }}</h1>
+      {{- with .Description -}}
+        <meta itemprop="description" content="{{ . }}" />
+      {{- end -}}
+      <div itemprop="description">
+        <p>These organizations engaged me to address specific delivery, operating model, or leadership constraints. The breadth reflects where systematic problems show up: regulated environments, global scale, distributed leadership, and strategic technology decisions.</p>
+
+        <p class="mb-0">This is not a comprehensive list. It shows the range of contexts where diagnostic consulting creates value.</p>
       </div>
-    {{- end -}}
-  </header>
+    </header>
 
-  {{- $pages := .Pages.ByWeight -}}
-  
-  <p class="text-muted mb-4" style="font-size: 0.9rem;" aria-label="Total number of client organisations">
-    {{ len $pages }} organisations
-  </p>
+    {{- $pages := .Pages.ByWeight -}}
 
-  <div class="row g-4" role="list" aria-label="Client organisations">
-    {{- range $pages -}}
-      <div class="col-md-3 col-sm-4 col-6" role="listitem" itemscope itemtype="https://schema.org/Organization">
-        <div class="card h-100 border-0 shadow-sm p-3">
-          <meta itemprop="name" content="{{ .Title }}">
-          {{- if .Params.url -}}
-            <meta itemprop="url" content="{{ .Params.url }}">
-          {{- end -}}
-          {{- if .Params.image -}}
-            {{- $imagePath := printf "images/clients/%s" .Params.image -}}
-            {{- $imageResource := resources.Get $imagePath -}}
-            {{- if $imageResource -}}
-              {{- $resized := $imageResource.Fit "200x75" -}}
-              <div class="d-flex align-items-center justify-content-center" style="min-height: 100px;">
-                <img src="{{ $resized.RelPermalink }}" 
-                     alt="{{ .Title }} logo" 
-                     title="{{ .Title }}" 
-                     class="img-fluid" 
-                     style="max-height: 80px; max-width: 100%;" 
-                     loading="lazy"
-                     width="{{ $resized.Width }}"
-                     height="{{ $resized.Height }}"
-                     itemprop="logo">
-              </div>
+
+    <p class="text-muted mb-4" style="font-size: 0.9rem;" aria-label="Total number of client organisations">{{ len $pages }} organizations</p>
+
+    <div class="row g-4" role="list" aria-label="Client organisations">
+      {{- range $pages -}}
+        <div class="col-md-3 col-sm-4 col-6" role="listitem" itemscope itemtype="https://schema.org/Organization">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <meta itemprop="name" content="{{ .Title }}" />
+            {{- if .Params.url -}}
+              <meta itemprop="url" content="{{ .Params.url }}" />
+            {{- end -}}
+            {{- if .Params.image -}}
+              {{- $imagePath := printf "images/clients/%s" .Params.image -}}
+              {{- $imageResource := resources.Get $imagePath -}}
+              {{- if $imageResource -}}
+                {{- $resized := $imageResource.Fit "200x75" -}}
+                <div class="d-flex align-items-center justify-content-center" style="min-height: 100px;">
+                  <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }} logo" title="{{ .Title }}" class="img-fluid" style="max-height: 80px; max-width: 100%;" loading="lazy" width="{{ $resized.Width }}" height="{{ $resized.Height }}" itemprop="logo" />
+                </div>
+              {{- else -}}
+                <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
+                  <span class="h5 mb-0 text-center" itemprop="name">{{ .Title }}</span>
+                </div>
+              {{- end -}}
             {{- else -}}
               <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
                 <span class="h5 mb-0 text-center" itemprop="name">{{ .Title }}</span>
               </div>
             {{- end -}}
-          {{- else -}}
-            <div class="d-flex align-items-center justify-content-center p-3" style="min-height: 100px;">
-              <span class="h5 mb-0 text-center" itemprop="name">{{ .Title }}</span>
-            </div>
-          {{- end -}}
+          </div>
         </div>
-      </div>
-    {{- end -}}
-  </div>
-</article>
+      {{- end -}}
+    </div>
 
+    <div class="mt-5 pt-4 border-top">
+      <h2>What This Means for You</h2>
+
+      <p>If your organization fits a similar profile, the relevant question is whether your constraint is systematic and addressable.</p>
+
+      <p>The starting point is clarity:</p>
+
+      <ul>
+        <li>Review <a href="/problems/">problems I solve</a> to see if your constraint matches a known pattern</li>
+        <li>Read <a href="/case-studies/">case studies</a> to understand what changes when these constraints are addressed</li>
+        <li>Explore <a href="/insights/">insights</a> to sharpen your diagnosis before acting</li>
+      </ul>
+
+      <p class="mb-0">Client logos demonstrate breadth of experience. The diagnostic conversation determines relevance to your situation.</p>
+    </div>
+  </article>
 {{- end -}}

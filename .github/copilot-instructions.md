@@ -5,7 +5,7 @@
 **Repository**: https://github.com/nkdAgility/Hinshelwood.com  
 **Type**: Hugo static site (Extended version required)  
 **Primary Language**: Markdown content, Go templates, YAML configuration  
-**Deployment**: Azure Static Web Apps  
+**Deployment**: Azure Static Web Apps
 
 Trust these instructions. Only search for additional information if you find gaps or errors.
 
@@ -16,32 +16,40 @@ Trust these instructions. Only search for additional information if you find gap
 **IMPORTANT**: Always run Hugo commands from the repository root, not from the `site/` directory.
 
 ### Local Development
+
 ```pwsh
 hugo serve --source site --config hugo.yaml,hugo.local.yaml
 ```
+
 - Run from repository root
 - Opens at `http://localhost:1313`
 - Hot reloads on file changes
 
 ### Production Build
+
 ```pwsh
 hugo --source site --config hugo.yaml,hugo.production.yaml --logLevel info
 ```
+
 - Run from repository root
 - Output: `public/` directory at repo root (not `site/public/`)
 - Typical output: 23 pages, <1MB
 - Environment configs overlay base `hugo.yaml`: production, preview, canary, local
 
 ### Preview Build
+
 ```pwsh
 hugo --source site --config hugo.yaml,hugo.preview.yaml
 ```
+
 - Run from repository root
 
 ### Canary Build
+
 ```pwsh
 hugo --source site --config hugo.yaml,hugo.canary.yaml
 ```
+
 - Run from repository root
 
 **Important**: Always specify both base config and environment config when building. Hugo merges them in order.
@@ -52,6 +60,8 @@ hugo --source site --config hugo.yaml,hugo.canary.yaml
 /
 ├── .github/
 │   ├── copilot-instructions.md          # This file
+│   ├── .analysis/
+│   │   └── buyer-journey-analysis.md    # Buyer journey mapping and implementation plan
 │   ├── instructions/*.instructions.md    # Scoped rules for content sections
 │   ├── workflows/
 │   │   ├── main.yaml                     # Primary CI/CD pipeline (GitVersion, multi-environment deploy)
@@ -93,32 +103,39 @@ hugo --source site --config hugo.yaml,hugo.canary.yaml
 **Primary Pipeline**: `.github/workflows/main.yaml`
 
 ### Triggers
+
 - Push to `main` branch
 - Pull requests to `main`
 - Manual workflow dispatch
 
 ### Pipeline Stages
+
 1. **Setup**: GitVersion, ring determination (Production/Preview/Canary)
 2. **BuildSite**: Hugo build with token replacement, artifact upload
 3. **Publish**: Merge SWA configs, deploy to Azure Static Web Apps
 
 ### Ring Determination
+
 - **Production**: When `GitVersion_PreReleaseLabel` is empty (release tags)
 - **Preview**: When `GitVersion_PreReleaseLabel` is "Preview"
 - **Canary**: Default for all other branches/PRs (includes PR number in environment name)
 
 ### Token Replacement
+
 Template tokens use format `#{VariableName}#` in HTML/YAML files. Replaced before build with:
+
 - GitVersion outputs (SemVer, Major, Minor, etc.)
 - Hinshelwood-specific config (AzureSitesConfig, PR_Number)
 
 ### Deployment
+
 - Uses `Azure/static-web-apps-deploy@v1` action
 - Requires secret: `AZURE_STATIC_WEB_APPS_API_TOKEN_CALM_ISLAND_0DC928510`
 - Deploys to environment-specific slot based on ring
 - Output URL available as `steps.azureDeploy.outputs.static_web_app_url`
 
 ### Size Validation
+
 Pipeline checks if `public/` exceeds 500MB (Azure SWA limit). Current size: ~0.08MB (safe).
 
 ## Custom Agents
@@ -132,6 +149,7 @@ For specialized content creation, use these custom agents:
 - **Clients**: `.github/agents/clients.md` - Client roster and logo management
 
 Each agent provides:
+
 - Specific persona and role
 - Content structure templates
 - Quality checklists
@@ -140,11 +158,13 @@ Each agent provides:
 ## Content Guidelines
 
 ### File Requirements
+
 - **Format**: Markdown with YAML front matter
 - **Naming**: lowercase-with-hyphens.md
 - **Location**: `site/content/<section>/`
 
 ### Front Matter Template
+
 ```yaml
 ---
 title: "Page Title"
@@ -156,19 +176,24 @@ categories: ["section-name"]
 ```
 
 ### Internal Links
+
 Use Hugo shortcodes (NOT relative markdown links):
+
 ```
 {{< ref "path/to/file.md" >}}
 {{< relref "file.md" >}}
 ```
 
 ### Creating New Content
+
 ```pwsh
 hugo new insights/my-new-article.md --source site
 ```
+
 - Run from repository root
 
 ### Content Sections
+
 - **about/**: Company/consultant information (use marketing-content agent)
 - **case-studies/**: Real client engagements with outcomes (use case-studies agent)
 - **clients/**: Client roster and logos demonstrating experience breadth (use clients agent)
@@ -179,16 +204,132 @@ hugo new insights/my-new-article.md --source site
 
 **See `.github/instructions/*.instructions.md` for section-specific writing standards.**
 
+## Buyer Journey Architecture
+
+**Reference**: `.github/.analysis/buyer-journey-analysis.md`
+
+The site implements explicit buyer journeys aligned with Allan Weiss principles. Content guides buyers through three stages:
+
+1. **Problem Awareness** (Insights, Problem pages)
+2. **Solution Education** (Case studies, About page, Outcomes)
+3. **Decision/Engagement** (Diagnostic assessment, Contact)
+
+### Navigation Infrastructure
+
+**Automated Linking** (implemented via bidirectional front matter relationships):
+
+All buyer journey navigation is automated using the `related:` front matter array and the `site/layouts/_partials/functions/get-related-items.html` function. The system finds related content bidirectionally, so you only need to declare the relationship once.
+
+**How it Works**:
+
+1. Content pages use `related:` front matter array to declare relationships
+2. Hugo templates use partial components to display related content:
+   - `related-problems.html` - Shows related problem pages
+   - `related-case-studies.html` - Shows related case studies
+   - `related-insights.html` - Shows related insights (limited to first 5)
+   - `related-outcomes.html` - Shows related outcome pages
+3. The `get-related-items.html` function searches bidirectionally:
+   - **Forward**: If page A lists page B in its `related:` array, page A displays page B
+   - **Reverse**: If page B lists page A in its `related:` array, page A automatically displays page B
+4. No need to add relationships in both directions
+
+**Current Template Structure**:
+
+- **Problem pages**: Display related case studies → related insights → related outcomes
+- **Insights pages**: Display related problems → related case studies → related outcomes
+- **Case study pages**: Display related outcomes → related problems
+- **Outcome pages**: Display related case studies → related insights
+
+**CRITICAL: One-Direction Linking Only**
+
+**DO NOT add related items in both directions.** The system handles bidirectional linking automatically.
+
+**Examples**:
+
+✅ **Correct** - Add relationship in one place only:
+
+```yaml
+# In insights/why-ai-is-making-delivery-harder/index.md
+related:
+  - "problems/ai"
+  - "outcomes/technical-leadership"
+  - "case-studies/when-product-leadership-breaks-across-borders"
+```
+
+Result: The insight displays the case study, AND the case study automatically displays the insight.
+
+❌ **Wrong** - Do not add the reverse relationship:
+
+```yaml
+# DO NOT do this in case-studies/when-product-leadership-breaks-across-borders/index.md
+related:
+  - "insights/2026-01-07-why-ai-is-making-delivery-harder" # WRONG - creates duplicate linking
+```
+
+**Where to Add Related Items**:
+
+- **Insights → Problems, Outcomes, Case Studies**: Add to insight front matter
+- **Case Studies → Problems, Outcomes**: Add to case study front matter (do NOT add insights)
+- **Problems → Outcomes**: Add to problem front matter (case studies and insights link TO problems, not from)
+- **Outcomes**: Generally link FROM other content types (insights, case studies link to outcomes)
+
+**Path Format**:
+
+Use section/slug format without leading slash or trailing slash:
+
+- ✅ `"problems/ai"`
+- ✅ `"case-studies/when-product-leadership-breaks-across-borders"`
+- ✅ `"outcomes/technical-leadership"`
+- ✅ `"insights/2026-01-07-why-ai-is-making-delivery-harder"`
+- ❌ `"/problems/ai/"` (will work but inconsistent)
+
+**Manual Guidance** (content layer):
+
+- Contextual text around automated sections explaining why they matter
+- "What to Do Next" sections after automated content
+- Homepage triage routing buyers to appropriate problem page
+- Diagnostic assessment offer between reading and engaging
+
+### Creating Journey-Aligned Content
+
+When creating new content:
+
+1. **Add `related:` front matter** to link to relevant problems/outcomes/case studies (only in ONE direction)
+2. **Add contextual guidance** explaining what buyer should do with information
+3. **Include next-step CTAs** that are specific, not generic ("Assess your scaling constraint" not "Contact me")
+4. **Test journey flow** by following links as if you were a buyer in that stage
+
+Example front matter for insight:
+
+```yaml
+related:
+  - "problems/ai"
+  - "outcomes/technical-leadership"
+  - "case-studies/when-product-leadership-breaks-across-borders"
+  - "case-studies/restoring-delivery-visibility-and-governance-at-enterprise-scale"
+```
+
+Example front matter for case study:
+
+```yaml
+related:
+  - "problems/devops"
+  - "outcomes/engineering-excellence"
+```
+
+See buyer-journey-analysis.md for full journey maps, identified gaps, and implementation phases.
+
 ## Communication Style
 
 Apply Allan Weiss principles to all content:
+
 - Direct, active voice
 - No marketing buzzwords or corporate speak
 - Evidence-backed claims
 - Front-load key information
 - Short paragraphs (3-4 lines max)
 - Challenge vague or unsupported assertions
-- **British English only**
+- **American English only**
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 
@@ -214,6 +355,7 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 ## Language Rules (Non-Negotiable)
 
 **Avoid**:
+
 - "Agile transformation" (prefer "systems of work redesign")
 - "ways of working" (prefer "systems of work" or "operating model")
 - "mindset" (prefer "ethos" when culture is relevant)
@@ -222,6 +364,7 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 - Hype or evangelism
 
 **Use**:
+
 - "systems of work" (default for processes, practices, funding, decisions, governance)
 - "operating model" (when speaking to executives about organisational design)
 - Direct, pragmatic, executive-safe language
@@ -229,16 +372,19 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 ## Configuration Files
 
 ### Hugo Configs (`site/hugo.*.yaml`)
+
 - `hugo.yaml`: Base config (menus, params, site title)
 - Environment configs: Override `baseURL`, `publishDir`, environment variables
 - Merged at build time with `--config hugo.yaml,hugo.<env>.yaml`
 
 ### Static Web App Configs (`staticwebapp.config.*.json`)
+
 - Control routing, redirects, security headers
 - Pipeline merges base + environment config with `jq` before deployment
 - Merged output placed in `public/` for deployment
 
 ### Spell Check (`.spellcheck.yml`)
+
 - Uses `pyspelling` with aspell
 - Custom wordlist: `.wordlist.txt`
 - Runs on markdown files
@@ -320,17 +466,19 @@ Update these files whenever you:
 
 ### Documentation Files to Maintain
 
-| File | Purpose | Update When |
-|------|---------|-------------|
-| `.github/copilot-instructions.md` | Repository-wide guidance | Build changes, new patterns, architecture changes |
-| `.github/instructions/*.instructions.md` | Content-specific rules | Writing standards evolve, new content patterns |
-| `.github/agents/*.md` | Specialized content agents | Workflow improvements, quality standards change |
-| `readme.md` | User-facing documentation | Setup changes, deployment changes |
-| `.wordlist.txt` | Spell check dictionary | New technical terms added |
+| File                                          | Purpose                         | Update When                                       |
+| --------------------------------------------- | ------------------------------- | ------------------------------------------------- |
+| `.github/copilot-instructions.md`             | Repository-wide guidance        | Build changes, new patterns, architecture changes |
+| `.github/.analysis/buyer-journey-analysis.md` | Buyer journey strategy and gaps | Journey flow changes, new navigation patterns     |
+| `.github/instructions/*.instructions.md`      | Content-specific rules          | Writing standards evolve, new content patterns    |
+| `.github/agents/*.md`                         | Specialized content agents      | Workflow improvements, quality standards change   |
+| `readme.md`                                   | User-facing documentation       | Setup changes, deployment changes                 |
+| `.wordlist.txt`                               | Spell check dictionary          | New technical terms added                         |
 
 ### Quality Check Before Committing
 
 When updating documentation:
+
 - [ ] All referenced files exist and paths are correct
 - [ ] Commands have been tested and work
 - [ ] Cross-references between docs are accurate
@@ -341,6 +489,7 @@ When updating documentation:
 ### Documentation Debt
 
 If you discover outdated information:
+
 1. Fix it immediately if straightforward
 2. Document as a TODO in the relevant file if complex
 3. Never leave known-incorrect information uncommented
