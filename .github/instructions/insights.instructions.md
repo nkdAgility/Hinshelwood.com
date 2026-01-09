@@ -47,6 +47,67 @@ Every insight article must:
 - Direct, pragmatic, executive-safe language.
 - Start with buyer problem/risk, name why it persists, identify the constraint, state consequences of inaction.
 
+## No Consultant Speak (CRITICAL)
+
+**Use leadership language, not consultant speak.** Allan Weiss promotes communicating in terms buyers understand, not industry jargon or consulting terminology.
+
+**Insights build buyer understanding. They should read like strategic analysis from an experienced leader, not consulting pitches.**
+
+### Consultant Speak to Avoid
+
+**Process/methodology jargon**:
+- ❌ "stakeholder alignment"
+- ❌ "change management"
+- ❌ "organizational transformation"
+- ❌ "engagement model"
+- ❌ "delivery framework"
+- ❌ "capability maturity"
+- ❌ "operating rhythm"
+- ❌ "value streams"
+- ❌ "centre of excellence"
+
+**Vague action verbs**:
+- ❌ "enable", "empower", "facilitate"
+- ❌ "drive", "accelerate", "optimize"
+- ❌ "transform", "revolutionize"
+- ❌ "leverage", "utilize"
+- ❌ "orchestrate", "operationalize"
+
+**Abstract outcomes**:
+- ❌ "enhanced collaboration"
+- ❌ "improved agility"
+- ❌ "increased alignment"
+- ❌ "cultural shift"
+- ❌ "organizational resilience"
+
+### Leadership Language to Use
+
+**Say what actually happens**:
+- ✅ "Teams decide faster" (not "enable decision velocity")
+- ✅ "Leaders see problems earlier" (not "enhance visibility")
+- ✅ "Engineering ships twice as often" (not "accelerate delivery cadence")
+- ✅ "Costs dropped by 40%" (not "optimize spend efficiency")
+
+**Use concrete business terms**:
+- ✅ "Deploy 10 times per day"
+- ✅ "Cut incident response from 4 hours to 20 minutes"
+- ✅ "Reduced coordination meetings from 15 to 3 per week"
+- ✅ "Freed up 30% of engineering time for new features"
+
+**Describe problems and solutions plainly**:
+- ✅ "Product and engineering can't agree on priorities" (not "misalignment between product and engineering")
+- ✅ "Teams spend 3 days coordinating what should take 30 minutes" (not "sub-optimal coordination overhead")
+- ✅ "Leaders discover problems after decisions are locked in" (not "feedback loops need optimization")
+
+### Test Your Language
+
+Ask: **Would a CTO say this to their CFO in a hallway conversation?**
+
+- If yes, keep it
+- If no, rewrite in plain business language
+
+Remember: Insights should sound like experienced leadership analysis, not consulting slide decks.
+
 ## Front Matter Requirements
 
 ```yaml

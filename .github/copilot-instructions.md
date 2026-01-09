@@ -335,6 +335,56 @@ Apply Allan Weiss principles to all content:
 
 Ask: "What does the reader gain?" If unclear, revise or delete.
 
+### No Consultant Speak (CRITICAL)
+
+**Use leadership language, not consultant speak.** Allan Weiss principle: Communicate in terms buyers understand, not industry jargon or consulting terminology.
+
+**You ARE selling Martin as a consultant and creating buyer journeys. You are NOT using consultant speak to do it.**
+
+#### Consultant Speak to Eliminate
+
+**Process/methodology jargon**:
+- ❌ "stakeholder alignment", "change management", "organizational transformation"
+- ❌ "engagement model", "delivery framework", "capability maturity"
+- ❌ "operating rhythm", "value streams", "centre of excellence"
+
+**Vague action verbs**:
+- ❌ "enable", "empower", "facilitate", "drive", "accelerate", "optimize"
+- ❌ "transform", "revolutionize", "leverage", "utilize"
+- ❌ "orchestrate", "operationalize"
+
+**Abstract outcomes**:
+- ❌ "enhanced collaboration", "improved agility", "increased alignment"
+- ❌ "cultural shift", "organizational resilience"
+
+#### Leadership Language to Use
+
+**Say what actually happens**:
+- ✅ "Teams decide faster" (not "enable decision velocity")
+- ✅ "Leaders see problems earlier" (not "enhance visibility")
+- ✅ "Engineering ships twice as often" (not "accelerate delivery cadence")
+- ✅ "Costs dropped by 40%" (not "optimize spend efficiency")
+
+**Use concrete business terms**:
+- ✅ "Deploy 10 times per day"
+- ✅ "Cut incident response from 4 hours to 20 minutes"
+- ✅ "Reduced coordination meetings from 15 to 3 per week"
+- ✅ "Freed up 30% of engineering time for new features"
+
+**Describe activities plainly**:
+- ✅ "Martin worked with the CTO to identify where decisions stall" (not "facilitated executive alignment")
+- ✅ "Ran 3 workshops with engineering and product teams" (not "orchestrated cross-functional collaboration")
+- ✅ "Helped engineering leaders see where platforms slow teams down" (not "optimized platform operating model")
+
+#### Test Your Language
+
+Ask: **Would a CFO or board member use this phrase in a business conversation?**
+
+- If yes, keep it
+- If no, rewrite in plain business language
+
+Remember: You're selling consulting services using language buyers speak, not language consultants speak to each other.
+
 ## Project Positioning
 
 **Site**: hinshelwood.com (NOT NKDAgility.com)  

@@ -50,6 +50,68 @@ Do NOT:
 - Direct, pragmatic, executive-safe language.
 - Start with buyer problem/risk, name why it persists, identify the constraint, state consequences of inaction.
 
+## No Consultant Speak (CRITICAL)
+
+**Use leadership language, not consultant speak.** Allan Weiss promotes communicating in terms buyers understand, not industry jargon or consulting terminology.
+
+**Problem pages diagnose constraints. They should read like technical incident reports, not consulting assessments.**
+
+### Consultant Speak to Avoid
+
+**Process/methodology jargon**:
+- ❌ "stakeholder alignment issues"
+- ❌ "change management resistance"
+- ❌ "organizational transformation barriers"
+- ❌ "engagement model friction"
+- ❌ "delivery framework gaps"
+- ❌ "capability maturity deficits"
+- ❌ "operating rhythm challenges"
+- ❌ "value stream impediments"
+- ❌ "centre of excellence dysfunction"
+
+**Vague action verbs**:
+- ❌ "enable", "empower", "facilitate"
+- ❌ "drive", "accelerate", "optimize"
+- ❌ "transform", "revolutionize"
+- ❌ "leverage", "utilize"
+- ❌ "orchestrate", "operationalize"
+
+**Abstract problem statements**:
+- ❌ "collaboration challenges"
+- ❌ "agility limitations"
+- ❌ "alignment issues"
+- ❌ "cultural dysfunction"
+- ❌ "resilience gaps"
+
+### Leadership Language to Use
+
+**Say what actually goes wrong**:
+- ✅ "Teams wait 3 days for architecture decisions" (not "decision velocity constraints")
+- ✅ "Leaders discover quality problems after release" (not "feedback loop delays")
+- ✅ "Engineering spends 60% of time on coordination" (not "coordination overhead inefficiency")
+- ✅ "Product and engineering disagree on priorities weekly" (not "alignment friction")
+
+**Use concrete business impact**:
+- ✅ "Deployments take 4 hours and fail 30% of the time"
+- ✅ "Feature delivery slows from 2 weeks to 3 months as team grows"
+- ✅ "Production incidents require 5 teams to coordinate response"
+- ✅ "Platform changes break 8 dependent teams every release"
+
+**Describe systemic constraints plainly**:
+- ✅ "Architecture decisions require 4 approval layers" (not "governance overhead")
+- ✅ "Teams can't deploy without ops team manual intervention" (not "deployment friction")
+- ✅ "Code review backlog averages 2 weeks" (not "review cycle inefficiency")
+- ✅ "Platform team can't keep up with requests from 15 product teams" (not "platform capacity constraints")
+
+### Test Your Language
+
+Ask: **Would an engineering leader describe this problem using these exact words to their CEO?**
+
+- If yes, keep it
+- If no, rewrite in plain business language
+
+Remember: Problem pages should sound like engineering post-mortems, not consulting diagnosis frameworks.
+
 ## Front Matter Requirements
 
 ```yaml
