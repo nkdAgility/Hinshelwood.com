@@ -18,13 +18,13 @@ menu:
       class: attention-cta
 ---
 
-**I help engineering leaders remove delivery constraints**
+**I help engineering leaders ship faster without increasing risk**
 
-I work with CTOs, Heads of Engineering, and senior technical leaders who are accountable for delivery outcomes but constrained by legacy systems of work, fragmented tooling, and inconsistent execution.
+I work with CTOs, Heads of Engineering, and senior technical leaders who are accountable for delivery outcomes but slowed by legacy systems, fragmented tooling, and inconsistent execution.
 
-My role is not to “do DevOps for you”.
+My role is not to "do DevOps for you".
 
-My role is to **strengthen your organization’s ability to deliver software reliably, predictably, and at speed**, without creating dependency on consultants.
+My role is to help your organization deliver software reliably, predictably, and at speed, without creating dependency on consultants.
 
 {{< contact-cta >}}
 
@@ -32,46 +32,46 @@ My role is to **strengthen your organization’s ability to deliver software rel
 
 Clients typically engage me when they need to:
 
-- Reduce lead time and improve delivery predictability
+- Ship features in weeks instead of months
 - Modernise legacy Azure DevOps or GitHub environments without disruption
-- Align engineering execution with strategic objectives and OKRs
-- Increase throughput without burning out teams
-- Establish clear engineering standards that scale
-- Introduce AI-enabled engineering practices safely and pragmatically
+- Engineering delivers what the business needs when it's needed
+- Teams deliver more without working longer hours
+- Engineering standards are clear and enforced consistently
+- AI improves engineering productivity without creating new risks
 
-The outcome is **stronger flow, clearer signals, and leadership confidence in delivery**.
+The outcome is faster delivery, better visibility, and confidence in your engineering organization.
 
 ## How I work
 
-I operate as an **engineering excellence leadership partner**, not an embedded contractor.
+I work as an engineering leadership partner, not an embedded contractor.
 
 My work focuses on:
 
-- Revealing and addressing delivery constraints in your system of work
-- Designing product-aligned operating models that support flow
-- Enabling maintainability, testability, observability, and automation
-- Establishing evidence-based measures that leadership can trust
-- Coaching leaders and senior engineers to sustain improvement internally
+- Finding what's blocking delivery and fixing it
+- Designing how engineering teams are organized and funded
+- Making code easier to maintain, test, monitor, and deploy
+- Creating metrics leadership can trust
+- Teaching leaders and senior engineers to sustain improvement without me
 
-This creates **capability uplift**, not temporary acceleration.
+This builds lasting capability, not temporary speed.
 
 ## Why organizations trust me
 
-I bring over **20 years of hands-on engineering and enablement experience** across global enterprises, financial services, technology firms, and scale-ups.
+I bring over **20 years of hands-on engineering and consulting experience** across global enterprises, financial services, technology firms, and scale-ups.
 
-I am a **17-time Microsoft MVP (DevOps & GitHub)** and a long-standing **Professional Scrum Trainer and Professional Kanban Trainer**, with deep experience in Azure DevOps, GitHub, CI/CD, platform engineering, and operating-model design.
+I am a **17-time Microsoft MVP (DevOps & GitHub)**, a long-standing **Professional Scrum Trainer**, **Professional Kanban Trainer**, and a **Kendall Project Certified Partner** specializing in AI context curation and problem identification. I have deep experience in Azure DevOps, GitHub, CI/CD, platform engineering, how organizations structure engineering work, and helping organizations apply AI effectively through proper context and problem framing.
 
-I have led and advised modernisation at organizations including Microsoft, global financial institutions, and complex regulated environments, always with a focus on **execution discipline and measurable outcomes**.
+I have led and advised modernization at organizations including Microsoft, global financial institutions, and complex regulated environments, always focused on measurable outcomes.
 
 {{< social-proof id="8MXE929U" >}}
 
 ## What makes this different
 
-Most enablement fails because they focus on frameworks, tools, or ceremonies.
+Most consulting fails because it focuses on frameworks, tools, or ceremonies.
 
-My work focuses on **how work actually flows**, how decisions are made, and how engineering systems behave under real pressure.
+I focus on how work actually flows, how decisions are made, and how engineering systems behave under real pressure.
 
-That is where predictability, speed, and quality are either enabled or constrained.
+That is where predictability, speed, and quality either happen or break down.
 
 ## When this is a fit
 
@@ -93,8 +93,8 @@ This is not a fit if:
 - You are looking for certification theatre or framework compliance
 - You want reassurance that your current approach is fine
 - You expect guaranteed results without organizational commitment
-- You need a vendor who will avoid uncomfortable conversations about constraints
-- You are seeking a methodology to implement rather than capability to build
+- You need a vendor who will avoid uncomfortable conversations about what's broken
+- You are seeking a methodology to implement rather than problems to solve
 
 I work with leaders who are prepared to examine their systems honestly and act on what we discover. If that is uncomfortable, this is probably not the right engagement.
 
@@ -115,7 +115,7 @@ Regular reviews, pairing sessions, shaping delivery direction and execution prac
 **Deep** (~14-16 hours/week)  
 Deep collaboration, working directly with engineering and product leaders, platform and operating-model design.
 
-I don't track hours. The focus is on removing constraints and delivering measurable improvement within the agreed timebox.
+I don't track hours. The focus is on fixing what's blocking you and delivering measurable improvement within the agreed timebox.
 
 Fees vary based on complexity, urgency, location requirements, and purchasing power parity adjustments for your region. UK IR35-risky contracts incur an additional 40% surcharge.
 
