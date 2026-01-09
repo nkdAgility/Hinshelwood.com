@@ -159,9 +159,13 @@ I help leaders steward their operating model deliberately, rather than inheritin
 
 ## What to Do Next
 
-If this pattern matches your situation, one option:
+If this pattern matches your situation, three options:
 
-1. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+1. **See a similar challenge**: Read [turning intent into capability in a national institution]({{< ref "case-studies/ghana-police-service" >}})
+2. **See what leadership at scale requires**: Explore [Technical Leadership outcomes]({{< ref "outcomes/technical-leadership" >}})
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+
+{{< contact-cta heading="Diagnose Where Scaling Has Created Constraints" text="If growth is creating friction rather than leverage, a diagnostic conversation can reveal where your operating model is blocking adaptability." >}}
 
 ## The Question That Matters
 

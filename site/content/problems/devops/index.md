@@ -176,8 +176,10 @@ It is whether your operating model still serves your strategy.
 
 ## What to Do Next
 
-If this pattern matches your situation, one option:
+If this pattern matches your situation, three options:
 
-1. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+1. **See a similar challenge**: Read [restoring engineering leverage at scale]({{< ref "case-studies/restoring-engineering-leverage-in-a-global-oil-and-gas-service-company" >}})
+2. **See what good looks like**: Explore [Engineering Excellence]({{< ref "outcomes/engineering-excellence" >}}) and [Technical Leadership]({{< ref "outcomes/technical-leadership" >}}) outcomes
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
 
 {{< contact-cta heading="Explore Whether This Applies to Your Situation" text="If these patterns describe what you're seeing, the next step is a diagnostic conversation to determine where constraints are creating delivery risk." >}}

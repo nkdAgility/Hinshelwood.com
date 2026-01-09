@@ -168,8 +168,10 @@ The only question is whether you do that deliberately, or let AI expose the prob
 
 ## What to Do Next
 
-If this pattern matches your situation, one option:
+If this pattern matches your situation, three options:
 
-1. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+1. **See what technical leadership looks like**: Explore [Technical Leadership outcomes]({{< ref "outcomes/technical-leadership" >}})
+2. **See what engineering excellence looks like**: Explore [Engineering Excellence outcomes]({{< ref "outcomes/engineering-excellence" >}})
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
 
 {{< contact-cta heading="Explore Whether AI Can Work in Your Organization" text="If AI is producing interesting outputs but not delivering business value, a diagnostic conversation can reveal where ambiguity and complexity are blocking progress." >}}
