@@ -10,19 +10,29 @@ sitemap:
   priority: 1.0
 ---
 
-I help engineering leaders restore predictability, reduce operational cost, and regain leverage—without creating dependency on consultants.
+I'm Martin Hinshelwood. I help CTOs and engineering leaders achieve delivery and outcomes through technical leadership.
 
-**This is for CTOs and engineering leaders accountable for delivery outcomes, not project managers seeking process compliance.**
+Your teams are capable. Your people are smart. But delivery is unpredictable, costs are rising, and technical decisions keep creating problems instead of solving them. This is a systems constraint, not a people problem.
+
+**I work with CTOs and engineering leaders accountable for delivery outcomes, not project managers seeking process compliance.**
+
+{{< youtube "ebvigDpxFl4" >}}
+
+I identify the constraint preventing delivery, then work with your leaders and teams to remove it. You get measurable improvements in cycle time, predictability, and engineering leverage. Your organization builds the capability to sustain results after I leave.
 
 {{< problem-constraints >}}
 
 {{< client-logos limit="8" >}}
 
-## How I Work
+## What You Get
 
-I use evidence to identify the constraint limiting your delivery system. I work directly with leaders and teams to remove friction, improve flow, and enable reliable delivery of valuable software. DevOps, Agile, Lean, and AI are treated as enablers, not ends in themselves.
+**Evidence-based diagnosis**: I find the actual constraint limiting delivery, not the symptoms everyone complains about.
 
-{{< youtube "ebvigDpxFl4" >}}
+**Technical leadership**: I work directly with engineering leaders to make better architectural, process, and organizational decisions that compound over time.
+
+**Measurable outcomes**: Shorter cycle times, lower defect rates, reduced coordination cost, reliable delivery of committed features.
+
+**Sustained capability**: Your teams learn to diagnose and solve delivery problems without ongoing consultant dependency.
 
 {{< social-proof id="2W8KLTEV" >}}
 

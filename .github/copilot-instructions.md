@@ -345,6 +345,8 @@ Ask: "What does the reader gain?" If unclear, revise or delete.
 
 **Content Intent**: Produce buyer-diagnostic insight that shapes decisions upstream of buying, without promotional tone or demand-gen tactics. Insights must stand alone and be useful without a pitch.
 
+**Anchor Document**: `.analysis/.martin-hinshelwood.md` - Comprehensive profile of Martin Hinshelwood including career history, expertise, credentials, and professional focus. Reference this document when creating content about Martin or when you need to understand his background, qualifications, and positioning.
+
 ## Lens and Framing
 
 **Prefer**: Operating model and systems of work framing  

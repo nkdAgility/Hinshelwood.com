@@ -174,20 +174,10 @@ At that point, the question is not which method to adopt.
 
 It is whether your operating model still serves your strategy.
 
-{{< related-case-studies >}}
-
-{{< related-insights >}}
-
-{{< related-outcomes >}}
-
 ## What to Do Next
 
-If this pattern matches your situation, three options:
+If this pattern matches your situation, one option:
 
-1. **Sharpen your diagnosis**: Read the related insights above
-2. **See proof of resolution**: Review the case studies above
-3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
-
----
+1. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
 
 {{< contact-cta heading="Explore Whether This Applies to Your Situation" text="If these patterns describe what you're seeing, the next step is a diagnostic conversation to determine where constraints are creating delivery risk." >}}

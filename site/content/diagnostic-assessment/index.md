@@ -17,9 +17,9 @@ This assessment answers those questions.
 
 A 30-minute video conversation where:
 
-- You describe what you're seeing (missed commitments, rising costs, stalled initiatives)
+- You describe what you're seeing and feeling
 - I ask diagnostic questions to identify root constraints
-- You leave with clear perspective on whether your constraint is structural and addressable
+- You leave with clear perspective
 
 No pitch. No obligation. Just clarity.
 
@@ -27,10 +27,10 @@ No pitch. No obligation. Just clarity.
 
 This conversation makes sense if you're seeing:
 
-- **Recurring patterns** that don't resolve despite changing people or processes
-- **Leadership authority** to make structural decisions (not just process changes)
-- **Budget context** where intervention cost is proportional to constraint cost
-- **Strategic pressure** where current delivery capability limits growth or competitive position
+- **The same problems keep happening** no matter who you hire or what processes you change
+- **You can restructure the organization**, not just adjust workflows
+- **You have budget available** and the problem is significant enough to warrant spending it
+- **Delivery capability is holding back growth** or competitive advantage
 
 If you're exploring options or need evidence to build an internal case, this conversation helps you determine whether further investigation is warranted.
 
@@ -38,9 +38,9 @@ If you're exploring options or need evidence to build an internal case, this con
 
 After the assessment, you'll have:
 
-- **Constraint clarity**: Is your problem in the operating model, organizational structure, or technical architecture?
-- **Intervention feasibility**: Can this be addressed without massive disruption?
-- **Timing recommendation**: Is this the right constraint to tackle now, or should you address something else first?
+- **Clarity**: Is your problem in the operating model, organizational structure, or technical architecture?
+- **Feasibility**: Can this be addressed without massive disruption?
+- **Recommendation**: Is this the right constraint to tackle now, or should you address something else first?
 
 If the constraint is addressable and timely, we discuss what engagement would involve. If not, I'll tell you.
 
