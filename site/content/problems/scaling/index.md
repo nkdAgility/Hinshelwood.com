@@ -68,7 +68,7 @@ It is none of those things.
 Most organizations respond to scaling pain by tightening control.
 
 More governance.
-More alignment work.
+More coordination meetings.
 More reporting.
 More certainty demanded upfront.
 

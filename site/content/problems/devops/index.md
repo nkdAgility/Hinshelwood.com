@@ -155,7 +155,7 @@ When the system of work is corrected:
 - Decisions are made closer to information
 - Work flows with fewer handoffs and delays
 - Risk is surfaced earlier, when it is cheaper to act
-- Teams regain autonomy without losing alignment
+- Teams regain autonomy without fragmenting decisions
 - Leaders spend more time steering and less time arbitrating
 
 Delivery improves as a consequence, not as a target.

@@ -42,7 +42,7 @@ Typical engagements run 10 to 90 days and are structured around measurable outco
 
 **What This Prevents**: A single delayed quarter costs £2M-£5M in missed revenue. Failed platform migrations cost £500K-£2M in abandoned work. Poor technical decisions compound quarterly, accumulating 15-25% additional operational cost year on year. One prevented failure pays for the engagement multiple times over.
 
-**What This Enables**: Restored predictability lets you commit to revenue forecasts with confidence. Reduced coordination cost frees engineering capacity for value work. Better technical decisions reduce future cost and increase strategic optionality. The return shows up in shorter cycle times, lower defect rates, and reliable delivery of committed features.
+**What You Gain**: Restored predictability lets you commit to revenue forecasts with confidence. Reduced coordination cost frees engineering capacity for value work. Better technical decisions reduce future cost and increase strategic optionality. The return shows up in shorter cycle times, lower defect rates, and reliable delivery of committed features.
 
 **Cost of Inaction**: Organizations that delay face 20-40% of engineering capacity lost to coordination overhead, quarterly targets missed by 15-30%, technical debt accumulating at 3-5x feature development rate, and 40-60% of strategic initiatives failing to deliver expected value.
 
