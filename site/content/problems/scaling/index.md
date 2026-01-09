@@ -18,7 +18,7 @@ keywords: [
 ]
 triage:
   title: "Scaling: Growth Is Creating Friction"
-  signal: "If coordination cost is rising faster than output, or decisions are escalating instead of resolving."
+  signal: "If growth creates more meetings than output, or decisions get pushed up instead of made."
 related:
   - "/outcomes/technical-leadership"
 ItemType: problem

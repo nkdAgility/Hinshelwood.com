@@ -2,8 +2,8 @@
 {{ $problems = $problems | first 10 }}
 
 {{ if $problems }}
-  <h2>Which Constraint Are You Facing?</h2>
-  <p>Your symptoms might show up as missed deadlines, rising costs, or strategic initiatives that stall. The root cause usually sits in one of three places. Start with the constraint that matches your situation:</p>
+  <h2>What's Blocking Your Delivery?</h2>
+  <p>Missed deadlines, rising costs, and stalled initiatives usually trace to one of three places. Start with the problem that describes your situation:</p>
 
   {{ range $problems }}
     {{ $page := . }}
@@ -17,5 +17,5 @@
   {{ end }}
 
 
-  <p>Not sure? Read <a href="{{ "insights" | relURL }}">insights</a> to sharpen your diagnosis, or <a href="{{ "diagnostic-assessment" | relURL }}">book a diagnostic conversation</a> to identify your specific constraint.</p>
+  <p>Not sure? Read <a href="{{ "insights" | relURL }}">insights</a> to clarify what you're seeing, or <a href="{{ "diagnostic-assessment" | relURL }}">book a diagnostic conversation</a> to identify what's blocking you.</p>
 {{ end }}
