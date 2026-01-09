@@ -125,8 +125,8 @@ Until learning speed becomes a first-class constraint, growth will always lag op
 
 If this pattern matches your situation, three options:
 
-1. **Understand the learning constraint**: Review the related constraint above to see why decision speed determines revenue velocity.
-2. **See execution capability in practice**: The case studies above show how organizations accelerated learning and improved decision quality.
-3. **Assess your learning speed**: If pipeline looks strong but conversion lags, a diagnostic conversation can identify where decisions are slowing revenue growth.
+1. **See why market signals don't become revenue**: {{< related-problems "inline" >}}
+2. **See what fast, safe learning produces**: {{< related-outcomes "inline" >}}
+3. **Assess your learning speed**: Schedule a diagnostic conversation using the link below
 
 {{< contact-cta heading="Assess Whether Learning Speed Is Constraining Your Revenue Growth" text="If market opportunities are clear but revenue growth is lagging, a diagnostic conversation can identify where your operating model is preventing fast, safe learning at the speed growth requires." >}}

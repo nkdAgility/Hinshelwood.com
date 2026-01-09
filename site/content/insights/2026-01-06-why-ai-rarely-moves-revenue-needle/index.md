@@ -140,8 +140,8 @@ It is also the only path where AI materially changes growth outcomes.
 
 If this pattern matches your situation, three options:
 
-1. **Understand the decision constraint**: Review the related constraint above to see why AI activity increases without moving revenue.
-2. **See institutional capability**: The case study above shows how organizations translated reform intent into coordinated action at scale.
-3. **Assess your AI-to-revenue path**: If AI delivers signals but revenue stays flat, a diagnostic conversation can identify where cross-functional alignment is missing.
+1. **See why AI activity doesn't move revenue**: {{< related-problems "inline" >}}
+2. **See what happens when decisions are clear**: {{< related-outcomes "inline" >}}
+3. **Assess your AI-to-revenue gap**: Schedule a diagnostic conversation using the link below
 
 {{< contact-cta heading="Assess Whether AI Can Actually Move Your Revenue Needle" text="If AI activity is increasing but revenue impact is not, a diagnostic conversation can identify where go-to-market alignment and decision clarity need to improve before AI can compound growth." >}}

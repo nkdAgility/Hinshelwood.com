@@ -137,8 +137,8 @@ The question is whether your organization is.
 
 If this pattern matches your situation, three options:
 
-1. **Understand the AI constraint**: Review the related constraint above to see why AI initiatives stall without organizational clarity.
-2. **See clarity in practice**: The case studies above show how organizations established decision-to-delivery capability that made AI useful rather than fragile.
-3. **Assess your AI readiness**: If AI initiatives feel expensive and fragile, a diagnostic conversation can identify where organizational clarity needs to improve first.
+1. **See why ambiguity breaks AI**: {{< related-problems "inline" >}}
+2. **See what AI can do when organizations are clear**: {{< related-outcomes "inline" >}}
+3. **Assess whether your organization is clear enough**: Schedule a diagnostic conversation using the link below
 
 {{< contact-cta variant="compact" heading="Assess Whether Your Organization Is Ready for AI" text="If AI initiatives feel slower or messier than expected, a diagnostic conversation can reveal where organizational ambiguity is blocking AI value." >}}

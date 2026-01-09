@@ -133,7 +133,8 @@ Until learning speed becomes a governance concern, portfolio performance will re
 
 If this pattern matches your situation, three options:
 
-1. **Understand the portfolio constraint**: Review the related constraint above to see why governance creates false confidence at scale.
-2. **See portfolio transformation**: The case studies above show how organizations regained strategic adaptability through institutional execution capability.
-3. **Assess your portfolio learning speed**: If the board sees busy execution but strategic returns plateau, a diagnostic conversation can reveal where governance is preventing adaptation.
-   {{< contact-cta heading="Assess Whether Your Portfolio Is Designed for Learning or Control" text="If strategic returns are plateauing despite busy teams and met forecasts, a diagnostic conversation can reveal whether governance mechanisms are suppressing adaptability at portfolio scale." >}}
+1. **See why governance creates false confidence**: {{< related-problems "inline" >}}
+2. **See what changes when portfolios learn**: {{< related-outcomes "inline" >}}
+3. **Assess how your portfolio learns**: Schedule a diagnostic conversation using the link below
+
+{{< contact-cta heading="Assess Whether Your Portfolio Is Designed for Learning or Control" text="If strategic returns are plateauing despite busy teams and met forecasts, a diagnostic conversation can reveal whether governance mechanisms are suppressing adaptability at portfolio scale." >}}

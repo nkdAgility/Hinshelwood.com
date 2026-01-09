@@ -140,8 +140,8 @@ That answer will tell you far more about your true delivery risk than any estima
 
 If this pattern matches your situation, three options:
 
-1. **Understand the scaling constraint**: Review the related constraint above to see why estimate accuracy creates false confidence.
-2. **See accountability in practice**: The case studies above show how organizations restored decision quality by returning ownership to teams.
-3. **Assess your estimate-driven risk**: If your organization appears predictable on paper but feels fragile in reality, a diagnostic conversation can reveal where control is creating illusion.
+1. **See why measurement creates defensive behavior**: {{< related-problems "inline" >}}
+2. **See what real control looks like**: {{< related-outcomes "inline" >}}
+3. **Assess whether your metrics create risk**: Schedule a diagnostic conversation using the link below
 
 {{< contact-cta heading="Assess Whether Your Measurement System Is Creating Risk" text="If your organization appears predictable on paper but delivery still feels fragile, a diagnostic conversation can reveal whether your measurement approach is encouraging defensive behavior and obscuring actual constraints." >}}
