@@ -68,6 +68,7 @@ Social proof is stored in `site/data/socialproof.json`:
 When selecting quotes to include, avoid those using:
 
 **Process/methodology jargon**:
+
 - ❌ "facilitated stakeholder alignment"
 - ❌ "drove organizational transformation"
 - ❌ "enabled delivery acceleration"
@@ -75,6 +76,7 @@ When selecting quotes to include, avoid those using:
 - ❌ "leveraged best practices"
 
 **Vague praise**:
+
 - ❌ "enhanced our capabilities"
 - ❌ "improved our agility"
 - ❌ "strengthened our culture"
@@ -85,18 +87,21 @@ When selecting quotes to include, avoid those using:
 Prioritize quotes using concrete, plain language:
 
 **Specific outcomes**:
+
 - ✅ "We cut deployment time from 4 hours to 20 minutes"
 - ✅ "Teams started shipping features in 2 weeks instead of 3 months"
 - ✅ "Incident response dropped from 4 hours to 30 minutes"
 - ✅ "We freed up 30% of engineering time for new work"
 
 **Plain descriptions of value**:
+
 - ✅ "Martin helped us see where decisions were stalling"
 - ✅ "He showed us which platform constraints were slowing teams down"
 - ✅ "We finally understood why quality issues appeared so late"
 - ✅ "His diagnostic work revealed problems we'd been missing"
 
 **Real working experiences**:
+
 - ✅ "Martin challenged our assumptions about how work flowed"
 - ✅ "He asked questions that made us rethink our approach"
 - ✅ "His analysis identified constraints we couldn't see"
@@ -105,11 +110,13 @@ Prioritize quotes using concrete, plain language:
 ### When Editing Quotes
 
 **Minor editing is acceptable** for:
+
 - Spelling and grammar corrections
 - Removing filler words ("um", "like", "you know")
 - Clarifying ambiguous references
 
 **Never edit to**:
+
 - Change meaning or emphasis
 - Add consultant speak that wasn't there
 - Make generic praise more specific
@@ -118,6 +125,7 @@ Prioritize quotes using concrete, plain language:
 ### Presentation Language
 
 When writing content around quotes:
+
 - ✅ "What clients say"
 - ❌ "Transformational impact testimonials"
 - ✅ "Client feedback by outcome"
