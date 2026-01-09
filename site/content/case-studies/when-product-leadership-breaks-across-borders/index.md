@@ -52,7 +52,7 @@ The real issue was not skill gaps. It was that **no one had explicitly redesigne
 
 Titles existed. Authority did not.
 Processes existed. Context did not.
-Good people existed. Alignment did not.
+Good people existed. Shared understanding did not.
 
 This was a **system failure**, not an individual one.
 

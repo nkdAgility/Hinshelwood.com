@@ -68,7 +68,7 @@ It is none of those things.
 Most organizations respond to scaling pain by tightening control.
 
 More governance.
-More alignment work.
+More coordination meetings.
 More reporting.
 More certainty demanded upfront.
 
@@ -157,19 +157,15 @@ I don’t promise outcomes I can’t control.
 
 I help leaders steward their operating model deliberately, rather than inheriting it by accident.
 
-{{< related-case-studies >}}
-
-{{< related-insights >}}
-
-{{< related-outcomes >}}
-
 ## What to Do Next
 
 If this pattern matches your situation, three options:
 
-1. **Sharpen your diagnosis**: Read the related insights above
-2. **See proof of resolution**: Review the case studies above
+1. **See a similar challenge**: Read [turning intent into capability in a national institution]({{< ref "case-studies/ghana-police-service" >}})
+2. **See what leadership at scale requires**: Explore [Technical Leadership outcomes]({{< ref "outcomes/technical-leadership" >}})
 3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
+
+{{< contact-cta heading="Diagnose Where Scaling Has Created Constraints" text="If growth is creating friction rather than leverage, a diagnostic conversation can reveal where your operating model is blocking adaptability." >}}
 
 ## The Question That Matters
 

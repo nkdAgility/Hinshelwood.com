@@ -77,7 +77,7 @@ Senior leaders received:
   Move to a single source control system and a shared branching strategy to reduce complexity and enable predictable integration.
 
 - **Branching and build design guidance**
-  Practical advice on how to balance team autonomy with enterprise alignment, without creating a new central bottleneck.
+  Practical advice on how to balance team autonomy with enterprise consistency, without creating a new central bottleneck.
 
 - **A reframing of accountability**
   Build and release were repositioned as first-class engineering responsibilities, owned by teams, not a service function.

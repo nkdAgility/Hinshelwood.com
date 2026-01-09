@@ -16,16 +16,4 @@
       {{ .Content }}
     </div>
   </article>
-
-  <section class="container my-5">
-    {{ partial "components/related-problems.html" (dict "page" . "display" "structured") }}
-  </section>
-
-  <section class="container my-5">
-    {{ partial "components/related-case-studies.html" (dict "page" . "display" "structured") }}
-  </section>
-
-  <section class="container my-5">
-    {{ partial "components/related-outcomes.html" (dict "page" . "display" "structured") }}
-  </section>
 {{- end }}

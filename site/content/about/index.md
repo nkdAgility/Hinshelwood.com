@@ -1,7 +1,7 @@
 ---
 title: Martin Hinshelwood Engineering Leadership and Delivery Systems Consultant
 shortTitle: Work With Me
-keywords: ["Martin Hinshelwood","engineering leadership consultant","software delivery consulting","engineering operating model","delivery constraints","predictable delivery","flow efficiency","Azure DevOps consulting","GitHub consulting","technical leadership","engineering excellence","systems of work","AI-enabled engineering","DevOps consulting"]
+keywords: ["Martin Hinshelwood", "engineering leadership consultant", "software delivery consulting", "engineering operating model", "delivery constraints", "predictable delivery", "flow efficiency", "Azure DevOps consulting", "GitHub consulting", "technical leadership", "engineering excellence", "systems of work", "AI-enabled engineering", "DevOps consulting"]
 date: 2026-01-01
 slug: about
 description: "Martin Hinshelwood is an engineering leadership consultant helping CTOs and senior leaders remove delivery constraints, improve flow, and achieve predictable software delivery through evidence-based engineering and operating-model design."
@@ -18,7 +18,6 @@ menu:
       class: attention-cta
 ---
 
-
 **I help engineering leaders remove delivery constraints**
 
 I work with CTOs, Heads of Engineering, and senior technical leaders who are accountable for delivery outcomes but constrained by legacy systems of work, fragmented tooling, and inconsistent execution.
@@ -29,17 +28,16 @@ My role is to **strengthen your organization’s ability to deliver software rel
 
 {{< contact-cta >}}
 
-
 ## What clients engage me to achieve
 
 Clients typically engage me when they need to:
 
-- Reduce lead time and improve delivery predictability  
-- Modernise legacy Azure DevOps or GitHub environments without disruption  
-- Align engineering execution with strategic objectives and OKRs  
-- Increase throughput without burning out teams  
-- Establish clear engineering standards that scale  
-- Introduce AI-enabled engineering practices safely and pragmatically  
+- Reduce lead time and improve delivery predictability
+- Modernise legacy Azure DevOps or GitHub environments without disruption
+- Align engineering execution with strategic objectives and OKRs
+- Increase throughput without burning out teams
+- Establish clear engineering standards that scale
+- Introduce AI-enabled engineering practices safely and pragmatically
 
 The outcome is **stronger flow, clearer signals, and leadership confidence in delivery**.
 
@@ -49,11 +47,11 @@ I operate as an **engineering excellence leadership partner**, not an embedded c
 
 My work focuses on:
 
-- Revealing and addressing delivery constraints in your system of work  
-- Designing product-aligned operating models that support flow  
-- Enabling maintainability, testability, observability, and automation  
-- Establishing evidence-based measures that leadership can trust  
-- Coaching leaders and senior engineers to sustain improvement internally  
+- Revealing and addressing delivery constraints in your system of work
+- Designing product-aligned operating models that support flow
+- Enabling maintainability, testability, observability, and automation
+- Establishing evidence-based measures that leadership can trust
+- Coaching leaders and senior engineers to sustain improvement internally
 
 This creates **capability uplift**, not temporary acceleration.
 
@@ -79,10 +77,10 @@ That is where predictability, speed, and quality are either enabled or constrain
 
 This is a fit if:
 
-- You are accountable for delivery outcomes, not just activity  
-- You want measurable improvement, not methodology adoption  
-- You value strong engineering judgment over dogma  
-- You want your organization to get better after I leave  
+- You are accountable for delivery outcomes, not just activity
+- You want measurable improvement, not methodology adoption
+- You value strong engineering judgment over dogma
+- You want your organization to get better after I leave
 
 {{< social-proof id="W72KAYY8" >}}
 
@@ -90,13 +88,13 @@ This is a fit if:
 
 This is not a fit if:
 
-- You want someone to "do DevOps" or "run Agile" for you  
-- You need body-shop capacity or staff augmentation  
-- You are looking for certification theatre or framework compliance  
-- You want reassurance that your current approach is fine  
-- You expect guaranteed results without organizational commitment  
-- You need a vendor who will avoid uncomfortable conversations about constraints  
-- You are seeking a methodology to implement rather than capability to build  
+- You want someone to "do DevOps" or "run Agile" for you
+- You need body-shop capacity or staff augmentation
+- You are looking for certification theatre or framework compliance
+- You want reassurance that your current approach is fine
+- You expect guaranteed results without organizational commitment
+- You need a vendor who will avoid uncomfortable conversations about constraints
+- You are seeking a methodology to implement rather than capability to build
 
 I work with leaders who are prepared to examine their systems honestly and act on what we discover. If that is uncomfortable, this is probably not the right engagement.
 
@@ -115,16 +113,17 @@ Light input, asynchronous feedback, occasional check-ins for specific challenges
 Regular reviews, pairing sessions, shaping delivery direction and execution practices.
 
 **Deep** (~14-16 hours/week)  
-Deep collaboration, hands-on stakeholder engagement, platform and operating-model design.
+Deep collaboration, working directly with engineering and product leaders, platform and operating-model design.
 
 I don't track hours. The focus is on removing constraints and delivering measurable improvement within the agreed timebox.
 
 Fees vary based on complexity, urgency, location requirements, and purchasing power parity adjustments for your region. UK IR35-risky contracts incur an additional 40% surcharge.
 
 **Payment terms:**
+
 - 50% due upon acceptance
-- 50% due 15 days after engagement start  
-- 5% discount available for full payment upfront  
+- 50% due 15 days after engagement start
+- 5% discount available for full payment upfront
 
 **Satisfaction guarantee:** If the engagement doesn't meet agreed standards, I refund your fee.
 
@@ -132,11 +131,11 @@ Engagements are non-cancellable but may be rescheduled without penalty.
 
 ## Credentials
 
-- 17× Microsoft MVP (DevOps & GitHub)  
-- Professional Scrum Trainer (PSM III, PSPO III)  
+- 17× Microsoft MVP (DevOps & GitHub)
+- Professional Scrum Trainer (PSM III, PSPO III)
 - Professional Kanban Trainer
-- Author and long-time engineering thought leader  
-- Founder of Naked Agility  
+- Author and long-time engineering thought leader
+- Founder of Naked Agility
 
 ## Next step
 

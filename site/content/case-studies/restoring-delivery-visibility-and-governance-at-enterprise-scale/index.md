@@ -72,7 +72,7 @@ This was not a people problem. It was the inevitable outcome of unmanaged decent
 
 ### The Advisory and Delivery Approach
 
-The engagement combined system design, automation, and leadership alignment.
+The engagement combined system design, automation, and leadership agreement on standards.
 
 Senior leaders were supported through a multi-year modernisation that included:
 

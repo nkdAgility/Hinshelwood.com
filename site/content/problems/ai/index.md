@@ -146,27 +146,13 @@ This work sits at the intersection of leadership, delivery, and decision-making.
 The outcome is not “doing more AI”.  
 It is building an organization that AI can actually serve.
 
-{{< related-case-studies >}}
-
-{{< related-insights >}}
-
-{{< related-outcomes >}}
-
-## What to Do Next
-
-If this pattern matches your situation, three options:
-
-1. **Sharpen your diagnosis**: Read the related insights above
-2. **See proof of resolution**: Review the case studies above
-3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
-
 ## Who This Is For
 
 This work is relevant if:
 
 - AI pilots are impressive but don’t scale
 - Teams don’t trust AI outputs enough to act on them
-- Leaders struggle to explain where AI is truly adding value
+- Leaders struggle to explain how and where AI is relevant
 - Delivery risk increases as automation increases
 - You want AI to compound, not reset every quarter
 
@@ -180,6 +166,12 @@ It will demand that you simplify _for it_.
 
 The only question is whether you do that deliberately, or let AI expose the problem for you.
 
----
+## What to Do Next
+
+If this pattern matches your situation, three options:
+
+1. **See what technical leadership looks like**: Explore [Technical Leadership outcomes]({{< ref "outcomes/technical-leadership" >}})
+2. **See what engineering excellence looks like**: Explore [Engineering Excellence outcomes]({{< ref "outcomes/engineering-excellence" >}})
+3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
 
 {{< contact-cta heading="Explore Whether AI Can Work in Your Organization" text="If AI is producing interesting outputs but not delivering business value, a diagnostic conversation can reveal where ambiguity and complexity are blocking progress." >}}

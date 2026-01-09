@@ -106,8 +106,8 @@ Until that question is answered honestly, delivery improvements will remain loca
 
 If this pattern matches your situation, three options:
 
-1. **Understand the scaling constraint**: Review the related constraint above to see why coordination creates organizational drag.
-2. **See how others regained speed**: The case studies above show what changed when organizations addressed governance overhead.
-3. **Assess your coordination cost**: If teams are busy but results lag, a diagnostic conversation can identify where effort is being absorbed without producing value.
+1. **See why planning and coordination slow you down**: {{< related-problems "inline" >}}
+2. **See what speed without chaos looks like**: {{< related-outcomes "inline" >}}
+3. **Assess where effort disappears**: Schedule a diagnostic conversation using the link below
 
 {{< contact-cta variant="compact" heading="Does This Describe Your Organization?" text="If your organization feels busy but slow, a diagnostic conversation can help identify which operating model assumptions are creating drag." >}}

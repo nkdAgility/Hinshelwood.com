@@ -75,7 +75,7 @@ Focus areas typically include:
 - Diagnosing delivery constraints and systemic bottlenecks
 - Redesigning product and engineering operating models
 - Improving flow, feedback loops, and decision latency
-- Aligning product strategy with delivery capability
+- Matching product strategy to delivery capability
 - Establishing evidence-based leadership and governance
 - Correcting broken Agile or DevOps implementations
 
@@ -155,7 +155,7 @@ When the system of work is corrected:
 - Decisions are made closer to information
 - Work flows with fewer handoffs and delays
 - Risk is surfaced earlier, when it is cheaper to act
-- Teams regain autonomy without losing alignment
+- Teams regain autonomy without fragmenting decisions
 - Leaders spend more time steering and less time arbitrating
 
 Delivery improves as a consequence, not as a target.
@@ -174,20 +174,12 @@ At that point, the question is not which method to adopt.
 
 It is whether your operating model still serves your strategy.
 
-{{< related-case-studies >}}
-
-{{< related-insights >}}
-
-{{< related-outcomes >}}
-
 ## What to Do Next
 
 If this pattern matches your situation, three options:
 
-1. **Sharpen your diagnosis**: Read the related insights above
-2. **See proof of resolution**: Review the case studies above
+1. **See a similar challenge**: Read [restoring engineering leverage at scale]({{< ref "case-studies/restoring-engineering-leverage-in-a-global-oil-and-gas-service-company" >}})
+2. **See what good looks like**: Explore [Engineering Excellence]({{< ref "outcomes/engineering-excellence" >}}) and [Technical Leadership]({{< ref "outcomes/technical-leadership" >}}) outcomes
 3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below
-
----
 
 {{< contact-cta heading="Explore Whether This Applies to Your Situation" text="If these patterns describe what you're seeing, the next step is a diagnostic conversation to determine where constraints are creating delivery risk." >}}

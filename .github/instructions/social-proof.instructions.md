@@ -57,6 +57,89 @@ Social proof is stored in `site/data/socialproof.json`:
 - Emphasise constraints removed, risk reduced, measurable outcomes
 - Assume issues are systemic, not people failures
 
+## No Consultant Speak (CRITICAL)
+
+**Use leadership language, not consultant speak.** Allan Weiss promotes communicating in terms buyers understand, not industry jargon or consulting terminology.
+
+**Social proof should sound like real client feedback, not curated testimonials from consulting marketing materials.**
+
+### Consultant Speak to Avoid in Quote Selection
+
+When selecting quotes to include, avoid those using:
+
+**Process/methodology jargon**:
+
+- ❌ "facilitated stakeholder alignment"
+- ❌ "drove organizational transformation"
+- ❌ "enabled delivery acceleration"
+- ❌ "optimized our operating model"
+- ❌ "leveraged best practices"
+
+**Vague praise**:
+
+- ❌ "enhanced our capabilities"
+- ❌ "improved our agility"
+- ❌ "strengthened our culture"
+- ❌ "elevated our maturity"
+
+### Leadership Language to Prefer
+
+Prioritize quotes using concrete, plain language:
+
+**Specific outcomes**:
+
+- ✅ "We cut deployment time from 4 hours to 20 minutes"
+- ✅ "Teams started shipping features in 2 weeks instead of 3 months"
+- ✅ "Incident response dropped from 4 hours to 30 minutes"
+- ✅ "We freed up 30% of engineering time for new work"
+
+**Plain descriptions of value**:
+
+- ✅ "Martin helped us see where decisions were stalling"
+- ✅ "He showed us which platform constraints were slowing teams down"
+- ✅ "We finally understood why quality issues appeared so late"
+- ✅ "His diagnostic work revealed problems we'd been missing"
+
+**Real working experiences**:
+
+- ✅ "Martin challenged our assumptions about how work flowed"
+- ✅ "He asked questions that made us rethink our approach"
+- ✅ "His analysis identified constraints we couldn't see"
+- ✅ "Working with Martin changed how we think about risk"
+
+### When Editing Quotes
+
+**Minor editing is acceptable** for:
+
+- Spelling and grammar corrections
+- Removing filler words ("um", "like", "you know")
+- Clarifying ambiguous references
+
+**Never edit to**:
+
+- Change meaning or emphasis
+- Add consultant speak that wasn't there
+- Make generic praise more specific
+- Exaggerate outcomes
+
+### Presentation Language
+
+When writing content around quotes:
+
+- ✅ "What clients say"
+- ❌ "Transformational impact testimonials"
+- ✅ "Client feedback by outcome"
+- ❌ "Strategic partnership success stories"
+
+### Test Your Selection
+
+Ask: **Does this quote sound like something a real person said in conversation, or like something from a consulting brochure?**
+
+- If it sounds real, include it
+- If it sounds polished or promotional, reconsider
+
+Remember: Authenticity builds more credibility than polish. Real client language proves value better than consultant-perfect testimonials.
+
 ## Quality Standards
 
 Accept quotes that:

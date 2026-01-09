@@ -22,6 +22,95 @@ Apply Allan Weiss standards to client documentation:
 - **No em dashes** (use full stops, commas, or shorter sentences)
 - **No analogies** (say what you mean directly)
 
+## No Consultant Speak (CRITICAL)
+
+**Use leadership language, not consultant speak.** Allan Weiss promotes communicating in terms buyers understand, not industry jargon or consulting terminology.
+
+**Client lists demonstrate experience breadth. They should be straightforward documentation, not marketing copy.**
+
+### Consultant Speak to Avoid
+
+**Engagement descriptions**:
+
+- ❌ "organizational transformation partner"
+- ❌ "strategic enablement engagement"
+- ❌ "delivery acceleration program"
+- ❌ "capability maturity initiative"
+- ❌ "agile transformation partner"
+
+**Client categories**:
+
+- ❌ "transformation clients"
+- ❌ "strategic partners"
+- ❌ "enterprise change initiatives"
+- ❌ "digital acceleration engagements"
+
+### Leadership Language to Use
+
+**Engagement types (plain language)**:
+
+- ✅ "Consulting" (not "strategic advisory partner")
+- ✅ "Training" (not "capability development program")
+- ✅ "Embedded work" (not "organizational transformation engagement")
+- ✅ "Advisory" (not "strategic enablement relationship")
+
+**Industry/context descriptions**:
+
+- ✅ "Financial services company (£10B revenue)"
+- ✅ "Global oil and gas service provider"
+- ✅ "National healthcare institution"
+- ✅ "Enterprise software company (200 engineers)"
+
+**Confidential client references**:
+
+- ✅ "FTSE 100 financial services company" (not "tier-1 banking transformation")
+- ✅ "Global manufacturing company (50,000 employees)" (not "enterprise operational excellence engagement")
+- ✅ "Government department (confidential)" (not "public sector modernization initiative")
+
+### Page Content Language
+
+When writing content for clients pages:
+
+**Headings**:
+
+- ✅ "Who Martin Has Worked With"
+- ❌ "Transformation Partners"
+- ✅ "Client Experience Across Industries"
+- ❌ "Strategic Engagement Portfolio"
+
+**Descriptions**:
+
+- ✅ "Martin has worked with clients across financial services, healthcare, government, and technology sectors"
+- ❌ "Martin partners with leading organizations to drive transformational change across diverse industry verticals"
+
+**Context about engagements**:
+
+- ✅ "Projects range from 3-month diagnostic assessments to 18-month embedded consulting engagements"
+- ❌ "Engagements span strategic transformation initiatives and capability acceleration programs"
+
+### Data Field Language
+
+In client data files, use plain terms:
+
+**engagementType values**:
+
+- ✅ `"consulting"`, `"training"`, `"fte"`, `"advisory"`
+- ❌ `"transformation"`, `"enablement"`, `"strategic_partnership"`
+
+**industry values**:
+
+- ✅ `"financial_services"`, `"healthcare"`, `"government"`, `"technology"`
+- ❌ `"fintech_innovation"`, `"healthcare_transformation"`, `"public_sector_modernization"`
+
+### Test Your Language
+
+Ask: **Would you use these exact words on a CV or when introducing yourself at a conference?**
+
+- If yes, keep it
+- If no, simplify to plain business language
+
+Remember: Client lists prove experience through breadth and authenticity, not through consulting marketing language.
+
 ## Content Types You Handle
 
 ### Client Logos

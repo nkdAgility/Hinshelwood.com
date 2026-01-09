@@ -38,6 +38,68 @@ Every case study must include:
 - Start with buyer problem/risk, name why it persists, identify the constraint, state consequences of inaction.
 - Stop short of prescribing solutions unless explicitly asked.
 
+## No Consultant Speak (CRITICAL)
+
+**Use leadership language, not consultant speak.** Allan Weiss promotes communicating in terms buyers understand, not industry jargon or consulting terminology.
+
+**Case studies document real work. They should read like honest project reports from experienced leaders, not sanitized consulting success stories.**
+
+### Consultant Speak to Avoid
+
+**Process/methodology jargon**:
+- ❌ "stakeholder alignment"
+- ❌ "change management"
+- ❌ "organizational transformation"
+- ❌ "engagement model"
+- ❌ "delivery framework"
+- ❌ "capability maturity"
+- ❌ "operating rhythm"
+- ❌ "value streams"
+- ❌ "centre of excellence"
+
+**Vague action verbs**:
+- ❌ "enable", "empower", "facilitate"
+- ❌ "drive", "accelerate", "optimize"
+- ❌ "transform", "revolutionize"
+- ❌ "leverage", "utilize"
+- ❌ "orchestrate", "operationalize"
+
+**Abstract outcomes**:
+- ❌ "enhanced collaboration"
+- ❌ "improved agility"
+- ❌ "increased alignment"
+- ❌ "cultural shift"
+- ❌ "organizational resilience"
+
+### Leadership Language to Use
+
+**Say what actually happened**:
+- ✅ "Teams started deciding faster" (not "enabled decision velocity")
+- ✅ "Leaders began seeing problems earlier" (not "enhanced visibility")
+- ✅ "Engineering shipped twice as often" (not "accelerated delivery cadence")
+- ✅ "Costs dropped by 40%" (not "optimized spend efficiency")
+
+**Use concrete business terms**:
+- ✅ "Deployment frequency increased from weekly to 10 times per day"
+- ✅ "Incident response time dropped from 4 hours to 20 minutes"
+- ✅ "Coordination meetings reduced from 15 to 3 per week"
+- ✅ "Engineering time for new features increased from 50% to 80%"
+
+**Describe activities plainly**:
+- ✅ "Martin worked with the CTO to map where decisions stalled" (not "facilitated executive alignment workshops")
+- ✅ "Ran 3 workshops with engineering and product teams to identify conflicting priorities" (not "orchestrated cross-functional collaboration sessions")
+- ✅ "Helped engineering leaders identify where platforms slowed teams down" (not "optimized platform operating model")
+- ✅ "Reviewed code review process with 5 senior engineers" (not "assessed development workflow maturity")
+
+### Test Your Language
+
+Ask: **Would you explain this to a board member using these exact words?**
+
+- If yes, keep it
+- If no, rewrite in plain business language
+
+Remember: Case studies prove Martin's value through honest documentation of real results using language buyers speak, not consulting frameworks.
+
 ## Front Matter Requirements
 
 ```yaml

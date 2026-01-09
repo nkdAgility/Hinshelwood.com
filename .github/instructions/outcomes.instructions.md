@@ -44,6 +44,68 @@ Each outcome page must:
 - Start with buyer problem/risk, explain the constraint, state consequences of inaction.
 - Stop short of prescribing solutions unless explicitly asked.
 
+## No Consultant Speak (CRITICAL)
+
+**Use leadership language, not consultant speak.** Allan Weiss promotes communicating in terms buyers understand, not industry jargon or consulting terminology.
+
+**Outcome pages describe business results. They should read like performance reports, not capability frameworks.**
+
+### Consultant Speak to Avoid
+
+**Process/methodology jargon**:
+- ❌ "stakeholder alignment"
+- ❌ "change management"
+- ❌ "organizational transformation"
+- ❌ "engagement model"
+- ❌ "delivery framework"
+- ❌ "capability maturity"
+- ❌ "operating rhythm"
+- ❌ "value streams"
+- ❌ "centre of excellence"
+
+**Vague action verbs**:
+- ❌ "enable", "empower", "facilitate"
+- ❌ "drive", "accelerate", "optimize"
+- ❌ "transform", "revolutionize"
+- ❌ "leverage", "utilize"
+- ❌ "orchestrate", "operationalize"
+
+**Abstract outcomes**:
+- ❌ "enhanced collaboration"
+- ❌ "improved agility"
+- ❌ "increased alignment"
+- ❌ "cultural shift"
+- ❌ "organizational resilience"
+
+### Leadership Language to Use
+
+**Say what actually happens**:
+- ✅ "Teams decide faster" (not "enable decision velocity")
+- ✅ "Leaders see problems earlier" (not "enhance visibility")
+- ✅ "Engineering ships twice as often" (not "accelerate delivery cadence")
+- ✅ "Costs dropped by 40%" (not "optimize spend efficiency")
+
+**Use concrete business terms**:
+- ✅ "Deploy 10 times per day"
+- ✅ "Cut incident response from 4 hours to 20 minutes"
+- ✅ "Reduced coordination meetings from 15 to 3 per week"
+- ✅ "Freed up 30% of engineering time for new features"
+
+**Describe outcomes as measurable changes**:
+- ✅ "Deployment frequency increased from weekly to daily"
+- ✅ "Bug escape rate dropped from 15% to 2%"
+- ✅ "Feature delivery time reduced from 3 months to 3 weeks"
+- ✅ "Platform onboarding time decreased from 2 weeks to 1 day"
+
+### Test Your Language
+
+Ask: **Would a CFO or board member understand this metric without explanation?**
+
+- If yes, keep it
+- If no, rewrite in plain business language
+
+Remember: Outcome pages should read like quarterly business reviews, not consulting capability models.
+
 ## Front Matter Requirements
 
 ```yaml

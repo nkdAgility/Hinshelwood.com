@@ -6,7 +6,7 @@ description: "Growth leaders invest in AI to accelerate revenue, but often find 
 diagnosis:
   question: "Why AI activity increases but revenue impact doesn't"
   statement: "Revenue systems depend on decisions, not data. AI cannot improve decisions when organizations cannot agree on intent, ownership, or success criteria across marketing, sales, product, and operations."
-  reason: "AI investments focus on insight generation rather than decision improvement. More dashboards and models don't translate to action when cross-functional alignment is missing."
+  reason: "AI investments focus on insight generation rather than decision improvement. More dashboards and models don't translate to action when teams can't agree on decisions."
   signal: "If your AI delivers signals but revenue growth stays flat, this explains the gap between activity and outcome."
 related:
   - "problems/ai"
@@ -74,7 +74,7 @@ When revenue impact lags, the instinct is predictable:
 “Feed the model more data.”
 
 But growth systems don’t fail due to lack of information.
-They fail due to lack of alignment.
+They fail because teams can't agree on what matters.
 
 If sales and marketing disagree on what matters, AI learns noise.
 If customer success isn’t reflected in pipeline decisions, AI optimizes churn.
@@ -140,8 +140,8 @@ It is also the only path where AI materially changes growth outcomes.
 
 If this pattern matches your situation, three options:
 
-1. **Understand the decision constraint**: Review the related constraint above to see why AI activity increases without moving revenue.
-2. **See institutional capability**: The case study above shows how organizations translated reform intent into coordinated action at scale.
-3. **Assess your AI-to-revenue path**: If AI delivers signals but revenue stays flat, a diagnostic conversation can identify where cross-functional alignment is missing.
+1. **See why AI activity doesn't move revenue**: {{< related-problems "inline" >}}
+2. **See what happens when decisions are clear**: {{< related-outcomes "inline" >}}
+3. **Assess your AI-to-revenue gap**: Schedule a diagnostic conversation using the link below
 
-{{< contact-cta heading="Assess Whether AI Can Actually Move Your Revenue Needle" text="If AI activity is increasing but revenue impact is not, a diagnostic conversation can identify where go-to-market alignment and decision clarity need to improve before AI can compound growth." >}}
+{{< contact-cta heading="Assess Whether AI Can Actually Move Your Revenue Needle" text="If AI activity is increasing but revenue impact is not, a diagnostic conversation can identify where go-to-market decision clarity needs to improve before AI can compound growth." >}}
