@@ -6,7 +6,7 @@ slug: ai
 description: "AI initiatives stall and create risk when organizations lack clarity, ownership, and decision discipline. As AI scales, ambiguity undermines trust, increases delivery risk, and prevents experiments from becoming reliable capability."
 keywords: ["AI enablement", "AI operating model", "AI at scale", "AI delivery risk", "AI in production", "organizational clarity", "decision-making discipline", "AI governance", "AI capability building", "scalable AI"]
 triage:
-  title: "AI: Experimentation Isn't Becoming Capability"
+  title: "AI: Pilots Impress But Don't Stick"
   signal: "If AI pilots impress but don't stick, or teams can't agree on what success looks like."
 related:
   - "/outcomes/engineering-excellence"
