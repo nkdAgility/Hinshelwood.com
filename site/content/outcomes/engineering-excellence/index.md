@@ -157,8 +157,9 @@ The question is whether you are paying deliberately, or through missed commitmen
 
 ## What to Do Next
 
-If this capability is what your organization needs, there is one option:
+If this capability is what your organization needs, two options:
 
-1. **Assess your specific situation**: Schedule a diagnostic conversation using the link below to determine where engineering excellence is constrained in your system
+1. **See what technical leadership looks like**: Explore [Technical Leadership outcomes]({{< ref "outcomes/technical-leadership" >}})
+2. **Assess your specific situation**: Schedule a diagnostic conversation using the link below to determine where engineering excellence is constrained in your system
 
 {{< contact-cta heading="Assess Whether Engineering Risk Is Constraining Your Delivery" text="If engineering problems appear late, require heroics to resolve, or make commitments feel risky, a diagnostic conversation can identify where engineering excellence needs to shift from individual capability to system design." >}}
