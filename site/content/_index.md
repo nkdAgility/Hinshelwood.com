@@ -12,9 +12,7 @@ sitemap:
 
 Your teams are capable. Your people are smart. But delivery is unpredictable, costs are rising, and technical decisions keep creating problems instead of solving them. This is a systems constraint, not a people problem.
 
-I'm Martin Hinshelwood. I work with CTOs and engineering leaders to identify the constraint preventing delivery, then remove it. You get measurable improvements in cycle time, predictability, and engineering leverage. Your organization builds the capability to sustain results after I leave.
-
-**I work with executives accountable for delivery outcomes, not project managers seeking process compliance.**
+I'm Martin Hinshelwood. **I work with CTOs and engineering leaders to identify the constraint preventing delivery, then remove it.** You get measurable improvements in cycle time, predictability, and engineering leverage. Your organization builds the capability to sustain results after I leave.
 
 {{< youtube "ebvigDpxFl4" >}}
 
