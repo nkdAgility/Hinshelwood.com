@@ -162,10 +162,8 @@ If that answer is unclear, technical leadership is already constraining outcomes
 
 ## What to Do Next
 
-If technical leadership is the capability you need to strengthen, three options:
+If technical leadership is the capability you need to strengthen, there is one option:
 
-1. **See how this shows up in practice**: Review the case studies above to see how other leaders scaled technical decision-making without centralizing control
-2. **Understand the constraint**: Read about {{< related-problems "inline" >}} to see where technical leadership typically becomes a bottleneck
-3. **Assess your specific situation**: Schedule a diagnostic conversation using the link below to identify where technical judgment is breaking down in your organization
+1. **Assess your specific situation**: Schedule a diagnostic conversation using the link below to identify where technical judgment is breaking down in your organization
 
 {{< contact-cta heading="Determine Whether Technical Leadership Is Your Constraint" text="If technical decisions are slow, inconsistent, or dependent on a few key people, a diagnostic conversation can reveal where technical leadership needs to become a system capability." >}}
