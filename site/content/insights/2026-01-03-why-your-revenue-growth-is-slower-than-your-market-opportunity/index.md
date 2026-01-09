@@ -37,9 +37,9 @@ You may recognize some of these patterns:
 - Forecast accuracy decreases as growth targets increase.
 - “Execution risk” is cited more often than “market risk”.
 
-This is usually framed as a sales–product alignment issue.
+This is usually framed as sales and product can't agree on priorities.
 
-It isn’t.
+That's not the real issue.
 
 ## The Hidden Constraint Is Learning Speed
 

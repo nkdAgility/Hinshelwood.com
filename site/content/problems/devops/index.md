@@ -75,7 +75,7 @@ Focus areas typically include:
 - Diagnosing delivery constraints and systemic bottlenecks
 - Redesigning product and engineering operating models
 - Improving flow, feedback loops, and decision latency
-- Aligning product strategy with delivery capability
+- Matching product strategy to delivery capability
 - Establishing evidence-based leadership and governance
 - Correcting broken Agile or DevOps implementations
 
