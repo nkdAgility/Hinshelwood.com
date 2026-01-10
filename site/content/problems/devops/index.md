@@ -7,7 +7,7 @@ description: "Delivery risk increases when the system of work cannot reliably tu
 keywords: ["devops consulting", "delivery risk", "engineering operating model", "systems of work", "flow and feedback loops", "predictable delivery", "decision latency", "engineering leadership", "software delivery capability", "devops beyond tools"]
 triage:
   title: "DevOps: Delivery isn’t improving"
-  signal: "If you are adding people and resources but delivery isn’t improving, increasing speed or meeting technical objectives."
+  signal: "You are adding people and resources but delivery isn't improving speed or meeting technical objectives."
 related:
   - "/outcomes/engineering-excellence"
   - "/outcomes/technical-leadership"
