@@ -6,8 +6,8 @@ slug: devops
 description: "Delivery risk increases when the system of work cannot reliably turn intent into outcomes. Slow flow, delayed decisions, and operating model constraints undermine the benefits organizations expect from DevOps."
 keywords: ["devops consulting", "delivery risk", "engineering operating model", "systems of work", "flow and feedback loops", "predictable delivery", "decision latency", "engineering leadership", "software delivery capability", "devops beyond tools"]
 triage:
-  title: "DevOps: Delivery Isn't Getting Faster"
-  signal: "If you're adding resources but delivery isn't speeding up, or technical decisions keep getting revisited."
+  title: "DevOps: Delivery isn’t improving"
+  signal: "If you are adding people and resources but delivery isn’t improving, increasing speed or meeting technical objectives."
 related:
   - "/outcomes/engineering-excellence"
   - "/outcomes/technical-leadership"
