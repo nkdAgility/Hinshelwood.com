@@ -380,7 +380,7 @@ See how one team [solved this problem]({{< ref "case-studies/solution.md" >}}).
 
 - **Instructions**: `.github/instructions/case-studies.instructions.md` (read this first!)
 - **Content Directory**: `site/content/case-studies/`
-- **Related Agents**: `.github/agents/insights.md`, `.github/agents/marketing-content.md`
+- **Related Agents**: `.github/agents/insights.agent.md`, `.github/agents/marketing-content.agent.md`
 - **Related Content**: `site/content/problems/`, `site/content/outcomes/`
 
 Remember: Case studies exist to prove credibility and demonstrate capability through buyer-diagnostic insight. Vague, sanitised success stories help no one. Be specific. Be honest. Show your work. Focus on what changed and measurable progress, not tools or methods. If you can't defend what you wrote, don't publish it.
