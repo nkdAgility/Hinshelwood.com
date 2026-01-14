@@ -26,7 +26,7 @@ I'm Martin Hinshelwood. _I work with leaders, managers, and teams to identify th
 
 **Evidence-based diagnosis**: I find the actual constraint limiting delivery, not the symptoms everyone complains about.
 
-**Technical leadership**: I work directly with engineering leaders to make better architectural, process, and organizational decisions that compound over time.
+**Technical leadership**: I work directly with engineering leaders and teams to make better architectural, process, and organizational decisions that compound over time.
 
 **Measurable outcomes**: Shorter cycle times, lower defect rates, reduced coordination cost, reliable delivery of committed features.
 
