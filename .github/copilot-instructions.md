@@ -142,11 +142,11 @@ Pipeline checks if `public/` exceeds 500MB (Azure SWA limit). Current size: ~0.0
 
 For specialized content creation, use these custom agents:
 
-- **Marketing Content**: `.github/agents/marketing-content.md` - Homepage, about pages, landing pages, service descriptions
-- **Insights**: `.github/agents/insights.md` - Technical articles, thought leadership, opinionated analysis
-- **Case Studies**: `.github/agents/case-studies.md` - Client engagement documentation with measurable outcomes
-- **Social Proof**: `.github/agents/social-proof.md` - Client testimonials and feedback curation
-- **Clients**: `.github/agents/clients.md` - Client roster and logo management
+- **Marketing Content**: `.github/agents/marketing-content.agent.md` - Homepage, about pages, landing pages, service descriptions
+- **Insights**: `.github/agents/insights.agent.md` - Technical articles, thought leadership, opinionated analysis
+- **Case Studies**: `.github/agents/case-studies.agent.md` - Client engagement documentation with measurable outcomes
+- **Social Proof**: `.github/agents/social-proof.agent.md` - Client testimonials and feedback curation
+- **Clients**: `.github/agents/clients.agent.md` - Client roster and logo management
 
 Each agent provides:
 
@@ -515,7 +515,7 @@ Update these files whenever you:
 
 4. **Create New Content Types**
    - Create new `.github/instructions/*.instructions.md`
-   - Create corresponding `.github/agents/*.md` if needed
+   - Create corresponding `.github/agents/*.agent.md` if needed
    - Reference in `.github/copilot-instructions.md`
 
 5. **Discover Build Issues or Workarounds**
@@ -529,7 +529,7 @@ Update these files whenever you:
 | `.github/copilot-instructions.md`             | Repository-wide guidance        | Build changes, new patterns, architecture changes |
 | `.github/.analysis/buyer-journey-analysis.md` | Buyer journey strategy and gaps | Journey flow changes, new navigation patterns     |
 | `.github/instructions/*.instructions.md`      | Content-specific rules          | Writing standards evolve, new content patterns    |
-| `.github/agents/*.md`                         | Specialized content agents      | Workflow improvements, quality standards change   |
+| `.github/agents/*.agent.md`                   | Specialized content agents      | Workflow improvements, quality standards change   |
 | `readme.md`                                   | User-facing documentation       | Setup changes, deployment changes                 |
 | `.wordlist.txt`                               | Spell check dictionary          | New technical terms added                         |
 
