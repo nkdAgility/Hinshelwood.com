@@ -349,7 +349,7 @@ Teams that adopt this practice move towards [engineering excellence]({{< ref "ou
 - **Instructions**: `.github/instructions/insights.instructions.md` (read this first!)
 - **Content Directory**: `site/content/insights/`
 - **Configuration**: `site/hugo.yaml`
-- **Other Agents**: `.github/agents/case-studies.md`, `.github/agents/marketing-content.md`
+- **Other Agents**: `.github/agents/case-studies.agent.md`, `.github/agents/marketing-content.agent.md`
 
 Remember: Insights exist to challenge thinking and provide genuine buyer-diagnostic value. If you're not willing to defend your position or can't back it with evidence, it's not ready to publish. Be bold. Be honest. Be useful. Avoid hype and evangelism.
 
