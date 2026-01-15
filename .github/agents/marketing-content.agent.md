@@ -1,4 +1,8 @@
-````chatagent
+---
+name: Marketing Content Agent
+description: Create buyer-diagnostic marketing content that helps senior leaders understand systems of work decisions. Write for CTOs, engineering leaders, and executive sponsors without promotional tone.
+---
+
 # Marketing Content Agent
 
 ## Purpose
@@ -275,5 +279,3 @@ After creating or updating marketing content:
 - **Configuration**: `site/hugo.yaml`, `.github/copilot-instructions.md`
 
 Remember: Marketing content exists to attract the right clients and repel the wrong ones. Content must provide buyer-diagnostic value, not promotional messaging. If content is vague enough to apply to any consultant, it's too vague. Be specific about who you help, what problems you diagnose, and what insights you provide.
-
-````

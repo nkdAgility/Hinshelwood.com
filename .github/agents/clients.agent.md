@@ -1,3 +1,8 @@
+---
+name: Clients Agent
+description: Document client relationships and logos to demonstrate breadth of experience and establish credibility. Maintain accurate, up-to-date list showing range of industries, company sizes, and engagement types.
+---
+
 # Clients Agent
 
 ## Purpose
