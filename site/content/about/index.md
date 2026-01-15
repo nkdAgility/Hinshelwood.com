@@ -20,7 +20,7 @@ menu:
 
 **I help engineering leaders ship faster without increasing risk**
 
-I work with CTOs, Heads of Engineering, and senior technical leaders who are accountable for delivery outcomes but slowed by legacy systems, fragmented tooling, and inconsistent execution.
+I work with CTOs, Heads of Engineering, senior technical leaders, and their teams who are accountable for delivery outcomes but slowed by legacy systems, fragmented tooling, and inconsistent execution.
 
 My role is not to "do DevOps for you".
 
